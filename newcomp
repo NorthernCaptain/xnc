@@ -1,0 +1,18 @@
+#! /bin/sh
+unset LC_ALL
+unset LANG
+echo char compiled[]=\"`date` by `whoami`@`hostname` `uname -a | cut -d\  -f1,3,11`\"\; >src/include/comp.h
+a=`cat src/include/build.h | sed 's/^.*char *build_chr\[\]= *\" //;s/ *\"\;//'`
+echo char build_chr[]= \" `expr $a + 1` \"\;>src/include/build.h
+if test -z "$DEVELOPER" ;
+then
+echo "#define XNCVERSION \"v.$1\"" >src/include/xnc/xncversion.h
+echo >>src/include/xnc/xncversion.h
+else
+echo "#define XNCVERSION \"v.$1 ["`date +'%d%b%Y %X'`"]\"" >src/include/xnc/xncversion.h
+echo >>src/include/xnc/xncversion.h
+fi
+
+
+
+

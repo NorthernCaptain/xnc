@@ -1,0 +1,102 @@
+#! /bin/sh
+
+srcdir='.'
+prefix='/usr'
+CC='gcc'
+CXX='g++'
+CFLAGS='-O'
+X_LIBS=' -L/usr/X11R6/lib'
+
+echo
+echo "-------------------------------------------------"
+echo "Additional Manual configuration for X Northern Captain:"
+echo "Comment: You can disable options marked (***) for smaller size"
+echo
+echo -n "Do You want to use russian mapping in IVES Editor? (Y/n) "
+read a
+if test "$a" = "n" ;
+then
+ echo "NO_ALT=-DNO_ALT" >make.conf
+ rus="disabled"
+else
+ echo "NO_ALT=" >make.conf
+ rus="enabled"
+fi
+echo
+echo
+echo "JLOC="`pwd`"/src/lib/jpeg/libjpeg.a" >> make.conf
+echo "JPGDEFINE=-DLOAD_JPG" >> make.conf
+echo -n "(***) Do You want to use an installed version of libjpeg 6 ? (y/N) "
+read a
+if test "$a" = "y"
+then
+  echo "JLIB=-L/usr/local/lib -ljpeg" >> make.conf
+  echo "JINC=-I/usr/local/include" >> make.conf
+  echo "JDEP=" >> make.conf
+else
+  echo "JLIB="`pwd`"/src/lib/jpeg/libjpeg.a" >> make.conf
+  echo "JINC=-I"`pwd`"/src/lib/jpeg" >> make.conf
+  echo "JDEP=\$(JLOC)" >> make.conf
+fi
+
+echo
+echo -n "(***) Do You need TIFF image format ? (y/N) "
+read a
+if test "$a" = "y" ;
+then
+ echo "TIFFDEFINE=-DLOAD_TIF" >>make.conf
+ echo "TLIB=-ltiff" >>make.conf
+ tiff="TIFF"
+else
+ echo "TIFFDEFINE=" >>make.conf
+ echo "TLIB=" >>make.conf
+ tiff=""
+fi
+
+echo -n "(***) Do You need PNG image format? (Y/n) "
+read a
+if test "$a" = "n" ;
+then
+ echo "PNGDEFINE=" >>make.conf
+ echo "PNG=" >>make.conf
+ echo "PNGINC=" >>make.conf
+ echo "PNGLIB=" >>make.conf
+ echo "PNGDEP=" >>make.conf
+ png=""
+ echo "ZINC=" >>make.conf
+ echo "ZLIB=" >>make.conf
+ echo "ZDEP=" >>make.conf
+else
+ echo "PNGDEFINE=-DLOAD_PNG" >> make.conf
+ echo "PNG=-DPNG_SUPPORT" >>make.conf
+ echo "PNGINC=-I`pwd`/src/lib/libpng -I`pwd`/src/lib/zlib" >>make.conf
+ echo "PNGLIB=`pwd`/src/lib/libpng/libpng.a `pwd`/src/lib/zlib/libz.a" >>make.conf
+ echo "PNGDEP=`pwd`/src/lib/libpng/libpng.a" >>make.conf
+ png="PNG"
+ echo "ZINC=-I`pwd`/src/lib/zlib" >>make.conf
+ echo "ZLIB=`pwd`/src/lib/zlib/libz.a" >>make.conf
+ echo "ZDEP=\$(ZLIB)" >>make.conf
+
+fi
+echo "---------------------------------------------------------------"
+
+echo "
+Configuration:
+
+  Source code location:     ${srcdir}
+  C Compiler:               ${CC}
+  C Compiler flags:         ${CFLAGS}
+  C++ Compiler:             ${CXX}
+  Install path:             ${prefix}/bin
+  Man pages path:           ${prefix}/man
+  X11 versions:             ${X_LIBS}
+  X Visuals:                ${pse}
+  Image formats:            JPEG GIF PCD XPM PCX TGA LBM PNM ${tiff} ${png}
+  IVES Russian:             ${rus}
+"
+echo "---------------------------------------------------------------"
+echo ""
+echo "Now remove all '*.o' files and run 'make' for building XNC"
+echo "Then run 'make install' for installation as 'root'"
+echo ""
+

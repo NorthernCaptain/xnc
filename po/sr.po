@@ -1,0 +1,2130 @@
+# Serbian (Latin) translation for XNC. 
+# This file is put in the public domain.
+# Nikola Radovanovic <nrad@eunet.yu>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 5.0\n"
+"POT-Creation-Date: 2003-11-27 18:28+0300\n"
+"PO-Revision-Date: 2003-01-25 17:46+0100\n"
+"Last-Translator: Nikola Radovanovic <nrad@eunet.yu>\n"
+"Language-Team: Serbian (Cyr) <sp@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.6\n"
+
+#: src/ives/editor.cxx:308 src/ives/ives.cxx:1011 src/ives/viewer.cxx:85
+#: src/ives/viewer.cxx:136 src/config_window.cxx:472 src/query_windows.cxx:392
+#: src/query_windows.cxx:568 src/query_windows.cxx:843
+#: src/query_windows.cxx:919 src/query_windows.cxx:1424
+#: src/query_windows.cxx:1791 src/query_windows.cxx:1868
+#: src/query_windows.cxx:1914 src/query_windows.cxx:2170
+msgid "OK"
+msgstr "Va¾i"
+
+#: src/ives/editor.cxx:309 src/ives/editor.cxx:371 src/ives/editor.cxx:424
+#: src/ives/editor.cxx:428 src/ives/viewer.cxx:86 src/config_window.cxx:473
+#: src/query_windows.cxx:161 src/query_windows.cxx:200
+#: src/query_windows.cxx:569 src/query_windows.cxx:645
+#: src/query_windows.cxx:844 src/query_windows.cxx:920
+#: src/query_windows.cxx:1205 src/query_windows.cxx:1425
+#: src/query_windows.cxx:1560 src/query_windows.cxx:1792
+#: src/query_windows.cxx:1869 src/query_windows.cxx:2081
+#: src/query_windows.cxx:2171
+msgid "Cancel"
+msgstr "Prekini"
+
+#: src/ives/editor.cxx:369 src/ives/editor.cxx:370 src/ives/ives.cxx:626
+#: src/ives/viewer.cxx:408 src/find.cxx:308
+msgid "Find"
+msgstr "Pronaði"
+
+#: src/ives/editor.cxx:373
+msgid "Text to find:"
+msgstr "Pronaði tekst:"
+
+#: src/ives/editor.cxx:374
+msgid "Entire scope"
+msgstr "Cela reè"
+
+#: src/ives/editor.cxx:375
+msgid "Backwards"
+msgstr "Unazad"
+
+#: src/ives/editor.cxx:415
+msgid "Save and Exit"
+msgstr "Saèuvaj i izaði"
+
+#: src/ives/editor.cxx:417 src/ives/editor.cxx:422 src/ives/editor.cxx:427
+#: src/xsetup/setup.cxx:125 src/xsetup/setup.cxx:152
+msgid "Save"
+msgstr "Saèuvaj"
+
+#: src/ives/editor.cxx:418
+msgid "DOS text format"
+msgstr "DOS format teksta"
+
+#: src/ives/editor.cxx:419
+msgid "KOI8 -> Any RUS"
+msgstr "KOI8 -> Bilo koji RUS"
+
+#: src/ives/editor.cxx:423 src/xsetup/setup.cxx:153
+msgid "Don't save"
+msgstr "Ne upisuj"
+
+#: src/ives/editor.cxx:432
+msgid "Save as"
+msgstr "Saèuvaj kao"
+
+#: src/ives/editor.cxx:640 src/ives/editor.cxx:1123 src/ives/editor.cxx:1126
+#: src/ives/editor.cxx:1152 src/ives/editor.cxx:2112 src/ives/viewer.cxx:791
+#: src/ives/viewer.cxx:820 src/base_cap.cxx:973 src/base_cap.cxx:1115
+#: src/base_cap.cxx:1245 src/base_cap.cxx:1276 src/base_cap.cxx:1377
+#: src/base_cap.cxx:1496 src/base_cap.cxx:1502 src/base_cap.cxx:1508
+#: src/main.cxx:105 src/query_windows.cxx:1396 src/query_windows.cxx:1401
+#: src/query_windows.cxx:1406 src/query_windows.cxx:2039
+#: src/lib/vfs/afs.cxx:1481 src/lib/vfs/afs.cxx:1488
+msgid "Error"
+msgstr "Gre¹ka"
+
+#: src/ives/editor.cxx:640
+msgid "TAGS file not found..."
+msgstr "Fajl TAGS nije pronaðen..."
+
+#: src/ives/editor.cxx:1099 src/ives/ives.cxx:652 src/ives/viewer.cxx:412
+msgid "Go to line..."
+msgstr "Idi na liniju..."
+
+#: src/ives/editor.cxx:1099 src/ives/ives.cxx:652 src/ives/viewer.cxx:412
+msgid "Line number:"
+msgstr "Linija broj:"
+
+#: src/ives/editor.cxx:1105
+msgid "ETags-Find"
+msgstr "ETags-Pretraga"
+
+#: src/ives/editor.cxx:1105
+msgid "String to find:"
+msgstr "Pronaði frazu:"
+
+#: src/ives/editor.cxx:1111
+msgid "ETAGS file"
+msgstr "ETAGS fajl"
+
+#: src/ives/editor.cxx:1111
+msgid "Enter tags file:"
+msgstr "Unesi fajl tagova:"
+
+#: src/ives/editor.cxx:1123
+msgid "Not a Emacs TAGS file!"
+msgstr "Nije Emacs TAGS fajl!"
+
+#: src/ives/editor.cxx:1126
+msgid "Etags fatal..."
+msgstr "Etags gre¹ka..."
+
+#: src/ives/editor.cxx:1133 src/base_cap.cxx:914
+msgid "Sorry!"
+msgstr "Izvinite!"
+
+#: src/ives/editor.cxx:1133
+msgid "Token not found..."
+msgstr "Tra¾eno nije pronaðeno.."
+
+#: src/ives/editor.cxx:1152
+msgid "Wrong line number"
+msgstr "Pogre¹an broj reda"
+
+#: src/ives/editor.cxx:2007
+msgid "FATAL Error!"
+msgstr "Fatalna gre¹ka!"
+
+#: src/ives/editor.cxx:2007 src/ives/viewer.cxx:738
+msgid "Error loading file..."
+msgstr "Gre¹ka pri uèitavanju fajla..."
+
+#: src/ives/editor.cxx:2047
+msgid "Error!"
+msgstr "Gre¹ka!"
+
+#: src/ives/editor.cxx:2047
+msgid "Maximum lines exeeded!"
+msgstr "Probijen najveæi broj redova!"
+
+#: src/ives/editor.cxx:2057
+msgid "FATAL Error"
+msgstr "Fatalna gre¹ka"
+
+#: src/ives/editor.cxx:2057
+msgid "Error loading file!"
+msgstr "Gre¹ka pri uèitavanju fajla!"
+
+#: src/ives/editor.cxx:2112
+msgid "Error saving file!"
+msgstr "Gre¹ka prilikom saèuvavanja!"
+
+#: src/ives/editor.cxx:2126 src/ives/editor.cxx:2149 src/ives/editor.cxx:2185
+#: src/ives/editor.cxx:2233
+msgid "Warning!"
+msgstr "Upozorenje!"
+
+#: src/ives/editor.cxx:2126
+msgid "Symbol not a bracket!"
+msgstr "Simbol nije uglasta zagrada!"
+
+#: src/ives/editor.cxx:2149 src/ives/editor.cxx:2185
+msgid "Another bracket not found!"
+msgstr "Zatvorena uglasta zagrada nije pronaðena!"
+
+#: src/ives/editor.cxx:2233
+msgid "String not found"
+msgstr "Fraza nije naðena"
+
+#: src/ives/ives.cxx:72
+msgid "Choose File"
+msgstr "Izaberi fajl"
+
+#: src/ives/ives.cxx:104
+msgid "Fast (Floyd Dithering)"
+msgstr "Brz (Floyd Dithering)"
+
+#: src/ives/ives.cxx:105
+msgid "Slow method"
+msgstr "Spor metod"
+
+#: src/ives/ives.cxx:106
+msgid "Best (PPM method)"
+msgstr "Najbolji (PPM metod)"
+
+#: src/ives/ives.cxx:182 src/ives/ives.cxx:191
+msgid "2.Save"
+msgstr "2.Saèuvaj"
+
+#: src/ives/ives.cxx:183
+msgid "3.Hex/Ascii"
+msgstr "3.Hex/Ascii"
+
+#: src/ives/ives.cxx:184
+msgid "7.Search"
+msgstr "7.Pretraga"
+
+#: src/ives/ives.cxx:185 src/ives/ives.cxx:197
+msgid "8.Go to"
+msgstr "8.Idi na"
+
+#: src/ives/ives.cxx:186 src/ives/ives.cxx:199
+msgid "11.DOSr"
+msgstr "11.DOSr"
+
+#: src/ives/ives.cxx:187 src/ives/ives.cxx:200
+msgid "12.WINr"
+msgstr "12.WINr"
+
+#: src/ives/ives.cxx:188 src/ives/ives.cxx:201
+msgid "-10.Quit"
+msgstr "-10.Izlaz"
+
+#: src/ives/ives.cxx:192
+msgid "3.Copy"
+msgstr "3.Kopiraj"
+
+#: src/ives/ives.cxx:193
+msgid "4.Paste"
+msgstr "4.Prenesi"
+
+#: src/ives/ives.cxx:194
+msgid "5.Cut"
+msgstr "5.Iseci"
+
+#: src/ives/ives.cxx:195
+msgid "6.Next"
+msgstr "6.Sledeæi"
+
+#: src/ives/ives.cxx:196
+msgid "7.Find"
+msgstr "7.Pronaði"
+
+#: src/ives/ives.cxx:198
+msgid "9.Del"
+msgstr "9.Izbri¹i"
+
+#: src/ives/ives.cxx:300
+#, c-format
+msgid "%s: IVES Editor %d-%s"
+msgstr "%s: IVES editor %d-%s"
+
+#: src/ives/ives.cxx:346
+#, c-format
+msgid "%s: IVES Viewer %d-%s"
+msgstr "%s: IVES preglednik %d-%s"
+
+#: src/ives/ives.cxx:366
+#, c-format
+msgid "%s: IVES Image Viewer %d-%s"
+msgstr "%s: IVES pregled slika %d-%s"
+
+#: src/ives/ives.cxx:367
+msgid "Loading "
+msgstr "Uèitavam "
+
+#: src/ives/ives.cxx:369
+msgid "GIF Image...."
+msgstr "GIF sliku...."
+
+#: src/ives/ives.cxx:370
+msgid "JPEG Image...."
+msgstr "JPEG sliku...."
+
+#: src/ives/ives.cxx:371
+msgid "PCX Image...."
+msgstr "PCX sliku...."
+
+#: src/ives/ives.cxx:372
+msgid "TIFF Image...."
+msgstr "TIFF sliku...."
+
+#: src/ives/ives.cxx:373
+msgid "XBM Image...."
+msgstr "XBM sliku...."
+
+#: src/ives/ives.cxx:374
+msgid "XPM Image...."
+msgstr "XPM sliku...."
+
+#: src/ives/ives.cxx:375
+msgid "BMP Image...."
+msgstr "BMP sliku...."
+
+#: src/ives/ives.cxx:376
+msgid "Photo CD...."
+msgstr "Foto CD...."
+
+#: src/ives/ives.cxx:377
+msgid "PNG Image...."
+msgstr "PNG sliku...."
+
+#: src/ives/ives.cxx:452 src/ives/ives.cxx:1156 src/panel_metacall.cxx:137
+#: src/menu_process.cxx:268
+msgid "Edit file"
+msgstr "Izmeni fajl"
+
+#: src/ives/ives.cxx:457 src/ives/ives.cxx:1157 src/panel_metacall.cxx:134
+#: src/menu_process.cxx:267
+msgid "View file"
+msgstr "Prika¾i fajl"
+
+#: src/ives/ives.cxx:619 src/ives/viewer.cxx:402
+msgid "Save file"
+msgstr "Saèuvaj fajl"
+
+#: src/ives/ives.cxx:619 src/ives/viewer.cxx:402
+msgid "Save as:"
+msgstr "Saèuvaj kao:"
+
+#: src/ives/ives.cxx:626 src/ives/viewer.cxx:408
+msgid "Find text:"
+msgstr "Pronaði tekst:"
+
+#: src/ives/ives.cxx:650 src/ives/viewer.cxx:411
+msgid "Go to offset..."
+msgstr "Idem na lokaciju"
+
+#: src/ives/ives.cxx:650 src/ives/viewer.cxx:411
+msgid "Hex offset:"
+msgstr "Hex lokacija:"
+
+#: src/ives/ives.cxx:834
+#, c-format
+msgid "Viewers:  %d"
+msgstr "Preglednika:  %d"
+
+#: src/ives/ives.cxx:836
+#, c-format
+msgid "Editors:  %d"
+msgstr "Editora:  %d"
+
+#: src/ives/ives.cxx:1010
+msgid "IVES Options"
+msgstr "IVES opcije"
+
+#: src/ives/ives.cxx:1012
+msgid "Image 24->8 convertion"
+msgstr "Konverzija slika 24->8"
+
+#: src/ives/ives.cxx:1013
+msgid "Photo CD resolution"
+msgstr "Foto CD rezolucija"
+
+#: src/ives/ives.cxx:1081
+msgid "Another IVES already running\n"
+msgstr "Drugi IVES je veæ pokernut\n"
+
+#: src/ives/ives.cxx:1129
+msgid "Loading..."
+msgstr "Uèitavam..."
+
+#: src/ives/ives.cxx:1154 src/xsetup/setup.cxx:124
+msgid "Exit"
+msgstr "Izlaz"
+
+#: src/ives/ives.cxx:1155 src/menu_process.cxx:300
+msgid "Options"
+msgstr "Opcije"
+
+#: src/ives/viewer.cxx:699
+#, c-format
+msgid "Size: %d"
+msgstr "Velièina: %d"
+
+#: src/ives/viewer.cxx:738
+msgid "FATAL ERROR!"
+msgstr "Fatalna gre¹ka!"
+
+#: src/ives/viewer.cxx:750
+msgid "FATAL ERROR"
+msgstr "Fatalna gre¹ka"
+
+#: src/ives/viewer.cxx:750
+msgid "Permission denied"
+msgstr "Zabranjen pristup"
+
+#: src/ives/viewer.cxx:791
+msgid "Can't save this file"
+msgstr "Nemoguæe saèuvati fajl"
+
+#: src/ives/viewer.cxx:820
+msgid "Wrong line number!"
+msgstr "Pogre¹an broj reda!"
+
+#: src/ives/viewer.cxx:922
+msgid "Warning"
+msgstr "Upozorenje"
+
+#: src/ives/viewer.cxx:922
+msgid "String not found!"
+msgstr "Fraza nije pronaðena!"
+
+#: src/base_cap.cxx:519 src/cmdline.cxx:135
+msgid "Enter your password"
+msgstr "Unesite ¹ifru"
+
+#: src/base_cap.cxx:540 src/base_cap.cxx:591 src/base_cap.cxx:2029
+msgid "Can't change to dir"
+msgstr "Nemoguæe preæi u katalog"
+
+#: src/base_cap.cxx:867
+msgid "Information"
+msgstr "Opis"
+
+#: src/base_cap.cxx:867
+msgid "No files match given criteria."
+msgstr "Ne postoji tra¾eni fajl"
+
+#: src/base_cap.cxx:914
+msgid "Current FileName has no extension!"
+msgstr "Tekuæi fajl nema ekstanziju!"
+
+#: src/base_cap.cxx:973
+msgid "Can't DELETE on this VFS"
+msgstr "Onemoguæeno brisanje u ovom sistemu fajlova"
+
+#: src/base_cap.cxx:976
+msgid "Deleting..."
+msgstr "Bri¹em..."
+
+#: src/base_cap.cxx:985 src/menu_process.cxx:273
+msgid "Delete file"
+msgstr "Izbri¹i fajl"
+
+#: src/base_cap.cxx:1045
+msgid "Delete files"
+msgstr "Izbri¹i fajlove"
+
+#: src/base_cap.cxx:1078 src/base_cap.cxx:1118
+msgid "Copying..."
+msgstr "Kopiram..."
+
+#: src/base_cap.cxx:1079
+msgid "Full Unpack"
+msgstr "Raspakuj sve"
+
+#: src/base_cap.cxx:1115
+msgid "Can't COPY on this VFS"
+msgstr "Onemoguæeno kopiranje u ovaj sistem fajlova"
+
+#: src/base_cap.cxx:1127 src/base_cap.cxx:1387
+msgid "Pocket operation"
+msgstr "Paketne peracije"
+
+#: src/base_cap.cxx:1160 src/panel.cxx:1455 src/panel.cxx:1526
+#: src/lib/vfs/ftpfs.cxx:1740 src/lib/vfs/ftpfs.cxx:1759
+#: src/lib/vfs/ftpfs.cxx:1843 src/lib/vfs/ftpfs.cxx:1929
+#: src/lib/vfs/ftpfs.cxx:1980 src/lib/vfs/afs.cxx:312 src/lib/vfs/afs.cxx:377
+#: src/lib/vfs/afs.cxx:560 src/lib/vfs/dfs.cxx:498 src/lib/vfs/dfs.cxx:550
+#: src/menu_process.cxx:269
+msgid "Copy file"
+msgstr "Kopiraj fajl"
+
+#: src/base_cap.cxx:1198
+msgid "Copy files"
+msgstr "Kopiraj fajlove"
+
+#: src/base_cap.cxx:1230
+msgid "Moving..."
+msgstr "Preme¹tam..."
+
+#: src/base_cap.cxx:1245 src/base_cap.cxx:1276
+msgid "Can't MOVE on this VFS"
+msgstr "Onemoguæeno preme¹tanje u ovaj sistem fajlova"
+
+#: src/base_cap.cxx:1257 src/panel.cxx:1547 src/panel.cxx:1579
+#: src/lib/vfs/dfs.cxx:601
+msgid "Move file"
+msgstr "Premesti fajl"
+
+#: src/base_cap.cxx:1311
+msgid "Move files"
+msgstr "Premesti fajlove"
+
+#: src/base_cap.cxx:1377
+#, fuzzy
+msgid "Can't LINK on this VFS"
+msgstr "Onemoguæeno brisanje u ovom sistemu fajlova"
+
+#: src/base_cap.cxx:1380
+#, fuzzy
+msgid "Linking..."
+msgstr "Pakujem..."
+
+#: src/base_cap.cxx:1420 src/xsetup/setup.cxx:334
+msgid "Link file"
+msgstr "Veza"
+
+#: src/base_cap.cxx:1458
+#, fuzzy
+msgid "Link files"
+msgstr "Veza"
+
+#: src/base_cap.cxx:1496
+msgid "No archiver association with your file!"
+msgstr "Ne postoji arhiver za raspakivanje!"
+
+#: src/base_cap.cxx:1502 src/base_cap.cxx:1508
+msgid "Archiver don't support archive creation!"
+msgstr "Arhiver ne podr¾ava pravljenje arhiva!"
+
+#: src/base_cap.cxx:1514 src/base_cap.cxx:1550
+msgid "Packing..."
+msgstr "Pakujem..."
+
+#: src/base_cap.cxx:1515 src/base_cap.cxx:1551
+msgid "Creating archive"
+msgstr "Pravim arhivu"
+
+#: src/base_cap.cxx:1546 src/lib/vfs/afs.cxx:1181 src/lib/vfs/afs.cxx:1371
+msgid "Can't access TMP dir"
+msgstr "Onemoguæen pristup TMP katalogu"
+
+#: src/base_cap.cxx:1662 src/query_windows.cxx:1203 src/menu_process.cxx:276
+msgid "Change Owner"
+msgstr "Promena vlasnika"
+
+#: src/base_cap.cxx:2001
+msgid "Set attributes"
+msgstr "Postavljanje dozvola"
+
+#: src/bookmark.cxx:1169
+msgid "Recycle Bin"
+msgstr "Kanta"
+
+#: src/config_window.cxx:63
+msgid "Full mode"
+msgstr "Potpun"
+
+#: src/config_window.cxx:64
+msgid "Brief mode"
+msgstr "Skraæen"
+
+#: src/config_window.cxx:65
+msgid "Custom mode"
+msgstr "Korisnièki"
+
+#: src/config_window.cxx:71
+msgid "XNC style icons"
+msgstr "XNC stil"
+
+#: src/config_window.cxx:72
+msgid "Windows style icons"
+msgstr "Windows stil"
+
+#: src/config_window.cxx:73
+msgid "KDE style icons"
+msgstr "KDE stil"
+
+#: src/config_window.cxx:74
+msgid "AquaFusion icons"
+msgstr "AquaFusion stil"
+
+#: src/config_window.cxx:75
+msgid "GNOME style icons"
+msgstr "GNOME stil"
+
+#: src/config_window.cxx:81
+msgid "Original Look"
+msgstr "Izvorni izgled"
+
+#: src/config_window.cxx:82
+msgid "Five Look"
+msgstr "Five izgled"
+
+#: src/config_window.cxx:83
+msgid "Aqua Look"
+msgstr "Aqua izgled"
+
+#: src/config_window.cxx:344 src/config_window.cxx:361
+#: src/config_window.cxx:381
+msgid "Wait..."
+msgstr "Èekam..."
+
+#: src/config_window.cxx:346 src/config_window.cxx:363
+#: src/config_window.cxx:383
+msgid "Loading Pixmaps..."
+msgstr "Uèitavam slike..."
+
+#: src/config_window.cxx:430
+msgid "XNC Configuration"
+msgstr "XNC pode¹avanja"
+
+#: src/config_window.cxx:433
+msgid "General:"
+msgstr "Op¹te:"
+
+#: src/config_window.cxx:434
+msgid "User prompts:"
+msgstr "Korisnièki upitnici:"
+
+#: src/config_window.cxx:435
+msgid "Show hidden files"
+msgstr "Prika¾i skrivene fajlove"
+
+#: src/config_window.cxx:437
+msgid "Bookmark animation"
+msgstr "Animacija preèice"
+
+#: src/config_window.cxx:438
+msgid "IVES exit with XNC"
+msgstr "IVES izlazi sa XNC"
+
+#: src/config_window.cxx:440
+msgid "Icons with directories"
+msgstr "Ikonice sa katalozima"
+
+#: src/config_window.cxx:441
+msgid "Icons with files"
+msgstr "Ikonice sa fajlovima"
+
+#: src/config_window.cxx:443
+msgid "Status bar view:"
+msgstr "Prikaz statusne linije:"
+
+#: src/config_window.cxx:444
+msgid "File name in status"
+msgstr "Naziv fajla"
+
+#: src/config_window.cxx:445
+msgid "Attributes in status"
+msgstr "Dozvole"
+
+#: src/config_window.cxx:446
+msgid "Date/Time in status"
+msgstr "Datum/vreme"
+
+#: src/config_window.cxx:447
+msgid "Size in status"
+msgstr "Velièina"
+
+#: src/config_window.cxx:448
+msgid "Owner in status"
+msgstr "Vlasnik"
+
+#: src/config_window.cxx:450
+msgid "Filled file cursor"
+msgstr "Popunjen fajl kursor"
+
+#: src/config_window.cxx:452
+msgid "Raise term on exec"
+msgstr "Izvr¹i u terminalu"
+
+#: src/config_window.cxx:453
+msgid "Lynx style navigation"
+msgstr "Lynx stil navigacije"
+
+#: src/config_window.cxx:454
+msgid "Shadow text"
+msgstr "Tekst sa senkom"
+
+#: src/config_window.cxx:455
+msgid "Choose iconset:"
+msgstr "Vrste ikonica:"
+
+#: src/config_window.cxx:458
+msgid "Prompts:"
+msgstr "Upitnici:"
+
+#: src/config_window.cxx:459
+msgid "Copy prompt"
+msgstr "Pri kopiranju"
+
+#: src/config_window.cxx:460
+msgid "Move prompt"
+msgstr "Pri preme¹tanju"
+
+#: src/config_window.cxx:461
+msgid "Delete prompt"
+msgstr "Pri brisanju"
+
+#: src/config_window.cxx:462
+msgid "Overwrite prompt"
+msgstr "Pri prepisivanju"
+
+#: src/config_window.cxx:463
+msgid "Pack prompt"
+msgstr "Pri pakovanju"
+
+#: src/config_window.cxx:464 src/xsetup/setup.cxx:150
+msgid "Exit prompt"
+msgstr "Pri izlazu"
+
+#: src/config_window.cxx:466
+msgid "Dirscan timeout:"
+msgstr "Dirscan ogranièenje:"
+
+#: src/config_window.cxx:468
+msgid "Branch depth:"
+msgstr "Dubina ogranka:"
+
+#: src/config_window.cxx:470
+msgid "sec"
+msgstr "sek."
+
+#: src/config_window.cxx:476
+msgid "Magic file:"
+msgstr "Magièan fajl:"
+
+#: src/config_window.cxx:479
+msgid "GUI plugin will work only after restart of XNC."
+msgstr "GUI dodatak æe raditi tek nakon ponovnog pokretanja XNC."
+
+#: src/config_window.cxx:480
+msgid "GUI plugin (skin):"
+msgstr "GUI dodatak (izgled):"
+
+#: src/config_window.cxx:483
+msgid "Mouse state:"
+msgstr "Status mi¹a:"
+
+#: src/config_window.cxx:489
+msgid "Action for the state:"
+msgstr "Komade za izabrani status:"
+
+#: src/config_window.cxx:493
+msgid "Modes:"
+msgstr "Prikaz:"
+
+#: src/config_window.cxx:496
+msgid "Enter mode format string:"
+msgstr "Unesite format prikaza:"
+
+#: src/config_window.cxx:497
+msgid "Minimum display file name length:"
+msgstr "Najmanja du¾ina imena fajla:"
+
+#: src/config_window.cxx:498
+msgid "Choose mode:"
+msgstr "Izaberite prikaz:"
+
+#: src/config_window.cxx:499
+msgid "Mode format explanation:"
+msgstr "Opis formata prikaza:"
+
+#: src/config_window.cxx:500
+msgid "F - file name"
+msgstr "F - naziv fajla"
+
+#: src/config_window.cxx:501
+msgid "A - file attributes (-rwxr-x-r-x)"
+msgstr "A - dozvole (-rwxr-x-r-x)"
+
+#: src/config_window.cxx:502
+msgid "O - file attributes in octal (0755)"
+msgstr "O - dozvole oktadecimalno (0755)"
+
+#: src/config_window.cxx:503
+msgid "S - file size"
+msgstr "S - velièina fajla"
+
+#: src/config_window.cxx:504
+msgid "D - file date/time"
+msgstr "D - datum/vreme fajla"
+
+#: src/config_window.cxx:505
+msgid "| - visual separator"
+msgstr "| - vizuelni razmak"
+
+#: src/config_window.cxx:506
+msgid ". - small empty space"
+msgstr ". - mali prazan prostor"
+
+#: src/config_window.cxx:516
+msgid "Main"
+msgstr "Glavno"
+
+#: src/config_window.cxx:518
+msgid "Prompt/View"
+msgstr "Op¹te"
+
+#: src/config_window.cxx:520
+msgid "Look/Feel"
+msgstr "Izgled"
+
+#: src/config_window.cxx:522
+msgid "Mouse"
+msgstr "Mi¹"
+
+#: src/config_window.cxx:524
+msgid "Modes"
+msgstr "Prikaz"
+
+#: src/find.cxx:309
+msgid "From '/'"
+msgstr "Od '/'"
+
+#: src/find.cxx:310
+msgid "Stop"
+msgstr "Prekini"
+
+#: src/find.cxx:311 src/menu_process.cxx:162
+msgid "Quit"
+msgstr "Izlaz"
+
+#: src/ftpvisuals.cxx:330
+msgid "Can't close during operation!"
+msgstr "Operacija u toku!"
+
+#: src/ftpvisuals.cxx:413 src/ftpvisuals.cxx:414 src/ftpvisuals.cxx:421
+#: src/ftpvisuals.cxx:422 src/ftpvisuals.cxx:425 src/ftpvisuals.cxx:426
+msgid "Vacant FTP"
+msgstr "Slobodan FTP"
+
+#: src/main.cxx:91
+msgid "Error connecting to IVES"
+msgstr "Gre¹ka pri povezivanju sa IVES-om"
+
+#: src/main.cxx:92
+msgid "Editor and/or Viewer not available! Use 'xncsetup' for correct"
+msgstr ""
+"Editor i/ili preglednik nisu dostupni! Koristite 'xncsetup' da biste to "
+"ispravili"
+
+#: src/main.cxx:98
+msgid "Loading IVES"
+msgstr "Uèitavam IVES"
+
+#: src/main.cxx:98
+msgid "   Please wait..."
+msgstr "   Molim saèekajte..."
+
+#: src/main.cxx:105
+msgid "IVE System not available!"
+msgstr "IVE System nije dostupan!"
+
+#: src/main.cxx:361
+msgid ""
+"OOPS! It seems that You found a bug in XNC!!!\n"
+"If You can repeat this situation then send me a bug report\n"
+"to <leo@xnc.dubna.su> with subject  'XNC - bug report'\n"
+msgstr ""
+"UPS! Izgleda da postoji gre¹ka u XNC!!!\n"
+"Ako se ova situacija ponovi po¹aljite izve¹taj o gre¹ci\n"
+"na <leo@xnc.dubna.su> sa zaglavljem  'XNC - bug report'\n"
+
+#: src/main.cxx:365
+msgid ""
+"Body of the mail:\n"
+"   -What are You doing to produce this bug.\n"
+"   -XNC configuration (~/.xnc/xnc.ini) file.\n"
+"   -Output of 'ldd xnc' command.\n"
+"   -X Server configuration (resolution and color depth)\n"
+"   -And Your reply mail address, for more information about situation if "
+"need\n"
+"Do NOT include 'CORE' dump file in the following letter.\n"
+"Thanks, and sorry for BUG\n"
+msgstr ""
+"Sadr¾aj el. po¹te:\n"
+"   -©ta ste radili pa se pojavila gre¹ka.\n"
+"   -XNC konfiguracioni (~/.xnc/xnc.ini) fajl.\n"
+"   -Izlaz od 'ldd xnc'komande.\n"
+"   -X Server konfiguracija (rezolucija i broj boja)\n"
+"   -Adresa va¹e el. po¹te, za dodatna informacije oko situacije, ako je "
+"potrebno\n"
+"Ne ukljuèujte 'CORE' dump fajl u ovom pismu.\n"
+"Hvala, i izvinite zbog gre¹ke\n"
+
+#: src/main.cxx:541
+#, c-format
+msgid "Starting %s Build%s.....\n"
+msgstr "Pokreæem %s Izdanje%s.....\n"
+
+#: src/main.cxx:572
+msgid "Copyright (c) 1995-2002 Leonid V. KHramov aka Leo <leo@xnc.dubna.su>\n"
+msgstr "Copyright (c) 1995-2002 Leonid V. Khramov kao Leo <leo@xnc.dubna.su>\n"
+
+#: src/main.cxx:648
+msgid ""
+"------------------------------------------------------------------------------\n"
+"Notice:\n"
+"\tIf You like X Northern Captain and will use it,\n"
+"\tthen send me e-mail to <leo@xnc.dubna.su> with names of\n"
+"\tcity and country where you are using it. It's for my collection.\n"
+"\tIf You do it, i'll be happy....\n"
+"\t\t\tThanks,\n"
+"\t\t\tLeonid V. Khramov aka Leo <leo@xnc.dubna.su>\n"
+msgstr ""
+"------------------------------------------------------------------------------\n"
+"Bele¹ka:\n"
+"\tAko vam se dopada X Northern Captain i ¾elite da ga koristite,\n"
+"\tpo¹aljite el. po¹tu na <leo@xnc.dubna.su> sa nazivom grada i zemlje\n"
+"\tgde ga koristite. To je samo za moju kolekciju.\n"
+"\tBio bih Vam vrlo zahvalan....\n"
+"\t\t\tHvala,\n"
+"\t\t\tLeonid V. Khramov kao Leo <leo@xnc.dubna.su>\n"
+
+#: src/main.cxx:654
+msgid ""
+"\n"
+"PS: If you have any questions, comments about xnc or you want\n"
+"to know latest news then join to xnc mailing list <xnc@xnc.dubna.su>\n"
+"Just mail a letter with 'SUBSCRIBE xnc' in the body of mail to\n"
+"<majordomo@xnc.dubna.su> and you are inside.\n"
+msgstr ""
+"\n"
+"PS: Ako imate neka pitanja ili komentare o xnc ili ¾elite da saznate\n"
+"najnovije novosti pridru¾ite se xnc listu el. po¹te <xnc@xnc.dubna.su>\n"
+"Napi¹ite 'SUBSCRIBE xnc' u telu el. po¹te i po¹aljite na\n"
+"<majordomo@xnc.dubna.su> i sa nama ste.\n"
+
+#: src/main.cxx:659
+#, c-format
+msgid "Thank you. You have run X Northern Captain %d times!\n"
+msgstr "Hvala. Pokretali ste X Northern Captain %d puta!\n"
+
+#: src/man_page.cxx:94
+msgid "Man report"
+msgstr "Izve¹taj priruènika"
+
+#: src/man_page.cxx:94
+msgid "No manual page for this command."
+msgstr "Ne postoji priruènik za ovu komandu."
+
+#: src/panel.cxx:865
+msgid " file(s) selected"
+msgstr " fajl(ova) je izabrano"
+
+#: src/panel.cxx:1271
+msgid "Kill process!"
+msgstr "Ubi proces!"
+
+#: src/panel.cxx:1435
+msgid "Delete file?"
+msgstr "Izbrisati fajl?"
+
+#: src/panel.cxx:1453 src/panel.cxx:1524
+msgid "Copy files?"
+msgstr "Iskopirati fajl?"
+
+#: src/panel.cxx:1472
+#, fuzzy
+msgid "Link files?"
+msgstr "Veza"
+
+#: src/panel.cxx:1474
+#, fuzzy
+msgid "Make a link to file"
+msgstr "Ne mogu da èitam iz fajla!"
+
+#: src/panel.cxx:1498 src/panel.cxx:1500
+msgid "Create archive?"
+msgstr "Napraviti arhivu?"
+
+#: src/panel.cxx:1545 src/panel.cxx:1577
+msgid "Move files?"
+msgstr "Premestiti fajlove?"
+
+#: src/panel.cxx:1564 src/menu_process.cxx:271
+msgid "Rename file"
+msgstr "Preimenuj fajl"
+
+#: src/panel.cxx:1725 src/panel.cxx:1802
+msgid "Reading directory"
+msgstr "Uèitavam katalog"
+
+#: src/panel.cxx:1749 src/lib/vfs/ftpfs.cxx:2048
+msgid "Changing directory"
+msgstr "Menjam katalog"
+
+#: src/panel.cxx:1831
+msgid "Which command?"
+msgstr "Koju komandu?"
+
+#: src/panel.cxx:1909
+msgid "Execute with..."
+msgstr "Izvr¹i pomoæu..."
+
+#: src/panel.cxx:1979 src/panel_metacall.cxx:264 src/menu_process.cxx:272
+#: src/panel_click.cxx:234
+msgid "Make directory"
+msgstr "Napravi katalog"
+
+#: src/panel.cxx:2105 src/lib/vfs/ftpfs.cxx:1101
+msgid "Pusher"
+msgstr "Prenesi"
+
+#: src/panel.cxx:2105
+msgid "Can't switch to FTP over another one!"
+msgstr "Nemoguæe zameniti jedan FTP drugim!"
+
+#: src/panel_metacall.cxx:64 src/panel_metacall.cxx:253
+#: src/menu_process.cxx:613 src/panel_click.cxx:172
+msgid "Man page"
+msgstr "Strane priruènika"
+
+#: src/panel_metacall.cxx:68
+msgid "Make directory "
+msgstr "Napravi katalog"
+
+#: src/panel_metacall.cxx:76
+#, c-format
+msgid "Create archive %s"
+msgstr "Napravi arhivu %s"
+
+#: src/panel_metacall.cxx:85
+#, c-format
+msgid "Create archive %s "
+msgstr "Napravi arhivu %s"
+
+#: src/panel_metacall.cxx:91
+msgid "Go to subdirectory "
+msgstr "Idi u podkatalog"
+
+#: src/panel_metacall.cxx:98
+msgid "Execute "
+msgstr "Izvr¹i "
+
+#: src/panel_metacall.cxx:106
+msgid "Browse into archive "
+msgstr "Uði u arhivu "
+
+#: src/panel_metacall.cxx:111
+msgid "Execute association "
+msgstr "Izvr¹i asocijacije "
+
+#: src/panel_metacall.cxx:116
+msgid "Execute with ... "
+msgstr "Izvr¹i pomoæu ... "
+
+#: src/panel_metacall.cxx:124
+msgid "Copy file(s)"
+msgstr "Kopiraj fajl(ove)"
+
+#: src/panel_metacall.cxx:127
+msgid "Move/Rename file(s)"
+msgstr "Premesti/preimenuj fajl(ove)"
+
+#: src/panel_metacall.cxx:130
+msgid "Delete file(s)"
+msgstr "Izbri¹i fajl(ove)"
+
+#: src/panel_metacall.cxx:142
+msgid "Change file(s) attributes"
+msgstr "Promena dozvola"
+
+#: src/panel_metacall.cxx:145
+msgid "Change file(s) owner"
+msgstr "Promena vlasnika"
+
+#: src/query_windows.cxx:157
+msgid "User prompt"
+msgstr "Korisnièki upitvik"
+
+#: src/query_windows.cxx:158
+msgid "Update archive before exiting from it?"
+msgstr "Osve¾iti arhivu pre izlaska iz nje?"
+
+#: src/query_windows.cxx:159
+msgid "Press 'Update' if You change files"
+msgstr "Pritisni 'Osve¾i' ako ste menjali fajlove"
+
+#: src/query_windows.cxx:160
+msgid "Update"
+msgstr "Osve¾i"
+
+#: src/query_windows.cxx:194
+msgid "File:"
+msgstr "Fajl:"
+
+#: src/query_windows.cxx:196
+msgid "This file already exists!"
+msgstr "Ovaj fajl veæ postoji!"
+
+#: src/query_windows.cxx:197
+msgid "Overwrite existing file???"
+msgstr "Da prepi¹em postojeæi fajl?"
+
+#: src/query_windows.cxx:199
+msgid "Yes to All"
+msgstr "Da za sve"
+
+#: src/query_windows.cxx:201
+msgid "No"
+msgstr "Ne"
+
+#: src/query_windows.cxx:270 src/query_windows.cxx:816
+#, c-format
+msgid "File:   %s"
+msgstr "Fajl:   %s"
+
+#: src/query_windows.cxx:271 src/query_windows.cxx:824
+#, c-format
+msgid "Owner:  %s.%s"
+msgstr "Vlasnik:  %s.%s"
+
+#: src/query_windows.cxx:278 src/query_windows.cxx:283
+#, c-format
+msgid "Status: %s"
+msgstr "Status: %s"
+
+#: src/query_windows.cxx:295
+msgid "Agree"
+msgstr "Prihvatam"
+
+#: src/query_windows.cxx:333 src/query_windows.cxx:334
+msgid "Path:  none"
+msgstr "Putanja:  bez"
+
+#: src/query_windows.cxx:335
+msgid "File:  unknown"
+msgstr "Fajl:  nepoznat"
+
+#: src/query_windows.cxx:336
+msgid "Size:  unknown"
+msgstr "Velièina: nepoznata"
+
+#: src/query_windows.cxx:337 src/query_windows.cxx:804
+msgid "Status: rwxrwxrwx"
+msgstr "Dozvole: rwxrwxrwx"
+
+#: src/query_windows.cxx:338
+msgid "Owner: *********"
+msgstr "Vlasnik: *********"
+
+#: src/query_windows.cxx:345
+msgid "Read"
+msgstr "Proèitaj"
+
+#: src/query_windows.cxx:346
+msgid "Write"
+msgstr "Zapi¹i"
+
+#: src/query_windows.cxx:347
+msgid "Execute"
+msgstr "Izvr¹i"
+
+#: src/query_windows.cxx:566
+#, c-format
+msgid "File: %s"
+msgstr "Fajl: %s"
+
+#: src/query_windows.cxx:567
+msgid "Attributes"
+msgstr "Dozvole"
+
+#: src/query_windows.cxx:570 src/query_windows.cxx:646
+#: src/query_windows.cxx:1210
+msgid "Owner:"
+msgstr "Vlasnik:"
+
+#: src/query_windows.cxx:571 src/query_windows.cxx:647
+msgid "Group:"
+msgstr "Grupa:"
+
+#: src/query_windows.cxx:572 src/query_windows.cxx:648
+msgid "Other:"
+msgstr "Ostali:"
+
+#: src/query_windows.cxx:575 src/query_windows.cxx:1790
+#, c-format
+msgid "Owner: %s.%s"
+msgstr "Vlasnik: %s.%s"
+
+#: src/query_windows.cxx:641
+msgid "For all selected files:"
+msgstr "Za sve izabrane fajlove:"
+
+#: src/query_windows.cxx:642
+msgid "Set/Clear attributes"
+msgstr "Postavi/promeni dozvole"
+
+#: src/query_windows.cxx:643
+msgid "Set"
+msgstr "Postavi"
+
+#: src/query_windows.cxx:644 src/xsetup/setup.cxx:1050
+msgid "Clear"
+msgstr "Izbri¹i"
+
+#: src/query_windows.cxx:789
+#, c-format
+msgid "From: %s"
+msgstr "Od: %s"
+
+#: src/query_windows.cxx:791
+msgid "To:   Recycle Bin"
+msgstr "U:   Kantu"
+
+#: src/query_windows.cxx:793
+msgid "To:   Printer"
+msgstr "Na:   ©tampaè"
+
+#: src/query_windows.cxx:797 src/query_windows.cxx:801
+#, c-format
+msgid "To:   %s"
+msgstr "U:   %s"
+
+#: src/query_windows.cxx:808 src/query_windows.cxx:902
+#, c-format
+msgid "File:   %d selected files"
+msgstr "Fajl:   %d izabrano fajlova"
+
+#: src/query_windows.cxx:809 src/query_windows.cxx:817
+#: src/query_windows.cxx:903
+#, c-format
+msgid "Size:   %s"
+msgstr "Velièina:   %s"
+
+#: src/query_windows.cxx:810
+msgid "Status: *********"
+msgstr "Status: *********"
+
+#: src/query_windows.cxx:811
+msgid "Owner:  *********"
+msgstr "Vlasnik:  *********"
+
+#: src/query_windows.cxx:887
+#, c-format
+msgid "From:  %s"
+msgstr "Od:  %s"
+
+#: src/query_windows.cxx:908
+msgid "To:"
+msgstr "Ka:"
+
+#: src/query_windows.cxx:925 src/query_windows.cxx:1807
+msgid "Make symbolic link"
+msgstr ""
+
+#: src/query_windows.cxx:927 src/query_windows.cxx:1809
+msgid "Translate symlinks as is."
+msgstr "Premesti identièno simboliène veze."
+
+#: src/query_windows.cxx:1184 src/query_windows.cxx:1789
+#, c-format
+msgid "File:  %s"
+msgstr "Fajl:  %s"
+
+#: src/query_windows.cxx:1186
+msgid "Attributes: "
+msgstr "Dozvole:"
+
+#: src/query_windows.cxx:1199
+#, c-format
+msgid "File: %d selected"
+msgstr "Fajl: %d selektovano"
+
+#: src/query_windows.cxx:1200
+msgid "Attributes: *********"
+msgstr "Dozvole: *********"
+
+#: src/query_windows.cxx:1204
+msgid "Change"
+msgstr "Promeni"
+
+#: src/query_windows.cxx:1211
+msgid "Users:"
+msgstr "Korisnici:"
+
+#: src/query_windows.cxx:1212
+msgid "Groups:"
+msgstr "Grupe:"
+
+#: src/query_windows.cxx:1360
+msgid "Sorry"
+msgstr "Izvinite"
+
+#: src/query_windows.cxx:1360
+msgid "Not implemented yet!"
+msgstr "Jo¹ uvek nedostupno!"
+
+#: src/query_windows.cxx:1396
+msgid "Hostname can't be blank!"
+msgstr "Mora se navesti naziv hosta!"
+
+#: src/query_windows.cxx:1401
+msgid "Login can't be blank!"
+msgstr "Login ne mo¾e biti prazno!"
+
+#: src/query_windows.cxx:1406
+msgid "Password can't be blank!"
+msgstr "©ifra ne mo¾e biti prazna!"
+
+#: src/query_windows.cxx:1417
+msgid "Ftp Proxy Config"
+msgstr "Pode¹avanje Ftp proksija"
+
+#: src/query_windows.cxx:1418 src/query_windows.cxx:1604
+msgid "Ftp Proxy host:"
+msgstr "Ftp proksi host:"
+
+#: src/query_windows.cxx:1420 src/query_windows.cxx:1606
+msgid "FTP Proxy Login:"
+msgstr "FTP proksi login:"
+
+#: src/query_windows.cxx:1422 src/query_windows.cxx:1592
+#: src/query_windows.cxx:1608
+msgid "Password:"
+msgstr "©ifra:"
+
+#: src/query_windows.cxx:1557
+msgid "Ftp Connection"
+msgstr "Ftp veza"
+
+#: src/query_windows.cxx:1559
+msgid "Connect"
+msgstr "Pove¾i se"
+
+#: src/query_windows.cxx:1565
+msgid "FTP Sessions:"
+msgstr "FTP sesija:"
+
+#: src/query_windows.cxx:1572
+msgid "Host:"
+msgstr "Host:"
+
+#: src/query_windows.cxx:1573
+msgid "Login:"
+msgstr "Login:"
+
+#: src/query_windows.cxx:1574
+msgid "Path:"
+msgstr "Putanja:"
+
+#: src/query_windows.cxx:1580
+msgid "Session name:"
+msgstr "Naziv sesije:"
+
+#: src/query_windows.cxx:1583
+msgid "Host name:"
+msgstr "Ime hosta:"
+
+#: src/query_windows.cxx:1586
+msgid "Remote path:"
+msgstr "Udaljena putanja:"
+
+#: src/query_windows.cxx:1589
+msgid "Login name:"
+msgstr "Ime logina:"
+
+#: src/query_windows.cxx:1595
+msgid "Port:"
+msgstr "Port:"
+
+#: src/query_windows.cxx:1598
+msgid "Add/Upd"
+msgstr "Dodaj/Osve¾i"
+
+#: src/query_windows.cxx:1600
+msgid "Anonymous"
+msgstr "Anonimno"
+
+#: src/query_windows.cxx:1602
+msgid "Use proxy"
+msgstr "Koristi proksi"
+
+#: src/query_windows.cxx:1660
+msgid "Sites"
+msgstr "Lokacije"
+
+#: src/query_windows.cxx:1662
+msgid "New site"
+msgstr "Nova lok."
+
+#: src/query_windows.cxx:1664
+msgid "Proxy"
+msgstr "Proksi"
+
+#: src/query_windows.cxx:1796
+msgid "To directory:"
+msgstr "U katalog:"
+
+#: src/query_windows.cxx:1865
+msgid "New Name:"
+msgstr "Novo ime:"
+
+#: src/query_windows.cxx:2006
+msgid "Remounting"
+msgstr "Ponovo pristupam"
+
+#: src/query_windows.cxx:2006
+msgid "Change DEVICE NOW"
+msgstr "Promeni ureðaj odmah"
+
+#: src/query_windows.cxx:2039
+msgid "Kill failed"
+msgstr "Neuspelo ubijanje procesa"
+
+#: src/query_windows.cxx:2079
+msgid "Signals for sending:"
+msgstr "Signal za slanje:"
+
+#: src/query_windows.cxx:2080
+msgid "Send"
+msgstr "Po¹alji"
+
+#: src/query_windows.cxx:2111
+msgid "Disk Free Space"
+msgstr "Slobodan prostor na disku"
+
+#: src/query_windows.cxx:2129
+msgid "Memory Information"
+msgstr "Kori¹æenje memorije"
+
+#: src/query_windows.cxx:2147
+msgid "Menu commands"
+msgstr "Komande menija"
+
+#: src/query_windows.cxx:2167
+msgid "Select files"
+msgstr "Izaberi fajlove"
+
+#: src/query_windows.cxx:2169
+msgid "Deselect files"
+msgstr "Poni¹ti izbor falova"
+
+#: src/query_windows.cxx:2174
+msgid "Mask:"
+msgstr "Kriterijum:"
+
+#: src/lib/vfs/ftpfs.cxx:131
+#, c-format
+msgid "Unplaning Child DIE with code %d"
+msgstr "Iznenadna smrt naslednika sa kodom %d"
+
+#: src/lib/vfs/ftpfs.cxx:741 src/lib/vfs/ftpfs.cxx:788
+#: src/lib/vfs/ftpfs.cxx:834
+msgid "Can't read list file!"
+msgstr "Ne mogu da èitam iz fajla!"
+
+#: src/lib/vfs/ftpfs.cxx:752 src/lib/vfs/ftpfs.cxx:799
+#: src/lib/vfs/ftpfs.cxx:845
+msgid "Can't create return list!"
+msgstr "Ne mogu da napravim povratnu listu!"
+
+#: src/lib/vfs/ftpfs.cxx:1077
+msgid "Operation not complete!"
+msgstr "Operacija nije dovr¹ena!"
+
+#: src/lib/vfs/ftpfs.cxx:1101
+msgid "Panel already in FTP mode. Close/Minimize first."
+msgstr "Panel je veæ u FTP modu. Prvo ga zatvori ili minimizuj."
+
+#: src/lib/vfs/ftpfs.cxx:1338
+msgid "FTP FATAL"
+msgstr "FTP fatalna gre¹ka"
+
+#: src/lib/vfs/ftpfs.cxx:1438
+msgid "Too many active connections"
+msgstr "Previ¹e aktivnih veza"
+
+#: src/lib/vfs/ftpfs.cxx:1464
+msgid "Forking Child"
+msgstr "Pravljenje potomka"
+
+#: src/lib/vfs/ftpfs.cxx:1471
+msgid "Connecting"
+msgstr "Povezujem se"
+
+#: src/lib/vfs/ftpfs.cxx:1485
+msgid "Child process failed"
+msgstr "Gre¹ka u procesu potomka"
+
+#: src/lib/vfs/ftpfs.cxx:1500
+msgid "Closing connection"
+msgstr "Prekidam vezu"
+
+#: src/lib/vfs/ftpfs.cxx:1541 src/lib/vfs/ftpfs.cxx:1949
+msgid "Getting file"
+msgstr "Primam fajl"
+
+#: src/lib/vfs/ftpfs.cxx:1568
+msgid "Deleting file"
+msgstr "Bri¹em fajl"
+
+#: src/lib/vfs/ftpfs.cxx:1589
+msgid "Deleting files"
+msgstr "Bri¹em fajlove"
+
+#: src/lib/vfs/ftpfs.cxx:1622
+msgid "Making directory"
+msgstr "Pravim katalog"
+
+#: src/lib/vfs/ftpfs.cxx:1650 src/lib/vfs/ftpfs.cxx:1828
+#: src/lib/vfs/ftpfs.cxx:1969
+msgid "Can't create temporary list file!"
+msgstr "Nemoguæe napraviti privremenu listu!"
+
+#: src/lib/vfs/ftpfs.cxx:1790
+msgid "Putting file"
+msgstr "Postavljam fajl"
+
+#: src/lib/vfs/ftpfs.cxx:1875
+msgid "MPutting files"
+msgstr "Prenos fajla"
+
+#: src/lib/vfs/ftpfs.cxx:2007
+msgid "MGetting files"
+msgstr "Prenos fajlova"
+
+#: src/lib/vfs/ftpfs.cxx:2149 src/lib/vfs/ftpfs.cxx:2171
+msgid "Directory listing"
+msgstr "Lista kataloga"
+
+#: src/lib/vfs/afs.cxx:135
+msgid "Updating..."
+msgstr "Osve¾avam..."
+
+#: src/lib/vfs/afs.cxx:243
+msgid "Preparing to execution..."
+msgstr "Pripremam za izvr¹avanje..."
+
+#: src/lib/vfs/afs.cxx:263
+msgid "Can't access exeTMP dir"
+msgstr "Onemoguæen pristup privremenom katalogu za izvr¹avanje"
+
+#: src/lib/vfs/afs.cxx:279 src/lib/vfs/afs.cxx:339
+msgid "Unpacking FAILED!"
+msgstr "Raspakivanje nije uspelo!"
+
+#: src/lib/vfs/afs.cxx:300
+msgid "Can't copy to destination VFS"
+msgstr "Ne mogu da iskopiram u ciljni sistem fajlova"
+
+#: src/lib/vfs/afs.cxx:398 src/lib/vfs/afs.cxx:504
+msgid "TMP dir not accessable!"
+msgstr "Zabranjen pristup katalogu Privremeno!"
+
+#: src/lib/vfs/afs.cxx:437 src/lib/vfs/afs.cxx:610
+msgid "Can't access execTMP dir"
+msgstr "Onemoguæen pristup privremenom katalogu za izvr¹avanje"
+
+#: src/lib/vfs/afs.cxx:546
+msgid "Operation not supported in this archive"
+msgstr "Operacija nije podr¾ana za ovaj tip arhive"
+
+#: src/lib/vfs/afs.cxx:663
+msgid "No support for this file"
+msgstr "Ne postoji podr¹ka za ovaj tip fajla"
+
+#: src/lib/vfs/afs.cxx:683
+msgid "Can't create AFSTMP directory!"
+msgstr "Ne mogu da napravim AFSTMP katalog!"
+
+#: src/lib/vfs/afs.cxx:1191
+msgid "No specified executable for this AFS"
+msgstr "Nije izabran program za izvr¹avanje ovog AFS"
+
+#: src/lib/vfs/afs.cxx:1196
+msgid "Reading Archive..."
+msgstr "Èitam arhivu..."
+
+#: src/lib/vfs/afs.cxx:1327
+msgid "Can't follow directory (outside archive)!"
+msgstr "Ne mogu da pratim katalog (van arhive)!"
+
+#: src/lib/vfs/afs.cxx:1481
+msgid "Exit from archive before cleaning cache!"
+msgstr "Izlazim iz arhive ne bri¹uæi ke¹!"
+
+#: src/lib/vfs/afs.cxx:1486
+msgid "Report"
+msgstr "Izve¹taj"
+
+#: src/lib/vfs/afs.cxx:1486
+msgid "Archive cache is clean."
+msgstr "Oèi¹æen je ke¹ arhive."
+
+#: src/lib/vfs/afs.cxx:1488
+msgid "Something wrong with AFS cache!!!"
+msgstr "Ne¹to nije u redu sa AFS ke¹om!!!"
+
+#: src/lib/vfs/afs.cxx:1518
+msgid "Errors during archive creation"
+msgstr "Gre¹ka prilikom pravljenja arhive"
+
+#: src/lib/vfs/dfs.cxx:112 src/lib/vfs/dfs.cxx:235 src/lib/vfs/dfs.cxx:798
+msgid "Error: trying copy to itself"
+msgstr "Gre¹ka: fajl veæ postoji"
+
+#: src/lib/vfs/dfs.cxx:127
+msgid "Error: can't write data to destination"
+msgstr "Gre¹ka: ne mogu upisati u ciljni katalog"
+
+#: src/lib/vfs/dfs.cxx:161
+msgid "Error: operation incomplete!"
+msgstr "Gre¹ka: nedovr¹ena operacija!"
+
+#: src/lib/vfs/dfs.cxx:578
+msgid "Error: RM call failed (Unknown reason)"
+msgstr "Gre¹ka: RM poziv neuspe¹an (nepoznat razlog)"
+
+#: src/lib/vfs/dfs.cxx:954
+#, fuzzy
+msgid "Symlink file"
+msgstr "Veza"
+
+#: src/lib/vfs/dfs.cxx:981
+#, fuzzy
+msgid "Operation not supported on this VFS"
+msgstr "Operacija nije podr¾ana za ovaj tip arhive"
+
+#: src/xsetup/setup.cxx:126
+msgid "Sysfiles Path:"
+msgstr "Putanja sistem. fajlova:"
+
+#: src/xsetup/setup.cxx:127
+msgid "XNC Geometry:"
+msgstr "XNC Geometrija:"
+
+#: src/xsetup/setup.cxx:128
+msgid "XNC Editor:"
+msgstr "XNC Editor:"
+
+#: src/xsetup/setup.cxx:129
+msgid "XNC Viewer:"
+msgstr "XNC Preglednik:"
+
+#: src/xsetup/setup.cxx:130
+msgid "Font Name:"
+msgstr "Pismo:"
+
+#: src/xsetup/setup.cxx:151
+msgid "Save configuration?"
+msgstr "Da li da saèuvam pode¹avanje?"
+
+#: src/xsetup/setup.cxx:311
+msgid "Vertical"
+msgstr "Vertikalno"
+
+#: src/xsetup/setup.cxx:312
+msgid "Horizontal"
+msgstr "Horizontalno"
+
+#: src/xsetup/setup.cxx:313
+msgid "Page"
+msgstr "Strana"
+
+#: src/xsetup/setup.cxx:315
+msgid "Main Font"
+msgstr "Glavna slova"
+
+#: src/xsetup/setup.cxx:316
+msgid "Panels Font"
+msgstr "Slova panela"
+
+#: src/xsetup/setup.cxx:317
+msgid "Fixed Font"
+msgstr "Utvrðena slova"
+
+#: src/xsetup/setup.cxx:318
+msgid "IVES Font"
+msgstr "IVES slova"
+
+#: src/xsetup/setup.cxx:319
+msgid "Mini Fixed Font"
+msgstr "Mala utvrðena slova"
+
+#: src/xsetup/setup.cxx:322
+msgid "Background"
+msgstr "Pozadina"
+
+#: src/xsetup/setup.cxx:323
+msgid "Shadow color"
+msgstr "Boja senke"
+
+#: src/xsetup/setup.cxx:324
+msgid "Text color"
+msgstr "Boja teksta"
+
+#: src/xsetup/setup.cxx:325
+msgid "Text warning"
+msgstr "Tekst upozorenja"
+
+#: src/xsetup/setup.cxx:326
+msgid "Text color 2"
+msgstr "Boja teksta 2"
+
+#: src/xsetup/setup.cxx:327
+msgid "Cursor color"
+msgstr "Boja pokazivaèa"
+
+#: src/xsetup/setup.cxx:328
+msgid "Panel Info"
+msgstr "Panel informacija"
+
+#: src/xsetup/setup.cxx:329
+msgid "Selected file"
+msgstr "Izabrani fajl"
+
+#: src/xsetup/setup.cxx:330
+msgid "Extension file"
+msgstr "Tip fajla"
+
+#: src/xsetup/setup.cxx:331
+msgid "Normal file"
+msgstr "Normalan fajl"
+
+#: src/xsetup/setup.cxx:332
+msgid "Directory"
+msgstr "Katalog"
+
+#: src/xsetup/setup.cxx:333
+msgid "Execution file"
+msgstr "Tip fajla"
+
+#: src/xsetup/setup.cxx:335
+msgid "Archive file"
+msgstr "Arhiva"
+
+#: src/xsetup/setup.cxx:336
+msgid "Image file"
+msgstr "Slika"
+
+#: src/xsetup/setup.cxx:360
+msgid "Define Key"
+msgstr "Definicija preèica"
+
+#: src/xsetup/setup.cxx:429 src/xsetup/setup.cxx:430
+msgid "Now Press Key combination..."
+msgstr "Pritisnite kombinaciju tastera..."
+
+#: src/xsetup/setup.cxx:657
+msgid "WHAT'S NEW from last version"
+msgstr "©ta je novo od prethodne verzije"
+
+#: src/xsetup/setup.cxx:674
+msgid "XNC Layout"
+msgstr "XNC izgled"
+
+#: src/xsetup/setup.cxx:675 src/xsetup/setup.cxx:1062
+msgid "Fonts"
+msgstr "Pisma"
+
+#: src/xsetup/setup.cxx:676 src/xsetup/setup.cxx:1062
+msgid "Colors"
+msgstr "Boje"
+
+#: src/xsetup/setup.cxx:681
+msgid "Example:"
+msgstr "Primer:"
+
+#: src/xsetup/setup.cxx:1036
+msgid "Always"
+msgstr "Uvek"
+
+#: src/xsetup/setup.cxx:1037 src/menu_process.cxx:358
+msgid "Never"
+msgstr "Nikad"
+
+#: src/xsetup/setup.cxx:1038
+msgid "Prompt"
+msgstr "Pitaj"
+
+#: src/xsetup/setup.cxx:1045
+msgid "Hot Keys to XNC Actions mapping:"
+msgstr "Preèice sa tastature za XNC akcije:"
+
+#: src/xsetup/setup.cxx:1047
+msgid "Key1"
+msgstr "Taster1"
+
+#: src/xsetup/setup.cxx:1048
+msgid "Key2"
+msgstr "Taster2"
+
+#: src/xsetup/setup.cxx:1049
+msgid "Key3"
+msgstr "Taster3"
+
+#: src/xsetup/setup.cxx:1051
+msgid "IVES->XNC:"
+msgstr "IVES->XNC:"
+
+#: src/xsetup/setup.cxx:1052
+msgid "Sticky terminal"
+msgstr "Prilepljen terminal"
+
+#: src/xsetup/setup.cxx:1053
+msgid "Raise terminal on exec"
+msgstr "Podigni terminal pri izvr¹avanju"
+
+#: src/xsetup/setup.cxx:1054
+msgid "Return Focus from IVES"
+msgstr "Povrati fokus od IVES"
+
+#: src/xsetup/setup.cxx:1055
+msgid "Bookmark Options:"
+msgstr "Pode¹avanje preèica:"
+
+#: src/xsetup/setup.cxx:1056
+msgid "Enable Bookmark"
+msgstr "Omoguæi preèice"
+
+#: src/xsetup/setup.cxx:1057
+msgid "Allow Bookmark animation"
+msgstr "Omoguæi animaciju preèice"
+
+#: src/xsetup/setup.cxx:1058
+msgid "AFS Options:"
+msgstr "AFS opcije:"
+
+#: src/xsetup/setup.cxx:1059
+msgid "Show icons with directory names"
+msgstr "Prika¾i ikonice uz kataloge"
+
+#: src/xsetup/setup.cxx:1060
+msgid "Show icons with files"
+msgstr "Prika¾i ikonice uz fajlove"
+
+#: src/xsetup/setup.cxx:1061
+msgid "Update archieve on exit"
+msgstr "Osve¾i arhivu pri izlasku"
+
+#: src/xsetup/setup.cxx:1062
+msgid "Common"
+msgstr "Op¹te"
+
+#: src/xsetup/setup.cxx:1062
+msgid "Keys"
+msgstr "Tasteri"
+
+#: src/xsetup/setup.cxx:1062
+msgid "Other"
+msgstr "Ostalo"
+
+#: src/xsetup/setup.cxx:1100
+msgid "vertical"
+msgstr "vertikalno"
+
+#: src/xsetup/setup.cxx:1100
+msgid "horizontal"
+msgstr "horizontalno"
+
+#: src/xsetup/setup.cxx:1100
+msgid "page"
+msgstr "strana"
+
+#: src/xsetup/setup.cxx:1345
+msgid "X Northern Captain Setup"
+msgstr "Pode¹avanje X Northern Captain"
+
+#: src/menu_process.cxx:148 src/menu_process.cxx:223
+msgid "Brief"
+msgstr "Skraæeno"
+
+#: src/menu_process.cxx:149 src/menu_process.cxx:224
+msgid "Full"
+msgstr "Potpuno"
+
+#: src/menu_process.cxx:150 src/menu_process.cxx:225
+msgid "Custom "
+msgstr "Korisnièki"
+
+#: src/menu_process.cxx:151 src/menu_process.cxx:226
+msgid "One column"
+msgstr "1 kolona"
+
+#: src/menu_process.cxx:152 src/menu_process.cxx:227
+msgid "Two columns"
+msgstr "2 kolone"
+
+#: src/menu_process.cxx:153 src/menu_process.cxx:228
+msgid "Three columns"
+msgstr "3 kolone"
+
+#: src/menu_process.cxx:154 src/menu_process.cxx:229
+msgid "Four columns "
+msgstr "4 kolone"
+
+#: src/menu_process.cxx:155 src/menu_process.cxx:230
+msgid "Sort by Names"
+msgstr "Sortiraj po imenu"
+
+#: src/menu_process.cxx:156 src/menu_process.cxx:231
+msgid "Sort by Extensions"
+msgstr "Sortiraj po tipu"
+
+#: src/menu_process.cxx:157 src/menu_process.cxx:232
+msgid "Sort by Size"
+msgstr "Sortiraj po velièini"
+
+#: src/menu_process.cxx:158 src/menu_process.cxx:233
+msgid "Sort by Time"
+msgstr "Sortiraj po vremenu"
+
+#: src/menu_process.cxx:159 src/menu_process.cxx:234
+msgid "Unsorted "
+msgstr "Nesortirano"
+
+#: src/menu_process.cxx:160 src/menu_process.cxx:235
+msgid "Reverse sort "
+msgstr "Obrnuto"
+
+#: src/menu_process.cxx:161 src/menu_process.cxx:236
+msgid "Toggle branch mode "
+msgstr "Razgranat prikaz "
+
+#: src/menu_process.cxx:185
+msgid "Edit menu file"
+msgstr "Izmena pomoænog menija"
+
+#: src/menu_process.cxx:186
+msgid "Edit extension file "
+msgstr "Izmena tipova"
+
+#: src/menu_process.cxx:187
+msgid "Clean AFS cache "
+msgstr "Isprazni AFS ke¹ "
+
+#: src/menu_process.cxx:188
+msgid "Configuration "
+msgstr "Pode¹avanja "
+
+#: src/menu_process.cxx:189
+msgid "Help in documentation"
+msgstr "Dokumentacija"
+
+#: src/menu_process.cxx:190
+msgid "About XNC"
+msgstr "O XNC"
+
+#: src/menu_process.cxx:207
+msgid "Reread current directory"
+msgstr "Osve¾i tekuæi katalog"
+
+#: src/menu_process.cxx:208
+msgid "Switch to terminal "
+msgstr "Prebaci na terminal"
+
+#: src/menu_process.cxx:209
+msgid "Add entry to bookmark "
+msgstr "Dodaj preèicu"
+
+#: src/menu_process.cxx:210
+msgid "Add selection by mask"
+msgstr "Dodaj izbor po kriterijumu"
+
+#: src/menu_process.cxx:211
+msgid "Clean selection by mask"
+msgstr "Oduzmi izbor po kriterijumu"
+
+#: src/menu_process.cxx:212
+msgid "Invert selection"
+msgstr "Obrnuti izbor"
+
+#: src/menu_process.cxx:213
+msgid "Add selection by extension"
+msgstr "Dodaj izbor po tipu"
+
+#: src/menu_process.cxx:214
+msgid "Clean selection by extension "
+msgstr "Oduzmi izbor po tipu"
+
+#: src/menu_process.cxx:215
+msgid "Insert left directory name"
+msgstr "Umetni naziv levog kataloga"
+
+#: src/menu_process.cxx:216
+msgid "Insert right directory name "
+msgstr "Umetni naziv desnog kataloga"
+
+#: src/menu_process.cxx:217
+msgid "Source <-> Target"
+msgstr "Izvorni <-> Ciljni"
+
+#: src/menu_process.cxx:218
+msgid "Target = Source"
+msgstr "Ciljni = Izvorni"
+
+#: src/menu_process.cxx:257
+msgid "Compare by sizes"
+msgstr "Uporedi po velièini"
+
+#: src/menu_process.cxx:257
+msgid "Compare by times"
+msgstr "Uporedi po vremenu"
+
+#: src/menu_process.cxx:265
+msgid "Remount current directory"
+msgstr "Ponovo pristupi trenutnom katalogu"
+
+#: src/menu_process.cxx:266
+msgid "Menu"
+msgstr "Meni"
+
+#: src/menu_process.cxx:270
+msgid "Move/Rename file"
+msgstr "Premesti/preimenuj fajl"
+
+#: src/menu_process.cxx:274
+#, fuzzy
+msgid "Make link"
+msgstr "Glavno"
+
+#: src/menu_process.cxx:275
+msgid "Attributes of file"
+msgstr "Dozvole fajla"
+
+#: src/menu_process.cxx:277
+msgid "Create Archive"
+msgstr "Napravi arhivu"
+
+#: src/menu_process.cxx:278
+msgid "Find files"
+msgstr "Pronaði fajlove"
+
+#: src/menu_process.cxx:279
+msgid "Quick ScanDir Info"
+msgstr "Brzi pregled kataloga"
+
+#: src/menu_process.cxx:280
+msgid "Processes Info"
+msgstr "Pregled procesa"
+
+#: src/menu_process.cxx:281
+msgid "Memory Info"
+msgstr "Kori¹æenje memorije"
+
+#: src/menu_process.cxx:282
+msgid "Disk Info"
+msgstr "Pregled diskova"
+
+#: src/menu_process.cxx:283
+msgid "Stat Info"
+msgstr "Statistika"
+
+#: src/menu_process.cxx:284
+msgid "Ftp connection "
+msgstr "Ftp konekcija "
+
+#: src/menu_process.cxx:285
+msgid "Compare directories"
+msgstr "Uporedi kataloge"
+
+#: src/menu_process.cxx:297
+msgid "Left"
+msgstr "Levo"
+
+#: src/menu_process.cxx:298
+msgid "Commands"
+msgstr "Komande"
+
+#: src/menu_process.cxx:299
+msgid "Operations"
+msgstr "Operacije"
+
+#: src/menu_process.cxx:301
+msgid "-Right"
+msgstr "-Desno"
+
+#: src/menu_process.cxx:305
+msgid "FTP"
+msgstr "FTP"
+
+#: src/menu_process.cxx:308
+msgid "1.Man"
+msgstr "1.Priruènik"
+
+#: src/menu_process.cxx:309
+msgid "2.Menu"
+msgstr "2.Meni"
+
+#: src/menu_process.cxx:310
+msgid "3.View"
+msgstr "3.Pregled"
+
+#: src/menu_process.cxx:311
+msgid "4.Edit"
+msgstr "4.Izmena"
+
+#: src/menu_process.cxx:312
+msgid "5.Copy"
+msgstr "5.Kopiraj"
+
+#: src/menu_process.cxx:313
+msgid "6.Move"
+msgstr "6.Premesti"
+
+#: src/menu_process.cxx:314
+msgid "7.Mkdir"
+msgstr "7.Napravi katalog"
+
+#: src/menu_process.cxx:315
+msgid "8.Delete"
+msgstr "8.Izbri¹i"
+
+#: src/menu_process.cxx:316
+msgid "9.Attr"
+msgstr "9.Dozvole"
+
+#: src/menu_process.cxx:317
+msgid "-0.Quit"
+msgstr "-0.Izlaz"
+
+#: src/menu_process.cxx:356
+msgid "Really, QUIT?"
+msgstr "Zaista ¾eliete da izaðete?"
+
+#: src/menu_process.cxx:357
+msgid "Yes"
+msgstr "Da"
+
+#: src/panel_click.cxx:190
+msgid "Print file"
+msgstr "©tampa fajla"
+
+#: src/panel_click.cxx:216
+msgid "New text file"
+msgstr "Novi tekstualni fajl"
+
+#: src/panel_wrap.cxx:29
+msgid "Remount Device ?"
+msgstr "Ponovni pristup ureðaju?"
+
+#: src/panel_wrap.cxx:239
+#, fuzzy
+msgid "Change directory"
+msgstr "Menjam katalog"
+
+#: src/panel_wrap.cxx:239
+#, fuzzy
+msgid "Directory:"
+msgstr "Katalog"

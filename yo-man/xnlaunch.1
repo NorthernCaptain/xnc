@@ -1,0 +1,104 @@
+
+
+   XNLAUNCH                          6 June 1997                     XNLAUNCH
+
+ Name
+
+    XNLAUNCH - Launch Pad for X Window
+
+ Syntax
+
+    xnlaunch [-d display]
+
+ Description
+
+   XNLAUNCH - X Northern Launch is a launch pad for X Window.
+   This program allows You to quick launch X applications by pressing
+   on button with image and/or name of it.
+   XNLaunch easy configurable for adding new application buttons
+   to launch menu.
+     
+ Options
+    Command line option only one '-d display' specified name of display
+    for connection to X Server.
+    
+ Configuration
+ 
+   XNLaunch read configuration file '.xnlaunch.ini' from your 'HOME/.xlaunch'
+   directory.
+   
+   Format of this file is very simple:
+   
+      - leoprogs.keys.background - background color for launch pad.
+      - leoprogs.syscolor0 - color used for shadows.
+      - leoprogs.syscolor1 - color used for text.
+      - leoporgs.syscolor2 - color used for pad title.
+      - leoprogs.font - font for title and text names.
+      - xnlaunch.pixmaps.searchpath - path where xnlaunch will search
+        for pixmaps named in '.launch.menu'
+        First of all xnlaunch searches files in current directory, then in
+        '$HOME/.xlaunch' and then in 'searchpath'
+      - xnlaunch.geometry - X and Y are coordinates of left-top corner
+        of pad window. Width and Height are sizes of one launch button,
+        not whole pad window!
+      - xnlaunch.pad.size - size and direction of launch pad (in buttons, not
+        in pixels). Direction is a side of pad expansion if buttons  too many for
+        described size.
+        For example:    xnlaunch.pad.size: 1x3  - It means that pad width
+        is one button and height is 3 button long. But if You defined more that
+        three buttons in '.launch.menu', You do not need to correct this size.
+        It will be correct automaticaly, and new size will be 1xN  so the higher
+        digit define direction, for this is Y-direction.
+        You can use any pad.size You want, not only 1x3 or 14x1. 
+        20x30 also allowed :)
+        
+ Format of menu file '.launch.menu':
+ 
+      In this file we define name of button, pixmap for it and application
+      which will be run when You press on launch button.
+      Each menu line define one button.
+      Allowed any combinations of name/pixmap button, except full absence
+      of name AND pixmap.
+      
+      Line consists from three part divided by ':'
+      
+      "name of button" : pixmap name : application name and parameters
+      
+      Name must be in   ""  but pixmap and application name must be
+      WITHOUT it.
+      
+      Name or pixmap may be absent, but not the app name.
+      Some examples:
+      
+        "Xterm": xterm.xpm : xterm -sb -title 'XTerminal'
+                    : netscape.gif: netscape
+         "XKill" :  : xkill
+         
+      You do not need to type '&' because xnlaunch always run 
+      tasks in background.
+      
+      As You can see xnlaunch may load different image formats. How many
+      formats it can understand depends on Your configuration of 
+      ImagEngine for X Northern Captain.
+      Currently You can load GIF, JPEG, PCX, BMP, XPM, XBM, TARGA and TIFF
+      formats. All format are autodetected while loading.
+ 
+
+  After starting xnlaunch (typically from '.xinitrc') You can launch any program
+  defined in launch menu simply by pressing on launch button. You can move
+  launch pad by pressing rught (3) mouse button on pad title and then dragging it.
+
+ Requarements
+ 
+   Linux system
+   g++  v 2.5.* of higher
+   X Window R6
+   
+ Version 
+
+    XNLaunch 1.0 for Linux
+
+ Copyrights
+
+    (c) 1997 Khramov Leo <leo@xnc.dubna.su>
+

@@ -1,0 +1,19 @@
+MAKE=make
+ALLDIRS=five aqua
+
+all: plugins
+
+plugins:
+	@for dir in ${ALLDIRS}; do \
+                cd $$dir; \
+                ${MAKE} all || exit 1; \
+                cd .. ;\
+        done
+
+clean:
+	@for dir in ${ALLDIRS}; do \
+                cd $$dir; \
+                ${MAKE} clean || exit 1; \
+                cd .. ;\
+        done
+

@@ -1,0 +1,42 @@
+#! /bin/sh
+#
+# Written by Erik Troan (ewt@redhat.com) 1996
+#            Jakub Jelinek (jj@sunsite.mff.cuni.cz) 1996
+# (C) 1996 The Free Software Foundation.
+#
+#Modified by Leonid V.Khramov (leo@pop.convey.ru) 1997
+
+xncrpmfs_list ()
+{
+    DESC=`rpm -qip $1`
+    DATE=`echo $DESC | sed 's/^.*Build Date: ... //;s/[0-9][0-9]:[0-9][0-9]:[0-9][0-9]//;s/[iI]nstall [dD]ate:.*$//'`
+    SIZE=`echo $DESC | sed 's/^.*Size *: //;s/License.:.*$//'`
+    HEADERSIZE=`echo $DESC | wc -c`
+    echo "--------------"
+    echo "-r--r--r--   1 root     root  $HEADERSIZE $DATE HEADER"
+    echo "-r-xr-xr-x   1 root     root    39 $DATE INSTALL"
+    echo "-r-xr-xr-x   1 root     root    39 $DATE UPGRADE"
+    rpm2cpio $1 | cpio --quiet -v --list
+    echo "--------------"
+}
+
+xncrpmfs_copyout ()
+{
+    case "$2" in
+        HEADER) rpm -qip $1 > $3; exit 0;;
+        INSTALL) echo "# Run this to install this RPM package" > $3; echo rpm -ivh $1 >>$3; chmod 0777 $3; exit 0;;
+        UPGRADE) echo "# Run this to upgrade this RPM package" > $3; echo rpm -iUvh $1 >>$3; chmod 0777 $3; exit 0;;
+        ./HEADER) rpm -qip $1 > $3; exit 0;;
+        ./INSTALL) echo "# Run this to install this RPM package" > $3; echo rpm -ivh $1 >>$3; chmod 0777 $3; exit 0;;
+        ./UPGRADE) echo "# Run this to upgrade this RPM package" > $3; echo rpm -iUvh $1 >>$3; chmod 0777 $3; exit 0;;
+        *)
+            rpm2cpio $1 | cpio -ivumd --quiet $2 >/dev/null
+    esac
+}
+
+a=`pwd`;
+case "$1" in
+  listing) xncrpmfs_list $2; exit 0;;
+  copyout) xncrpmfs_copyout $2 $3 $a/$3; exit 0;;
+esac
+exit 1

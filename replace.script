@@ -1,0 +1,34 @@
+#! /bin/sh
+echo Replace old style XNC files to new '.xnc' directory
+if [ -d $HOME/.xnc ]
+then
+ echo '.xnc' directory already exists, using it.
+else
+ mkdir $HOME/.xnc 
+fi
+
+if [ -f $HOME/.xnc.ini ]
+then
+ mv -f $HOME/.xnc.ini $HOME/.xnc
+fi
+if [ -f $HOME/.ives.ini ]
+then
+ mv -f $HOME/.ives.ini $HOME/.xnc
+fi
+if [ -f $HOME/.xnc.cfg ]
+then
+ mv -f $HOME/.xnc.cfg $HOME/.xnc
+fi
+if [ -f $HOME/.xnc.menu ]
+then
+ mv -f $HOME/.xnc.menu $HOME/.xnc
+fi
+if [ -f $HOME/.xnc.ext ]
+then
+ mv -f $HOME/.xnc.ext $HOME/.xnc
+fi
+if [ -f $HOME/.xnc.keys ]
+then
+ mv -f $HOME/.xnc.keys $HOME/.xnc
+fi
+

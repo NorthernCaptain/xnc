@@ -1,0 +1,368 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=koi8-r">
+   <meta name="Author" content="Leonid Khramov">
+   <meta name="GENERATOR" content="Mozilla/4.79 [en] (X11; U; Linux 2.4.18-18.8.0 i686) [Netscape]">
+   <meta name="Description" content="http://xnc.dubna.su">
+   <meta name="Keywords" content="xnc">
+   <title>X Northern Captain - Commands</title>
+</head>
+<body text="#F0FFF0" bgcolor="#003366" link="#66FFFF" vlink="#FFCC99" alink="#FF6666">
+
+<center>
+<h3>
+<font color="#FFFF00">Commands and Operations</font></h3></center>
+
+<table CELLSPACING=0 CELLPADDING=5 >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP><b><font size=-1>XNC Index:</font></b>
+<br><font size=-1><a href="index.html">Overview</a></font>
+<br><font size=-1><a href="doc8.html">Installation</a></font>
+<br><font size=-1><a href="doc1.html">Panels</a></font>
+<br><font size=-1><a href="doc2.html">Commands</a></font>
+<br><font size=-1><a href="doc4.html">VFS_support</a></font>
+<br><font size=-1><a href="doc5.html">Bookmark</a></font>
+<br><font size=-1><a href="doc6.html">Extensions</a></font>
+<br><font size=-1><a href="doc7.html">User Menu</a></font>
+<br><font size=-1><a href="doc3.html">Hot Keys</a></font></td>
+
+<td><b>X Northern Captain </b>operates on files with many commands. Each
+command makes some actions with given files on virtual file system. Now
+we describe a full list of commands and functions of XNC with its descriptions
+for each one, way to use and default hot keys. Hot keys will be typed in
+brackets. Remember that this hot keys are default and you can redefine
+them as you wish in XNCSetup program.
+<p>Navigation:
+<ul>
+<li>
+<font color="#FFFF99">Move cursor up/down on the panel [Up/Down] - MoveUp/MoveDown.</font>
+This command moves cursor one file up or down in the active panel.</li>
+
+<li>
+<font color="#FFFF99">Move cursor one column up/down [Left/Right] - MoveLeft/MoveRight.</font>
+This command moves cursor one column up and down or left and right according
+to number of columns.</li>
+
+<li>
+<font color="#FFFF99">Move cursor page up/down [PageUp/PageDown] - MoveCursorPageUp/MoveCursorPageDown.</font>
+This command moves cursor one page up or down if number of files in current
+directory are more that for one page.</li>
+
+<li>
+<font color="#FFFF99">Move cursor home [Home] - MoveCursorHome.</font>
+This command moves cursor to the beggining of the directory list where
+'..' is shown.</li>
+
+<li>
+<font color="#FFFF99">Move cursor to the end [End] - MoveCursorEnd.</font>
+This command moves cursor to the last file in the current directory listing.</li>
+</ul>
+Panels and xterminal:
+<ul>
+<li>
+<font color="#FFFF99">Switch between panels [Tab] - SwitchPanels.</font>
+This action allows you to change focus between panels and makes one active.
+You can also switch between panels by clicking with mouse on the panel
+or its header.</li>
+
+<li>
+<font color="#FFFF99">Switch between Xterminal and Panels window [Crtl-O]
+- SwitchToTerm.</font> Allow you to switch between panels window and xterminal
+window to view xterminal output of running programs in it and then return
+back to your panels and continue browsing your file system tree.</li>
+
+<li>
+<font color="#FFFF99">Set inactive panel directory to current one [Ctrl+j]
+- SetPanelToCurrent.</font> This command takes directory path from active
+panel and sets the same path to inactive one. Usefull if you want to copy
+to the same directory.</li>
+
+<li>
+<font color="#FFFF99">Swap directories in the panels [Ctrl+u] - SwapPanels.</font>
+This command exchanges directory paths between two panels.</li>
+</ul>
+File execution:
+<ul>
+<li>
+<font color="#FFFF99">Execute in foreground or changing directory [Enter]
+- Execute.</font> Double left click on file or pressing hotkey will execute
+file in foreground with output to built in xterminal. If file has no execute
+permission, association menu appears and you can choose command from it
+to execute with current file as a parameter. If current file is a directory
+then xnc changes current directory to those one under cursor and shows
+dir contents.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Execute in background [Shift-Enter] - Execute.</font>
+This operation allowed only if file has execute permission. File executed
+in background using built in xterminal shell ('&amp;' will be auto added
+by xnc).&nbsp;</li>
+
+<li>
+<font color="#FFFF99">File insertion to command line [Ctrl-Enter] - Execute.</font>
+Pressing this combination or dragging file to command line and xnc will
+insert this file in command. Very useful for constructing command line
+parameters.&nbsp;</li>
+</ul>
+Command line:
+<ul>
+<li>
+<font color="#FFFF99">Insert left panel directory path [Ctrl+[] - InsertLeftDir</font>.
+If this command is activated, then xnc will insert into the command line
+full path from left (top) panel. This command is usefull if you want combine
+filename with it full path.</li>
+
+<li>
+<font color="#FFFF99">Insert right panel directory path [Ctrl+]] - InsertRightDir.</font>
+If this command is activated, then xnc will insert into the command line
+full path from right (bottom) panel. This command is usefull if you want
+combine filename with it full path.</li>
+
+<li>
+<font color="#FFFF99">Insert previous executed command from history [Shift+Up,Ctrl+e]
+- CmdLineCommandUp.</font> Take previous command from history and put it
+into the command line. You can also view all history and choose your remembered
+command by clicking on the icon in the left corner of the command line.</li>
+
+<li>
+<font color="#FFFF99">Move cursor one step right in the command line [Shift+Right]
+- CmdLineCommandRight.</font></li>
+
+<li>
+<font color="#FFFF99">Move cursor one step left in the command line [Shift+Right]
+- CmdLineCommandLeft.</font></li>
+</ul>
+File and directory selection:
+<ul>
+<li>
+<font color="#FFFF99">Manual Selectection/Deselection files and directories
+on the panels. [Insert] - ManualSelectFile</font>. Use right mouse button
+to do this operation with mouse.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Selection/Deselection by mask. [Gray+ or Gray-] -
+AddMaskSelection/DelMaskSelection.</font>You can type any file mask with
+'*' and '?' in wildcard. Use 'Gray +' for select files by mask and 'Gray
+-' for deselect or choose these operations from 'Operations' menu.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Invert selection of the files. [Gray*] - InvertMaskSelection.</font>
+Make currently selected files deselected and select others.</li>
+
+<li>
+<font color="#FFFF99">Select file by extension [Shift+Gray+] - SelectFileMask.</font>
+Takes the extension of the file under cursor and selects all files with
+the same extension.</li>
+
+<li>
+<font color="#FFFF99">Deselect file by extension [Shift+Gray-] - DeselectFileMask.</font>
+Takes the extension of the file under cursor and deselects all files with
+the same extension.</li>
+</ul>
+File and directory manipulation:
+<ul>
+<li>
+<font color="#FFFF99">Copy file(s) [F5] - CopyFile</font>. With this function
+you can copy files and directories to destination file system, where destination
+file system may be disk, archive or ftp session. Directories are copied
+recursively. Links are copied as files if opposite option is not set in
+a confirmation copy window. This window appears only if your option 'prompt
+on copy' is on. You can enter another directory&nbsp; in this window. Use
+Tab key for directory name completion on normal disk file system. If you
+copy single file not a selection then you can add new file name to directy
+path in the confirmation window and file will be copied with another name.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Move file(s) [F6] - MoveFile.</font> Same as copy
+files but this function move files i.e delete it from source panel after
+'copying'.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Delete file(s) [F8] - DelFile.</font> Delete files
+and directories from the active panel. Directories are deleted recursively.
+Use mouse to drag files and drop it on recycle bin icon for activating
+the same delete command.</li>
+
+<li>
+<font color="#FFFF99">Create archive from file(s) [Shift+F5] - CreateArchive.</font><font color="#FFFFFF">
+If you want to create an archive from some files or directories in the
+active panel, then select them and activate this command. Dialog window
+apperas and the default name or the archive is displayed. Default arhiver
+is TAR+GZIP, and if you want any other that xnc supports then just change
+extension in name of the archive and xnc will automatically use necessary
+arhiver. For exmaple if you type 'my_first_one.zip' then zip archiver will
+be used and my_first_one will be created. Note that removing directoty
+name from the name of the archive will push xnc to create archive in the
+current directory of the active panel. XNC can create archives only on
+normal disk file system, but from files from any type of virtual file system.</font></li>
+
+<li>
+<font color="#FFFF99">Rename file [Shift+F6] - RenameFile.</font> Rename
+file command pop ups the dialog window this the old file name in it. Change
+this name to any other you want and the file will be renamed. Command works
+only with one file under cursor.</li>
+
+<li>
+<font color="#FFFF99">Change attributes [F9] - AttributeFile.</font> Change
+owner/group/other read/write/execute permissions of file or set/clear these
+permissions for selected files and directories.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Change owner [Shift-F9] - ChangeOwner.</font> Change
+owner and group of file(s). Pops up dialog window and you can choose new
+owner and group from list or type it on keyboard in 'owner.group' format.
+After that owner and/or group will be updated for selected files of for
+file under cursor.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Make directory [F7] - MakeDir.</font> Create directory
+with given name in current one.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">View file [F3] - ViewFile</font>. View current file
+(not selected) with IVES or specified viewer.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Simple View [Shift-F3] - SimpleViewFile</font>. Work
+only with IVES and allow you to view file in simple raw/HEX mode even it
+is an image.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Edit file [F4] - EditFile</font>. Edit current file
+with IVES or specified editor.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">New file for edit [Shift-F4] - NewFileEdit.</font>
+Create new file and give it to editor.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Print current file [Ctrl+F9] - Print</font>. This
+command sends current file to the default printer via 'lpr' command.</li>
+</ul>
+Information commands:
+<ul>
+<li>
+<font color="#FFFF99">Memory information [Ctrl-M] - MemoryInfo.</font>
+Shows memory information window with output from by 'free' or 'vmstat'
+command.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Disk information [Ctrl-L] - DiskInfo</font>. Shows
+window with information about each mounted partition in system (executes
+'df' command).&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Processes information [F11] - KillMenu</font>. Shows
+working processes and allow you to send signal to selected process.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Quick ScanDir [Ctrl-Q] - QuickDir.</font> Switch
+on/off summary information window about current directory and its files
+and subdirectories.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Inode file information [Crtl+i] - InodeInfo</font>.
+Shows information window with specific information about file taken from
+'stat' structure.</li>
+
+<li>
+<font color="#FFFF99">Quick file information [GrayInsert] - QuickFileInfo.</font>
+If you activate this command the xnc will show 'magic' file information
+in status bar area of the current panel. If any files are selected the
+instead of magic file information, ordinary information about file under
+cursor will be shown.</li>
+</ul>
+Bookmark commands:
+<ul>
+<li>
+<font color="#FFFF99">Add entry to bookmark [Ctrl-a] - AddtoBookMark.</font>
+Add current directory to empty place in the bookmark. If bookmark is full
+then addition is failed. If this directory already exists in the bookmark
+then folder with that dir starts flushing. Use drag and drop from the panel
+header to empty bookmark area if you want to add new bookmark folder by
+mouse.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Switch to folder [Alt-1..9] - SwitchToBook.</font>
+Switch active panel to directory stored in specified bookmark folder. If
+the bookmark folder does not exist it will be created with current directory
+and no switching will be made. Click on choosen bookmark folder with mouse
+to make it visible on active panel.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Delete current folder from the bookmark [Alt-Delete]
+- DelCurrentBook.</font> Delete highlighted folder from the bookmark (not
+from file system). Also You can drag any bookmark folder to Recycle bin
+to delete it.</li>
+</ul>
+Other commands:
+<ul>
+<li>
+<font color="#FFFF99">Find files [Ctrl-F] - FindFile.</font> This command
+opens a find file window where file name or mask need to be specified and
+find results will be shown. Allow recursive directories scanning from current
+or from '/' directory. You can click on one of the found files you are
+interested in and xnc will switch active panel to the directory where this
+file is located and set cursor to it.</li>
+
+<li>
+<font color="#FFFF99">Open FTP session [Ctrl+H] - ActivateFtpLink. </font><font color="#FFFFFF">This
+command open FTP connection window, where you can choose one of your favorite
+sites to connect to or add one and connect to it via FTP. You can also
+open FTP session by typing the following command in the command line: '<b>cd
+ftp://[user@]hostname[:port][/path]</b>'.</font></li>
+
+<li>
+<font color="#FFFF99">User Menu [F2] - UserMenu.</font> Show user menu
+with commands and hotkeys defined for it and allow activate menu item.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Man pages [F1] - ManPage</font>. Popup window asks
+you for man page name and options then execute 'man'. If you are using
+IVES as a viewer then it shows man pages in IVES HighLight View window
+otherwise in xterminal using your PAGER environment.&nbsp;</li>
+
+<li>
+<font color="#FFFF99">Clean archive file system cache [Ctrl+C] - CleanAFSCache</font>.
+This command cleans archive cache on your disk. XNC uses this cache for
+speed up browsing your archives.</li>
+
+<li>
+<font color="#FFFF99">Remount current directory [Shift+F1] - RemountCurrent.</font>
+This command tries to remount current directory. Often useful only if you
+are root.</li>
+
+<li>
+<font color="#FFFF99">Remount device from the list [Ctrl+F1] - RemountList.</font>
+This command show list of all mountable device and allow you to choose
+and then mount/remount selected device. Useful from cdrom disks changing
+on the fly.</li>
+
+<li>
+<font color="#FFFF99">Reread current directory [Ctrl+R] - RereadDir.</font>
+This command forces xnc to reread directory contents from virtual file
+system.</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>
+<center><font size=-1>XNC НОМЕ</font>
+<br><font size=-1><a href="http://xnc.dubna.su">xnc.dubna.su</a></font></center>
+</td>
+
+<td></td>
+</tr>
+</table>
+
+<div align=right><font size=-1>Author <a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">Leonid
+V. Khramov</a></font>
+<br><font size=-1><a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">leo@xnc.dubna.su</a></font>
+<br><font size=-1>St-Petersburg</font>
+<br><font size=-1>Russia</font>
+<br><font size=-1>1995-2002</font></div>
+
+</body>
+</html>

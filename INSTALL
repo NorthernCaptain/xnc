@@ -1,0 +1,37 @@
+For install XNC from sources do following:
+
+Attention! While installing xnc, it uses xncsetup prog, which need X running
+on Your machine. So do following commands from xterm.
+
+Install:
+
+   ./configure
+   make
+   make install
+   xncsetup
+
+Run:
+   
+   xnc 
+   
+           Enjoy!
+
+Faster run:
+
+   xncloader  - Do it just ONCE after starting X server.
+
+   xnc        - xnc will use preloaded resources and start faster
+
+           More enjoy!  :)
+
+For any new user, who want to run xnc too, first run xncsetup from his/her
+xterm then make all neccesary settings and press 'Save' button. Only after
+that new user can start xnc properly.
+
+About xnc functions, hot keys etc.. read docs in 'Docs' directory (html format).
+
+P.S: If You like XNC, please, send me a letter with names of country and city
+where you using XNC. It's for my collection.
+
+          Leo <leo@xnc.dubna.su>
+                     

@@ -1,0 +1,80 @@
+#  XNC -- a  filemanager for X Window
+#                                
+#  Copyright (C) 1996-99 by Leo Khramov
+#  email:             leo@xnc.dubna.su
+# 
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+
+include ../../make.conf
+
+BASE_DIR = ../..
+
+@MCOMMON@
+
+
+           SETUPOBJS= \
+                xh_setup.o \
+                setup.o \
+                em.o \
+                sfiles.o \
+                ../ives/viewer.o \
+                ../au/au_lex.o \
+                ../au/key.o \
+                ../au/au_tree.o \
+                ../tartest.o \
+                dummyfuncs.o
+
+           SETUPLIBS= \
+		$(MYLIBDIR)/libie.a \
+		$(MYLIBDIR)/libnorthgui.a \
+		$(MYLIBDIR)/libxnctool.a
+
+           CXXINCLUDES= -I. \
+		-I$(MYSRCDIR)/lib/manage \
+		-I$(MYSRCDIR)/lib/image2/sdl_image \
+		-I$(MYSRCDIR)/au \
+		-I$(MYSRCDIR)/include/xnc \
+		$(XINC)
+
+           CXXOPT=$(DEFS) -DOLD_STYLE $(CFLAGS) $(DEB)
+           LOCAL_LIBRARIES=$(PNGLIB) $(ZLIB) $(TLIB) $(XLIBS) $(LIBS)
+           CINCLUDES=-I. -I$(MYSRCDIR)/lib/manage
+
+all:: compile
+
+compile:
+	make $(MYBINDIR)/xncsetup
+
+$(MYBINDIR)/xncsetup: $(SETUPOBJS) $(SETUPLIBS) $(JDEP)
+	$(CXX) $(LDFLAGS) -o $@ $(SETUPOBJS) $(SETUPLIBS) $(LOCAL_LIBRARIES) $(JLIB) \
+	$(DEB) $(STRIPPING)
+
+clean:
+	$(RMF) *.o
+	$(RMF) $(MYBINDIR)/xncsetup
+
+FORCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+#! /bin/sh
+if [ ! -z "$LC_MESSAGES" ]  
+then
+  unset LC_MESSAGES
+else
+  unset LANG
+  unset LC_ALL
+fi
+exec xnc $*
+

@@ -1,0 +1,2129 @@
+# TRADUZIONE ITALIANA DI XNC.
+# This file is put in the public domain.
+# Mircus Nikkotico <nikkotico@freemail.it>, 2003.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xnc 5.0.0\n"
+"POT-Creation-Date: 2003-11-27 18:28+0300\n"
+"PO-Revision-Date: 2003-02-25 HO:MI+ZONE\n"
+"Last-Translator: Mircus Nikkotico <nikkotico@freemail.it>\n"
+"Language-Team: Italiano\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/ives/editor.cxx:308 src/ives/ives.cxx:1011 src/ives/viewer.cxx:85
+#: src/ives/viewer.cxx:136 src/config_window.cxx:472 src/query_windows.cxx:392
+#: src/query_windows.cxx:568 src/query_windows.cxx:843
+#: src/query_windows.cxx:919 src/query_windows.cxx:1424
+#: src/query_windows.cxx:1791 src/query_windows.cxx:1868
+#: src/query_windows.cxx:1914 src/query_windows.cxx:2170
+msgid "OK"
+msgstr "OK"
+
+#: src/ives/editor.cxx:309 src/ives/editor.cxx:371 src/ives/editor.cxx:424
+#: src/ives/editor.cxx:428 src/ives/viewer.cxx:86 src/config_window.cxx:473
+#: src/query_windows.cxx:161 src/query_windows.cxx:200
+#: src/query_windows.cxx:569 src/query_windows.cxx:645
+#: src/query_windows.cxx:844 src/query_windows.cxx:920
+#: src/query_windows.cxx:1205 src/query_windows.cxx:1425
+#: src/query_windows.cxx:1560 src/query_windows.cxx:1792
+#: src/query_windows.cxx:1869 src/query_windows.cxx:2081
+#: src/query_windows.cxx:2171
+msgid "Cancel"
+msgstr "Annulla"
+
+#: src/ives/editor.cxx:369 src/ives/editor.cxx:370 src/ives/ives.cxx:626
+#: src/ives/viewer.cxx:408 src/find.cxx:308
+msgid "Find"
+msgstr "Trova"
+
+#: src/ives/editor.cxx:373
+msgid "Text to find:"
+msgstr "Testo da cercare:"
+
+#: src/ives/editor.cxx:374
+msgid "Entire scope"
+msgstr "Intera vista"
+
+#: src/ives/editor.cxx:375
+msgid "Backwards"
+msgstr "Indietro"
+
+#: src/ives/editor.cxx:415
+msgid "Save and Exit"
+msgstr "Salva ed Esci"
+
+#: src/ives/editor.cxx:417 src/ives/editor.cxx:422 src/ives/editor.cxx:427
+#: src/xsetup/setup.cxx:125 src/xsetup/setup.cxx:152
+msgid "Save"
+msgstr "Salva"
+
+#: src/ives/editor.cxx:418
+msgid "DOS text format"
+msgstr "Formato testo DOS"
+
+#: src/ives/editor.cxx:419
+msgid "KOI8 -> Any RUS"
+msgstr "KOI8 -> Any RUS"
+
+#: src/ives/editor.cxx:423 src/xsetup/setup.cxx:153
+msgid "Don't save"
+msgstr "Non salvare"
+
+#: src/ives/editor.cxx:432
+msgid "Save as"
+msgstr "Salva con nome"
+
+#: src/ives/editor.cxx:640 src/ives/editor.cxx:1123 src/ives/editor.cxx:1126
+#: src/ives/editor.cxx:1152 src/ives/editor.cxx:2112 src/ives/viewer.cxx:791
+#: src/ives/viewer.cxx:820 src/base_cap.cxx:973 src/base_cap.cxx:1115
+#: src/base_cap.cxx:1245 src/base_cap.cxx:1276 src/base_cap.cxx:1377
+#: src/base_cap.cxx:1496 src/base_cap.cxx:1502 src/base_cap.cxx:1508
+#: src/main.cxx:105 src/query_windows.cxx:1396 src/query_windows.cxx:1401
+#: src/query_windows.cxx:1406 src/query_windows.cxx:2039
+#: src/lib/vfs/afs.cxx:1481 src/lib/vfs/afs.cxx:1488
+msgid "Error"
+msgstr "Errore"
+
+#: src/ives/editor.cxx:640
+msgid "TAGS file not found..."
+msgstr "File TAGS non trovato..."
+
+#: src/ives/editor.cxx:1099 src/ives/ives.cxx:652 src/ives/viewer.cxx:412
+msgid "Go to line..."
+msgstr "Vai alla linea..."
+
+#: src/ives/editor.cxx:1099 src/ives/ives.cxx:652 src/ives/viewer.cxx:412
+msgid "Line number:"
+msgstr "Linea numero:"
+
+#: src/ives/editor.cxx:1105
+msgid "ETags-Find"
+msgstr "ETags-Find"
+
+#: src/ives/editor.cxx:1105
+msgid "String to find:"
+msgstr "Stringa da cercare:"
+
+#: src/ives/editor.cxx:1111
+msgid "ETAGS file"
+msgstr "File ETAGS"
+
+#: src/ives/editor.cxx:1111
+msgid "Enter tags file:"
+msgstr "Inserire il file tag:"
+
+#: src/ives/editor.cxx:1123
+msgid "Not a Emacs TAGS file!"
+msgstr "Non e' un file TAGS Emacs!"
+
+#: src/ives/editor.cxx:1126
+msgid "Etags fatal..."
+msgstr "Errore fatale Etags..."
+
+#: src/ives/editor.cxx:1133 src/base_cap.cxx:914
+msgid "Sorry!"
+msgstr "Spiacente!"
+
+#: src/ives/editor.cxx:1133
+msgid "Token not found..."
+msgstr "Stringa non trovata..."
+
+#: src/ives/editor.cxx:1152
+msgid "Wrong line number"
+msgstr "Errato numero di riga"
+
+#: src/ives/editor.cxx:2007
+msgid "FATAL Error!"
+msgstr "Errore FATALE!"
+
+#: src/ives/editor.cxx:2007 src/ives/viewer.cxx:738
+msgid "Error loading file..."
+msgstr "Errore caricando il file..."
+
+#: src/ives/editor.cxx:2047
+msgid "Error!"
+msgstr "Errore!"
+
+#: src/ives/editor.cxx:2047
+msgid "Maximum lines exeeded!"
+msgstr "Numero massimo di linee superato!"
+
+#: src/ives/editor.cxx:2057
+msgid "FATAL Error"
+msgstr "Errore FATALE"
+
+#: src/ives/editor.cxx:2057
+msgid "Error loading file!"
+msgstr "Errore caricando il file!"
+
+#: src/ives/editor.cxx:2112
+msgid "Error saving file!"
+msgstr "Errore nel salvare il file!"
+
+#: src/ives/editor.cxx:2126 src/ives/editor.cxx:2149 src/ives/editor.cxx:2185
+#: src/ives/editor.cxx:2233
+msgid "Warning!"
+msgstr "Attenzione!"
+
+#: src/ives/editor.cxx:2126
+msgid "Symbol not a bracket!"
+msgstr "Il simbolo non e' una parentesi!"
+
+#: src/ives/editor.cxx:2149 src/ives/editor.cxx:2185
+msgid "Another bracket not found!"
+msgstr "Altra parentesi non trovata!"
+
+#: src/ives/editor.cxx:2233
+msgid "String not found"
+msgstr "Stringa non trovata!"
+
+#: src/ives/ives.cxx:72
+msgid "Choose File"
+msgstr "Scelta file"
+
+#: src/ives/ives.cxx:104
+msgid "Fast (Floyd Dithering)"
+msgstr "Veloce (Floyd Dithering)"
+
+#: src/ives/ives.cxx:105
+msgid "Slow method"
+msgstr "Metodo lento"
+
+#: src/ives/ives.cxx:106
+msgid "Best (PPM method)"
+msgstr "Ottimo (metodo PPM)"
+
+#: src/ives/ives.cxx:182 src/ives/ives.cxx:191
+msgid "2.Save"
+msgstr "2.Salva"
+
+#: src/ives/ives.cxx:183
+msgid "3.Hex/Ascii"
+msgstr "3.Hex/Ascii"
+
+#: src/ives/ives.cxx:184
+msgid "7.Search"
+msgstr "7.Trova"
+
+#: src/ives/ives.cxx:185 src/ives/ives.cxx:197
+msgid "8.Go to"
+msgstr "8.Vai a"
+
+#: src/ives/ives.cxx:186 src/ives/ives.cxx:199
+msgid "11.DOSr"
+msgstr "11.DOSr"
+
+#: src/ives/ives.cxx:187 src/ives/ives.cxx:200
+msgid "12.WINr"
+msgstr "12.WINr"
+
+#: src/ives/ives.cxx:188 src/ives/ives.cxx:201
+msgid "-10.Quit"
+msgstr "-10.Esci"
+
+#: src/ives/ives.cxx:192
+msgid "3.Copy"
+msgstr "3.Copia"
+
+#: src/ives/ives.cxx:193
+msgid "4.Paste"
+msgstr "4.Incolla"
+
+#: src/ives/ives.cxx:194
+msgid "5.Cut"
+msgstr "5.Taglia"
+
+#: src/ives/ives.cxx:195
+msgid "6.Next"
+msgstr "6.Prossimo"
+
+#: src/ives/ives.cxx:196
+msgid "7.Find"
+msgstr "7.Trova"
+
+#: src/ives/ives.cxx:198
+msgid "9.Del"
+msgstr "9.Cancella"
+
+#: src/ives/ives.cxx:300
+#, c-format
+msgid "%s: IVES Editor %d-%s"
+msgstr "%s: IVES Editor %d-%s"
+
+#: src/ives/ives.cxx:346
+#, c-format
+msgid "%s: IVES Viewer %d-%s"
+msgstr "%s: IVES Lettore %d-%s"
+
+#: src/ives/ives.cxx:366
+#, c-format
+msgid "%s: IVES Image Viewer %d-%s"
+msgstr "%s: IVES Lettore Immagini %d-%s"
+
+#: src/ives/ives.cxx:367
+msgid "Loading "
+msgstr "Carica "
+
+#: src/ives/ives.cxx:369
+msgid "GIF Image...."
+msgstr "Immagine GIF...."
+
+#: src/ives/ives.cxx:370
+msgid "JPEG Image...."
+msgstr "Immagine JPEG...."
+
+#: src/ives/ives.cxx:371
+msgid "PCX Image...."
+msgstr "Immagine PCX...."
+
+#: src/ives/ives.cxx:372
+msgid "TIFF Image...."
+msgstr "Immagine TIFF...."
+
+#: src/ives/ives.cxx:373
+msgid "XBM Image...."
+msgstr "Immagine XBM...."
+
+#: src/ives/ives.cxx:374
+msgid "XPM Image...."
+msgstr "Immagine XPM...."
+
+#: src/ives/ives.cxx:375
+msgid "BMP Image...."
+msgstr "Immagine BMP...."
+
+#: src/ives/ives.cxx:376
+msgid "Photo CD...."
+msgstr "Foto CD...."
+
+#: src/ives/ives.cxx:377
+msgid "PNG Image...."
+msgstr "Immagine PNG...."
+
+#: src/ives/ives.cxx:452 src/ives/ives.cxx:1156 src/panel_metacall.cxx:137
+#: src/menu_process.cxx:268
+msgid "Edit file"
+msgstr "Modifica file"
+
+#: src/ives/ives.cxx:457 src/ives/ives.cxx:1157 src/panel_metacall.cxx:134
+#: src/menu_process.cxx:267
+msgid "View file"
+msgstr "Visualizza file"
+
+#: src/ives/ives.cxx:619 src/ives/viewer.cxx:402
+msgid "Save file"
+msgstr "Salva file"
+
+#: src/ives/ives.cxx:619 src/ives/viewer.cxx:402
+msgid "Save as:"
+msgstr "Salva con nome:"
+
+#: src/ives/ives.cxx:626 src/ives/viewer.cxx:408
+msgid "Find text:"
+msgstr "Trova testo:"
+
+#: src/ives/ives.cxx:650 src/ives/viewer.cxx:411
+msgid "Go to offset..."
+msgstr "Vai all'offset..."
+
+#: src/ives/ives.cxx:650 src/ives/viewer.cxx:411
+msgid "Hex offset:"
+msgstr "Hex offset:"
+
+#: src/ives/ives.cxx:834
+#, c-format
+msgid "Viewers:  %d"
+msgstr "Lettori:  %d"
+
+#: src/ives/ives.cxx:836
+#, c-format
+msgid "Editors:  %d"
+msgstr "Editors:  %d"
+
+#: src/ives/ives.cxx:1010
+msgid "IVES Options"
+msgstr "IVES Opzioni"
+
+#: src/ives/ives.cxx:1012
+msgid "Image 24->8 convertion"
+msgstr "Conversione immagine 24->8"
+
+#: src/ives/ives.cxx:1013
+msgid "Photo CD resolution"
+msgstr "Risoluzione Photo CD"
+
+#: src/ives/ives.cxx:1081
+msgid "Another IVES already running\n"
+msgstr "Un'altro IVES gia' in esecuzione\n"
+
+#: src/ives/ives.cxx:1129
+msgid "Loading..."
+msgstr "Carica..."
+
+#: src/ives/ives.cxx:1154 src/xsetup/setup.cxx:124
+msgid "Exit"
+msgstr "Uscita"
+
+#: src/ives/ives.cxx:1155 src/menu_process.cxx:300
+msgid "Options"
+msgstr "Opzioni"
+
+#: src/ives/viewer.cxx:699
+#, c-format
+msgid "Size: %d"
+msgstr "Grandezza: %d"
+
+#: src/ives/viewer.cxx:738
+msgid "FATAL ERROR!"
+msgstr "ERRORE FATALE!"
+
+#: src/ives/viewer.cxx:750
+msgid "FATAL ERROR"
+msgstr "ERRORE FATALE"
+
+#: src/ives/viewer.cxx:750
+msgid "Permission denied"
+msgstr "Accesso non consentito"
+
+#: src/ives/viewer.cxx:791
+msgid "Can't save this file"
+msgstr "Impossibile salvare il file"
+
+#: src/ives/viewer.cxx:820
+msgid "Wrong line number!"
+msgstr "Numero linea errato!"
+
+#: src/ives/viewer.cxx:922
+msgid "Warning"
+msgstr "Attenzione"
+
+#: src/ives/viewer.cxx:922
+msgid "String not found!"
+msgstr "Stringa non trovata"
+
+#: src/base_cap.cxx:519 src/cmdline.cxx:135
+msgid "Enter your password"
+msgstr "Inserisci la tua password"
+
+#: src/base_cap.cxx:540 src/base_cap.cxx:591 src/base_cap.cxx:2029
+msgid "Can't change to dir"
+msgstr "Impossibile accedere alla dir"
+
+#: src/base_cap.cxx:867
+msgid "Information"
+msgstr "Informazione"
+
+#: src/base_cap.cxx:867
+msgid "No files match given criteria."
+msgstr "Nessun file rispetta i criteri dati"
+
+#: src/base_cap.cxx:914
+msgid "Current FileName has no extension!"
+msgstr "Il nome del file corrente non ha estensione!"
+
+#: src/base_cap.cxx:973
+msgid "Can't DELETE on this VFS"
+msgstr "Impossibile CANCELLARE su questo VFS"
+
+#: src/base_cap.cxx:976
+msgid "Deleting..."
+msgstr "Cancella..."
+
+#: src/base_cap.cxx:985 src/menu_process.cxx:273
+msgid "Delete file"
+msgstr "Cancella file"
+
+#: src/base_cap.cxx:1045
+msgid "Delete files"
+msgstr "Cancella i file"
+
+#: src/base_cap.cxx:1078 src/base_cap.cxx:1118
+msgid "Copying..."
+msgstr "Copia..."
+
+#: src/base_cap.cxx:1079
+msgid "Full Unpack"
+msgstr "Scompatta Tutto"
+
+#: src/base_cap.cxx:1115
+msgid "Can't COPY on this VFS"
+msgstr "Impossibile COPIARE su questo VFS"
+
+#: src/base_cap.cxx:1127 src/base_cap.cxx:1387
+msgid "Pocket operation"
+msgstr "Pocket operation"
+
+#: src/base_cap.cxx:1160 src/panel.cxx:1455 src/panel.cxx:1526
+#: src/lib/vfs/ftpfs.cxx:1740 src/lib/vfs/ftpfs.cxx:1759
+#: src/lib/vfs/ftpfs.cxx:1843 src/lib/vfs/ftpfs.cxx:1929
+#: src/lib/vfs/ftpfs.cxx:1980 src/lib/vfs/afs.cxx:312 src/lib/vfs/afs.cxx:377
+#: src/lib/vfs/afs.cxx:560 src/lib/vfs/dfs.cxx:498 src/lib/vfs/dfs.cxx:550
+#: src/menu_process.cxx:269
+msgid "Copy file"
+msgstr "Copia file"
+
+#: src/base_cap.cxx:1198
+msgid "Copy files"
+msgstr "Copia i file"
+
+#: src/base_cap.cxx:1230
+msgid "Moving..."
+msgstr "Muovi..."
+
+#: src/base_cap.cxx:1245 src/base_cap.cxx:1276
+msgid "Can't MOVE on this VFS"
+msgstr "Impossibile MUOVERE su questo VFS"
+
+#: src/base_cap.cxx:1257 src/panel.cxx:1547 src/panel.cxx:1579
+#: src/lib/vfs/dfs.cxx:601
+msgid "Move file"
+msgstr "Muovi file"
+
+#: src/base_cap.cxx:1311
+msgid "Move files"
+msgstr "Muovi i file"
+
+#: src/base_cap.cxx:1377
+#, fuzzy
+msgid "Can't LINK on this VFS"
+msgstr "Impossibile CANCELLARE su questo VFS"
+
+#: src/base_cap.cxx:1380
+#, fuzzy
+msgid "Linking..."
+msgstr "Compatta..."
+
+#: src/base_cap.cxx:1420 src/xsetup/setup.cxx:334
+msgid "Link file"
+msgstr "File link"
+
+#: src/base_cap.cxx:1458
+#, fuzzy
+msgid "Link files"
+msgstr "File link"
+
+#: src/base_cap.cxx:1496
+msgid "No archiver association with your file!"
+msgstr "Nessun archiviatore associato al tuo file!"
+
+#: src/base_cap.cxx:1502 src/base_cap.cxx:1508
+msgid "Archiver don't support archive creation!"
+msgstr "L'archiviatore non supporta la creazione di archivi!"
+
+#: src/base_cap.cxx:1514 src/base_cap.cxx:1550
+msgid "Packing..."
+msgstr "Compatta..."
+
+#: src/base_cap.cxx:1515 src/base_cap.cxx:1551
+msgid "Creating archive"
+msgstr "Crea archivio"
+
+#: src/base_cap.cxx:1546 src/lib/vfs/afs.cxx:1181 src/lib/vfs/afs.cxx:1371
+msgid "Can't access TMP dir"
+msgstr "Impossibile accedere alla dir TMP"
+
+#: src/base_cap.cxx:1662 src/query_windows.cxx:1203 src/menu_process.cxx:276
+msgid "Change Owner"
+msgstr "Cambia Proprietario"
+
+#: src/base_cap.cxx:2001
+msgid "Set attributes"
+msgstr "Setta attributi"
+
+#: src/bookmark.cxx:1169
+msgid "Recycle Bin"
+msgstr "Cestino"
+
+#: src/config_window.cxx:63
+msgid "Full mode"
+msgstr "Modo completo"
+
+#: src/config_window.cxx:64
+msgid "Brief mode"
+msgstr "Modo abbreviato"
+
+#: src/config_window.cxx:65
+msgid "Custom mode"
+msgstr "Modo personalizzato"
+
+#: src/config_window.cxx:71
+msgid "XNC style icons"
+msgstr "Icone stile XNC"
+
+#: src/config_window.cxx:72
+msgid "Windows style icons"
+msgstr "Icone stile Windows"
+
+#: src/config_window.cxx:73
+msgid "KDE style icons"
+msgstr "Icone stile KDE"
+
+#: src/config_window.cxx:74
+msgid "AquaFusion icons"
+msgstr "Icone AquaFusion"
+
+#: src/config_window.cxx:75
+msgid "GNOME style icons"
+msgstr "Icone stile GNOME"
+
+#: src/config_window.cxx:81
+msgid "Original Look"
+msgstr "Tema Originale"
+
+#: src/config_window.cxx:82
+msgid "Five Look"
+msgstr "Tema 'Five'"
+
+#: src/config_window.cxx:83
+msgid "Aqua Look"
+msgstr "Tema 'Aqua'"
+
+#: src/config_window.cxx:344 src/config_window.cxx:361
+#: src/config_window.cxx:381
+msgid "Wait..."
+msgstr "Attendere..."
+
+#: src/config_window.cxx:346 src/config_window.cxx:363
+#: src/config_window.cxx:383
+msgid "Loading Pixmaps..."
+msgstr "Caricamento Pixmaps..."
+
+#: src/config_window.cxx:430
+msgid "XNC Configuration"
+msgstr "Configurazione XNC"
+
+#: src/config_window.cxx:433
+msgid "General:"
+msgstr "Generale:"
+
+#: src/config_window.cxx:434
+msgid "User prompts:"
+msgstr "Conferme utente:"
+
+#: src/config_window.cxx:435
+msgid "Show hidden files"
+msgstr "Mostra file nascosti"
+
+#: src/config_window.cxx:437
+msgid "Bookmark animation"
+msgstr "Animazione dei Favoriti"
+
+#: src/config_window.cxx:438
+msgid "IVES exit with XNC"
+msgstr "IVES esce con XNC"
+
+#: src/config_window.cxx:440
+msgid "Icons with directories"
+msgstr "Icone con directori"
+
+#: src/config_window.cxx:441
+msgid "Icons with files"
+msgstr "Icone con i file"
+
+#: src/config_window.cxx:443
+msgid "Status bar view:"
+msgstr "Vista della barra di stato"
+
+#: src/config_window.cxx:444
+msgid "File name in status"
+msgstr "Nome del file nello stato"
+
+#: src/config_window.cxx:445
+msgid "Attributes in status"
+msgstr "Attributi nello stato"
+
+#: src/config_window.cxx:446
+msgid "Date/Time in status"
+msgstr "Data/Ora nello stato"
+
+#: src/config_window.cxx:447
+msgid "Size in status"
+msgstr "Grandezza nello stato"
+
+#: src/config_window.cxx:448
+msgid "Owner in status"
+msgstr "Proprietario nello stato"
+
+#: src/config_window.cxx:450
+msgid "Filled file cursor"
+msgstr "Cursore riempito dal file"
+
+#: src/config_window.cxx:452
+msgid "Raise term on exec"
+msgstr "Terminale in primo piano all'esecuzione"
+
+#: src/config_window.cxx:453
+msgid "Lynx style navigation"
+msgstr "Navigazione stile Lynx"
+
+#: src/config_window.cxx:454
+msgid "Shadow text"
+msgstr "Testo ombreggiato"
+
+#: src/config_window.cxx:455
+msgid "Choose iconset:"
+msgstr "Scelta insieme di icone:"
+
+#: src/config_window.cxx:458
+msgid "Prompts:"
+msgstr "Conferme:"
+
+#: src/config_window.cxx:459
+msgid "Copy prompt"
+msgstr "Conferma Copia"
+
+#: src/config_window.cxx:460
+msgid "Move prompt"
+msgstr "Conferma Sposta"
+
+#: src/config_window.cxx:461
+msgid "Delete prompt"
+msgstr "Conferma Cancella"
+
+#: src/config_window.cxx:462
+msgid "Overwrite prompt"
+msgstr "Conferma Sovrascrivi"
+
+#: src/config_window.cxx:463
+msgid "Pack prompt"
+msgstr "Conferma Compatta"
+
+#: src/config_window.cxx:464 src/xsetup/setup.cxx:150
+msgid "Exit prompt"
+msgstr "Conferma Uscita"
+
+#: src/config_window.cxx:466
+msgid "Dirscan timeout:"
+msgstr "Timeout per l'esplorazione directory:"
+
+#: src/config_window.cxx:468
+msgid "Branch depth:"
+msgstr "Profondita' ramo:"
+
+#: src/config_window.cxx:470
+msgid "sec"
+msgstr "secondi"
+
+#: src/config_window.cxx:476
+msgid "Magic file:"
+msgstr "File Magico:"
+
+#: src/config_window.cxx:479
+msgid "GUI plugin will work only after restart of XNC."
+msgstr "Il plugin GUI funzionera' solo dopo il riavvio di XNC"
+
+#: src/config_window.cxx:480
+msgid "GUI plugin (skin):"
+msgstr "Plugin GUI (skin):"
+
+#: src/config_window.cxx:483
+msgid "Mouse state:"
+msgstr "Stato del mouse:"
+
+#: src/config_window.cxx:489
+msgid "Action for the state:"
+msgstr "Azione per lo stato:"
+
+#: src/config_window.cxx:493
+msgid "Modes:"
+msgstr "Modalita':"
+
+#: src/config_window.cxx:496
+msgid "Enter mode format string:"
+msgstr "Inserisci la stringa del formato del modo:"
+
+#: src/config_window.cxx:497
+msgid "Minimum display file name length:"
+msgstr "Grandezza minima nome del file:"
+
+#: src/config_window.cxx:498
+msgid "Choose mode:"
+msgstr "Scelta modalita':"
+
+#: src/config_window.cxx:499
+msgid "Mode format explanation:"
+msgstr "Descrizione formato del modo:"
+
+#: src/config_window.cxx:500
+msgid "F - file name"
+msgstr "F - nome file"
+
+#: src/config_window.cxx:501
+msgid "A - file attributes (-rwxr-x-r-x)"
+msgstr "A - attributi file (-rwxr-x-r-x)"
+
+#: src/config_window.cxx:502
+msgid "O - file attributes in octal (0755)"
+msgstr "O - attributi file in ottale (0755)"
+
+#: src/config_window.cxx:503
+msgid "S - file size"
+msgstr "S - grandezza file"
+
+#: src/config_window.cxx:504
+msgid "D - file date/time"
+msgstr "D - data/ora file"
+
+#: src/config_window.cxx:505
+msgid "| - visual separator"
+msgstr "| - separatore visuale"
+
+#: src/config_window.cxx:506
+msgid ". - small empty space"
+msgstr ". - piccolo spazio vuoto"
+
+#: src/config_window.cxx:516
+msgid "Main"
+msgstr "Principale"
+
+#: src/config_window.cxx:518
+msgid "Prompt/View"
+msgstr "Conferme/Visualizzazione"
+
+#: src/config_window.cxx:520
+msgid "Look/Feel"
+msgstr "Aspetto/Comportamento"
+
+#: src/config_window.cxx:522
+msgid "Mouse"
+msgstr "Mouse"
+
+#: src/config_window.cxx:524
+msgid "Modes"
+msgstr "Modalita'"
+
+#: src/find.cxx:309
+msgid "From '/'"
+msgstr "Da '/'"
+
+#: src/find.cxx:310
+msgid "Stop"
+msgstr "Stop"
+
+#: src/find.cxx:311 src/menu_process.cxx:162
+msgid "Quit"
+msgstr "Uscita"
+
+#: src/ftpvisuals.cxx:330
+msgid "Can't close during operation!"
+msgstr "Impossibile chiudere durante un'operazione!"
+
+#: src/ftpvisuals.cxx:413 src/ftpvisuals.cxx:414 src/ftpvisuals.cxx:421
+#: src/ftpvisuals.cxx:422 src/ftpvisuals.cxx:425 src/ftpvisuals.cxx:426
+msgid "Vacant FTP"
+msgstr "FTP libero"
+
+#: src/main.cxx:91
+msgid "Error connecting to IVES"
+msgstr "Errore nella connessione a IVES"
+
+#: src/main.cxx:92
+msgid "Editor and/or Viewer not available! Use 'xncsetup' for correct"
+msgstr ""
+"Editor e/o Lettore non disponibile! Usa 'xncsetup' per settare quello "
+"corretto"
+
+#: src/main.cxx:98
+msgid "Loading IVES"
+msgstr "Caricamento IVES"
+
+#: src/main.cxx:98
+msgid "   Please wait..."
+msgstr "   Attendere prego..."
+
+#: src/main.cxx:105
+msgid "IVE System not available!"
+msgstr "Sistema IVE non disponibile!"
+
+#: src/main.cxx:361
+msgid ""
+"OOPS! It seems that You found a bug in XNC!!!\n"
+"If You can repeat this situation then send me a bug report\n"
+"to <leo@xnc.dubna.su> with subject  'XNC - bug report'\n"
+msgstr ""
+"OPS! Sembra che Tu abbia incontrato un baco in XNC!!!\n"
+"Se puoi ripetere questa situazione mandami un rapporto\n"
+"a <leo@xnc.dubna.su> con oggetto 'XNC - bug report'\n"
+
+#: src/main.cxx:365
+msgid ""
+"Body of the mail:\n"
+"   -What are You doing to produce this bug.\n"
+"   -XNC configuration (~/.xnc/xnc.ini) file.\n"
+"   -Output of 'ldd xnc' command.\n"
+"   -X Server configuration (resolution and color depth)\n"
+"   -And Your reply mail address, for more information about situation if "
+"need\n"
+"Do NOT include 'CORE' dump file in the following letter.\n"
+"Thanks, and sorry for BUG\n"
+msgstr ""
+"Corpo della mail:\n"
+"   -Cosa stavi facendo per produrre questo baco.\n"
+"   -File di configurazione di XNC (~/.xnc/xnc.ini).\n"
+"   -L'output del comando 'ldd xnc'.\n"
+"   -Conficurazione dell'X Server (risoluzione e profondita' di colore)\n"
+"   -E il tuo indirizzo di posta per la risposta, per ulteriori\n"
+"informazioni se necessario\n"
+"Non inculdere file di 'CORE' dump nella lettera seguente.\n"
+"Grazie e spiacente per il baco!\n"
+
+#: src/main.cxx:541
+#, fuzzy, c-format
+msgid "Starting %s Build%s.....\n"
+msgstr "Esecuzione %s Build$s.....\n"
+
+#: src/main.cxx:572
+msgid "Copyright (c) 1995-2002 Leonid V. KHramov aka Leo <leo@xnc.dubna.su>\n"
+msgstr "Copyright (c) 1995-2002 Leonid V. KHramov aka Leo <leo@xnc.dubna.su>\n"
+
+#: src/main.cxx:648
+msgid ""
+"------------------------------------------------------------------------------\n"
+"Notice:\n"
+"\tIf You like X Northern Captain and will use it,\n"
+"\tthen send me e-mail to <leo@xnc.dubna.su> with names of\n"
+"\tcity and country where you are using it. It's for my collection.\n"
+"\tIf You do it, i'll be happy....\n"
+"\t\t\tThanks,\n"
+"\t\t\tLeonid V. Khramov aka Leo <leo@xnc.dubna.su>\n"
+msgstr ""
+"------------------------------------------------------------------------------\n"
+"\tSe ti piace X Northern Captain e lo userai spesso,\n"
+"\tallora mandami una e-mail a <leo@xnc.dubna.su> con i nomi della\n"
+"\tcitta' e nazione di dove lo stai usando. E' per la mia collezione.\n"
+"\tSe lo farai, ne saro' felice....\n"
+"\t\t\tGrazie,\n"
+"\t\t\tLeonid V. Khramov aka Leo <leo@xnc.dubna.su>\n"
+
+#: src/main.cxx:654
+msgid ""
+"\n"
+"PS: If you have any questions, comments about xnc or you want\n"
+"to know latest news then join to xnc mailing list <xnc@xnc.dubna.su>\n"
+"Just mail a letter with 'SUBSCRIBE xnc' in the body of mail to\n"
+"<majordomo@xnc.dubna.su> and you are inside.\n"
+msgstr ""
+"\n"
+"PS: Se hai qualche domanda, commento su xnc o vuoi sapere\n"
+"le ultime novita', allora sottoscriviti alla xnc mailing list <xnc@xnc.dubna."
+"su>\n"
+"Basta mandare una lettera con 'SUBSCRIBE xnc' nel corpo della mail a\n"
+"<majordomo@xnc.dubna.su> e sarai inserito.\n"
+
+#: src/main.cxx:659
+#, c-format
+msgid "Thank you. You have run X Northern Captain %d times!\n"
+msgstr "Grazie. Hai lanciato X Northern Captain %d volte!\n"
+
+#: src/man_page.cxx:94
+msgid "Man report"
+msgstr "Rapporto man"
+
+#: src/man_page.cxx:94
+msgid "No manual page for this command."
+msgstr "Nessuna pagina di manuale per questo comando."
+
+#: src/panel.cxx:865
+msgid " file(s) selected"
+msgstr " file selezionato/i"
+
+#: src/panel.cxx:1271
+msgid "Kill process!"
+msgstr "Uccidi il processo!"
+
+#: src/panel.cxx:1435
+msgid "Delete file?"
+msgstr "Cancella il file?"
+
+#: src/panel.cxx:1453 src/panel.cxx:1524
+msgid "Copy files?"
+msgstr "Copia il file?"
+
+#: src/panel.cxx:1472
+#, fuzzy
+msgid "Link files?"
+msgstr "File link"
+
+#: src/panel.cxx:1474
+#, fuzzy
+msgid "Make a link to file"
+msgstr "Impossibile leggere il file della lista!"
+
+#: src/panel.cxx:1498 src/panel.cxx:1500
+msgid "Create archive?"
+msgstr "Crea l'archivio?"
+
+#: src/panel.cxx:1545 src/panel.cxx:1577
+msgid "Move files?"
+msgstr "Muovere i file?"
+
+#: src/panel.cxx:1564 src/menu_process.cxx:271
+msgid "Rename file"
+msgstr "Rinomina file"
+
+#: src/panel.cxx:1725 src/panel.cxx:1802
+msgid "Reading directory"
+msgstr "Lettura directory"
+
+#: src/panel.cxx:1749 src/lib/vfs/ftpfs.cxx:2048
+msgid "Changing directory"
+msgstr "Cambiamento directory"
+
+#: src/panel.cxx:1831
+msgid "Which command?"
+msgstr "Quale comando?"
+
+#: src/panel.cxx:1909
+msgid "Execute with..."
+msgstr "Esegui con..."
+
+#: src/panel.cxx:1979 src/panel_metacall.cxx:264 src/menu_process.cxx:272
+#: src/panel_click.cxx:234
+msgid "Make directory"
+msgstr "Crea directory"
+
+#: src/panel.cxx:2105 src/lib/vfs/ftpfs.cxx:1101
+msgid "Pusher"
+msgstr "Pusher"
+
+#: src/panel.cxx:2105
+msgid "Can't switch to FTP over another one!"
+msgstr "Impossibile passare ad un FTP da un altro"
+
+#: src/panel_metacall.cxx:64 src/panel_metacall.cxx:253
+#: src/menu_process.cxx:613 src/panel_click.cxx:172
+msgid "Man page"
+msgstr "Pagine di manuale"
+
+#: src/panel_metacall.cxx:68
+msgid "Make directory "
+msgstr "Crea directory "
+
+#: src/panel_metacall.cxx:76
+#, c-format
+msgid "Create archive %s"
+msgstr "Crea archivio %s"
+
+#: src/panel_metacall.cxx:85
+#, c-format
+msgid "Create archive %s "
+msgstr "Crea archivio %s "
+
+#: src/panel_metacall.cxx:91
+msgid "Go to subdirectory "
+msgstr "Vai alla sottodirectory "
+
+#: src/panel_metacall.cxx:98
+msgid "Execute "
+msgstr "Esegui "
+
+#: src/panel_metacall.cxx:106
+msgid "Browse into archive "
+msgstr "Entra nell'archivio "
+
+#: src/panel_metacall.cxx:111
+msgid "Execute association "
+msgstr "Esegui associazione "
+
+#: src/panel_metacall.cxx:116
+msgid "Execute with ... "
+msgstr "Esegui con... "
+
+#: src/panel_metacall.cxx:124
+msgid "Copy file(s)"
+msgstr "Copia il/i file"
+
+#: src/panel_metacall.cxx:127
+msgid "Move/Rename file(s)"
+msgstr "Muovi/Rinomina il/i file"
+
+#: src/panel_metacall.cxx:130
+msgid "Delete file(s)"
+msgstr "Cancella il/i file"
+
+#: src/panel_metacall.cxx:142
+msgid "Change file(s) attributes"
+msgstr "Cambia gli attributi del/dei file"
+
+#: src/panel_metacall.cxx:145
+msgid "Change file(s) owner"
+msgstr "Cambia proprietario al/ai file"
+
+#: src/query_windows.cxx:157
+msgid "User prompt"
+msgstr "Conferma dell'utente"
+
+#: src/query_windows.cxx:158
+msgid "Update archive before exiting from it?"
+msgstr "Aggiorna archivio prima di uscire da esso?"
+
+#: src/query_windows.cxx:159
+msgid "Press 'Update' if You change files"
+msgstr "Premi 'Aggiorna' se cambi i file"
+
+#: src/query_windows.cxx:160
+msgid "Update"
+msgstr "Aggiorna"
+
+#: src/query_windows.cxx:194
+msgid "File:"
+msgstr "File:"
+
+#: src/query_windows.cxx:196
+msgid "This file already exists!"
+msgstr "Questo file esiste gia'!"
+
+#: src/query_windows.cxx:197
+msgid "Overwrite existing file???"
+msgstr "Sovrascrivi file esistente???"
+
+#: src/query_windows.cxx:199
+msgid "Yes to All"
+msgstr "Si a Tutto"
+
+#: src/query_windows.cxx:201
+msgid "No"
+msgstr "No"
+
+#: src/query_windows.cxx:270 src/query_windows.cxx:816
+#, c-format
+msgid "File:   %s"
+msgstr "File:   %s"
+
+#: src/query_windows.cxx:271 src/query_windows.cxx:824
+#, c-format
+msgid "Owner:  %s.%s"
+msgstr "Proprietario  %s.%s"
+
+#: src/query_windows.cxx:278 src/query_windows.cxx:283
+#, c-format
+msgid "Status: %s"
+msgstr "Stato: %s"
+
+#: src/query_windows.cxx:295
+msgid "Agree"
+msgstr "Accetto"
+
+#: src/query_windows.cxx:333 src/query_windows.cxx:334
+msgid "Path:  none"
+msgstr "Percorso:  nessuno"
+
+#: src/query_windows.cxx:335
+msgid "File:  unknown"
+msgstr "File:  sconosciuto"
+
+#: src/query_windows.cxx:336
+msgid "Size:  unknown"
+msgstr "Grandezza:  sconosciuta"
+
+#: src/query_windows.cxx:337 src/query_windows.cxx:804
+msgid "Status: rwxrwxrwx"
+msgstr "Stato: rwxrwxrwx"
+
+#: src/query_windows.cxx:338
+msgid "Owner: *********"
+msgstr "Proprietario: *********"
+
+#: src/query_windows.cxx:345
+msgid "Read"
+msgstr "Leggi"
+
+#: src/query_windows.cxx:346
+msgid "Write"
+msgstr "Scrivi"
+
+#: src/query_windows.cxx:347
+msgid "Execute"
+msgstr "Esegui"
+
+#: src/query_windows.cxx:566
+#, c-format
+msgid "File: %s"
+msgstr "File: %s"
+
+#: src/query_windows.cxx:567
+msgid "Attributes"
+msgstr "Attributi"
+
+#: src/query_windows.cxx:570 src/query_windows.cxx:646
+#: src/query_windows.cxx:1210
+msgid "Owner:"
+msgstr "Proprietario:"
+
+#: src/query_windows.cxx:571 src/query_windows.cxx:647
+msgid "Group:"
+msgstr "Gruppo:"
+
+#: src/query_windows.cxx:572 src/query_windows.cxx:648
+msgid "Other:"
+msgstr "Altri:"
+
+#: src/query_windows.cxx:575 src/query_windows.cxx:1790
+#, c-format
+msgid "Owner: %s.%s"
+msgstr "Proprietario: %s.%s"
+
+#: src/query_windows.cxx:641
+msgid "For all selected files:"
+msgstr "Per tutti i file selezionati:"
+
+#: src/query_windows.cxx:642
+msgid "Set/Clear attributes"
+msgstr "Setta/Cancella attibuti"
+
+#: src/query_windows.cxx:643
+msgid "Set"
+msgstr "Setta"
+
+#: src/query_windows.cxx:644 src/xsetup/setup.cxx:1050
+msgid "Clear"
+msgstr "Cancella"
+
+#: src/query_windows.cxx:789
+#, c-format
+msgid "From: %s"
+msgstr "Da: %s"
+
+#: src/query_windows.cxx:791
+msgid "To:   Recycle Bin"
+msgstr "A:   Cestino"
+
+#: src/query_windows.cxx:793
+msgid "To:   Printer"
+msgstr "A:   Stampante"
+
+#: src/query_windows.cxx:797 src/query_windows.cxx:801
+#, c-format
+msgid "To:   %s"
+msgstr "A:   %s"
+
+#: src/query_windows.cxx:808 src/query_windows.cxx:902
+#, c-format
+msgid "File:   %d selected files"
+msgstr "File:   %d file selezionati"
+
+#: src/query_windows.cxx:809 src/query_windows.cxx:817
+#: src/query_windows.cxx:903
+#, c-format
+msgid "Size:   %s"
+msgstr "Grandezza:   %s"
+
+#: src/query_windows.cxx:810
+msgid "Status: *********"
+msgstr "Stato: *********"
+
+#: src/query_windows.cxx:811
+msgid "Owner:  *********"
+msgstr "Proprietario:  *********"
+
+#: src/query_windows.cxx:887
+#, c-format
+msgid "From:  %s"
+msgstr "Da:  %s"
+
+#: src/query_windows.cxx:908
+msgid "To:"
+msgstr "A:"
+
+#: src/query_windows.cxx:925 src/query_windows.cxx:1807
+msgid "Make symbolic link"
+msgstr ""
+
+#: src/query_windows.cxx:927 src/query_windows.cxx:1809
+msgid "Translate symlinks as is."
+msgstr "Traduci i link simbolici come sono."
+
+#: src/query_windows.cxx:1184 src/query_windows.cxx:1789
+#, c-format
+msgid "File:  %s"
+msgstr "File:  %s"
+
+#: src/query_windows.cxx:1186
+msgid "Attributes: "
+msgstr "Attributi: "
+
+#: src/query_windows.cxx:1199
+#, c-format
+msgid "File: %d selected"
+msgstr "File: %d selezionato/i"
+
+#: src/query_windows.cxx:1200
+msgid "Attributes: *********"
+msgstr "Attributi: *********"
+
+#: src/query_windows.cxx:1204
+msgid "Change"
+msgstr "Cambia"
+
+#: src/query_windows.cxx:1211
+msgid "Users:"
+msgstr "Utenti"
+
+#: src/query_windows.cxx:1212
+msgid "Groups:"
+msgstr "Gruppi"
+
+#: src/query_windows.cxx:1360
+msgid "Sorry"
+msgstr "Spiacente"
+
+#: src/query_windows.cxx:1360
+msgid "Not implemented yet!"
+msgstr "Non ancora implementato!"
+
+#: src/query_windows.cxx:1396
+msgid "Hostname can't be blank!"
+msgstr "Il nome dell'host non puo' essere vuoto!"
+
+#: src/query_windows.cxx:1401
+msgid "Login can't be blank!"
+msgstr "La login non puo' essere vuota!"
+
+#: src/query_windows.cxx:1406
+msgid "Password can't be blank!"
+msgstr "La password non puo' essere vuota!"
+
+#: src/query_windows.cxx:1417
+msgid "Ftp Proxy Config"
+msgstr "Configurazione Proxy FTP"
+
+#: src/query_windows.cxx:1418 src/query_windows.cxx:1604
+msgid "Ftp Proxy host:"
+msgstr "FTP Proxy Host:"
+
+#: src/query_windows.cxx:1420 src/query_windows.cxx:1606
+msgid "FTP Proxy Login:"
+msgstr "FTP Proxy Login:"
+
+#: src/query_windows.cxx:1422 src/query_windows.cxx:1592
+#: src/query_windows.cxx:1608
+msgid "Password:"
+msgstr "Password:"
+
+#: src/query_windows.cxx:1557
+msgid "Ftp Connection"
+msgstr "Connessione FTP"
+
+#: src/query_windows.cxx:1559
+msgid "Connect"
+msgstr "Connetti"
+
+#: src/query_windows.cxx:1565
+msgid "FTP Sessions:"
+msgstr "Sessioni FTP:"
+
+#: src/query_windows.cxx:1572
+msgid "Host:"
+msgstr "Host:"
+
+#: src/query_windows.cxx:1573
+msgid "Login:"
+msgstr "Login:"
+
+#: src/query_windows.cxx:1574
+msgid "Path:"
+msgstr "Percorso:"
+
+#: src/query_windows.cxx:1580
+msgid "Session name:"
+msgstr "Nome della sessione:"
+
+#: src/query_windows.cxx:1583
+msgid "Host name:"
+msgstr "Nome dell'Host"
+
+#: src/query_windows.cxx:1586
+msgid "Remote path:"
+msgstr "Percorso remoto:"
+
+#: src/query_windows.cxx:1589
+msgid "Login name:"
+msgstr "Nome Login:"
+
+#: src/query_windows.cxx:1595
+msgid "Port:"
+msgstr "Porta:"
+
+#: src/query_windows.cxx:1598
+msgid "Add/Upd"
+msgstr "Aggiungi/Udp"
+
+#: src/query_windows.cxx:1600
+msgid "Anonymous"
+msgstr "Anonymous"
+
+#: src/query_windows.cxx:1602
+msgid "Use proxy"
+msgstr "Usa proxy"
+
+#: src/query_windows.cxx:1660
+msgid "Sites"
+msgstr "Siti"
+
+#: src/query_windows.cxx:1662
+msgid "New site"
+msgstr "Nuovo sito"
+
+#: src/query_windows.cxx:1664
+msgid "Proxy"
+msgstr "Proxy"
+
+#: src/query_windows.cxx:1796
+msgid "To directory:"
+msgstr "Alla directory:"
+
+#: src/query_windows.cxx:1865
+#, fuzzy
+msgid "New Name:"
+msgstr "Node del Font:"
+
+#: src/query_windows.cxx:2006
+msgid "Remounting"
+msgstr "Rimontaggio"
+
+#: src/query_windows.cxx:2006
+msgid "Change DEVICE NOW"
+msgstr "Cambia DISPOSITIVO ORA"
+
+#: src/query_windows.cxx:2039
+msgid "Kill failed"
+msgstr "Uccisione fallita"
+
+#: src/query_windows.cxx:2079
+msgid "Signals for sending:"
+msgstr "Segnale da mandare:"
+
+#: src/query_windows.cxx:2080
+msgid "Send"
+msgstr "Manda"
+
+#: src/query_windows.cxx:2111
+msgid "Disk Free Space"
+msgstr "Spazio libero su disco"
+
+#: src/query_windows.cxx:2129
+msgid "Memory Information"
+msgstr "Informazioni Memoria"
+
+#: src/query_windows.cxx:2147
+msgid "Menu commands"
+msgstr "Menu comandi"
+
+#: src/query_windows.cxx:2167
+msgid "Select files"
+msgstr "File selezionati"
+
+#: src/query_windows.cxx:2169
+msgid "Deselect files"
+msgstr "File deselezionati"
+
+#: src/query_windows.cxx:2174
+msgid "Mask:"
+msgstr "Filtro:"
+
+#: src/lib/vfs/ftpfs.cxx:131
+#, c-format
+msgid "Unplaning Child DIE with code %d"
+msgstr "Un processo secondario usci' con codice %d"
+
+#: src/lib/vfs/ftpfs.cxx:741 src/lib/vfs/ftpfs.cxx:788
+#: src/lib/vfs/ftpfs.cxx:834
+msgid "Can't read list file!"
+msgstr "Impossibile leggere il file della lista!"
+
+#: src/lib/vfs/ftpfs.cxx:752 src/lib/vfs/ftpfs.cxx:799
+#: src/lib/vfs/ftpfs.cxx:845
+msgid "Can't create return list!"
+msgstr "Impossibile creare la lista!"
+
+#: src/lib/vfs/ftpfs.cxx:1077
+msgid "Operation not complete!"
+msgstr "Operazione incompleta!"
+
+#: src/lib/vfs/ftpfs.cxx:1101
+msgid "Panel already in FTP mode. Close/Minimize first."
+msgstr "Pannello gia' in modalita' FTP. Prima Chiudi/Minimizza."
+
+#: src/lib/vfs/ftpfs.cxx:1338
+msgid "FTP FATAL"
+msgstr "FTP FATAL"
+
+#: src/lib/vfs/ftpfs.cxx:1438
+msgid "Too many active connections"
+msgstr "Troppe connessioni attive"
+
+#: src/lib/vfs/ftpfs.cxx:1464
+msgid "Forking Child"
+msgstr "Creazione processo figlio(fork)"
+
+#: src/lib/vfs/ftpfs.cxx:1471
+msgid "Connecting"
+msgstr "Connessione"
+
+#: src/lib/vfs/ftpfs.cxx:1485
+msgid "Child process failed"
+msgstr "Processo figlio fallito"
+
+#: src/lib/vfs/ftpfs.cxx:1500
+msgid "Closing connection"
+msgstr "Chiusura connessione"
+
+#: src/lib/vfs/ftpfs.cxx:1541 src/lib/vfs/ftpfs.cxx:1949
+msgid "Getting file"
+msgstr "Ottenimento file"
+
+#: src/lib/vfs/ftpfs.cxx:1568
+msgid "Deleting file"
+msgstr "Cancellazione file"
+
+#: src/lib/vfs/ftpfs.cxx:1589
+msgid "Deleting files"
+msgstr "Cancellazione dei file"
+
+#: src/lib/vfs/ftpfs.cxx:1622
+msgid "Making directory"
+msgstr "Creazione directory"
+
+#: src/lib/vfs/ftpfs.cxx:1650 src/lib/vfs/ftpfs.cxx:1828
+#: src/lib/vfs/ftpfs.cxx:1969
+msgid "Can't create temporary list file!"
+msgstr "Impossibile creare un file lista temporaneo!"
+
+#: src/lib/vfs/ftpfs.cxx:1790
+msgid "Putting file"
+msgstr "Invio file"
+
+#: src/lib/vfs/ftpfs.cxx:1875
+msgid "MPutting files"
+msgstr "MultiploInvio dei file"
+
+#: src/lib/vfs/ftpfs.cxx:2007
+msgid "MGetting files"
+msgstr "MultiploOttenimento dei file"
+
+#: src/lib/vfs/ftpfs.cxx:2149 src/lib/vfs/ftpfs.cxx:2171
+msgid "Directory listing"
+msgstr "Listato directory"
+
+#: src/lib/vfs/afs.cxx:135
+msgid "Updating..."
+msgstr "Aggiornamento..."
+
+#: src/lib/vfs/afs.cxx:243
+msgid "Preparing to execution..."
+msgstr "Preparazione all'esecuzione..."
+
+#: src/lib/vfs/afs.cxx:263
+msgid "Can't access exeTMP dir"
+msgstr "Impossibile accedere alla dir exeTMP"
+
+#: src/lib/vfs/afs.cxx:279 src/lib/vfs/afs.cxx:339
+msgid "Unpacking FAILED!"
+msgstr "Scompattazione FALLITA!"
+
+#: src/lib/vfs/afs.cxx:300
+msgid "Can't copy to destination VFS"
+msgstr "Impossibile copiare sulla destinazione VFS"
+
+#: src/lib/vfs/afs.cxx:398 src/lib/vfs/afs.cxx:504
+msgid "TMP dir not accessable!"
+msgstr "Dir TMP non accessibile!"
+
+#: src/lib/vfs/afs.cxx:437 src/lib/vfs/afs.cxx:610
+msgid "Can't access execTMP dir"
+msgstr "Impossibile accedere alla dir execTMP"
+
+#: src/lib/vfs/afs.cxx:546
+msgid "Operation not supported in this archive"
+msgstr "Operazione non supportata in questo archivio"
+
+#: src/lib/vfs/afs.cxx:663
+msgid "No support for this file"
+msgstr "Nessun supporto per questo file"
+
+#: src/lib/vfs/afs.cxx:683
+msgid "Can't create AFSTMP directory!"
+msgstr "Impossibile creare la directory AFSTMP!"
+
+#: src/lib/vfs/afs.cxx:1191
+msgid "No specified executable for this AFS"
+msgstr "Nessun eseguibile specificato per questo AFS"
+
+#: src/lib/vfs/afs.cxx:1196
+msgid "Reading Archive..."
+msgstr "Lettura Archivio..."
+
+#: src/lib/vfs/afs.cxx:1327
+msgid "Can't follow directory (outside archive)!"
+msgstr "Impossibile seguire la directory (fuori dall'archivio)!"
+
+#: src/lib/vfs/afs.cxx:1481
+msgid "Exit from archive before cleaning cache!"
+msgstr "Uscire dall'archivio prima di ripulire la cache!"
+
+#: src/lib/vfs/afs.cxx:1486
+msgid "Report"
+msgstr "Report"
+
+#: src/lib/vfs/afs.cxx:1486
+msgid "Archive cache is clean."
+msgstr "La cache dell'archivio e' pulita."
+
+#: src/lib/vfs/afs.cxx:1488
+msgid "Something wrong with AFS cache!!!"
+msgstr "Qualcosa ha provocato un problema alla cache AFS!!!"
+
+#: src/lib/vfs/afs.cxx:1518
+msgid "Errors during archive creation"
+msgstr "Errori durante la creazione dell'archivio"
+
+#: src/lib/vfs/dfs.cxx:112 src/lib/vfs/dfs.cxx:235 src/lib/vfs/dfs.cxx:798
+msgid "Error: trying copy to itself"
+msgstr "Errore: copia su se stesso"
+
+#: src/lib/vfs/dfs.cxx:127
+msgid "Error: can't write data to destination"
+msgstr "Errore: impossibile scrivere i dati sulla destinazione"
+
+#: src/lib/vfs/dfs.cxx:161
+msgid "Error: operation incomplete!"
+msgstr "Errore: operazione incompleta!"
+
+#: src/lib/vfs/dfs.cxx:578
+msgid "Error: RM call failed (Unknown reason)"
+msgstr "Errore: chiamata RM fallita (causa sconosciuta)"
+
+#: src/lib/vfs/dfs.cxx:954
+#, fuzzy
+msgid "Symlink file"
+msgstr "File link"
+
+#: src/lib/vfs/dfs.cxx:981
+#, fuzzy
+msgid "Operation not supported on this VFS"
+msgstr "Operazione non supportata in questo archivio"
+
+#: src/xsetup/setup.cxx:126
+msgid "Sysfiles Path:"
+msgstr "Percorso file di sistema"
+
+#: src/xsetup/setup.cxx:127
+msgid "XNC Geometry:"
+msgstr "Geometria XNC:"
+
+#: src/xsetup/setup.cxx:128
+msgid "XNC Editor:"
+msgstr "Editor XNC:"
+
+#: src/xsetup/setup.cxx:129
+msgid "XNC Viewer:"
+msgstr "Lettore XNC:"
+
+#: src/xsetup/setup.cxx:130
+msgid "Font Name:"
+msgstr "Node del Font:"
+
+#: src/xsetup/setup.cxx:151
+msgid "Save configuration?"
+msgstr "Salvare la configurazione?"
+
+#: src/xsetup/setup.cxx:311
+msgid "Vertical"
+msgstr "Verticale"
+
+#: src/xsetup/setup.cxx:312
+msgid "Horizontal"
+msgstr "Orizzontale"
+
+#: src/xsetup/setup.cxx:313
+msgid "Page"
+msgstr "Pagina"
+
+#: src/xsetup/setup.cxx:315
+msgid "Main Font"
+msgstr "Font Principale"
+
+#: src/xsetup/setup.cxx:316
+msgid "Panels Font"
+msgstr "Font dei Pannelli"
+
+#: src/xsetup/setup.cxx:317
+msgid "Fixed Font"
+msgstr "Fixed Font"
+
+#: src/xsetup/setup.cxx:318
+msgid "IVES Font"
+msgstr "IVES Font"
+
+#: src/xsetup/setup.cxx:319
+msgid "Mini Fixed Font"
+msgstr "Mini Fixed Font"
+
+#: src/xsetup/setup.cxx:322
+msgid "Background"
+msgstr "Sfondo"
+
+#: src/xsetup/setup.cxx:323
+msgid "Shadow color"
+msgstr "Colore dell'ombra"
+
+#: src/xsetup/setup.cxx:324
+msgid "Text color"
+msgstr "Colore del testo"
+
+#: src/xsetup/setup.cxx:325
+msgid "Text warning"
+msgstr "Colore di attenzione"
+
+#: src/xsetup/setup.cxx:326
+msgid "Text color 2"
+msgstr "Colore det testo 2"
+
+#: src/xsetup/setup.cxx:327
+msgid "Cursor color"
+msgstr "Colore del cursore"
+
+#: src/xsetup/setup.cxx:328
+msgid "Panel Info"
+msgstr "Informazioni Pannello"
+
+#: src/xsetup/setup.cxx:329
+msgid "Selected file"
+msgstr "File Selezionato"
+
+#: src/xsetup/setup.cxx:330
+msgid "Extension file"
+msgstr "Estensione del file"
+
+#: src/xsetup/setup.cxx:331
+msgid "Normal file"
+msgstr "File normale"
+
+#: src/xsetup/setup.cxx:332
+msgid "Directory"
+msgstr "Directory"
+
+#: src/xsetup/setup.cxx:333
+msgid "Execution file"
+msgstr "Esecuzione file"
+
+#: src/xsetup/setup.cxx:335
+msgid "Archive file"
+msgstr "File archivio"
+
+#: src/xsetup/setup.cxx:336
+msgid "Image file"
+msgstr "File Immagine"
+
+#: src/xsetup/setup.cxx:360
+msgid "Define Key"
+msgstr "Definisci Tasto"
+
+#: src/xsetup/setup.cxx:429 src/xsetup/setup.cxx:430
+msgid "Now Press Key combination..."
+msgstr "Ora Premi la combinazione di Tasti..."
+
+#: src/xsetup/setup.cxx:657
+msgid "WHAT'S NEW from last version"
+msgstr "NOVITA' dall'ultima versione"
+
+#: src/xsetup/setup.cxx:674
+msgid "XNC Layout"
+msgstr "Disposizione XNC"
+
+#: src/xsetup/setup.cxx:675 src/xsetup/setup.cxx:1062
+msgid "Fonts"
+msgstr "Font"
+
+#: src/xsetup/setup.cxx:676 src/xsetup/setup.cxx:1062
+msgid "Colors"
+msgstr "Colori"
+
+#: src/xsetup/setup.cxx:681
+msgid "Example:"
+msgstr "Esempio:"
+
+#: src/xsetup/setup.cxx:1036
+msgid "Always"
+msgstr "Sempre"
+
+#: src/xsetup/setup.cxx:1037 src/menu_process.cxx:358
+msgid "Never"
+msgstr "Mai"
+
+#: src/xsetup/setup.cxx:1038
+msgid "Prompt"
+msgstr "Conferme"
+
+#: src/xsetup/setup.cxx:1045
+msgid "Hot Keys to XNC Actions mapping:"
+msgstr "Combinazioni di tasti per le azioni XNC:"
+
+#: src/xsetup/setup.cxx:1047
+msgid "Key1"
+msgstr "Tasto1"
+
+#: src/xsetup/setup.cxx:1048
+msgid "Key2"
+msgstr "Tasto2"
+
+#: src/xsetup/setup.cxx:1049
+msgid "Key3"
+msgstr "Tasto3"
+
+#: src/xsetup/setup.cxx:1051
+msgid "IVES->XNC:"
+msgstr "IVES->XNC:"
+
+#: src/xsetup/setup.cxx:1052
+msgid "Sticky terminal"
+msgstr "Terminale persistente"
+
+#: src/xsetup/setup.cxx:1053
+msgid "Raise terminal on exec"
+msgstr "Passa il terminale in primo piano all'esecuzione"
+
+#: src/xsetup/setup.cxx:1054
+msgid "Return Focus from IVES"
+msgstr "Ritorna il fuoco da IVES"
+
+#: src/xsetup/setup.cxx:1055
+msgid "Bookmark Options:"
+msgstr "Opzioni per Favoriti"
+
+#: src/xsetup/setup.cxx:1056
+msgid "Enable Bookmark"
+msgstr "Abilita Favoriti"
+
+#: src/xsetup/setup.cxx:1057
+msgid "Allow Bookmark animation"
+msgstr "Consenti animazioni per Favoriti"
+
+#: src/xsetup/setup.cxx:1058
+msgid "AFS Options:"
+msgstr "Opzioni AFS:"
+
+#: src/xsetup/setup.cxx:1059
+msgid "Show icons with directory names"
+msgstr "Mostra le icone con i nomi delle directory"
+
+#: src/xsetup/setup.cxx:1060
+msgid "Show icons with files"
+msgstr "Mostra le icone con i file"
+
+#: src/xsetup/setup.cxx:1061
+msgid "Update archieve on exit"
+msgstr "Aggiorna archivi all'uscita"
+
+#: src/xsetup/setup.cxx:1062
+msgid "Common"
+msgstr "Comune"
+
+#: src/xsetup/setup.cxx:1062
+msgid "Keys"
+msgstr "Tasti"
+
+#: src/xsetup/setup.cxx:1062
+msgid "Other"
+msgstr "Altro"
+
+#: src/xsetup/setup.cxx:1100
+msgid "vertical"
+msgstr "verticale"
+
+#: src/xsetup/setup.cxx:1100
+msgid "horizontal"
+msgstr "orizzontale"
+
+#: src/xsetup/setup.cxx:1100
+msgid "page"
+msgstr "pagina"
+
+#: src/xsetup/setup.cxx:1345
+msgid "X Northern Captain Setup"
+msgstr "X Northern Captain Setup"
+
+#: src/menu_process.cxx:148 src/menu_process.cxx:223
+msgid "Brief"
+msgstr "Breve"
+
+#: src/menu_process.cxx:149 src/menu_process.cxx:224
+msgid "Full"
+msgstr "Completa"
+
+#: src/menu_process.cxx:150 src/menu_process.cxx:225
+msgid "Custom "
+msgstr "Personalizzata "
+
+#: src/menu_process.cxx:151 src/menu_process.cxx:226
+msgid "One column"
+msgstr "1 colonna"
+
+#: src/menu_process.cxx:152 src/menu_process.cxx:227
+msgid "Two columns"
+msgstr "2 colonne"
+
+#: src/menu_process.cxx:153 src/menu_process.cxx:228
+msgid "Three columns"
+msgstr "3 colonne"
+
+#: src/menu_process.cxx:154 src/menu_process.cxx:229
+msgid "Four columns "
+msgstr "4 colonne"
+
+#: src/menu_process.cxx:155 src/menu_process.cxx:230
+msgid "Sort by Names"
+msgstr "Ordina per Nome"
+
+#: src/menu_process.cxx:156 src/menu_process.cxx:231
+msgid "Sort by Extensions"
+msgstr "Ordina per Estensione"
+
+#: src/menu_process.cxx:157 src/menu_process.cxx:232
+msgid "Sort by Size"
+msgstr "Ordina per Dimensione"
+
+#: src/menu_process.cxx:158 src/menu_process.cxx:233
+msgid "Sort by Time"
+msgstr "Ordina per Ora"
+
+#: src/menu_process.cxx:159 src/menu_process.cxx:234
+msgid "Unsorted "
+msgstr "Senza Ordine"
+
+#: src/menu_process.cxx:160 src/menu_process.cxx:235
+msgid "Reverse sort "
+msgstr "Ordine inverso "
+
+#: src/menu_process.cxx:161 src/menu_process.cxx:236
+msgid "Toggle branch mode "
+msgstr "Modalita' albero"
+
+#: src/menu_process.cxx:185
+msgid "Edit menu file"
+msgstr "Modifica file menu"
+
+#: src/menu_process.cxx:186
+msgid "Edit extension file "
+msgstr "Modifica estensione del file"
+
+#: src/menu_process.cxx:187
+msgid "Clean AFS cache "
+msgstr "Pulisci cache AFS "
+
+#: src/menu_process.cxx:188
+msgid "Configuration "
+msgstr "Configurazione"
+
+#: src/menu_process.cxx:189
+msgid "Help in documentation"
+msgstr "Aiuto nella documentazione"
+
+#: src/menu_process.cxx:190
+msgid "About XNC"
+msgstr "Informazioni su XNC"
+
+#: src/menu_process.cxx:207
+msgid "Reread current directory"
+msgstr "Rileggi la directory corrente"
+
+#: src/menu_process.cxx:208
+msgid "Switch to terminal "
+msgstr "Switcha sul terminale "
+
+#: src/menu_process.cxx:209
+msgid "Add entry to bookmark "
+msgstr "Aggiungi voce ai favoriti "
+
+#: src/menu_process.cxx:210
+msgid "Add selection by mask"
+msgstr "Aggiungi selezione per filtro"
+
+#: src/menu_process.cxx:211
+msgid "Clean selection by mask"
+msgstr "Pulisci selezione per filtro"
+
+#: src/menu_process.cxx:212
+msgid "Invert selection"
+msgstr "Inverti la selezione"
+
+#: src/menu_process.cxx:213
+msgid "Add selection by extension"
+msgstr "Aggiungi selezione per estensione"
+
+#: src/menu_process.cxx:214
+msgid "Clean selection by extension "
+msgstr "Pulisci selezione per estensione"
+
+#: src/menu_process.cxx:215
+msgid "Insert left directory name"
+msgstr "Inserisci nome della directory SX"
+
+#: src/menu_process.cxx:216
+msgid "Insert right directory name "
+msgstr "Inserisci nome della directory DX"
+
+#: src/menu_process.cxx:217
+msgid "Source <-> Target"
+msgstr "Sorgente <-> Destinazione"
+
+#: src/menu_process.cxx:218
+msgid "Target = Source"
+msgstr "Destinazione = Sorgente"
+
+#: src/menu_process.cxx:257
+msgid "Compare by sizes"
+msgstr "Confronta per grandezza"
+
+#: src/menu_process.cxx:257
+msgid "Compare by times"
+msgstr "Confronta per ora"
+
+#: src/menu_process.cxx:265
+msgid "Remount current directory"
+msgstr "Rimonta la directory corrente"
+
+#: src/menu_process.cxx:266
+msgid "Menu"
+msgstr "Menu"
+
+#: src/menu_process.cxx:270
+msgid "Move/Rename file"
+msgstr "Muovi/Rinomina file"
+
+#: src/menu_process.cxx:274
+#, fuzzy
+msgid "Make link"
+msgstr "Principale"
+
+#: src/menu_process.cxx:275
+msgid "Attributes of file"
+msgstr "Attributi del file"
+
+#: src/menu_process.cxx:277
+msgid "Create Archive"
+msgstr "Crea Archivio"
+
+#: src/menu_process.cxx:278
+msgid "Find files"
+msgstr "Trova file"
+
+#: src/menu_process.cxx:279
+msgid "Quick ScanDir Info"
+msgstr "Analisi info dir velove"
+
+#: src/menu_process.cxx:280
+msgid "Processes Info"
+msgstr "Informazioni Processi"
+
+#: src/menu_process.cxx:281
+msgid "Memory Info"
+msgstr "Inormazioni Memoria"
+
+#: src/menu_process.cxx:282
+msgid "Disk Info"
+msgstr "Informazioni Disco"
+
+#: src/menu_process.cxx:283
+msgid "Stat Info"
+msgstr "Informazioni Statistiche"
+
+#: src/menu_process.cxx:284
+msgid "Ftp connection "
+msgstr "Connessione FTP "
+
+#: src/menu_process.cxx:285
+msgid "Compare directories"
+msgstr "Confronta directory"
+
+#: src/menu_process.cxx:297
+msgid "Left"
+msgstr "Sinistra"
+
+#: src/menu_process.cxx:298
+msgid "Commands"
+msgstr "Comandi"
+
+#: src/menu_process.cxx:299
+msgid "Operations"
+msgstr "Operazioni"
+
+#: src/menu_process.cxx:301
+msgid "-Right"
+msgstr "-Destra"
+
+#: src/menu_process.cxx:305
+msgid "FTP"
+msgstr "FTP"
+
+#: src/menu_process.cxx:308
+msgid "1.Man"
+msgstr "1.Man"
+
+#: src/menu_process.cxx:309
+msgid "2.Menu"
+msgstr "2.Menu"
+
+#: src/menu_process.cxx:310
+msgid "3.View"
+msgstr "3.Visualizza"
+
+#: src/menu_process.cxx:311
+msgid "4.Edit"
+msgstr "4.Modifica"
+
+#: src/menu_process.cxx:312
+msgid "5.Copy"
+msgstr "5.Copia"
+
+#: src/menu_process.cxx:313
+msgid "6.Move"
+msgstr "6.Muovi"
+
+#: src/menu_process.cxx:314
+msgid "7.Mkdir"
+msgstr "7.Mkdir"
+
+#: src/menu_process.cxx:315
+msgid "8.Delete"
+msgstr "8.Cancella"
+
+#: src/menu_process.cxx:316
+msgid "9.Attr"
+msgstr "9.Attr"
+
+#: src/menu_process.cxx:317
+msgid "-0.Quit"
+msgstr "-0.Esci"
+
+#: src/menu_process.cxx:356
+msgid "Really, QUIT?"
+msgstr "Veramente, ESCI?"
+
+#: src/menu_process.cxx:357
+msgid "Yes"
+msgstr "Si"
+
+#: src/panel_click.cxx:190
+msgid "Print file"
+msgstr "Stampa file"
+
+#: src/panel_click.cxx:216
+msgid "New text file"
+msgstr "Nuovo file di testo"
+
+#: src/panel_wrap.cxx:29
+msgid "Remount Device ?"
+msgstr "Rimontare il dispositivo?"
+
+#: src/panel_wrap.cxx:239
+msgid "Change directory"
+msgstr "Cambia directory"
+
+#: src/panel_wrap.cxx:239
+msgid "Directory:"
+msgstr "Directory:"

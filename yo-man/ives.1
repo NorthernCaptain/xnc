@@ -1,0 +1,88 @@
+.TH "ives" "1" "1995-2002" "The XNC Package" "IVES" 
+.PP 
+.SH "NAME" 
+ives \- Independent Viewing and Editing System
+.PP 
+.SH "SYNOPSIS" 
+\fBives\fP [-d xdisplay]
+.PP 
+.SH "DESCRIPTION" 
+.PP 
+This manual page describes the \fBives\fP program, the multi-window
+viewer and editor for X Window\&.
+\fBives\fP can view and edit files in \fIASCII\fP and \fIHEX\fP formats,
+and show images written in GIF, JPEG, PNG, PCX, BMP, XBM, XPM, TIFF,
+TGA and PhotoCD formats\&.
+\fBives\fP was designed to use with \fBxnc\fP but also can be used 
+separately with simple \fBiedit\fP and \fBiview\fP interface programs\&.
+.PP 
+Currently \fBives\fP does not support hotkeys redefinitions,
+so here it is keys description\&.
+.PP 
+Editor keys:
+.IP "F2" 
+Save file\&.
+.IP "F3 or Ctrl-C" 
+Copy selected area of text to cut buffer\&.
+.IP "F4 or Ctrl-V" 
+Paste text from cut buffer to currentl line\&.
+.IP "F5 or Ctrl-X" 
+Cut selected text to cut buffer\&.
+.IP "F6" 
+Switch between \fBives\fP windows\&.
+.IP "F7" 
+Find string in text\&.
+.IP "F8" 
+Go to line number\&.
+.IP "F10 or Esc" 
+Exit from editor\&.
+.IP "Ctrl-B" 
+Find bracket pair\&.
+.IP "Ctrl-L" 
+Find next entrance\&. Use after <Find>\&.
+.IP "Ctrl-Y" 
+Delete current line\&.
+.IP "Shift+Arrows" 
+Select/deselect text area\&.
+.IP "Ctrl+[+\&." 
+Emacs tags find\&.
+.IP "Ctrl+[+/" 
+Emacs tag file path definition\&.
+Viewer keys:
+.IP "F2" 
+Save file, when in HEX mode\&.
+.IP "F3" 
+Switch between ASCII/HEX modes\&.
+.IP "F6" 
+Switch between \fBives\fP viewer windows\&.
+.IP "F7 or /" 
+Find string in file\&.
+.IP "F10 or Esc" 
+Exit from viewer\&.
+.PP 
+.SH "OPTIONS" 
+.PP 
+.IP 
+.IP "-d xdisplay" 
+Connect to X Server \fIxdisplay\fP\&.
+.IP 
+.PP 
+.SH "FILES" 
+.PP 
+The \fBives\fP program requires configuration file in your \fIHOME/\&.xnc\fP
+directory\&. Edit \fIHOME/\&.xnc/ives\&.ini\fP to adjust settings or run 
+\fBxncsetup\fP for it\&. 
+.PP 
+.SH "SEE ALSO" 
+.PP 
+\fBxnc\fP, \fBxncsetup\fP, \fBiview\fP, \fBiedit\fP
+.PP 
+.SH "BUGS" 
+.PP 
+There may be bugs in the \fBives\fP, but that\'s not very likely\&.
+But if you\'ll find the bug then please, send complete description to
+the author\&.
+.PP 
+.SH "AUTHOR" 
+.PP 
+Leonid Khramov (leo@xnc\&.dubna\&.su), Russia St\&.Petersburg 2002

@@ -1,0 +1,56 @@
+#! /bin/sh
+if [ -f $HOME/.xnc/.xnc.cfg ]
+then
+ echo "Found old name style config -> renaming to xnc.cfg"
+ mv -f $HOME/.xnc/.xnc.cfg $HOME/.xnc/xnc.cfg
+fi
+
+if [ -f $HOME/.xnc/.xnc.ini ]
+then
+ echo "Found old name style ini -> renaming to xnc.ini"
+ mv -f $HOME/.xnc/.xnc.ini $HOME/.xnc/xnc.ini
+fi
+
+if [ -f $HOME/.xnc/.xnc.afs ]
+then
+ echo "Found old name style AFS -> renaming to xnc.afs"
+ mv -f $HOME/.xnc/.xnc.afs $HOME/.xnc/xnc.afs
+fi
+
+if [ -f $HOME/.xnc/.xnc.keys ]
+then
+ echo "Found old name style keys -> renaming to xnc.keys"
+ mv -f $HOME/.xnc/.xnc.keys $HOME/.xnc/xnc.keys
+fi
+
+if [ -f $HOME/.xnc/.xnc.ext ]
+then
+ echo "Found old name style extension file -> renaming to xnc.ext"
+ mv -f $HOME/.xnc/.xnc.ext $HOME/.xnc/xnc.ext
+fi
+
+if [ -f $HOME/.xnc/.xnc.menu ]
+then
+ echo "Found old name style menu -> renaming to xnc.menu"
+ mv -f $HOME/.xnc/.xnc.menu $HOME/.xnc/xnc.menu
+fi
+
+if [ -f $HOME/.xnc/.xnc.history ]
+then
+ echo "Found old name style history -> renaming to xnc.history"
+ mv -f $HOME/.xnc/.xnc.history $HOME/.xnc/xnc.history
+fi
+
+if [ -f $HOME/.xnc/.ives.history ]
+then
+ echo "Found old name style IVES history -> renaming to ives.history"
+ mv -f $HOME/.xnc/.ives.history $HOME/.xnc/ives.history
+fi
+
+if [ -f $HOME/.xnc/.ives.ini ]
+then
+ echo "Found old name style IVES ini -> renaming to ives.ini"
+ mv -f $HOME/.xnc/.ives.ini $HOME/.xnc/ives.ini
+fi
+
+

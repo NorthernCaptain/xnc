@@ -1,0 +1,276 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=koi8-r">
+   <meta name="Author" content="Leonid Khramov">
+   <meta name="GENERATOR" content="Mozilla/4.79 [en] (X11; U; Linux 2.4.18-3 i686) [Netscape]">
+   <meta name="Description" content="http://xnc.dubna.su">
+   <meta name="Keywords" content="xnc">
+   <title>X Northern Captain Installation</title>
+</head>
+<body text="#F0FFF0" bgcolor="#003366" link="#66FFFF" vlink="#FFCC99" alink="#FF6666">
+
+<center>
+<h3>
+<font color="#FFFF00">X Northern Captain Installation</font></h3></center>
+
+<table CELLSPACING=0 CELLPADDING=5 >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP><b><font size=-1>XNC Index:</font></b>
+<br><font size=-1><a href="index.html">Overview</a></font>
+<br><font size=-1><a href="doc8.html">Installation</a></font>
+<br><font size=-1><a href="doc1.html">Panels</a></font>
+<br><font size=-1><a href="doc2.html">Commands</a></font>
+<br><font size=-1><a href="doc4.html">VFS_support</a></font>
+<br><font size=-1><a href="doc5.html">Bookmark</a></font>
+<br><font size=-1><a href="doc6.html">Extensions</a></font>
+<br><font size=-1><a href="doc7.html">User Menu</a></font>
+<br><font size=-1><a href="doc3.html">Hot Keys</a></font></td>
+
+<td>
+<br><b><u>INSTALLATION</u>&nbsp;</b>
+<p>XNC publishes in three types of archives:
+<ul>
+<li>
+Source code tarball (src.tar.gz)</li>
+
+<li>
+Precompiled binaries for various platforms in tarball (Platform.tar.gz)</li>
+
+<li>
+Precompiled binaries for Linux RPM systems (rpm)</li>
+</ul>
+The following text explains installation process for each type of archive:
+<p><font color="#FFFF99">Source code tarball</font>:&nbsp;
+<ul>
+<li>
+Unpack archive with '<b>tar zxvf filename</b>' or '<b>gunzip -c filename
+| tar xvf -</b>'</li>
+
+<li>
+Go to <b>xnc-5.x.x</b> directory&nbsp;</li>
+
+<li>
+Run '<b>./configure</b>'. For configure options see output of '<b>./configure
+--help</b>'</li>
+
+<li>
+Run '<b>make</b>'&nbsp;</li>
+
+<li>
+Run '<b>make install</b>' under <b>root</b>. This operation install files
+to Your computer.</li>
+
+<li>
+You need to run '<b>xncsetup</b>' for each user who wants to run xnc.&nbsp;</li>
+
+<li>
+Configure Your environment with xncsetup and press '<b>Save</b>' button.&nbsp;</li>
+</ul>
+PS: If you have troubles compiling XNC try run '<b>./configure --disbale-shared</b>'
+and then make again.
+<br>&nbsp;
+<p><font color="#FFFF99">Source code tarball to local directory (home directory
+without root)</font>:&nbsp;
+<br>If you want to install xnc to another directory that default one (/usr),
+then read this part of instructions:
+<p>Assume that you want to install xnc locally to your home directory and
+don't have '<b>root</b>' access.
+<br>For example your home directory is '/home/leo'.
+<ul>
+<li>
+Unpack archive with '<b>tar zxvf filename</b>' or '<b>gunzip -c filename
+| tar xvf -</b>'</li>
+
+<li>
+Go to <b>xnc-5.x.x</b> directory&nbsp;</li>
+
+<li>
+Run '<b>./configure --prefix=/home/leo</b>'. For more configure options
+see output of '<b>./configure --help</b>'</li>
+
+<li>
+Run '<b>make</b>'&nbsp;</li>
+
+<li>
+Run '<b>make install</b>'. This operation install files to Your computer.</li>
+
+<li>
+You need to run '<b>xncsetup</b>' before running xnc. Do it under X window
+system because xncsetup requires connection to X server. XNC installs itself
+in the following directories:</li>
+
+<ul>
+<li>
+/home/leo/bin - binaries</li>
+
+<li>
+/home/leo/lib/xnc - libraries</li>
+
+<li>
+/home/leo/share/man/man1 - man pages</li>
+
+<li>
+/home/leo/share/doc/xnc-5.x.x - documentation</li>
+
+<li>
+/home/leo/share/locale - localization</li>
+</ul>
+
+<li>
+Configure Your environment with xncsetup and press '<b>Save</b>' button.</li>
+
+<li>
+Make sure that you have '/home/leo/bin' directory in your $PATH environment.</li>
+
+<li>
+Or add with '<b>export PATH=/home/leo/bin:$PATH</b>' into your local startup
+script.&nbsp;</li>
+</ul>
+PS: If you have troubles compiling XNC try run '<b>./configure --disbale-shared</b>'
+and then make again.
+<p><font color="#FFFF99">Precompiled binary TAR archive</font>:&nbsp;
+<ul>
+<li>
+Just unpack archive to '/' directory.</li>
+
+<ul>
+<li>
+<b>cd /</b></li>
+
+<li>
+<b>gunzip -c xnc-tarball-name.tar.gz | tar xvf -</b></li>
+</ul>
+
+<li>
+Configure Your environment with '<b>xncsetup</b>' and press '<b>Save</b>'
+button for each user who wants to run xnc.&nbsp;</li>
+</ul>
+<font color="#FFFF99">Binary RPM archive</font>:&nbsp;
+<ul>
+<li>
+Just install RPM archive to your system with '<b>rpm -ivh xnc-*.rpm</b>'.</li>
+
+<li>
+Or upgrade from previous version with '<b>rpm -Uvh xnc-*.rpm</b>'.</li>
+
+<li>
+Configure Your environment with '<b>xncsetup</b>', see or change hotkeys,
+colors and press '<b>Save</b>' button.&nbsp;</li>
+</ul>
+
+<ul>
+<li>
+'/usr/bin' - xnc binaries and helpers</li>
+
+<li>
+'/usr/lib/xnc' - xnc plugin libraries.</li>
+
+<li>
+'/usr/share/man/man1' - xnc man pages.</li>
+
+<li>
+'/usr/share/locale' - xnc localization files.</li>
+
+<br>'/usr/share/doc/xnc-5.x.x' - xnc documentation in html format.</ul>
+
+<p><br><b><u>HOW TO RUN</u>&nbsp;</b>
+<p><font color="#FFFF99">Simple run:</font>
+<ul>
+<li>
+Just type '<b>xnc</b>' and enjoy.&nbsp;</li>
+</ul>
+Don't forget to run xncsetup before running xnc at first time.
+<p><font color="#FFFF99">Faster startup:</font>
+<ul>
+<li>
+Run '<b>xncloader</b>'. Do it just ONCE after you start your X.&nbsp;</li>
+
+<br>For example you can place it in your .xinitrc or .xsession file.&nbsp;
+<li>
+Run '<b>xnc</b>' as many times as you wish. XNC will use shared resources
+loaded by '<b>xncloader</b>' and start faster.&nbsp;</li>
+
+<br>If you have troubles with this method try '<b>xnc +shared</b>'.&nbsp;</ul>
+<font color="#FFFF99">Run with plugins:&nbsp;</font>
+<ul>
+<li>
+Run '<b>xnc -plugin aqua</b>' and you see XNC with Aqua skin. Also you
+can choose plugin in xnc 'Configuration' window.</li>
+
+<li>
+If you want to switch off the plugin then run '<b>xnc -plugin none</b>'
+or set original look in the 'Configuration' window.</li>
+</ul>
+
+<p><br><font color="#FFFF99">Run with command line options:</font>
+<br>You can run xnc with many command line options that make some tuning
+at startup. Here is the list of these options:
+<ul>
+<li>
+<b>-display displayname</b> - X server display name to contact</li>
+
+<li>
+<b>-/+rv</b> - Turn on/off reverse video mode in xterminal</li>
+
+<li>
+<b>-fg color</b> - foreground color for xterminal window</li>
+
+<li>
+<b>-cr color</b> - cursor color in terminal window</li>
+
+<li>
+<b>-fn fontname</b> - normal terminal text font</li>
+
+<li>
+<b>-iconic</b> - start iconic</li>
+
+<li>
+<b>-title string</b> - title name for window</li>
+
+<li>
+<b>-/+ls</b> - turn on/off login shell</li>
+
+<li>
+<b>-/+sb</b> - turn on/off scrollbar in terminal window</li>
+
+<li>
+<b>-sl number</b> - number of scrolled lines to save</li>
+
+<li>
+<b>-/+ut</b> - turn on/off utmp inhibit</li>
+
+<li>
+<b>-/+vb</b> - turn on/off visual bell</li>
+
+<li>
+<b>-/+si</b> - turn on/off introduction banner</li>
+
+<li>
+<b>-plugin plugin-name</b> - plugin name for load different look (skin)</li>
+
+<li>
+<b>-/+shared</b> - turn on/off shared resource using with xncloader</li>
+</ul>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+
+<tr>
+<td>
+<center><font size=-1>XNC НОМЕ</font>
+<br><font size=-1><a href="http://xnc.dubna.su">xnc.dubna.su</a></font></center>
+</td>
+
+<td></td>
+</tr>
+</table>
+
+<div align=right><font size=-1>Author <a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">Leonid
+V. Khramov</a></font>
+<br><font size=-1><a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">leo@xnc.dubna.su</a></font>
+<br><font size=-1>St-Petersburg</font>
+<br><font size=-1>Russia</font>
+<br><font size=-1>1995-2002</font></div>
+
+</body>
+</html>

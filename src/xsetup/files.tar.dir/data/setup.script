@@ -1,0 +1,36 @@
+#! /bin/sh
+if [ -f $HOME/.xnc/xnc.cfg ]
+then
+ echo "Config file already exist! Skip changing."
+else
+ cp ./.xnc.cfg $HOME/.xnc/xnc.cfg
+fi
+if [ -f $HOME/.xnc/xnc.menu ]
+then
+ echo "User Menu file already exist! Skip changing."
+else
+ cp ./.xnc.menu $HOME/.xnc/xnc.menu
+fi
+if [ -f $HOME/.xnc/xnc.ext ]
+then
+ echo "User Extensions file already exist! Skip changing."
+else
+ cp ./.xnc.ext $HOME/.xnc/xnc.ext
+fi
+#if [ -f $HOME/.xnc/xnc.keys ]
+#then
+# echo "User Keys Definition file already exist! Renaming to xnc.keys.old"
+# mv -f $HOME/.xnc/.xnc.keys $HOME/.xnc/.xnc.keys.old
+# cp -f ./.xnc.keys $HOME/.xnc
+#else
+# cp ./.xnc.keys $HOME/.xnc
+#fi
+if [ -f $HOME/.xnc/xnc.afs ]
+then
+ echo "Archieve Support file already exist! Replacing with 2.1 version."
+ mv -f $HOME/.xnc/xnc.afs $HOME/.xnc/xnc.afs.before.`date +%d-%b-%Y`
+ cp -f ./$1 $HOME/.xnc/xnc.afs
+else
+ cp ./$1 $HOME/.xnc/xnc.afs
+fi
+

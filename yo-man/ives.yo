@@ -1,0 +1,77 @@
+manpage(ives)
+       (1)
+       (1995-2002)
+       (The XNC Package)
+       (IVES)
+
+manpagename(ives)(Independent Viewing and Editing System)
+
+manpagesynopsis()
+    bf(ives) [-d xdisplay]
+
+manpagedescription()
+
+    This manual page describes the bf(ives) program, the multi-window
+    viewer and editor for X Window.
+	bf(ives) can view and edit files in em(ASCII) and em(HEX) formats,
+	and show images written in GIF, JPEG, PNG, PCX, BMP, XBM, XPM, TIFF,
+	TGA and PhotoCD formats.
+	bf(ives) was designed to use with bf(xnc) but also can be used 
+	separately with simple bf(iedit) and bf(iview) interface programs.
+
+	Currently bf(ives) does not support hotkeys redefinitions,
+	so here it is keys description.
+
+	Editor keys:
+startdit()
+	dit(F2)Save file.
+	dit(F3 or Ctrl-C)Copy selected area of text to cut buffer.
+	dit(F4 or Ctrl-V)Paste text from cut buffer to currentl line.
+	dit(F5 or Ctrl-X)Cut selected text to cut buffer.
+	dit(F6)Switch between bf(ives) windows.
+	dit(F7)Find string in text.
+	dit(F8)Go to line number.
+	dit(F10 or Esc)Exit from editor.
+	dit(Ctrl-B)Find bracket pair.
+	dit(Ctrl-L)Find next entrance. Use after <Find>.
+	dit(Ctrl-Y)Delete current line.
+	dit(Shift+Arrows)Select/deselect text area.
+	dit(Ctrl+[+.)Emacs tags find.
+        dit(Ctrl+[+/)Emacs tag file path definition.
+enddit()
+	Viewer keys:
+startdit()
+	dit(F2)Save file, when in HEX mode.
+	dit(F3)Switch between ASCII/HEX modes.
+	dit(F6)Switch between bf(ives) viewer windows.
+	dit(F7 or /)Find string in file.
+	dit(F10 or Esc)Exit from viewer.
+enddit()
+
+manpageoptions()
+
+startdit()
+
+    dit(-d xdisplay) Connect to X Server em(xdisplay).
+    
+enddit()
+
+manpagefiles()
+
+    The bf(ives) program requires configuration file in your em(HOME/.xnc)
+	directory. Edit em(HOME/.xnc/ives.ini) to adjust settings or run 
+    bf(xncsetup) for it. 
+
+manpageseealso()
+
+    bf(xnc), bf(xncsetup), bf(iview), bf(iedit)
+
+manpagebugs()
+
+    There may be bugs in the bf(ives), but that's not very likely.
+	But if you'll find the bug then please, send complete description to
+	the author.
+
+manpageauthor()
+
+    Leonid Khramov (leo@xnc.dubna.su), Russia St.Petersburg 2002

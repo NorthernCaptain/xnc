@@ -1,0 +1,144 @@
+>LSF
+
+#AFS Format Version 2.1 with GNU TAR 1.12 or higher
+
+#Support for ZIP archives
+support ZIP
+extensions: .zip;
+header: 1
+separator: byte
+syntax: attributes word word size word word date time name;
+list: unzip -Z -st archive;
+extract: unzip -o -q archive;
+single_ex: unzip -o -q archive file;
+delete_file: zip -d -q archive file;
+single_packfile: zip -q archive file;
+single_packdir: zip -q -r archive file;
+single_create: zip -r -q archive file;
+multi_create: zip -r -q archive file;
+endsupport
+
+#Support for TAR archives
+support TAR
+extensions: .tar;
+syntax: attributes word size date time name;
+list: tar tvf archive;
+extract: tar xf archive;
+single_ex: tar xf archive file;
+single_packfile: tar rf archive file;
+single_packdir: tar rf archive file;
+list_unpack: tar -xT file -f archive;
+list_pack: tar -rT file -f archive;
+single_create: tar -cf archive file;
+multi_create: tar -cf archive file;
+#delete_file: tar f archive --delete file;
+endsupport
+
+#Support for GZIPPED files
+support GZIP
+extensions: .gz;
+syntax: size attributes day month year time name;
+list: gzip.xnc listing archive;
+single_ex: gzip.xnc copyout archive file;
+single_create: gzip.xnc pack archive file;
+endsupport
+
+#Support for BZIP 2 files
+support BZIP2
+extensions: .bz2;
+syntax: size attributes day month year time name;
+list: bzip.xnc listing archive;
+single_ex: bzip.xnc copyout archive file;
+single_create: bzip.xnc pack archive file;
+endsupport
+
+#Support for TAR BZIPped II archives
+support TARBZ2
+extensions: .tbz2 .tar.bz2;
+syntax: attributes word size date time name;
+list: bzip2 -c -d archive | tar -tvf -;
+extract: bzip2 -c -d archive | tar -xf -;
+single_ex: bzip2 -c -d archive | tar -xf - file;
+list_unpack: bzip2 -c -d archive | tar -xT file -f -;
+single_create: tar -cf - file | bzip2 -c -f > archive;
+multi_create: tar -cf - file | bzip2 -c -f > archive;
+endsupport
+
+#Support for TAR GZIPped archives
+support TARGZ
+extensions: .tgz .tar.gz .tar.Z .tar.z .taz;
+syntax: attributes word size date time name;
+list: gzip -c -f -d archive | tar -tvf -;
+extract: gzip -c -f -d archive | tar -xf -;
+single_ex: gzip -c -f -d archive | tar -xf - file;
+list_unpack: gzip -c -f -d archive | tar -xT file -f -;
+single_create: tar -cf - file | gzip -c -f > archive;
+multi_create: tar -cf - file | gzip -c -f > archive;
+endsupport
+
+support RPM
+extensions: .rpm;
+separator: '----'
+syntax: attributes word word word size word word word name;
+list: rpm.xnc listing archive;
+single_ex: rpm.xnc copyout archive file;
+endsupport
+
+#Support for DEB archives
+support DEB
+extensions: .deb;
+syntax: attributes word size date time name;
+#syntax: attributes word size month day time year name;
+list: dpkg-deb -c archive;
+extract: dpkg-deb -x archive .;
+single_ex: dpkg-deb --fsys-tarfile archive | tar xf - file;
+endsupport
+
+#Support for ARJ archives but use 'unarj'
+support UNARJ
+extensions: .arj;
+separator: '-----'
+syntax: name size word word date time word word word;
+list: unarj archive;
+extract: unarj x archive;
+endsupport
+
+#Support for RAR archives
+support RAR
+extensions: .rar;
+#header: 8
+separator: '-----'
+syntax: name_cr size word word date time attributes word word word;
+list: rar v -c- archive;
+extract: rar x -y -o+ -c- archive;
+single_ex: rar x -y -o+ -c- archive file;
+delete_file: rar d -y -o+ -c- archive file;
+single_packfile: rar a -y -o+ archive file;
+single_packdir: rar a -r -y -o+ archive file;
+list_unpack: rar x -y -o+ -c- archive @file;
+list_pack: rar a -y -o+ archive @file;
+single_create: rar a -y -o+ -r archive file;
+multi_create: rar a -y -o+ -r archive file;
+endsupport
+
+#Support for LHA archives
+support LHA
+extensions: .lha .lzh;
+#header: 8
+separator: '-----'
+syntax: attributes word size word word word time name;
+list: lha l archive;
+extract: lha xf archive;
+single_ex: lha xf archive file;
+delete_file: lha df archive file;
+single_packfile: lha af archive file;
+single_packdir: lha af archive file;
+list_unpack: lha xf archive < file;
+list_pack: lha afq archive < file;
+single_create: lha cfq archive file;
+multi_create: lha cfq archive file;
+endsupport
+
+#end of support file
+>endLSF
+

@@ -1,0 +1,7 @@
+#! /bin/sh
+patch_file=/tmp/xnc-patch
+echo -n "Enter old directory to compare with: "
+read old_dir
+diff -U 3 -N -r $old_dir . >$patch_file
+echo "See patch file: $patch_file"
+

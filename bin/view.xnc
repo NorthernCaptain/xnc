@@ -1,0 +1,249 @@
+#!/bin/sh
+# this script is used by Debianized XNC to run proper viewer
+# it takes only one parameter - filename of file to be shown
+
+# IF YOU UPDATE THIS SCRIPT WITH NEW PROGRAM, EXTENSIONS, IDEAS
+# =>> PLEASE SEND IT TO: greg@sente.pl or XNC author - THANKS!
+
+# below variables are passed as parameters to the viewers
+# You can alter by putting modified version which sets those variables
+# into ~/.xnc/xncview.cfg
+
+# parameters to the viewers
+P_XV=""
+P_QIV="-m -t -p"
+P_XVIEW=""
+P_EE=""
+P_MPLAYER=""
+P_AVIPLAY=""
+P_MTVP=""
+P_OPERA=""
+P_MPG321=""
+
+# order of viewers that are tried
+O_IMAGE="qiv xview xanim xv"
+O_VIDEO="mplayer aviplay mtvp"
+O_AUDIO="mpg321 mpg123"
+O_HTML="opera galeon mozilla netscape"
+
+########### YOU SHOULDN'T NEED TO TOUCH ANYTHING BELOW THIS LINE ############
+
+# But YOU can always LOOK at the TODO list:
+# - add more file formats and more viewers
+# - better distinguish between different formats, maybe use variables
+# $O_FORMAT_NAME
+# - use automake or other generation env. instead of writing dozens of
+#  very similar lines by hand
+# - think what existing databases of file assotiations are available?
+#  maybe GNOME or KDE ones ? It'd be better to just use them instead
+#  of reinventing the wheel
+
+if [ "$1" = "" ]; then
+  echo "Usage: $0 filename"
+  exit 1;
+fi
+
+FILE=$1
+EXT=`echo ${FILE##*.} | tr '[:upper:]' '[:lower:]'`
+DEBUG=0;
+
+if [ $DEBUG = 1 ]; then echo "File: $FILE"; echo "Ext: $EXT"; fi
+
+# extension is always lowercase, as locales are set
+# btw: have you ever seen "localized" file extenstion ? ;-)
+
+# executables and their pathes
+X_XV="/usr/bin/xv /usr/X11R6/bin/xv"
+X_QIV="/usr/bin/qiv /usr/local/bin/qiv"
+X_XVIEW="/usr/bin/xview"
+X_EE="/usr/bin/ee"
+X_MPLAYER="/usr/bin/mplayer /usr/local/bin/mplayer"
+X_AVIPLAY="/usr/bin/aviplay"
+X_MTVP="/usr/bin/mtvp"
+X_GALEON="/usr/bin/galeon"
+X_MOZILLA="/usr/bin/mozilla"
+X_NETSCAPE="/usr/bin/X11/netscape /usr/bin/netscape"
+X_OPERA="/usr/X11R6/bin/opera /usr/local/bin/opera"
+X_MPG321="/usr/local/bin/mpg321"
+
+if [ -r "$HOME/.xnc/xncview.cfg" ]; then
+  . $HOME/.xnc/xncview.cfg
+fi
+
+tryview()  {
+  DONE=0
+  for one in $*
+    do
+      if [ $DEBUG = 1 ]; then echo "trying |$one|"; fi
+      if [ $DONE = 0 ]; then
+# below are IMAGE viewers
+      case "$one" in
+        xv)
+          for two in $X_XV `which xv`; do
+            if [ $DONE = 0 ]; then
+              if [ -x "$two" ]; then
+                if [ $DEBUG = 1 ]; then echo "will run $two"; fi
+                $two $P_XV "$FILE"
+                DONE=1
+              fi
+            fi
+          done
+        ;;
+        xview)
+          for two in $X_XVIEW `which xview`; do
+            if [ $DONE = 0 ]; then
+              if [ -x "$two" ]; then
+                if [ $DEBUG = 1 ]; then echo "will run $two"; fi
+                $two $P_XVIEW "$FILE"
+                DONE=1
+              fi
+            fi
+          done
+        ;;        
+        qiv)
+          for two in $X_QIV `which qiv`; do
+            if [ $DONE = 0 ]; then
+              if [ -x "$two" ]; then
+                if [ $DEBUG = 1 ]; then echo "will run $two"; fi              
+                $two $P_QIV "$FILE"
+                DONE=1
+              fi
+            fi
+          done
+        ;;
+        ee)
+          for two in $X_EE `which ee`; do
+            if [ $DONE = 0 ]; then
+              if [ -x "$two" ]; then
+                if [ $DEBUG = 1 ]; then echo "will run $two"; fi              
+                $two $P_EE "$FILE"
+                DONE=1
+              fi
+            fi
+          done
+        ;;
+# below are VIDEO players        
+        aviplay)
+          for two in $X_AVIPLAY `which aviplay`; do
+            if [ $DONE = 0 ]; then
+              if [ -x "$two" ]; then
+                if [ $DEBUG = 1 ]; then echo "will run $two"; fi              
+                $two $P_AVIPLAY "$FILE" >/dev/null
+                DONE=1
+              fi
+            fi
+          done
+        ;;
+        mtvp)
+          for two in $X_MTVP `which mtvp`; do
+            if [ $DONE = 0 ]; then
+              if [ -x "$two" ]; then
+                if [ $DEBUG = 1 ]; then echo "will run $two"; fi              
+                $two $P_MTVP "$FILE" >/dev/null
+                DONE=1
+              fi
+            fi
+          done
+        ;;
+        mplayer)
+          for two in $X_MPLAYER `which mplayer`; do
+            if [ $DONE = 0 ]; then
+              if [ -x "$two" ]; then
+                if [ $DEBUG = 1 ]; then echo "will run $two"; fi              
+                $two $P_MPLAYER "$FILE" >/dev/null
+                DONE=1
+              fi
+            fi
+          done
+        ;;
+# below are HTML viewers
+	galeon)
+          for two in $X_GALEON `which galeon`; do
+            if [ $DONE = 0 ]; then
+              if [ -x "$two" ]; then
+                if [ $DEBUG = 1 ]; then echo "will run $two"; fi              
+                $two "$FILE" >/dev/null
+                DONE=1
+              fi
+            fi
+          done
+        ;;
+	mozilla)
+          for two in $X_MOZILLA `which mozilla`; do
+            if [ $DONE = 0 ]; then
+              if [ -x "$two" ]; then
+                if [ $DEBUG = 1 ]; then echo "will run $two"; fi              
+                $two "$FILE" >/dev/null
+                DONE=1
+              fi
+            fi
+          done
+        ;;
+	netscape)
+          for two in $X_NETSCAPE `which netscape`; do
+            if [ $DONE = 0 ]; then
+              if [ -x "$two" ]; then
+                if [ $DEBUG = 1 ]; then echo "will run $two"; fi              
+                $two "$FILE" >/dev/null
+                DONE=1
+              fi
+            fi
+          done
+        ;;
+	opera)
+          for two in $X_OPERA `which opera`; do
+            if [ $DONE = 0 ]; then
+              if [ -x "$two" ]; then
+                if [ $DEBUG = 1 ]; then echo "will run $two"; fi              
+                $two $P_OPERA "$FILE" >/dev/null
+                DONE=1
+              fi
+            fi
+          done
+        ;;
+# below are AUDIO players - please FILL and send me !
+        mpg321)
+          for two in $X_MPG321 `which mpg321`; do
+            if [ $DONE = 0 ]; then
+              if [ -x "$two" ]; then
+                if [ $DEBUG = 1 ]; then echo "will run $two"; fi              
+                $two $P_MPG321 "$FILE" >/dev/null
+                DONE=1
+              fi
+            fi
+          done
+        ;;
+        mpg123)
+        ;;
+        freeamp)
+        ;;
+        xmms)
+        ;;
+        *)
+        echo "Warning: unknow view type!"
+        ;; 
+      esac
+      fi
+    done
+  if [ ! $DONE ]; then echo "Error: no view availabe"; fi
+}
+
+case "$EXT" in
+    gif | jpg | jpeg | png | tif | tiff | bmp | xpm | ppm )
+    tryview $O_IMAGE
+    ;;
+    avi | mpg | mpeg )
+    tryview $O_VIDEO
+    ;;
+    mp3 | ogg | wav | voc )
+    tryview $O_AUDIO
+    ;;
+    html | htm )
+    tryview $O_HTML
+    ;;
+    *)
+    echo "Error: unsupported file type" >&2
+    ;;
+esac
+
+exit 0

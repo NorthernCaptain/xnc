@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=XNC
+GenericName=X Northern Capatin - Graphical File Manager
+Exec=/usr/bin/xnc
+Icon=xnc
+MimeType=
+Path=
+ServiceTypes=
+SwallowExec=
+SwallowTitle=
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+

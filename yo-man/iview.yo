@@ -1,0 +1,35 @@
+manpage(iview)
+       (1)
+       (1995-2002)
+       (The XNC Package)
+       (View files by IVES)
+
+manpagename(vs)(View files by IVES)
+
+manpagesynopsis()
+    bf(iview) file
+
+manpagedescription()
+
+    This manual page describes the bf(iview) program - simple interface to
+    bf(ives). The bf(iview) can load files in bf(ives) viewer from 
+    command shell. bf(Ives) must be run before running bf(iview).
+
+
+manpagefiles()
+
+    The bf(iview) program requires no configuration files.
+
+manpageseealso()
+
+    bf(xnc), bf(ives), bf(iedit)
+
+manpagebugs()
+
+    There may be bugs in the bf(iview), but that's not very likely.
+	But if you'll find the bug then please, send complete description to
+	the author.
+
+manpageauthor()
+
+    Leonid Khramov (leo@xnc.dubna.su) Russia, St.Petersburg 2002

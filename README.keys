@@ -1,0 +1,84 @@
+There is file  for helping Your work in X Northern Captain
+
+Following keys are supported
+
+  in XNC:
+     
+     F1:  Remount current directory using information in /etc/mtab
+     Ctrl+F1: Choose from list device to mount
+     F2:  User Menu commands. You can add your own commands
+     F3:  View file in ASCII of HEX format. You can edit it in HEX format
+     F4:  Edit file in ASCII format
+     F5:  Copy files to opposite panel
+     F6:  Move or rename files
+     F7:  Create subdirectory
+     F8:  Delete files
+     F9:  Set/Reset file attributes
+     Shift+F9: Change Owner/Group
+     F10: Quit from XNC
+     F11: Kill running process
+     
+     Tab: Switch between panels
+     
+     'Enter': Execute file in foreground
+      Shift+Enter: Execute file in background
+      Ctrl+Enter: Place name of file to command line
+      Ctrl+Shift+Enter: Place full path of current dir to command line
+      
+      Ctrl+E or Shift+Up or Shift+Down: Rotate command history list
+      Ctrl+R: Refresh active panel
+      Ctrl+F: Find file
+      Ctrl+L: Show Free Disk Space
+      Ctrl+M: Show Memory Info
+      Ctrl+O, Esc: Switch between panels and VT.
+      Shift-Esc: Passes 'Esc' to VT.
+      Ctrl+Q: Quick ScanDir Info
+      
+      on Keypad:
+          '+' : Select files by mask
+          '-' : Deselect files by mask
+          '*' :  Invert selection
+       
+      Insert: Select/Deselect current file
+      
+  in IVES Viewer:
+
+      F2:  Save file after editing in HEX mode
+      F3:  Switch between ASCII/HEX modes
+      F6: Switch between Viewer windows 
+      F7:  Search string from current position in the file
+      F10 or Esc: Exit viewing
+      F11: Convert DOS russian files into KOI8 format.
+      
+      
+  in IVES Editor:
+       
+       F2: Save file
+       F3: Copy selected area of text to cutbuffer
+       F4: Paste text from cutbuffer to current line
+       F5: Cut selected text and place it in cutbuffer
+       F6: Switch between Editor windows 
+       Ctrl+Del: Delete selected text (Don't place in cutbuffer)
+       F7: Find string in the file
+       F8: Go to specified line number
+       F10 or Esc: Exit editing
+       F11: Convert DOS russian files into KOI8 format.
+       F12: Choose format. (KOI8/DOS)
+       
+       Ctrl+Y: Delete current line
+       
+       Shift+Arrows Select/Deselect text
+       Mode_switch:
+       Alt_R:   Switch between russian/english keyboards.
+
+  in IVES Image Viewer:
+
+      F6 or Tab: Switch between Image Viewer windows 
+      I: Show information about image
+      Esc: Exit viewing
+       
+This are all keys that supported by this version.
+                          Thank You.
+                          
+                          File created by Leo '96.
+                          

@@ -1,0 +1,116 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=koi8-r">
+   <meta name="Author" content="Leonid Khramov">
+   <meta name="GENERATOR" content="Mozilla/4.79 [en] (X11; U; Linux 2.4.18-3 i686) [Netscape]">
+   <meta name="Description" content="http://xnc.dubna.su">
+   <meta name="Keywords" content="xnc">
+   <title>X Northern Captain - Virtual File System</title>
+</head>
+<body text="#F0FFF0" bgcolor="#003366" link="#66FFFF" vlink="#FFCC99" alink="#FF6666">
+
+<center>
+<h3>
+<font color="#FFFF00">Virtual File System</font></h3></center>
+
+<table CELLSPACING=0 CELLPADDING=5 >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP><b><font size=-1>XNC Index:</font></b>
+<br><font size=-1><a href="index.html">Overview</a></font>
+<br><font size=-1><a href="doc8.html">Installation</a></font>
+<br><font size=-1><a href="doc1.html">Panels</a></font>
+<br><font size=-1><a href="doc2.html">Commands</a></font>
+<br><font size=-1><a href="doc4.html">VFS_support</a></font>
+<br><font size=-1><a href="doc5.html">Bookmark</a></font>
+<br><font size=-1><a href="doc6.html">Extensions</a></font>
+<br><font size=-1><a href="doc7.html">User Menu</a></font>
+<br><font size=-1><a href="doc3.html">Hot Keys</a></font></td>
+
+<td><b>X Northern Captain</b> based on <b>Virtual File System</b> (<b><font color="#FFFF99">VFS</font></b>)
+conception. The virtual file system, or VFS, is an abstraction that allows
+applications to access different types of file systems in a consistent
+fashion. This allows uniform access to files in the local file system,
+ftp sites, RPM packages, and compressed archives. You can easily manipulate
+files on normal disk, inside archives and ftp sessions to remote machines,
+and all operations on these files are transparent to the user.&nbsp;
+<br><b>Achive file system</b>, or <b><font color="#FFFF99">AFS</font></b>,
+is a part of VFS and it has supports for different types of arhives. These
+supports allow XNC to enter into archive or archive inside archive and
+to take a list of contents and to do other operations as with normal files
+(<font color="#FFFFFF">even execute from it</font><font color="#F0FFF0">)</font>.
+Of couse, not all operations supported inside archives, but such usefull
+ones as copy, view, delete, execute can be activated by pressing hot keys
+or via mouse actions.
+<br>AFS supports are not compiled into xnc itself, its a set of commands
+that placed into xnc configuration file '<b>~/.xnc/xnc.afs</b>' and you
+can easily add your on supports for any exotic archive you like.
+<br>If You enter into archive, XNC finds appropriate support for it and
+run program pointed in the support. So this program (archiver) must be
+installed before using support. After entering into archive abd reading
+list of contents from support xnc displays file list on the panel, and
+panel header shows assigned support, name of archieve and relative path
+from the top of it.
+<p>Currently XNC has following AFS supports:
+<br>Extensions given in brackets.&nbsp;
+<ul>
+<li>
+TAR [<font color="#FFFF99">.tar</font>]- execute 'tar' and allow 'copy
+from/to (extract/add)', 'view', 'execute' and 'edit' operations.</li>
+
+<li>
+TARGZ [<font color="#FFFF99">.tgz;.tar.gz;tar.Z;tar.z</font>]- execute
+'tar and gzip' and allow 'copy from', 'view' and 'execute' operations.</li>
+
+<li>
+ZIP [<font color="#FFFF99">.zip</font>] - execute 'zip and unzip' and allow
+'copy from/to', 'delete', 'view', 'edit' and 'execute' operations.</li>
+
+<li>
+RPM [<font color="#FFFF99">.rpm</font>] - execute 'rpm' and allow 'copy
+from', 'view', 'edit' and 'execute' operations.</li>
+
+<li>
+DEB [<font color="#FFFF99">.deb</font>] - execute 'deb-pkg' and allow 'copy
+from', 'view' and 'execute' operations.</li>
+
+<li>
+RAR [<font color="#FFFF99">.rar</font>] - execute 'rar' and allow 'copy
+from/to', 'delete', 'view', 'edit' and 'execute' operations.</li>
+
+<li>
+UNARJ [<font color="#FFFF99">.arj</font>] - execute 'unarj' and allow only
+full extract ('copy from' with all selected files) command.</li>
+
+<li>
+LHA [<font color="#FFFF99">.lzh;.lha</font>] - execute 'lha' and allow
+'copy from/to', 'delete', 'view', 'edit' and 'execute' operations.</li>
+</ul>
+<b><font color="#FFFF99">FTP</font></b> file system is another type of
+VFS&nbsp;in XNC, it allows you browse and manage remote directories via
+well-known <b>File Transfer Protocol</b>. FTP connection can be established
+by <font color="#FFFF99">ActivateFtpLink</font> command or by typing '<font color="#FFFF99">cd
+ftp://site</font>' string in command line. Also you can remember bookmark
+for your site and then go to the site by pressing on the bookmark button.
+<br>&nbsp;</td>
+</tr>
+
+<tr>
+<td>
+<center><font size=-1>XNC НОМЕ</font>
+<br><font size=-1><a href="http://xnc.dubna.su">xnc.dubna.su</a></font></center>
+</td>
+
+<td></td>
+</tr>
+</table>
+
+<div align=right><font size=-1>Author <a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">Leonid
+V. Khramov</a></font>
+<br><font size=-1><a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">leo@xnc.dubna.su</a></font>
+<br><font size=-1>St-Petersburg</font>
+<br><font size=-1>Russia</font>
+<br><font size=-1>1995-2002</font></div>
+
+</body>
+</html>

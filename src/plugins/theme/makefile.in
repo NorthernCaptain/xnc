@@ -1,0 +1,91 @@
+#  XNC -- a  filemanager for X Window
+#                                
+#  Copyright (C) 1996-99 by Leo Khramov
+#  email:             leo@xnc.dubna.su
+# 
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+
+include ../../../make.conf
+
+BASE_DIR = ../../..
+
+@MCOMMON@
+
+SIGCPPLIBS=`pkg-config --libs sigc++-1.2`
+SIGCPPINCS=`pkg-config --cflags sigc++-1.2`
+
+PLUGINFLAGS=$(SHAREFLAGS)
+
+           THEMEOBJS= \
+		../common/iplugin.o
+#		themeplugin.o \
+#		themegeom.o \
+#		themefuncs.o \
+#		themeskin.o \
+#		themegui.o \
+#		themepanel.o \
+#		xncinitheme.o \
+
+           THEMEMAIN= \
+		themeparse.o \
+		guistyle.o \
+		$(MYLIBDIR)/libxnctool.a
+
+           THEMEINC= \
+		-I$(BOOST_ROOT) \
+		$(SIGCPPINCS)
+
+           CXXINCLUDES= -I. \
+		-I$(MYSRCDIR)/lib/manage \
+		-I$(MYSRCDIR)/lib/xbitmaps \
+		-I$(MYSRCDIR)/lib/vfs \
+		-I$(MYSRCDIR)/lib/vfs/ftplib \
+		-I$(MYSRCDIR)/include/xnc \
+		-I$(MYSRCDIR)/au \
+		-I$(MYSRCDIR)/plugins/common \
+		$(XINC) $(THEMEINC)
+
+           CXXOPT=$(DEFS) -DOLD_STYLE $(CFLAGS) $(DEB)
+           CINCLUDES=-I. -I$(MYSRCDIR)/lib/manage
+
+all:: compile rctest
+
+compile:
+	make $(MYLIBDIR)/libxnctheme.so
+
+$(MYLIBDIR)/libxnctheme.so: $(THEMEOBJS)
+	$(CXX) -o $@ $(THEMEOBJS) -shared $(SHAREFLAGS) $(DEB) $(STRIPPING) $(LD_SHAREFLAGS) $(SIGCPPLIBS)
+
+rctest: $(THEMEMAIN)
+	$(CXX) -o $@ $(THEMEMAIN) $(DEB) $(STRIPPING) $(SIGCPPLIBS)
+
+clean:
+	$(RMF) *.o
+	$(RMF) ../common/*.o
+	$(RMF) $(MYLIBDIR)/libxnctheme.so
+
+FORCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+

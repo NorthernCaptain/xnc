@@ -1,0 +1,75 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=koi8-r">
+   <meta name="Author" content="Leonid Khramov">
+   <meta name="GENERATOR" content="Mozilla/4.79 [en] (X11; U; Linux 2.4.18-3 i686) [Netscape]">
+   <meta name="Description" content="http://xnc.dubna.su">
+   <meta name="Keywords" content="xnc">
+   <title>X Northern Captain - User menu</title>
+</head>
+<body text="#F0FFF0" bgcolor="#003366" link="#66FFFF" vlink="#FFCC99" alink="#FF6666">
+
+<center>
+<h3>
+<font color="#FFFF00">User menu</font></h3></center>
+
+<table CELLSPACING=0 CELLPADDING=5 >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP><b><font size=-1>XNC Index:</font></b>
+<br><font size=-1><a href="index.html">Overview</a></font>
+<br><font size=-1><a href="doc8.html">Installation</a></font>
+<br><font size=-1><a href="doc1.html">Panels</a></font>
+<br><font size=-1><a href="doc2.html">Commands</a></font>
+<br><font size=-1><a href="doc4.html">VFS_support</a></font>
+<br><font size=-1><a href="doc5.html">Bookmark</a></font>
+<br><font size=-1><a href="doc6.html">Extensions</a></font>
+<br><font size=-1><a href="doc7.html">User Menu</a></font>
+<br><font size=-1><a href="doc3.html">Hot Keys</a></font></td>
+
+<td><b>X Northern Captain</b> has User Menu, that allows store and execute
+User commands by pressing on menu items or associated hot key. XNC reads
+User menu file (~/.xnc/xnc.menu) at startup and then activates it and shows
+contents when 'Menu'[F2] key is pressed. After that user can choose menu
+item and activate it with mouse or by hot key.&nbsp;
+<br>User menu file is a simple text file where each line define user command,
+and hot key for it.&nbsp;
+<p>Format of the user menu string:
+<blockquote>#Comments begin with this sign
+<br>Hot_key: Menu Item Name: command
+<br>Hot_key: Menu Item Name: command %s
+<br>Hot_key: Menu Item Name: command %s/%s
+<br>Hot_key: Menu Item Name: command %p(PWName)</blockquote>
+where:
+<blockquote>Hot_key - any key that will be associated with command. For
+example: 'F3', 'x', 'Escape'.&nbsp;
+<br>command - one or more command(s) separated with spaces.&nbsp;
+<br>%s - Current file without path.&nbsp;
+<br>%s/%s - Current file with full path. Command runs in opposite (inactive)
+panel directory with full path filename from the current panel.&nbsp;
+<br>%p(PWName) - Shows Prompt Window with 'PWName' in Window title, waits
+input and then execute command with this input.&nbsp;</blockquote>
+To add/edit User menu file choose in upper menu 'Option' then 'Edit Menu
+file'. Remember, if you are using external editor then you need to restart
+xnc after the changes were made.&nbsp;</td>
+</tr>
+
+<tr>
+<td>
+<center><font size=-1>XNC НОМЕ</font>
+<br><font size=-1><a href="http://xnc.dubna.su">xnc.dubna.su</a></font></center>
+</td>
+
+<td></td>
+</tr>
+</table>
+
+<div align=right><font size=-1>Author <a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">Leonid
+V. Khramov</a></font>
+<br><font size=-1><a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">leo@xnc.dubna.su</a></font>
+<br><font size=-1>St-Petersburg</font>
+<br><font size=-1>Russia</font>
+<br><font size=-1>1995-2002</font></div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+#! /bin/sh
+#Clean directory structure and prepare
+#project for BINARY distribution.
+rm -rf ./other
+rm -rf ./ftplib/files
+rm -rf ./ftplib/pthreads
+rm -rf ./xnewmag
+rm -rf ./mai
+rm -rf ./rxvt2
+rm -rf ./xbitmaps
+rm -rf ./jpeg
+rm -rf ./image
+rm -rf ./au
+rm -f */*.o
+rm -f */*.old
+rm -f */*.out
+rm -f */*~
+rm -f */*.rej
+rm -f */*.orig
+rm -f */*.a
+rm -f */*.h
+rm -f */*.c
+rm -f */*.cxx
+rm -f */*.cache
+rm -f */*.log
+rm -f */*.before
+rm -f */*.status
+rm -f *.o
+rm -f *.old
+rm -f *.out
+rm -f *~
+rm -f *.rej
+rm -f *.orig
+rm -f *.a
+rm -f *.h
+rm -f *.cxx
+rm -f *.cache
+rm -f *.before
+rm -f *.status
+rm -f *.log
+rm -f */*.in
+rm -f ./*.in
+rm -f ./Make.common
+rm -f */*.mai
+rm -f ./*.mai
+rm -f ./configure
+rm -f ./newcomp
+rm -f ./ftplib/go
+rm -f ./ftplib/fls
+rm -f ./*.tar*
+
+
+
+

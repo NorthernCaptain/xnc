@@ -1,0 +1,35 @@
+manpage(iedit)
+       (1)
+       (1995-2002)
+       (The XNC Package)
+       (Edit by IVES)
+
+manpagename(es)(Edit files by IVES)
+
+manpagesynopsis()
+    bf(iedit) file
+
+manpagedescription()
+
+    This manual page describes the bf(iedit) program - simple interface to
+	bf(ives). The bf(iedit) can load files in bf(ives) editor from command shell.
+	bf(Ives) must be run before running bf(iedit).
+
+
+manpagefiles()
+
+    The bf(iedit) program requires no configuration files.
+
+manpageseealso()
+
+    bf(xnc), bf(ives), bf(iview)
+
+manpagebugs()
+
+    There may be bugs in the bf(iedit), but that's not very likely.
+	But if you'll find the bug then please, send complete description to
+	the author.
+
+manpageauthor()
+
+    Leonid Khramov (leo@xnc.dubna.su) Russia, St.Petersburg 2002

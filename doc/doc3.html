@@ -1,0 +1,291 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=koi8-r">
+   <meta name="Author" content="Leonid Khramov">
+   <meta name="GENERATOR" content="Mozilla/4.79 [en] (X11; U; Linux 2.4.18-3 i686) [Netscape]">
+   <meta name="Description" content="http://xnc.dubna.su">
+   <meta name="Keywords" content="xnc">
+   <title>X Northern Captain - Hot Keys</title>
+</head>
+<body text="#F0FFF0" bgcolor="#003366" link="#66FFFF" vlink="#FFCC99" alink="#FF6666">
+
+<center>
+<h3>
+<font color="#FFFF00">Hot Keys</font></h3></center>
+
+<table CELLSPACING=0 CELLPADDING=5 >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP><b><font size=-1>XNC Index:</font></b>
+<br><font size=-1><a href="index.html">Overview</a></font>
+<br><font size=-1><a href="doc8.html">Installation</a></font>
+<br><font size=-1><a href="doc1.html">Panels</a></font>
+<br><font size=-1><a href="doc2.html">Commands</a></font>
+<br><font size=-1><a href="doc4.html">VFS_support</a></font>
+<br><font size=-1><a href="doc5.html">Bookmark</a></font>
+<br><font size=-1><a href="doc6.html">Extensions</a></font>
+<br><font size=-1><a href="doc7.html">User Menu</a></font>
+<br><font size=-1><a href="doc3.html">Hot Keys</a></font></td>
+
+<td><b>X Northern Captain</b> has many hot keys for its actions and these
+hot keys can be easily redefined with 'xncsetup' program or manually by
+editing '~/.xnc/xnc.keys' file in HOME directory.&nbsp;
+<br>Each action can have up to three key combinations.&nbsp;
+<br>Format of the key definition is simple:&nbsp;
+<blockquote>Modifier+Key1;Modifier+Key2;Modifier+Key3;</blockquote>
+Where:
+<ul>
+<li>
+Modifier- Shift, Ctrl or Alt word which mean Shift or Control or Alt keys.
+This field can be empty (no modifier and no '+').&nbsp;</li>
+
+<li>
+Key - Key representation in X format but without 'XK_' prefix, like output
+from 'xev' program.&nbsp;</li>
+</ul>
+
+<p><br>Here is the default 'xnc.keys' file with full list of functions
+and keys definitions (for description of each function see <a href="doc2.html">commands
+page</a>):
+<ul>
+<li>
+MoveUp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: Up;&nbsp;</li>
+
+<li>
+MoveDown&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: Down;&nbsp;</li>
+
+<li>
+MoveLeft&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: Left;&nbsp;</li>
+
+<li>
+MoveRight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+Right;</li>
+
+<li>
+<i>#Here we define keys for 'execute;background execute;commandline insertion;'</i></li>
+
+<li>
+Execute&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: Return; Shift+Return; Ctrl+Return;&nbsp;</li>
+
+<li>
+ManualSelectFile&nbsp;&nbsp;&nbsp; : Insert;&nbsp;</li>
+
+<li>
+ManPage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: F1;&nbsp;</li>
+
+<li>
+UserMenu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: F2;&nbsp;</li>
+
+<li>
+ViewFile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: F3;&nbsp;</li>
+
+<li>
+EditFile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: F4;&nbsp;</li>
+
+<li>
+CopyFile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: F5;&nbsp;</li>
+
+<li>
+MoveFile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: F6;&nbsp;</li>
+
+<li>
+DelFile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: F8; Delete;&nbsp;</li>
+
+<li>
+SwitchPanels&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Tab;&nbsp;</li>
+
+<li>
+SwitchToTerm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+o;&nbsp;</li>
+
+<li>
+RereadDir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+Ctrl+r;&nbsp;</li>
+
+<li>
+AttributeFile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : F9;&nbsp;</li>
+
+<li>
+KillMenu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: F11;&nbsp;</li>
+
+<li>
+MakeDir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: F7;&nbsp;</li>
+
+<li>
+InvertMaskSelection : KP_Multiply;&nbsp;</li>
+
+<li>
+AddMaskSelection&nbsp;&nbsp;&nbsp; : KP_Add;&nbsp;</li>
+
+<li>
+DelMaskSelection&nbsp;&nbsp;&nbsp; : KP_Subtract;&nbsp;</li>
+
+<li>
+CmdLineCommandUp&nbsp;&nbsp;&nbsp; : Shift+Up; Ctrl+e;&nbsp;</li>
+
+<li>
+CmdLineCommandDown&nbsp; : Shift+Down;&nbsp;</li>
+
+<li>
+CmdLineCommandRight : Shift+Right;&nbsp;</li>
+
+<li>
+CmdLineCommandLeft&nbsp; : Shift+Left;&nbsp;</li>
+
+<li>
+FindFile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: Ctrl+f;&nbsp;</li>
+
+<li>
+QuickDir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: Ctrl+q;&nbsp;</li>
+
+<li>
+MemoryInfo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+m;&nbsp;</li>
+
+<li>
+Quit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: F10;&nbsp;</li>
+
+<li>
+Print&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: Ctrl+F9;&nbsp;</li>
+
+<li>
+SimpleView&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Shift+F3;&nbsp;</li>
+
+<li>
+RemountList&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+F1;&nbsp;</li>
+
+<li>
+RemountCurrent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Shift+F1;&nbsp;</li>
+
+<li>
+NewFileEdit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Shift+F4;&nbsp;</li>
+
+<li>
+DiskInfo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: Ctrl+l;&nbsp;</li>
+
+<li>
+AddtoBookMark&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+a;&nbsp;</li>
+
+<li>
+SwitchToBook1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+1;&nbsp;</li>
+
+<li>
+SwitchToBook2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+2;&nbsp;</li>
+
+<li>
+SwitchToBook3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+3;&nbsp;</li>
+
+<li>
+SwitchToBook4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+4;&nbsp;</li>
+
+<li>
+SwitchToBook5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+5;&nbsp;</li>
+
+<li>
+SwitchToBook6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+6;&nbsp;</li>
+
+<li>
+SwitchToBook7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+7;&nbsp;</li>
+
+<li>
+SwitchToBook8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+8;&nbsp;</li>
+
+<li>
+SwitchToBook9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+9;&nbsp;</li>
+
+<li>
+DelCurrentBook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+Delete;&nbsp;</li>
+
+<li>
+ChangeOwner&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Shift+F9;&nbsp;</li>
+
+<li>
+CleanAFScache&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+c;&nbsp;</li>
+
+<li>
+ActivateFtpLink&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+h;&nbsp;</li>
+
+<li>
+InsertLeftDir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+bracketleft;&nbsp;</li>
+
+<li>
+InsertRightDir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+bracketright;&nbsp;</li>
+
+<li>
+SelectFileMask&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Shift+KP_Add;&nbsp;</li>
+
+<li>
+DeselectFileMask&nbsp;&nbsp;&nbsp; : Shift+KP_Subtract;&nbsp;</li>
+
+<li>
+MoveCursorHome&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Home;&nbsp;</li>
+
+<li>
+MoveCursorEnd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : End;&nbsp;</li>
+
+<li>
+MoveCursorPageDown&nbsp; : Next;&nbsp;</li>
+
+<li>
+MoveCursorPageUp&nbsp;&nbsp;&nbsp; : Prior;&nbsp;</li>
+
+<li>
+InodeInfo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+Ctrl+i;&nbsp;</li>
+
+<li>
+QuickFileInfo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : KP_Insert; KP_Insert;&nbsp;</li>
+
+<li>
+SwapPanels&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+u;&nbsp;</li>
+
+<li>
+SetPanelToCurrent&nbsp;&nbsp; : Ctrl+j;&nbsp;</li>
+
+<li>
+CreateArchive&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+F5;&nbsp;</li>
+
+<li>
+BranchView&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Ctrl+b;&nbsp;</li>
+
+<li>
+RenameFile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Shift+F6;</li>
+</ul>
+&nbsp;</td>
+</tr>
+
+<tr>
+<td>
+<center><font size=-1>XNC НОМЕ</font>
+<br><font size=-1><a href="http://xnc.dubna.su">xnc.dubna.su</a></font></center>
+</td>
+
+<td></td>
+</tr>
+</table>
+
+<div align=right><font size=-1>Author <a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">Leonid
+V. Khramov</a></font>
+<br><font size=-1><a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">leo@xnc.dubna.su</a></font>
+<br><font size=-1>St-Petersburg</font>
+<br><font size=-1>Russia</font>
+<br><font size=-1>1995-2002</font></div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+#! /bin/sh
+#Clean directory structure and prepare
+#project for source distribution.
+rm -rf ./ftplib/files
+rm -rf ./xnewmag
+rm -rf ./mai
+rm -rf ./ftplib/ftplib-*
+rm -f *.spec
+rm -f */*.o
+rm -f */*/*.o
+rm -f */*/*.so
+rm -f */*.old
+rm -f */*.out
+rm -f */*~
+rm -f */*.rej
+rm -f */*.orig
+rm -f */*.a
+rm -f */*.cache
+rm -f */*.log
+rm -f */*.before
+rm -f */*.status
+rm -f *.o
+rm -f *.old
+rm -f *.out
+rm -f *.patch
+rm -f *~
+rm -f *.rej
+rm -f *.orig
+rm -f *.a
+rm -f *.cache
+rm -f *.before
+rm -f *.status
+rm -f *.log
+rm -f */?akefile
+rm -f ./jpeg/jconfig.h
+rm -f ?akefile
+rm -f ./config.h
+rm -f ./create.script
+rm -f ./Make.common
+rm -f ./make.conf
+rm -f ./findslave.xnc
+rm -f ./groups.xnc
+rm -f ./users.xnc
+rm -f ./nc
+rm -f ./ftplib/ftp.xnc
+rm -f ./ives/ives
+rm -f ./ives/iview
+rm -f ./ives/iedit
+rm -f ./xjroot/xjpegroot
+rm -f ./xsetup/xncsetup
+rm -f ./resloader/xncloader
+rm -f */*.mai
+rm -f ./*.mai
+rm -f ./ftplib/go
+rm -f ./ftplib/fls
+rm -f ./launch/xnlaunch
+rm -f ./*.tar*
+rm -f ./TAGS
+rm -f ./zips.xnc
+rm -f ./keynames.txt
+
+
+
+

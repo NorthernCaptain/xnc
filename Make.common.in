@@ -1,0 +1,87 @@
+# ./Make.common.in	 -*- Makefile -*-
+# Makefile common definisions for XNC Project
+# 
+XNCVERSION=@VERSION@
+FULLDIR = @BASE_DIR@
+srcdir = @srcdir@
+VPATH  = @srcdir@
+MYSRCDIR = $(BASE_DIR)/src
+MYBINDIR = $(BASE_DIR)/bin
+MYLIBDIR = $(BASE_DIR)/lib
+top_srcdir = $(BASE_DIR)
+top_builddir = $(top_srcdir)
+
+SHELL = /bin/sh
+
+# Installation target directories & other installation stuff
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+binprefix =
+manprefix =
+bindir = @bindir@
+mandir = @mandir@
+libdir = @libdir@
+manext = 1
+datadir = @datadir@
+localedir = $(datadir)/locale
+
+# Tools & program stuff
+CC = @CC@
+CXX = @CXX@
+CPP = @CPP@
+RM = @RM@
+RMF = @RM@ -f
+CP = @CP@
+CPF = @CP@ -f
+
+# Installers and install dirs
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL@ -m 755
+INSTALL_DATA = @INSTALL@ -m 644
+INSTALL_DIR=@INSTALL@ -d -m 755
+MKINSTALLDIRS=$(srcdir)/mkinstalldirs
+
+INSTDIR=$(bindir)
+INSTMAN=$(mandir)/man$(manext)
+INSTPLUG=$(libdir)/xnc
+INSTDOCDIR = ${prefix}/share/doc/xnc-$(XNCVERSION)
+INSTICONDIR = $(datadir)/pixmaps
+INSTDESKDIR1= $(datadir)/gnome/apps/Applications
+INSTDESKDIR2= $(datadir)/applnk/System
+INSTDESKDIR3= $(datadir)/applications
+# flags
+
+DEB=@DEB@
+STRIPPING=
+
+CFLAGS = @CFLAGS@ $(PLUGINFLAGS)
+CPPFLAGS = -I$(MYSRCDIR)/intl @CPPFLAGS@ #-DHAVE_LIBXPM
+LDFLAGS = @LDFLAGS@
+SHAREFLAGS = @SHAREFLAGS@
+LD_SHAREFLAGS= @LD_SHAREFLAGS@
+PLUGINS = @PLUGINS@
+PO_MAKE_DIR = @PO_MAKE_DIR@
+DEFS = -DLOCALEDIR=\"$(localedir)\" @DEFS@
+XLIBS=@X_PRE_LIBS@ @X_LIBS@ @X_EXTRA_LIBS@ -lX11 -lXext
+LIBS = @LIBINTL@ @LIBS@
+
+XINC=@X_CFLAGS@
+INCLUDES=\
+	-I$(BASE_DIR)/intl \
+	-I$(MYSRCDIR)/include \
+	-I$(MYSRCDIR)/lib/northgui \
+	-I$(MYSRCDIR)/lib/image2
+
+
+
+.SUFFIXES: .cxx .c
+
+.cxx.o:
+	$(CXX) -c $(CXXINCLUDES) $(INCLUDES) $(CXXOPT) $< -o $@
+
+.c.o:
+	$(CC) -c $(CFLAGS) $(CINCLUDES) $(INCLUDES) $(DEFS) $(DEB) $< -o $@
+
+##########################    End of Make.common  ############################
+
+

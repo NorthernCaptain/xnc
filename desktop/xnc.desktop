@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=XNC
+Comment=Graphical File manager, X Northern Captain
+Name[en_US.ISO8859-1]=X Northern Captain
+Comment[en_US.ISO8859-1]=Graphical File Manager
+Name[ru_RU.koi8r]=Северный капитан (XNC)
+Name[ru_RU.KOI8-R]=Северный капитан (XNC)
+Comment[ru_RU.koi8r]=Графический файл менеджер (XNC)
+Comment[ru_RU.KOI8-R]=Графический файл менеджер (XNC)
+Exec=xnc
+Icon=/usr/share/pixmaps/xnc.xpm
+Terminal=false
+MultipleArgs=true
+Type=Application

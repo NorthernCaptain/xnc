@@ -1,0 +1,13 @@
+#! /bin/sh
+
+list_contents ()
+{
+  echo `bzip2 -d -c $1 | wc -c` `zips.xnc $1 .bz2`
+}
+
+a=`pwd`
+case "$1" in
+  listing) list_contents $2; exit 0;;
+  copyout) bzip2 -c -d $2 $3 >$a/$3; exit 0;;
+  pack) cat $3 | bzip2 -c >$2; exit 0;;
+esac

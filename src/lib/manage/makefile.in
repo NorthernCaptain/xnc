@@ -1,0 +1,57 @@
+#  vfs library for xnc
+#                                
+#  Copyright (C) 2002 by Leo Khramov
+#  email:      leo@solvo.ru
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+
+include ../../../make.conf
+
+BASE_DIR = ../../..
+
+@MCOMMON@
+
+           IOBJS = \
+		baseguiplugin.o \
+		guiplugin.o \
+		iconman.o \
+		ivesclient.o \
+		mouse_actions.o \
+		pluginman.o \
+		xdndclass.o \
+		xshrloader.o
+
+           PROGRAM = $(MYLIBDIR)/libxncmanage.a
+
+           CXXINCLUDES=-I$(MYSRCDIR)/include/xnc \
+		-I$(MYSRCDIR)/lib/manage \
+		-I$(MYSRCDIR)/au \
+		-I$(MYSRCDIR)/lib/vfs \
+		-I$(MYSRCDIR)/lib/vfs/ftplib \
+		-I$(MYSRCDIR)/lib/xbitmaps \
+		$(XINC)
+           CXXOPT=$(DEFS) -DOLD_STYLE $(CFLAGS) $(DEB)
+	   CINCLUDES=$(CXXINCLUDES)
+
+all:: $(PROGRAM)
+
+compile: $(PROGRAM)
+
+$(PROGRAM): $(IOBJS)
+	$(RMF) $(PROGRAM)
+	ar rc $(PROGRAM) $(IOBJS)
+	@RANLIB@ $(PROGRAM)
+
+clean:
+	 $(RMF) $(IOBJS) $(PROGRAM)
+
+FORCE:

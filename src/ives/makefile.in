@@ -1,0 +1,107 @@
+#  XNC -- a  filemanager for X Window
+#                                
+#  Copyright (C) 1996-99 by Leo Khramov
+#  email:             leo@xnc.dubna.su
+# 
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+
+include ../../make.conf
+
+BASE_DIR = ../..
+
+@MCOMMON@
+
+
+           IVESOBJS= \
+		editor.o \
+		viewer.o \
+		ives.o \
+		ivesserver.o \
+		dummyfuncs.o \
+		imview.o \
+		xh_ives.o \
+                ../au/au.o \
+                ../au/au_lex.o \
+                ../au/au_tree.o \
+                ../au/key.o
+
+           IVESLIBS= \
+		$(MYLIBDIR)/libie.a \
+		$(MYLIBDIR)/libxncbitmaps.a \
+		$(MYLIBDIR)/libxnctool.a \
+		$(MYLIBDIR)/libnorthgui.a
+
+           CXXINCLUDES= -I. \
+		-I$(MYSRCDIR)/lib/manage \
+		-I$(MYSRCDIR)/lib/xbitmaps \
+		-I$(MYSRCDIR)/au \
+		$(XINC)
+
+           CXXOPT=$(DEFS) -DOLD_STYLE $(CFLAGS) $(DEB)
+           LOCAL_LIBRARIES=$(PNGLIB) $(ZLIB) $(TLIB) $(XLIBS) $(LIBS)
+           CINCLUDES=-I. -I$(MYSRCDIR)/lib/manage $(XINC)
+
+all:: compile
+
+compile:
+	make $(MYBINDIR)/iview
+	make $(MYBINDIR)/iedit
+	make $(MYBINDIR)/ives
+
+$(MYBINDIR)/ives: $(IVESOBJS) $(IVESLIBS) $(JDEP) $(PNGDEP) $(ZDEP)
+	$(CXX) $(LDFLAGS) -o $@ $(IVESOBJS) $(IVESLIBS) $(LOCAL_LIBRARIES) $(JLIB) \
+	$(DEB) $(STRIPPING)
+
+$(MYBINDIR)/iview: vs.o
+	$(CXX) $(LDFLAGS) -o $@ vs.o $(MYLIBDIR)/libnorthgui.a $(LIBS) $(XLIBS) \
+	$(DEB) $(STRIPPING)
+
+$(MYBINDIR)/iedit: es.o
+	$(CXX) $(LDFLAGS) -o $@ es.o $(MYLIBDIR)/libnorthgui.a $(LIBS) $(XLIBS) \
+	$(DEB) $(STRIPPING)
+
+
+$(JDEP):
+	cd $(MYSRCDIR)/lib/jpeg && make
+
+$(PNGDEP):
+	cd $(MYSRCDIR)/lib/libpng && make
+
+$(ZDEP):
+	cd $(MYSRCDIR)/lib/zlib && make
+
+clean:
+	$(RMF) *.o
+	$(RMF) $(MYBINDIR)/ives
+	$(RMF) $(MYBINDIR)/iedit
+	$(RMF) $(MYBINDIR)/iview
+
+fast:
+	$(RMF) *.o
+	make compile
+
+FORCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+

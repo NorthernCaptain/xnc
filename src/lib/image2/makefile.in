@@ -1,0 +1,82 @@
+#  Image Engine for X Window
+#                                
+#  Copyright (C) 1996 by Leo Khramov
+#  email:      leo@xnc.dubna.su
+#  (c) Leo Khramov 2002
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+
+include ../../../make.conf
+
+BASE_DIR = ../../..
+
+@MCOMMON@
+
+           IOBJS = \
+		image.o \
+		convert.o \
+		accel.o \
+		libpcd/file.o \
+		libpcd/huff.o \
+		libpcd/inter.o \
+		libpcd/pcdr.o \
+		libpcd/yuv2rgb.o \
+		sdl_image/SDL_surface.o \
+		sdl_image/SDL_rwops.o \
+		sdl_image/SDL_error.o \
+		sdl_image/SDL_endian.o \
+		sdl_image/SDL_to_picinfo.o \
+		sdl_image/SDL_bmp.o \
+		sdl_image/IMG_gif.o \
+		sdl_image/IMG_jpg.o \
+		sdl_image/IMG_xpm.o \
+		sdl_image/IMG_pcx.o \
+		sdl_image/IMG_tga.o \
+		sdl_image/IMG_lbm.o \
+		sdl_image/IMG_png.o \
+		sdl_image/IMG_tif.o
+
+
+           CXXINCLUDES=$(XINC) $(JINC) -I$(MYSRCDIR)/lib/manage
+           CXXOPT=$(JPGDEFINE) \
+		$(PNGDEFINE) \
+		$(TIFFDEFINE) \
+		-I. -I./sdl_image \
+		$(CFLAGS) $(DEFS) $(DEB) \
+		$(XINC) $(JINC) $(PNGINC) $(TIFFINC) 
+           CINCLUDES=$(CXXOPT) $(CPPFLAGS)
+
+
+all:: compile
+
+compile: $(MYLIBDIR)/libie.a $(PNGDEP) $(ZDEP)
+
+$(ZDEP):
+	cd ../zlib && make
+
+$(PNGDEP):
+	cd ../libpng && make
+
+$(MYLIBDIR)/libie.a: $(IOBJS)
+	$(RMF) $@
+	ar rc $@ $(IOBJS)
+	@RANLIB@ $@
+
+clean:
+	 $(RMF) $(MYLIBDIR)/libie.a
+	 $(RMF) *.o
+	 $(RMF) libpcd/*.o
+	 $(RMF) sdl_image/*.o
+
+FORCE:
+
+

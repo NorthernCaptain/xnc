@@ -1,0 +1,57 @@
+#This is Extension file for X Northern Captain...
+#Usage:   .extension:   command  %s  or %s/%s
+#   %s           means filename
+#   %s/%s    means path/filename
+.au: showaudio %s
+.gif: xv %s             #View GIF picture
+.gif: xanim %s       #For animated GIFs
+.bmp: xv %s             #View BMP picture
+.jpg: xv %s             #View JPG picture
+.pcx: xv %s             #View PCX picture
+.tif: xv %s             #View TIF picture
+.GIF: xv %s             #View GIF picture
+.BMP: xv %s             #View BMP picture
+.JPG: xv %s             #View JPG picture
+.jpeg: xv %s             #View JPG picture
+.PCX: xv %s             #View PCX picture
+.tif: xv %s             #View TIF picture
+.ppm: xv %s             #View PPM picture
+.xpm: xv %s             #View PPM picture
+.pcd: xpcd %s
+.tgz: tar zvtf %s       #List archive
+.tgz: tar zxvf %s/%s    #Unpack to the opposite panel
+.tgz: tar zxvf %s       #Unpack to the same panel
+.tar.gz: tar ztvf %s       #List archive
+.tar.Z: tar ztvf %s       #List archive
+.taz: tar ztvf %s       #List archive
+.tar.gz: tar zxvf %s/%s    #Unpack to the opposite panel
+.tar.gz: tar zxvf %s       #Unpack to the same panel
+.tar.Z: tar zxvf %s/%s    #Unpack to the opposite panel
+.tar.Z: tar zxvf %s       #Unpack to the same panel
+.taz: tar zxvf %s/%s    #Unpack to the opposite panel
+.taz: tar zxvf %s       #Unpack to the same panel
+.z: gunzip -d %s
+.Z: gunzip -d %s
+.arj: unarj %s          #List archive
+.arj: unarj e %s        #Uncompress
+.arj: unarj x %s        #Uncompress with subdirs
+.rar: rar v %s        #List archive
+.rar: rar e %s        #Uncompress
+.rar: rar x %s        #Uncompress with subdirs
+.wav: vplay %s          #Play WAVE file
+.wav: xanim %s          #Play WAVE file
+.mod: tracker %s        #Play sound MODule
+.mod: mikmod  %s       #Play sound MODule in bg
+.xm: mikmod  %s 
+.s3m: mikmod  %s 
+.S3M: mikmod  %s 
+.stm: mikmod  %s 
+.xbm: bitmap %s
+.html: netscape %s &
+.net: textedit %s &
+.doc: vs %s
+.mp3: x11amp %s &
+.mpg: mtvp %s &
+.ps: ghostview %s &
+.c: gcc %s -I.
+#End of file

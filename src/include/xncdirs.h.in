@@ -1,0 +1,6 @@
+#ifndef XNCDIRS_H
+#define XNCDIRS_H
+
+#define XNCLIBS  "@prefix@/lib/xnc"
+
+#endif

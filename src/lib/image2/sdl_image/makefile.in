@@ -1,0 +1,46 @@
+#  Image Engine for X Window
+#                                
+#  Copyright (C) 1996 by Leo Khramov
+#  email:      leo@pop.convey.ru
+#  Fido:       2:5030/627.15
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+
+include ../../make.conf
+
+BASE_DIR = ../../../..
+
+@MCOMMON@
+
+.SUFFIXES: .c
+
+.c.o:
+	$(CC) -c $(CXXOPT) $(CPPFLAGS) -o $@ $<
+
+           IOBJS = \
+		SDL_surface.o \
+		SDL_rwops.o \
+		SDL_error.o \
+		SDL_to_picinfo.o \
+		IMG_gif.o
+
+           CXXOPT=-I. -I./.. -I../.. -I../../include $(CFLAGS) $(DEFS) $(DEB) 
+
+
+all:: $(IOBJS)
+
+clean:
+	 $(RM) *.o
+
+FORCE:
+
+

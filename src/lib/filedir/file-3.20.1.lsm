@@ -1,0 +1,20 @@
+Begin3
+Title:          file(1): C sources
+Version:        3.20.1
+Entered-date:   29JUL96
+Description:    These are the sources to Darwin's file(1) utility and master
+                magic(4) file, now maintained by Christos Zoulas. The file(1)
+                utility is used to determine the types of various files;
+                file prints a one-line summary for each argument it is given.
+Keywords:       /etc/magic file identify magic /usr/bin/file source
+Author:         ian@sq.com (Ian F. Darwin)
+Maintained-by:  acahalan@cs.uml.edu (Albert Cahalan)
+                christos@ee.cornell.edu (Christos Zoulas)
+                moraes@deshaw.com (Mark Moraes)
+Primary-site:   sunsite.unc.edu pub/Linux/utils/file
+                70kB file-3.20.1.tgz
+Alternate-site: tsx-11.mit.edu
+Original-site:  ftp.deshaw.com /pub/file
+Platforms:      Linux
+Copying-policy: Free and copyrighted
+End

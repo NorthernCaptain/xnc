@@ -1,0 +1,64 @@
+
+                        ****        X Northern Captain v5.0.0   ****
+                                          
+                         >>>         http://xnc.dubna.su    <<<
+                          
+        
+X Window file-manager for Linux, FreeBSD, Solaris, AIX and HP-UX systems.
+Two panels show highlighted directory listings and give easy and
+simple way for manipulating files on disks or inside archives with
+Virtual File System. Built in Rxvt terminal to run programs; Bookmark
+for storing HotDirectories and quick changing its; Drag and Drop
+protocol for file operations; MultiWindow Viewing and Editing system
+with various image formats; User menus and file associations;
+Different panel layouts, icons, keys and colors configuration
+make XNC very useful tool.....
+
+Currently XNC Virtual filesystem supports various operations with
+following archives: TAR, TARGZ, TARBZ, GZIP, BZIP2, RPM, DEB, RAR, LHA, ZIP, ARJ.
+To add your favorite archivator just edit xnc.afs file and no changes
+or recompilation of XNC at all, just restart it and you are inside...
+You can easily browse through archives, run programs from its,
+copy to/from, delete inside its, edit and update files.
+Archives inside archives supproted as well with all operations
+described above.
+
+Whats New from verion 4.4.7 (28-Mar-2002):
+        -Added localization support. 
+         XNC translated into :
+            - Russian
+            - Polush
+            - Portugese
+            - French
+         Volunteers for other languages wanted!
+        -Added context menu for file manipulation.
+         Use middle mouse button for pop up it or redifine in configuration.
+        -Added mouse actions. Define your own combinations for mouse
+         buttons + modificators for xnc actions. Use configuration for that.
+        -Added format definition of display modes (full, brief, custom)
+        -Added third panel mode - custom mode
+        -Added command line history menu
+        -Added full support of XDnd v3 (Drag and Drop). Now xnc can do dnd
+         with KDE and GNOME apps.
+        -Added iconsets for menu and files (KDE, GNOME, Windows, XNC, Aqua).
+        -XNC and xterminal now in one solid window.
+        -Added Ctrl-U - swap panels command.
+        -Added Ctrl-J - duplicate panel command.
+        -Added branch view mode for viewing files inside subdirectores
+         on the panel (Ctrl+B).
+        -Add archive creation from panels for TAR,ZIP,RAR,LHA,GZ,BZ2.
+         Use context menu or Ctrl+F5.
+        -Bookmarks now work in terminal mode too (Crtl+1,2,3..).
+
+Visit our site for details, screen shots, downloads.....
+
+                        http://xnc.dubna.su
+                        
+X Northern Captain distributes under GNU General Public License and free
+for everyone.
+
+------
+Leonid Khramov aka Leo,
+Author and maintainer of X Northern Captain
+<leo@xnc.dubna.su> St.Petersburg, Russia.
+

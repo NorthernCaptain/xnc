@@ -1,0 +1,22 @@
+This is first version of XJPEGroot.
+
+A simple program for installing images to Your root window.
+
+XJPEGroot support two image formats: JPEG and GIF.
+
+XJPEGroot has two options:
+   
+    xjpegroot -t file.jpg         Tiling image 'file.jpg' on root window
+    
+    xjpegroot -c file.jpg         Place image 'file.jpg' in the center of root window
+    
+XJPEGroot automaticaly detect type of file, so filename can have any name
+even without '.jpg' or '.gif' extensions.
+
+PS: XJPEGroot work only on TrueColor Visuals. Other Visuals will be available
+       in next version. Sorry!
+       
+       
+       
+           (c) Copyright by Leo 1996-97.    (old@sunct2.jinr.dubna.su)
+

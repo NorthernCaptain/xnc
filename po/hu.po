@@ -1,0 +1,2122 @@
+# Hungarian Translation for XNC
+# This file is put in the public domain.
+# Creepy <catlipoc@freemail.hu>.
+#  160á;130é - á;é
+msgid ""
+msgstr ""
+"Project-Id-Version: xnc 5.0.0\n"
+"POT-Creation-Date: 2003-11-27 18:28+0300\n"
+"PO-Revision-Date: 2002-10-05 18:47+0400\n"
+"Last-Translator: Creepy <catlipoc@freemail.hu>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/ives/editor.cxx:308 src/ives/ives.cxx:1011 src/ives/viewer.cxx:85
+#: src/ives/viewer.cxx:136 src/config_window.cxx:472 src/query_windows.cxx:392
+#: src/query_windows.cxx:568 src/query_windows.cxx:843
+#: src/query_windows.cxx:919 src/query_windows.cxx:1424
+#: src/query_windows.cxx:1791 src/query_windows.cxx:1868
+#: src/query_windows.cxx:1914 src/query_windows.cxx:2170
+msgid "OK"
+msgstr "OK"
+
+#: src/ives/editor.cxx:309 src/ives/editor.cxx:371 src/ives/editor.cxx:424
+#: src/ives/editor.cxx:428 src/ives/viewer.cxx:86 src/config_window.cxx:473
+#: src/query_windows.cxx:161 src/query_windows.cxx:200
+#: src/query_windows.cxx:569 src/query_windows.cxx:645
+#: src/query_windows.cxx:844 src/query_windows.cxx:920
+#: src/query_windows.cxx:1205 src/query_windows.cxx:1425
+#: src/query_windows.cxx:1560 src/query_windows.cxx:1792
+#: src/query_windows.cxx:1869 src/query_windows.cxx:2081
+#: src/query_windows.cxx:2171
+msgid "Cancel"
+msgstr "Mégse"
+
+#: src/ives/editor.cxx:369 src/ives/editor.cxx:370 src/ives/ives.cxx:626
+#: src/ives/viewer.cxx:408 src/find.cxx:308
+msgid "Find"
+msgstr ""
+
+#: src/ives/editor.cxx:373
+msgid "Text to find:"
+msgstr ""
+
+#: src/ives/editor.cxx:374
+msgid "Entire scope"
+msgstr ""
+
+#: src/ives/editor.cxx:375
+msgid "Backwards"
+msgstr ""
+
+#: src/ives/editor.cxx:415
+msgid "Save and Exit"
+msgstr ""
+
+#: src/ives/editor.cxx:417 src/ives/editor.cxx:422 src/ives/editor.cxx:427
+#: src/xsetup/setup.cxx:125 src/xsetup/setup.cxx:152
+msgid "Save"
+msgstr ""
+
+#: src/ives/editor.cxx:418
+msgid "DOS text format"
+msgstr ""
+
+#: src/ives/editor.cxx:419
+msgid "KOI8 -> Any RUS"
+msgstr ""
+
+#: src/ives/editor.cxx:423 src/xsetup/setup.cxx:153
+msgid "Don't save"
+msgstr ""
+
+#: src/ives/editor.cxx:432
+msgid "Save as"
+msgstr ""
+
+#: src/ives/editor.cxx:640 src/ives/editor.cxx:1123 src/ives/editor.cxx:1126
+#: src/ives/editor.cxx:1152 src/ives/editor.cxx:2112 src/ives/viewer.cxx:791
+#: src/ives/viewer.cxx:820 src/base_cap.cxx:973 src/base_cap.cxx:1115
+#: src/base_cap.cxx:1245 src/base_cap.cxx:1276 src/base_cap.cxx:1377
+#: src/base_cap.cxx:1496 src/base_cap.cxx:1502 src/base_cap.cxx:1508
+#: src/main.cxx:105 src/query_windows.cxx:1396 src/query_windows.cxx:1401
+#: src/query_windows.cxx:1406 src/query_windows.cxx:2039
+#: src/lib/vfs/afs.cxx:1481 src/lib/vfs/afs.cxx:1488
+msgid "Error"
+msgstr "Hiba"
+
+#: src/ives/editor.cxx:640
+msgid "TAGS file not found..."
+msgstr ""
+
+#: src/ives/editor.cxx:1099 src/ives/ives.cxx:652 src/ives/viewer.cxx:412
+msgid "Go to line..."
+msgstr ""
+
+#: src/ives/editor.cxx:1099 src/ives/ives.cxx:652 src/ives/viewer.cxx:412
+msgid "Line number:"
+msgstr ""
+
+#: src/ives/editor.cxx:1105
+msgid "ETags-Find"
+msgstr ""
+
+#: src/ives/editor.cxx:1105
+msgid "String to find:"
+msgstr ""
+
+#: src/ives/editor.cxx:1111
+#, fuzzy
+msgid "ETAGS file"
+msgstr "File szerkesztése"
+
+#: src/ives/editor.cxx:1111
+msgid "Enter tags file:"
+msgstr ""
+
+#: src/ives/editor.cxx:1123
+msgid "Not a Emacs TAGS file!"
+msgstr ""
+
+#: src/ives/editor.cxx:1126
+msgid "Etags fatal..."
+msgstr ""
+
+#: src/ives/editor.cxx:1133 src/base_cap.cxx:914
+msgid "Sorry!"
+msgstr "Bocsi!"
+
+#: src/ives/editor.cxx:1133
+msgid "Token not found..."
+msgstr ""
+
+#: src/ives/editor.cxx:1152
+msgid "Wrong line number"
+msgstr ""
+
+#: src/ives/editor.cxx:2007
+msgid "FATAL Error!"
+msgstr ""
+
+#: src/ives/editor.cxx:2007 src/ives/viewer.cxx:738
+msgid "Error loading file..."
+msgstr ""
+
+#: src/ives/editor.cxx:2047
+#, fuzzy
+msgid "Error!"
+msgstr "Hiba"
+
+#: src/ives/editor.cxx:2047
+msgid "Maximum lines exeeded!"
+msgstr ""
+
+#: src/ives/editor.cxx:2057
+#, fuzzy
+msgid "FATAL Error"
+msgstr "Hiba"
+
+#: src/ives/editor.cxx:2057
+msgid "Error loading file!"
+msgstr ""
+
+#: src/ives/editor.cxx:2112
+msgid "Error saving file!"
+msgstr ""
+
+#: src/ives/editor.cxx:2126 src/ives/editor.cxx:2149 src/ives/editor.cxx:2185
+#: src/ives/editor.cxx:2233
+msgid "Warning!"
+msgstr ""
+
+#: src/ives/editor.cxx:2126
+msgid "Symbol not a bracket!"
+msgstr ""
+
+#: src/ives/editor.cxx:2149 src/ives/editor.cxx:2185
+msgid "Another bracket not found!"
+msgstr ""
+
+#: src/ives/editor.cxx:2233
+msgid "String not found"
+msgstr ""
+
+#: src/ives/ives.cxx:72
+msgid "Choose File"
+msgstr ""
+
+#: src/ives/ives.cxx:104
+msgid "Fast (Floyd Dithering)"
+msgstr ""
+
+#: src/ives/ives.cxx:105
+msgid "Slow method"
+msgstr ""
+
+#: src/ives/ives.cxx:106
+msgid "Best (PPM method)"
+msgstr ""
+
+#: src/ives/ives.cxx:182 src/ives/ives.cxx:191
+msgid "2.Save"
+msgstr ""
+
+#: src/ives/ives.cxx:183
+msgid "3.Hex/Ascii"
+msgstr ""
+
+#: src/ives/ives.cxx:184
+msgid "7.Search"
+msgstr ""
+
+#: src/ives/ives.cxx:185 src/ives/ives.cxx:197
+msgid "8.Go to"
+msgstr ""
+
+#: src/ives/ives.cxx:186 src/ives/ives.cxx:199
+msgid "11.DOSr"
+msgstr ""
+
+#: src/ives/ives.cxx:187 src/ives/ives.cxx:200
+msgid "12.WINr"
+msgstr ""
+
+#: src/ives/ives.cxx:188 src/ives/ives.cxx:201
+msgid "-10.Quit"
+msgstr ""
+
+#: src/ives/ives.cxx:192
+msgid "3.Copy"
+msgstr ""
+
+#: src/ives/ives.cxx:193
+msgid "4.Paste"
+msgstr ""
+
+#: src/ives/ives.cxx:194
+msgid "5.Cut"
+msgstr ""
+
+#: src/ives/ives.cxx:195
+msgid "6.Next"
+msgstr ""
+
+#: src/ives/ives.cxx:196
+msgid "7.Find"
+msgstr ""
+
+#: src/ives/ives.cxx:198
+msgid "9.Del"
+msgstr ""
+
+#: src/ives/ives.cxx:300
+#, c-format
+msgid "%s: IVES Editor %d-%s"
+msgstr ""
+
+#: src/ives/ives.cxx:346
+#, c-format
+msgid "%s: IVES Viewer %d-%s"
+msgstr ""
+
+#: src/ives/ives.cxx:366
+#, c-format
+msgid "%s: IVES Image Viewer %d-%s"
+msgstr ""
+
+#: src/ives/ives.cxx:367
+msgid "Loading "
+msgstr "Betöltés"
+
+#: src/ives/ives.cxx:369
+msgid "GIF Image...."
+msgstr "GIF kép...."
+
+#: src/ives/ives.cxx:370
+msgid "JPEG Image...."
+msgstr "JPEG kép..."
+
+#: src/ives/ives.cxx:371
+msgid "PCX Image...."
+msgstr ""
+
+#: src/ives/ives.cxx:372
+msgid "TIFF Image...."
+msgstr ""
+
+#: src/ives/ives.cxx:373
+msgid "XBM Image...."
+msgstr ""
+
+#: src/ives/ives.cxx:374
+msgid "XPM Image...."
+msgstr ""
+
+#: src/ives/ives.cxx:375
+msgid "BMP Image...."
+msgstr ""
+
+#: src/ives/ives.cxx:376
+msgid "Photo CD...."
+msgstr ""
+
+#: src/ives/ives.cxx:377
+msgid "PNG Image...."
+msgstr ""
+
+#: src/ives/ives.cxx:452 src/ives/ives.cxx:1156 src/panel_metacall.cxx:137
+#: src/menu_process.cxx:268
+msgid "Edit file"
+msgstr "File szerkesztése"
+
+#: src/ives/ives.cxx:457 src/ives/ives.cxx:1157 src/panel_metacall.cxx:134
+#: src/menu_process.cxx:267
+msgid "View file"
+msgstr "File nézese"
+
+#: src/ives/ives.cxx:619 src/ives/viewer.cxx:402
+msgid "Save file"
+msgstr ""
+
+#: src/ives/ives.cxx:619 src/ives/viewer.cxx:402
+msgid "Save as:"
+msgstr ""
+
+#: src/ives/ives.cxx:626 src/ives/viewer.cxx:408
+msgid "Find text:"
+msgstr ""
+
+#: src/ives/ives.cxx:650 src/ives/viewer.cxx:411
+msgid "Go to offset..."
+msgstr ""
+
+#: src/ives/ives.cxx:650 src/ives/viewer.cxx:411
+msgid "Hex offset:"
+msgstr ""
+
+#: src/ives/ives.cxx:834
+#, c-format
+msgid "Viewers:  %d"
+msgstr ""
+
+#: src/ives/ives.cxx:836
+#, c-format
+msgid "Editors:  %d"
+msgstr ""
+
+#: src/ives/ives.cxx:1010
+msgid "IVES Options"
+msgstr ""
+
+#: src/ives/ives.cxx:1012
+msgid "Image 24->8 convertion"
+msgstr ""
+
+#: src/ives/ives.cxx:1013
+msgid "Photo CD resolution"
+msgstr ""
+
+#: src/ives/ives.cxx:1081
+msgid "Another IVES already running\n"
+msgstr ""
+
+#: src/ives/ives.cxx:1129
+msgid "Loading..."
+msgstr ""
+
+#: src/ives/ives.cxx:1154 src/xsetup/setup.cxx:124
+msgid "Exit"
+msgstr ""
+
+#: src/ives/ives.cxx:1155 src/menu_process.cxx:300
+msgid "Options"
+msgstr "Beálliitások"
+
+#: src/ives/viewer.cxx:699
+#, c-format
+msgid "Size: %d"
+msgstr ""
+
+#: src/ives/viewer.cxx:738
+msgid "FATAL ERROR!"
+msgstr ""
+
+#: src/ives/viewer.cxx:750
+msgid "FATAL ERROR"
+msgstr ""
+
+#: src/ives/viewer.cxx:750
+msgid "Permission denied"
+msgstr ""
+
+#: src/ives/viewer.cxx:791
+#, fuzzy
+msgid "Can't save this file"
+msgstr "Nem válthatsz ebbe a könyvtárba"
+
+#: src/ives/viewer.cxx:820
+msgid "Wrong line number!"
+msgstr ""
+
+#: src/ives/viewer.cxx:922
+msgid "Warning"
+msgstr ""
+
+#: src/ives/viewer.cxx:922
+msgid "String not found!"
+msgstr ""
+
+#: src/base_cap.cxx:519 src/cmdline.cxx:135
+msgid "Enter your password"
+msgstr "Jelszó beírása"
+
+#: src/base_cap.cxx:540 src/base_cap.cxx:591 src/base_cap.cxx:2029
+msgid "Can't change to dir"
+msgstr "Nem válthatsz ebbe a könyvtárba"
+
+#: src/base_cap.cxx:867
+msgid "Information"
+msgstr "Információ"
+
+#: src/base_cap.cxx:867
+msgid "No files match given criteria."
+msgstr "Nincs ilyen file"
+
+#: src/base_cap.cxx:914
+msgid "Current FileName has no extension!"
+msgstr "Ennek a filenévnek nincs kiterjesztése!"
+
+#: src/base_cap.cxx:973
+msgid "Can't DELETE on this VFS"
+msgstr "Ezen a VFS-en nem törölhetsz"
+
+#: src/base_cap.cxx:976
+msgid "Deleting..."
+msgstr "Törlés..."
+
+#: src/base_cap.cxx:985 src/menu_process.cxx:273
+msgid "Delete file"
+msgstr "File törlése"
+
+#: src/base_cap.cxx:1045
+msgid "Delete files"
+msgstr "Fileok törlése"
+
+#: src/base_cap.cxx:1078 src/base_cap.cxx:1118
+msgid "Copying..."
+msgstr "Másolás..."
+
+#: src/base_cap.cxx:1079
+msgid "Full Unpack"
+msgstr "Teljes kitömörítés"
+
+#: src/base_cap.cxx:1115
+msgid "Can't COPY on this VFS"
+msgstr "Nem másolhatsz erre a VFS-re"
+
+#: src/base_cap.cxx:1127 src/base_cap.cxx:1387
+msgid "Pocket operation"
+msgstr ""
+
+#: src/base_cap.cxx:1160 src/panel.cxx:1455 src/panel.cxx:1526
+#: src/lib/vfs/ftpfs.cxx:1740 src/lib/vfs/ftpfs.cxx:1759
+#: src/lib/vfs/ftpfs.cxx:1843 src/lib/vfs/ftpfs.cxx:1929
+#: src/lib/vfs/ftpfs.cxx:1980 src/lib/vfs/afs.cxx:312 src/lib/vfs/afs.cxx:377
+#: src/lib/vfs/afs.cxx:560 src/lib/vfs/dfs.cxx:498 src/lib/vfs/dfs.cxx:550
+#: src/menu_process.cxx:269
+msgid "Copy file"
+msgstr "File másolása"
+
+#: src/base_cap.cxx:1198
+msgid "Copy files"
+msgstr "Fileok másolása"
+
+#: src/base_cap.cxx:1230
+msgid "Moving..."
+msgstr "Áthelyezés..."
+
+#: src/base_cap.cxx:1245 src/base_cap.cxx:1276
+msgid "Can't MOVE on this VFS"
+msgstr "Nem helyezhetsz át ezen a VFS-en"
+
+#: src/base_cap.cxx:1257 src/panel.cxx:1547 src/panel.cxx:1579
+#: src/lib/vfs/dfs.cxx:601
+msgid "Move file"
+msgstr "File Áthelyezése"
+
+#: src/base_cap.cxx:1311
+msgid "Move files"
+msgstr "File-ok Áthelyezése"
+
+#: src/base_cap.cxx:1377
+#, fuzzy
+msgid "Can't LINK on this VFS"
+msgstr "Ezen a VFS-en nem törölhetsz"
+
+#: src/base_cap.cxx:1380
+#, fuzzy
+msgid "Linking..."
+msgstr "Áthelyezés..."
+
+#: src/base_cap.cxx:1420 src/xsetup/setup.cxx:334
+msgid "Link file"
+msgstr ""
+
+#: src/base_cap.cxx:1458
+#, fuzzy
+msgid "Link files"
+msgstr "File keresés"
+
+#: src/base_cap.cxx:1496
+msgid "No archiver association with your file!"
+msgstr ""
+
+#: src/base_cap.cxx:1502 src/base_cap.cxx:1508
+msgid "Archiver don't support archive creation!"
+msgstr ""
+
+#: src/base_cap.cxx:1514 src/base_cap.cxx:1550
+#, fuzzy
+msgid "Packing..."
+msgstr "Áthelyezés..."
+
+#: src/base_cap.cxx:1515 src/base_cap.cxx:1551
+msgid "Creating archive"
+msgstr ""
+
+#: src/base_cap.cxx:1546 src/lib/vfs/afs.cxx:1181 src/lib/vfs/afs.cxx:1371
+msgid "Can't access TMP dir"
+msgstr ""
+
+#: src/base_cap.cxx:1662 src/query_windows.cxx:1203 src/menu_process.cxx:276
+msgid "Change Owner"
+msgstr "Tulajdonos csere"
+
+#: src/base_cap.cxx:2001
+msgid "Set attributes"
+msgstr "Atribútumok beállitása"
+
+#: src/bookmark.cxx:1169
+msgid "Recycle Bin"
+msgstr "Kuka"
+
+#: src/config_window.cxx:63
+msgid "Full mode"
+msgstr "Teljes mód"
+
+#: src/config_window.cxx:64
+msgid "Brief mode"
+msgstr "Rövid mód"
+
+#: src/config_window.cxx:65
+msgid "Custom mode"
+msgstr "Egyéni mód"
+
+#: src/config_window.cxx:71
+msgid "XNC style icons"
+msgstr "XNC stílusú ikonok"
+
+#: src/config_window.cxx:72
+msgid "Windows style icons"
+msgstr "Windows stílusú ikonok"
+
+#: src/config_window.cxx:73
+msgid "KDE style icons"
+msgstr "KDE stílusú ikonok"
+
+#: src/config_window.cxx:74
+msgid "AquaFusion icons"
+msgstr "AquaFusion ikonok"
+
+#: src/config_window.cxx:75
+msgid "GNOME style icons"
+msgstr "Gnome stílusú ikonok"
+
+#: src/config_window.cxx:81
+msgid "Original Look"
+msgstr "Eredeti kinézet"
+
+#: src/config_window.cxx:82
+msgid "Five Look"
+msgstr "Five kinézet"
+
+#: src/config_window.cxx:83
+msgid "Aqua Look"
+msgstr "Aqua kinézet"
+
+#: src/config_window.cxx:344 src/config_window.cxx:361
+#: src/config_window.cxx:381
+msgid "Wait..."
+msgstr "Várj..."
+
+#: src/config_window.cxx:346 src/config_window.cxx:363
+#: src/config_window.cxx:383
+msgid "Loading Pixmaps..."
+msgstr "Képek betöltése"
+
+#: src/config_window.cxx:430
+msgid "XNC Configuration"
+msgstr "XNC Beállítások"
+
+#: src/config_window.cxx:433
+msgid "General:"
+msgstr "Általános:"
+
+#: src/config_window.cxx:434
+msgid "User prompts:"
+msgstr ""
+
+#: src/config_window.cxx:435
+msgid "Show hidden files"
+msgstr "Rejtett fileok kiírása"
+
+#: src/config_window.cxx:437
+msgid "Bookmark animation"
+msgstr "Kedvencek animáció"
+
+#: src/config_window.cxx:438
+msgid "IVES exit with XNC"
+msgstr "IVES bezárása XNC-vel együtt"
+
+#: src/config_window.cxx:440
+msgid "Icons with directories"
+msgstr "Ikonok könyvtárakkal"
+
+#: src/config_window.cxx:441
+msgid "Icons with files"
+msgstr "Ikonok fileokkal"
+
+#: src/config_window.cxx:443
+msgid "Status bar view:"
+msgstr ""
+
+#: src/config_window.cxx:444
+msgid "File name in status"
+msgstr ""
+
+#: src/config_window.cxx:445
+msgid "Attributes in status"
+msgstr ""
+
+#: src/config_window.cxx:446
+msgid "Date/Time in status"
+msgstr ""
+
+#: src/config_window.cxx:447
+msgid "Size in status"
+msgstr ""
+
+#: src/config_window.cxx:448
+msgid "Owner in status"
+msgstr ""
+
+#: src/config_window.cxx:450
+msgid "Filled file cursor"
+msgstr ""
+
+#: src/config_window.cxx:452
+msgid "Raise term on exec"
+msgstr ""
+
+#: src/config_window.cxx:453
+msgid "Lynx style navigation"
+msgstr ""
+
+#: src/config_window.cxx:454
+msgid "Shadow text"
+msgstr ""
+
+#: src/config_window.cxx:455
+msgid "Choose iconset:"
+msgstr "Válassz ikoncsomagot"
+
+#: src/config_window.cxx:458
+msgid "Prompts:"
+msgstr "Megerõsítések:"
+
+#: src/config_window.cxx:459
+msgid "Copy prompt"
+msgstr "Másolásnál"
+
+#: src/config_window.cxx:460
+msgid "Move prompt"
+msgstr "Áthelyezésnél"
+
+#: src/config_window.cxx:461
+msgid "Delete prompt"
+msgstr "Törlésnél"
+
+#: src/config_window.cxx:462
+msgid "Overwrite prompt"
+msgstr "Felülírásnál"
+
+#: src/config_window.cxx:463
+#, fuzzy
+msgid "Pack prompt"
+msgstr "Kilépésnél"
+
+#: src/config_window.cxx:464 src/xsetup/setup.cxx:150
+msgid "Exit prompt"
+msgstr "Kilépésnél"
+
+#: src/config_window.cxx:466
+msgid "Dirscan timeout:"
+msgstr ""
+
+#: src/config_window.cxx:468
+msgid "Branch depth:"
+msgstr ""
+
+#: src/config_window.cxx:470
+msgid "sec"
+msgstr "Másodperc"
+
+#: src/config_window.cxx:476
+msgid "Magic file:"
+msgstr ""
+
+#: src/config_window.cxx:479
+msgid "GUI plugin will work only after restart of XNC."
+msgstr "Az új kinézethez újra kell inditani az XNC-t."
+
+#: src/config_window.cxx:480
+msgid "GUI plugin (skin):"
+msgstr "GUI plugin (b???r)"
+
+#: src/config_window.cxx:483
+msgid "Mouse state:"
+msgstr "Egér állapot:"
+
+#: src/config_window.cxx:489
+msgid "Action for the state:"
+msgstr "Esemény az állapothoz:"
+
+#: src/config_window.cxx:493
+msgid "Modes:"
+msgstr "Módok:"
+
+#: src/config_window.cxx:496
+msgid "Enter mode format string:"
+msgstr ""
+
+#: src/config_window.cxx:497
+msgid "Minimum display file name length:"
+msgstr "Minimális filenév hosszúság:"
+
+#: src/config_window.cxx:498
+msgid "Choose mode:"
+msgstr "Válassz módot:"
+
+#: src/config_window.cxx:499
+msgid "Mode format explanation:"
+msgstr ""
+
+#: src/config_window.cxx:500
+msgid "F - file name"
+msgstr "F - filenév"
+
+#: src/config_window.cxx:501
+msgid "A - file attributes (-rwxr-x-r-x)"
+msgstr "A - file attribútumok (-rwxr-x-r-x)"
+
+#: src/config_window.cxx:502
+msgid "O - file attributes in octal (0755)"
+msgstr "O - file attribútumok oktálisan (0755)"
+
+#: src/config_window.cxx:503
+msgid "S - file size"
+msgstr "S - file méret"
+
+#: src/config_window.cxx:504
+msgid "D - file date/time"
+msgstr "D - file dátum/id?"
+
+#: src/config_window.cxx:505
+msgid "| - visual separator"
+msgstr ""
+
+#: src/config_window.cxx:506
+msgid ". - small empty space"
+msgstr ""
+
+#: src/config_window.cxx:516
+msgid "Main"
+msgstr "F???menü"
+
+#: src/config_window.cxx:518
+msgid "Prompt/View"
+msgstr ""
+
+#: src/config_window.cxx:520
+msgid "Look/Feel"
+msgstr "Kinézet"
+
+#: src/config_window.cxx:522
+msgid "Mouse"
+msgstr "Egér"
+
+#: src/config_window.cxx:524
+msgid "Modes"
+msgstr "Módok"
+
+#: src/find.cxx:309
+msgid "From '/'"
+msgstr ""
+
+#: src/find.cxx:310
+msgid "Stop"
+msgstr ""
+
+#: src/find.cxx:311 src/menu_process.cxx:162
+msgid "Quit"
+msgstr "Kilép"
+
+#: src/ftpvisuals.cxx:330
+msgid "Can't close during operation!"
+msgstr "Mu???velet közben nem lehet bezarni!"
+
+#: src/ftpvisuals.cxx:413 src/ftpvisuals.cxx:414 src/ftpvisuals.cxx:421
+#: src/ftpvisuals.cxx:422 src/ftpvisuals.cxx:425 src/ftpvisuals.cxx:426
+msgid "Vacant FTP"
+msgstr ""
+
+#: src/main.cxx:91
+msgid "Error connecting to IVES"
+msgstr ""
+
+#: src/main.cxx:92
+msgid "Editor and/or Viewer not available! Use 'xncsetup' for correct"
+msgstr ""
+
+#: src/main.cxx:98
+msgid "Loading IVES"
+msgstr "IVES indítása"
+
+#: src/main.cxx:98
+msgid "   Please wait..."
+msgstr "   Várj..."
+
+#: src/main.cxx:105
+msgid "IVE System not available!"
+msgstr ""
+
+#: src/main.cxx:361
+msgid ""
+"OOPS! It seems that You found a bug in XNC!!!\n"
+"If You can repeat this situation then send me a bug report\n"
+"to <leo@xnc.dubna.su> with subject  'XNC - bug report'\n"
+msgstr ""
+
+#: src/main.cxx:365
+msgid ""
+"Body of the mail:\n"
+"   -What are You doing to produce this bug.\n"
+"   -XNC configuration (~/.xnc/xnc.ini) file.\n"
+"   -Output of 'ldd xnc' command.\n"
+"   -X Server configuration (resolution and color depth)\n"
+"   -And Your reply mail address, for more information about situation if "
+"need\n"
+"Do NOT include 'CORE' dump file in the following letter.\n"
+"Thanks, and sorry for BUG\n"
+msgstr ""
+
+#: src/main.cxx:541
+#, c-format
+msgid "Starting %s Build%s.....\n"
+msgstr ""
+
+#: src/main.cxx:572
+msgid "Copyright (c) 1995-2002 Leonid V. KHramov aka Leo <leo@xnc.dubna.su>\n"
+msgstr ""
+
+#: src/main.cxx:648
+msgid ""
+"------------------------------------------------------------------------------\n"
+"Notice:\n"
+"\tIf You like X Northern Captain and will use it,\n"
+"\tthen send me e-mail to <leo@xnc.dubna.su> with names of\n"
+"\tcity and country where you are using it. It's for my collection.\n"
+"\tIf You do it, i'll be happy....\n"
+"\t\t\tThanks,\n"
+"\t\t\tLeonid V. Khramov aka Leo <leo@xnc.dubna.su>\n"
+msgstr ""
+
+#: src/main.cxx:654
+msgid ""
+"\n"
+"PS: If you have any questions, comments about xnc or you want\n"
+"to know latest news then join to xnc mailing list <xnc@xnc.dubna.su>\n"
+"Just mail a letter with 'SUBSCRIBE xnc' in the body of mail to\n"
+"<majordomo@xnc.dubna.su> and you are inside.\n"
+msgstr ""
+
+#: src/main.cxx:659
+#, c-format
+msgid "Thank you. You have run X Northern Captain %d times!\n"
+msgstr "Köszönjük, hogy %d alkalommal inditotta az XNC-t!\n"
+
+#: src/man_page.cxx:94
+msgid "Man report"
+msgstr ""
+
+#: src/man_page.cxx:94
+msgid "No manual page for this command."
+msgstr ""
+
+#: src/panel.cxx:865
+msgid " file(s) selected"
+msgstr " file kijelölve"
+
+#: src/panel.cxx:1271
+msgid "Kill process!"
+msgstr "Processz bezarasa"
+
+#: src/panel.cxx:1435
+msgid "Delete file?"
+msgstr "File torlése?"
+
+#: src/panel.cxx:1453 src/panel.cxx:1524
+msgid "Copy files?"
+msgstr "Fileok másolása?"
+
+#: src/panel.cxx:1472
+#, fuzzy
+msgid "Link files?"
+msgstr "File keresés"
+
+#: src/panel.cxx:1474
+msgid "Make a link to file"
+msgstr ""
+
+#: src/panel.cxx:1498 src/panel.cxx:1500
+msgid "Create archive?"
+msgstr ""
+
+#: src/panel.cxx:1545 src/panel.cxx:1577
+msgid "Move files?"
+msgstr "Fileok mozgatása?"
+
+#: src/panel.cxx:1564 src/menu_process.cxx:271
+#, fuzzy
+msgid "Rename file"
+msgstr "File mozgatása/átnevezése"
+
+#: src/panel.cxx:1725 src/panel.cxx:1802
+msgid "Reading directory"
+msgstr "Könyvtár olvasása"
+
+#: src/panel.cxx:1749 src/lib/vfs/ftpfs.cxx:2048
+msgid "Changing directory"
+msgstr "Könyvtár váltása"
+
+#: src/panel.cxx:1831
+msgid "Which command?"
+msgstr "Melyik parancs?"
+
+#: src/panel.cxx:1909
+msgid "Execute with..."
+msgstr "Mivel nyissuk meg?"
+
+#: src/panel.cxx:1979 src/panel_metacall.cxx:264 src/menu_process.cxx:272
+#: src/panel_click.cxx:234
+msgid "Make directory"
+msgstr "Könyvtár létrehozása"
+
+#: src/panel.cxx:2105 src/lib/vfs/ftpfs.cxx:1101
+msgid "Pusher"
+msgstr ""
+
+#: src/panel.cxx:2105
+msgid "Can't switch to FTP over another one!"
+msgstr ""
+
+#: src/panel_metacall.cxx:64 src/panel_metacall.cxx:253
+#: src/menu_process.cxx:613 src/panel_click.cxx:172
+msgid "Man page"
+msgstr "Man oldalak"
+
+#: src/panel_metacall.cxx:68
+msgid "Make directory "
+msgstr ""
+
+#: src/panel_metacall.cxx:76
+#, c-format
+msgid "Create archive %s"
+msgstr ""
+
+#: src/panel_metacall.cxx:85
+#, c-format
+msgid "Create archive %s "
+msgstr ""
+
+#: src/panel_metacall.cxx:91
+msgid "Go to subdirectory "
+msgstr ""
+
+#: src/panel_metacall.cxx:98
+msgid "Execute "
+msgstr ""
+
+#: src/panel_metacall.cxx:106
+msgid "Browse into archive "
+msgstr ""
+
+#: src/panel_metacall.cxx:111
+msgid "Execute association "
+msgstr ""
+
+#: src/panel_metacall.cxx:116
+msgid "Execute with ... "
+msgstr ""
+
+#: src/panel_metacall.cxx:124
+msgid "Copy file(s)"
+msgstr ""
+
+#: src/panel_metacall.cxx:127
+msgid "Move/Rename file(s)"
+msgstr ""
+
+#: src/panel_metacall.cxx:130
+msgid "Delete file(s)"
+msgstr ""
+
+#: src/panel_metacall.cxx:142
+msgid "Change file(s) attributes"
+msgstr ""
+
+#: src/panel_metacall.cxx:145
+msgid "Change file(s) owner"
+msgstr ""
+
+#: src/query_windows.cxx:157
+msgid "User prompt"
+msgstr ""
+
+#: src/query_windows.cxx:158
+msgid "Update archive before exiting from it?"
+msgstr ""
+
+#: src/query_windows.cxx:159
+msgid "Press 'Update' if You change files"
+msgstr ""
+
+#: src/query_windows.cxx:160
+msgid "Update"
+msgstr ""
+
+#: src/query_windows.cxx:194
+msgid "File:"
+msgstr ""
+
+#: src/query_windows.cxx:196
+msgid "This file already exists!"
+msgstr ""
+
+#: src/query_windows.cxx:197
+msgid "Overwrite existing file???"
+msgstr ""
+
+#: src/query_windows.cxx:199
+msgid "Yes to All"
+msgstr ""
+
+#: src/query_windows.cxx:201
+msgid "No"
+msgstr ""
+
+#: src/query_windows.cxx:270 src/query_windows.cxx:816
+#, c-format
+msgid "File:   %s"
+msgstr ""
+
+#: src/query_windows.cxx:271 src/query_windows.cxx:824
+#, c-format
+msgid "Owner:  %s.%s"
+msgstr ""
+
+#: src/query_windows.cxx:278 src/query_windows.cxx:283
+#, c-format
+msgid "Status: %s"
+msgstr ""
+
+#: src/query_windows.cxx:295
+msgid "Agree"
+msgstr ""
+
+#: src/query_windows.cxx:333 src/query_windows.cxx:334
+msgid "Path:  none"
+msgstr ""
+
+#: src/query_windows.cxx:335
+msgid "File:  unknown"
+msgstr ""
+
+#: src/query_windows.cxx:336
+msgid "Size:  unknown"
+msgstr ""
+
+#: src/query_windows.cxx:337 src/query_windows.cxx:804
+msgid "Status: rwxrwxrwx"
+msgstr ""
+
+#: src/query_windows.cxx:338
+msgid "Owner: *********"
+msgstr ""
+
+#: src/query_windows.cxx:345
+msgid "Read"
+msgstr ""
+
+#: src/query_windows.cxx:346
+msgid "Write"
+msgstr ""
+
+#: src/query_windows.cxx:347
+msgid "Execute"
+msgstr ""
+
+#: src/query_windows.cxx:566
+#, c-format
+msgid "File: %s"
+msgstr ""
+
+#: src/query_windows.cxx:567
+msgid "Attributes"
+msgstr ""
+
+#: src/query_windows.cxx:570 src/query_windows.cxx:646
+#: src/query_windows.cxx:1210
+msgid "Owner:"
+msgstr ""
+
+#: src/query_windows.cxx:571 src/query_windows.cxx:647
+msgid "Group:"
+msgstr ""
+
+#: src/query_windows.cxx:572 src/query_windows.cxx:648
+msgid "Other:"
+msgstr ""
+
+#: src/query_windows.cxx:575 src/query_windows.cxx:1790
+#, c-format
+msgid "Owner: %s.%s"
+msgstr ""
+
+#: src/query_windows.cxx:641
+msgid "For all selected files:"
+msgstr ""
+
+#: src/query_windows.cxx:642
+msgid "Set/Clear attributes"
+msgstr ""
+
+#: src/query_windows.cxx:643
+msgid "Set"
+msgstr ""
+
+#: src/query_windows.cxx:644 src/xsetup/setup.cxx:1050
+msgid "Clear"
+msgstr ""
+
+#: src/query_windows.cxx:789
+#, c-format
+msgid "From: %s"
+msgstr ""
+
+#: src/query_windows.cxx:791
+msgid "To:   Recycle Bin"
+msgstr ""
+
+#: src/query_windows.cxx:793
+msgid "To:   Printer"
+msgstr ""
+
+#: src/query_windows.cxx:797 src/query_windows.cxx:801
+#, c-format
+msgid "To:   %s"
+msgstr ""
+
+#: src/query_windows.cxx:808 src/query_windows.cxx:902
+#, c-format
+msgid "File:   %d selected files"
+msgstr ""
+
+#: src/query_windows.cxx:809 src/query_windows.cxx:817
+#: src/query_windows.cxx:903
+#, c-format
+msgid "Size:   %s"
+msgstr ""
+
+#: src/query_windows.cxx:810
+msgid "Status: *********"
+msgstr ""
+
+#: src/query_windows.cxx:811
+msgid "Owner:  *********"
+msgstr ""
+
+#: src/query_windows.cxx:887
+#, c-format
+msgid "From:  %s"
+msgstr ""
+
+#: src/query_windows.cxx:908
+msgid "To:"
+msgstr ""
+
+#: src/query_windows.cxx:925 src/query_windows.cxx:1807
+msgid "Make symbolic link"
+msgstr ""
+
+#: src/query_windows.cxx:927 src/query_windows.cxx:1809
+msgid "Translate symlinks as is."
+msgstr ""
+
+#: src/query_windows.cxx:1184 src/query_windows.cxx:1789
+#, c-format
+msgid "File:  %s"
+msgstr ""
+
+#: src/query_windows.cxx:1186
+msgid "Attributes: "
+msgstr ""
+
+#: src/query_windows.cxx:1199
+#, c-format
+msgid "File: %d selected"
+msgstr ""
+
+#: src/query_windows.cxx:1200
+msgid "Attributes: *********"
+msgstr ""
+
+#: src/query_windows.cxx:1204
+msgid "Change"
+msgstr ""
+
+#: src/query_windows.cxx:1211
+msgid "Users:"
+msgstr ""
+
+#: src/query_windows.cxx:1212
+msgid "Groups:"
+msgstr ""
+
+#: src/query_windows.cxx:1360
+msgid "Sorry"
+msgstr ""
+
+#: src/query_windows.cxx:1360
+msgid "Not implemented yet!"
+msgstr ""
+
+#: src/query_windows.cxx:1396
+msgid "Hostname can't be blank!"
+msgstr ""
+
+#: src/query_windows.cxx:1401
+msgid "Login can't be blank!"
+msgstr ""
+
+#: src/query_windows.cxx:1406
+msgid "Password can't be blank!"
+msgstr ""
+
+#: src/query_windows.cxx:1417
+msgid "Ftp Proxy Config"
+msgstr ""
+
+#: src/query_windows.cxx:1418 src/query_windows.cxx:1604
+msgid "Ftp Proxy host:"
+msgstr ""
+
+#: src/query_windows.cxx:1420 src/query_windows.cxx:1606
+msgid "FTP Proxy Login:"
+msgstr ""
+
+#: src/query_windows.cxx:1422 src/query_windows.cxx:1592
+#: src/query_windows.cxx:1608
+msgid "Password:"
+msgstr ""
+
+#: src/query_windows.cxx:1557
+msgid "Ftp Connection"
+msgstr ""
+
+#: src/query_windows.cxx:1559
+msgid "Connect"
+msgstr ""
+
+#: src/query_windows.cxx:1565
+msgid "FTP Sessions:"
+msgstr ""
+
+#: src/query_windows.cxx:1572
+msgid "Host:"
+msgstr ""
+
+#: src/query_windows.cxx:1573
+msgid "Login:"
+msgstr ""
+
+#: src/query_windows.cxx:1574
+msgid "Path:"
+msgstr ""
+
+#: src/query_windows.cxx:1580
+msgid "Session name:"
+msgstr ""
+
+#: src/query_windows.cxx:1583
+msgid "Host name:"
+msgstr ""
+
+#: src/query_windows.cxx:1586
+msgid "Remote path:"
+msgstr ""
+
+#: src/query_windows.cxx:1589
+msgid "Login name:"
+msgstr ""
+
+#: src/query_windows.cxx:1595
+msgid "Port:"
+msgstr ""
+
+#: src/query_windows.cxx:1598
+msgid "Add/Upd"
+msgstr ""
+
+#: src/query_windows.cxx:1600
+msgid "Anonymous"
+msgstr ""
+
+#: src/query_windows.cxx:1602
+msgid "Use proxy"
+msgstr ""
+
+#: src/query_windows.cxx:1660
+msgid "Sites"
+msgstr ""
+
+#: src/query_windows.cxx:1662
+msgid "New site"
+msgstr ""
+
+#: src/query_windows.cxx:1664
+msgid "Proxy"
+msgstr ""
+
+#: src/query_windows.cxx:1796
+msgid "To directory:"
+msgstr ""
+
+#: src/query_windows.cxx:1865
+msgid "New Name:"
+msgstr ""
+
+#: src/query_windows.cxx:2006
+msgid "Remounting"
+msgstr ""
+
+#: src/query_windows.cxx:2006
+msgid "Change DEVICE NOW"
+msgstr ""
+
+#: src/query_windows.cxx:2039
+msgid "Kill failed"
+msgstr ""
+
+#: src/query_windows.cxx:2079
+msgid "Signals for sending:"
+msgstr ""
+
+#: src/query_windows.cxx:2080
+msgid "Send"
+msgstr ""
+
+#: src/query_windows.cxx:2111
+msgid "Disk Free Space"
+msgstr ""
+
+#: src/query_windows.cxx:2129
+msgid "Memory Information"
+msgstr ""
+
+#: src/query_windows.cxx:2147
+msgid "Menu commands"
+msgstr ""
+
+#: src/query_windows.cxx:2167
+msgid "Select files"
+msgstr ""
+
+#: src/query_windows.cxx:2169
+msgid "Deselect files"
+msgstr ""
+
+#: src/query_windows.cxx:2174
+msgid "Mask:"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:131
+#, c-format
+msgid "Unplaning Child DIE with code %d"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:741 src/lib/vfs/ftpfs.cxx:788
+#: src/lib/vfs/ftpfs.cxx:834
+msgid "Can't read list file!"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:752 src/lib/vfs/ftpfs.cxx:799
+#: src/lib/vfs/ftpfs.cxx:845
+msgid "Can't create return list!"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1077
+msgid "Operation not complete!"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1101
+msgid "Panel already in FTP mode. Close/Minimize first."
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1338
+msgid "FTP FATAL"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1438
+msgid "Too many active connections"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1464
+msgid "Forking Child"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1471
+msgid "Connecting"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1485
+msgid "Child process failed"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1500
+msgid "Closing connection"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1541 src/lib/vfs/ftpfs.cxx:1949
+msgid "Getting file"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1568
+msgid "Deleting file"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1589
+msgid "Deleting files"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1622
+msgid "Making directory"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1650 src/lib/vfs/ftpfs.cxx:1828
+#: src/lib/vfs/ftpfs.cxx:1969
+msgid "Can't create temporary list file!"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1790
+msgid "Putting file"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:1875
+msgid "MPutting files"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:2007
+msgid "MGetting files"
+msgstr ""
+
+#: src/lib/vfs/ftpfs.cxx:2149 src/lib/vfs/ftpfs.cxx:2171
+msgid "Directory listing"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:135
+msgid "Updating..."
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:243
+msgid "Preparing to execution..."
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:263
+msgid "Can't access exeTMP dir"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:279 src/lib/vfs/afs.cxx:339
+msgid "Unpacking FAILED!"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:300
+msgid "Can't copy to destination VFS"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:398 src/lib/vfs/afs.cxx:504
+msgid "TMP dir not accessable!"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:437 src/lib/vfs/afs.cxx:610
+msgid "Can't access execTMP dir"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:546
+msgid "Operation not supported in this archive"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:663
+msgid "No support for this file"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:683
+msgid "Can't create AFSTMP directory!"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:1191
+msgid "No specified executable for this AFS"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:1196
+msgid "Reading Archive..."
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:1327
+msgid "Can't follow directory (outside archive)!"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:1481
+msgid "Exit from archive before cleaning cache!"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:1486
+msgid "Report"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:1486
+msgid "Archive cache is clean."
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:1488
+msgid "Something wrong with AFS cache!!!"
+msgstr ""
+
+#: src/lib/vfs/afs.cxx:1518
+msgid "Errors during archive creation"
+msgstr ""
+
+#: src/lib/vfs/dfs.cxx:112 src/lib/vfs/dfs.cxx:235 src/lib/vfs/dfs.cxx:798
+msgid "Error: trying copy to itself"
+msgstr ""
+
+#: src/lib/vfs/dfs.cxx:127
+msgid "Error: can't write data to destination"
+msgstr ""
+
+#: src/lib/vfs/dfs.cxx:161
+msgid "Error: operation incomplete!"
+msgstr ""
+
+#: src/lib/vfs/dfs.cxx:578
+msgid "Error: RM call failed (Unknown reason)"
+msgstr ""
+
+#: src/lib/vfs/dfs.cxx:954
+#, fuzzy
+msgid "Symlink file"
+msgstr "File szerkesztése"
+
+#: src/lib/vfs/dfs.cxx:981
+msgid "Operation not supported on this VFS"
+msgstr ""
+
+#: src/xsetup/setup.cxx:126
+msgid "Sysfiles Path:"
+msgstr ""
+
+#: src/xsetup/setup.cxx:127
+msgid "XNC Geometry:"
+msgstr ""
+
+#: src/xsetup/setup.cxx:128
+msgid "XNC Editor:"
+msgstr ""
+
+#: src/xsetup/setup.cxx:129
+msgid "XNC Viewer:"
+msgstr ""
+
+#: src/xsetup/setup.cxx:130
+msgid "Font Name:"
+msgstr ""
+
+#: src/xsetup/setup.cxx:151
+msgid "Save configuration?"
+msgstr ""
+
+#: src/xsetup/setup.cxx:311
+msgid "Vertical"
+msgstr ""
+
+#: src/xsetup/setup.cxx:312
+msgid "Horizontal"
+msgstr ""
+
+#: src/xsetup/setup.cxx:313
+msgid "Page"
+msgstr ""
+
+#: src/xsetup/setup.cxx:315
+msgid "Main Font"
+msgstr ""
+
+#: src/xsetup/setup.cxx:316
+msgid "Panels Font"
+msgstr ""
+
+#: src/xsetup/setup.cxx:317
+msgid "Fixed Font"
+msgstr ""
+
+#: src/xsetup/setup.cxx:318
+msgid "IVES Font"
+msgstr ""
+
+#: src/xsetup/setup.cxx:319
+msgid "Mini Fixed Font"
+msgstr ""
+
+#: src/xsetup/setup.cxx:322
+msgid "Background"
+msgstr ""
+
+#: src/xsetup/setup.cxx:323
+msgid "Shadow color"
+msgstr ""
+
+#: src/xsetup/setup.cxx:324
+msgid "Text color"
+msgstr ""
+
+#: src/xsetup/setup.cxx:325
+msgid "Text warning"
+msgstr ""
+
+#: src/xsetup/setup.cxx:326
+msgid "Text color 2"
+msgstr ""
+
+#: src/xsetup/setup.cxx:327
+msgid "Cursor color"
+msgstr ""
+
+#: src/xsetup/setup.cxx:328
+msgid "Panel Info"
+msgstr ""
+
+#: src/xsetup/setup.cxx:329
+msgid "Selected file"
+msgstr ""
+
+#: src/xsetup/setup.cxx:330
+msgid "Extension file"
+msgstr ""
+
+#: src/xsetup/setup.cxx:331
+msgid "Normal file"
+msgstr ""
+
+#: src/xsetup/setup.cxx:332
+msgid "Directory"
+msgstr ""
+
+#: src/xsetup/setup.cxx:333
+msgid "Execution file"
+msgstr ""
+
+#: src/xsetup/setup.cxx:335
+msgid "Archive file"
+msgstr ""
+
+#: src/xsetup/setup.cxx:336
+msgid "Image file"
+msgstr ""
+
+#: src/xsetup/setup.cxx:360
+msgid "Define Key"
+msgstr ""
+
+#: src/xsetup/setup.cxx:429 src/xsetup/setup.cxx:430
+msgid "Now Press Key combination..."
+msgstr ""
+
+#: src/xsetup/setup.cxx:657
+msgid "WHAT'S NEW from last version"
+msgstr ""
+
+#: src/xsetup/setup.cxx:674
+msgid "XNC Layout"
+msgstr ""
+
+#: src/xsetup/setup.cxx:675 src/xsetup/setup.cxx:1062
+msgid "Fonts"
+msgstr ""
+
+#: src/xsetup/setup.cxx:676 src/xsetup/setup.cxx:1062
+msgid "Colors"
+msgstr ""
+
+#: src/xsetup/setup.cxx:681
+msgid "Example:"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1036
+msgid "Always"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1037 src/menu_process.cxx:358
+msgid "Never"
+msgstr "Soha"
+
+#: src/xsetup/setup.cxx:1038
+msgid "Prompt"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1045
+msgid "Hot Keys to XNC Actions mapping:"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1047
+msgid "Key1"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1048
+msgid "Key2"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1049
+msgid "Key3"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1051
+msgid "IVES->XNC:"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1052
+msgid "Sticky terminal"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1053
+msgid "Raise terminal on exec"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1054
+msgid "Return Focus from IVES"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1055
+msgid "Bookmark Options:"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1056
+msgid "Enable Bookmark"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1057
+msgid "Allow Bookmark animation"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1058
+msgid "AFS Options:"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1059
+msgid "Show icons with directory names"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1060
+msgid "Show icons with files"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1061
+msgid "Update archieve on exit"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1062
+msgid "Common"
+msgstr "Ãltala'nos"
+
+#: src/xsetup/setup.cxx:1062
+msgid "Keys"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1062
+msgid "Other"
+msgstr "EgyÃ©b"
+
+#: src/xsetup/setup.cxx:1100
+msgid "vertical"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1100
+msgid "horizontal"
+msgstr ""
+
+#: src/xsetup/setup.cxx:1100
+#, fuzzy
+msgid "page"
+msgstr "Man oldalak"
+
+#: src/xsetup/setup.cxx:1345
+msgid "X Northern Captain Setup"
+msgstr "X Northern Captain Beállítás"
+
+#: src/menu_process.cxx:148 src/menu_process.cxx:223
+msgid "Brief"
+msgstr "Rövid"
+
+#: src/menu_process.cxx:149 src/menu_process.cxx:224
+msgid "Full"
+msgstr "Teljes"
+
+#: src/menu_process.cxx:150 src/menu_process.cxx:225
+msgid "Custom "
+msgstr "Egyéni"
+
+#: src/menu_process.cxx:151 src/menu_process.cxx:226
+msgid "One column"
+msgstr "Egy oszlop"
+
+#: src/menu_process.cxx:152 src/menu_process.cxx:227
+msgid "Two columns"
+msgstr "Két oszlop"
+
+#: src/menu_process.cxx:153 src/menu_process.cxx:228
+msgid "Three columns"
+msgstr "Három oszlop"
+
+#: src/menu_process.cxx:154 src/menu_process.cxx:229
+msgid "Four columns "
+msgstr "Négy oszlop"
+
+#: src/menu_process.cxx:155 src/menu_process.cxx:230
+msgid "Sort by Names"
+msgstr "Név szerinti rendezés"
+
+#: src/menu_process.cxx:156 src/menu_process.cxx:231
+msgid "Sort by Extensions"
+msgstr "Kiterjesztés szerinti rendezés"
+
+#: src/menu_process.cxx:157 src/menu_process.cxx:232
+msgid "Sort by Size"
+msgstr "Méret szerinti rendezés"
+
+#: src/menu_process.cxx:158 src/menu_process.cxx:233
+msgid "Sort by Time"
+msgstr "Id??? szerinti rendezés"
+
+#: src/menu_process.cxx:159 src/menu_process.cxx:234
+msgid "Unsorted "
+msgstr "Nem rendezett"
+
+#: src/menu_process.cxx:160 src/menu_process.cxx:235
+msgid "Reverse sort "
+msgstr "Visszafelé"
+
+#: src/menu_process.cxx:161 src/menu_process.cxx:236
+msgid "Toggle branch mode "
+msgstr ""
+
+#: src/menu_process.cxx:185
+msgid "Edit menu file"
+msgstr "Menü-file szerkesztése"
+
+#: src/menu_process.cxx:186
+msgid "Edit extension file "
+msgstr "Kiterjesztés-file szerkesztése"
+
+#: src/menu_process.cxx:187
+msgid "Clean AFS cache "
+msgstr "AFS cache törlése"
+
+#: src/menu_process.cxx:188
+#, fuzzy
+msgid "Configuration "
+msgstr "Beállítás"
+
+#: src/menu_process.cxx:189
+msgid "Help in documentation"
+msgstr ""
+
+#: src/menu_process.cxx:190
+msgid "About XNC"
+msgstr ""
+
+#: src/menu_process.cxx:207
+#, fuzzy
+msgid "Reread current directory"
+msgstr "Könyvtár ujramountolása"
+
+#: src/menu_process.cxx:208
+msgid "Switch to terminal "
+msgstr ""
+
+#: src/menu_process.cxx:209
+msgid "Add entry to bookmark "
+msgstr ""
+
+#: src/menu_process.cxx:210
+msgid "Add selection by mask"
+msgstr ""
+
+#: src/menu_process.cxx:211
+msgid "Clean selection by mask"
+msgstr ""
+
+#: src/menu_process.cxx:212
+msgid "Invert selection"
+msgstr ""
+
+#: src/menu_process.cxx:213
+msgid "Add selection by extension"
+msgstr ""
+
+#: src/menu_process.cxx:214
+msgid "Clean selection by extension "
+msgstr ""
+
+#: src/menu_process.cxx:215
+#, fuzzy
+msgid "Insert left directory name"
+msgstr "Ikonok könyvtárakkal"
+
+#: src/menu_process.cxx:216
+#, fuzzy
+msgid "Insert right directory name "
+msgstr "Ikonok könyvtárakkal"
+
+#: src/menu_process.cxx:217
+msgid "Source <-> Target"
+msgstr ""
+
+#: src/menu_process.cxx:218
+msgid "Target = Source"
+msgstr ""
+
+#: src/menu_process.cxx:257
+msgid "Compare by sizes"
+msgstr "Összehasonlítás méret szerint"
+
+#: src/menu_process.cxx:257
+msgid "Compare by times"
+msgstr "Összehasonlítás id??? szerint"
+
+#: src/menu_process.cxx:265
+msgid "Remount current directory"
+msgstr "Könyvtár ujramountolása"
+
+#: src/menu_process.cxx:266
+msgid "Menu"
+msgstr "Menü"
+
+#: src/menu_process.cxx:270
+msgid "Move/Rename file"
+msgstr "File mozgatása/átnevezése"
+
+#: src/menu_process.cxx:274
+#, fuzzy
+msgid "Make link"
+msgstr "F???menü"
+
+#: src/menu_process.cxx:275
+msgid "Attributes of file"
+msgstr "File attribútumok"
+
+#: src/menu_process.cxx:277
+msgid "Create Archive"
+msgstr ""
+
+#: src/menu_process.cxx:278
+msgid "Find files"
+msgstr "File keresés"
+
+#: src/menu_process.cxx:279
+msgid "Quick ScanDir Info"
+msgstr ""
+
+#: src/menu_process.cxx:280
+msgid "Processes Info"
+msgstr "Processzek Infó"
+
+#: src/menu_process.cxx:281
+msgid "Memory Info"
+msgstr "Memoria Infó"
+
+#: src/menu_process.cxx:282
+msgid "Disk Info"
+msgstr "Taroló infó"
+
+#: src/menu_process.cxx:283
+msgid "Stat Info"
+msgstr ""
+
+#: src/menu_process.cxx:284
+msgid "Ftp connection "
+msgstr "Ftp kapcsolódás"
+
+#: src/menu_process.cxx:285
+#, fuzzy
+msgid "Compare directories"
+msgstr "Összehasonlítás id??? szerint"
+
+#: src/menu_process.cxx:297
+msgid "Left"
+msgstr "Bal Panel"
+
+#: src/menu_process.cxx:298
+msgid "Commands"
+msgstr "Parancsok"
+
+#: src/menu_process.cxx:299
+#, fuzzy
+msgid "Operations"
+msgstr "Beálliitások"
+
+#: src/menu_process.cxx:301
+msgid "-Right"
+msgstr ""
+
+#: src/menu_process.cxx:305
+msgid "FTP"
+msgstr "FTP"
+
+#: src/menu_process.cxx:308
+msgid "1.Man"
+msgstr "1.Man"
+
+#: src/menu_process.cxx:309
+msgid "2.Menu"
+msgstr "2.Menü"
+
+#: src/menu_process.cxx:310
+msgid "3.View"
+msgstr "3.Olvasás"
+
+#: src/menu_process.cxx:311
+msgid "4.Edit"
+msgstr "4.Szerkesztés"
+
+#: src/menu_process.cxx:312
+msgid "5.Copy"
+msgstr "5.Másol"
+
+#: src/menu_process.cxx:313
+msgid "6.Move"
+msgstr "6.Áthelyezés"
+
+#: src/menu_process.cxx:314
+msgid "7.Mkdir"
+msgstr "7.Mkdir"
+
+#: src/menu_process.cxx:315
+msgid "8.Delete"
+msgstr "8.Törlés"
+
+#: src/menu_process.cxx:316
+msgid "9.Attr"
+msgstr "9.Attr."
+
+#: src/menu_process.cxx:317
+msgid "-0.Quit"
+msgstr "Kilépés"
+
+#: src/menu_process.cxx:356
+msgid "Really, QUIT?"
+msgstr "Tényleg ki akarsz lépni?"
+
+#: src/menu_process.cxx:357
+msgid "Yes"
+msgstr "Igen"
+
+#: src/panel_click.cxx:190
+#, fuzzy
+msgid "Print file"
+msgstr "File szerkesztése"
+
+#: src/panel_click.cxx:216
+#, fuzzy
+msgid "New text file"
+msgstr "File törlése"
+
+#: src/panel_wrap.cxx:29
+msgid "Remount Device ?"
+msgstr ""
+
+#: src/panel_wrap.cxx:239
+#, fuzzy
+msgid "Change directory"
+msgstr "Könyvtár váltása"
+
+#: src/panel_wrap.cxx:239
+#, fuzzy
+msgid "Directory:"
+msgstr "Könyvtár létrehozása"
+
+#~ msgid "Delete File"
+#~ msgstr "File törlése"
+
+#~ msgid "Reverse sort"
+#~ msgstr "Visszafelé rendezés"

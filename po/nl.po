@@ -1,0 +1,2131 @@
+# translation of xnc.pot to DUTCH (nl)
+# Dutch translations for xnc package.
+# This file is put in the public domain.
+# frank schoolmeesters <frank_schoolmeester@yahoo.com>, 08/09/2003.
+#
+# REMARK: some translations are are not yet translated to Dutch
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xnc-5.0.2\n"
+"POT-Creation-Date: 2003-11-27 18:28+0300\n"
+"PO-Revision-Date: 2003-09-08 07:35+0200\n"
+"Last-Translator: Frank Schoolmeesters <frank_schoolmeesters@yahoo.com>\n"
+"Language-Team: DUTCH (nl) <nl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.0.1\n"
+
+#: src/ives/editor.cxx:308 src/ives/ives.cxx:1011 src/ives/viewer.cxx:85
+#: src/ives/viewer.cxx:136 src/config_window.cxx:472 src/query_windows.cxx:392
+#: src/query_windows.cxx:568 src/query_windows.cxx:843
+#: src/query_windows.cxx:919 src/query_windows.cxx:1424
+#: src/query_windows.cxx:1791 src/query_windows.cxx:1868
+#: src/query_windows.cxx:1914 src/query_windows.cxx:2170
+msgid "OK"
+msgstr "OK"
+
+#: src/ives/editor.cxx:309 src/ives/editor.cxx:371 src/ives/editor.cxx:424
+#: src/ives/editor.cxx:428 src/ives/viewer.cxx:86 src/config_window.cxx:473
+#: src/query_windows.cxx:161 src/query_windows.cxx:200
+#: src/query_windows.cxx:569 src/query_windows.cxx:645
+#: src/query_windows.cxx:844 src/query_windows.cxx:920
+#: src/query_windows.cxx:1205 src/query_windows.cxx:1425
+#: src/query_windows.cxx:1560 src/query_windows.cxx:1792
+#: src/query_windows.cxx:1869 src/query_windows.cxx:2081
+#: src/query_windows.cxx:2171
+msgid "Cancel"
+msgstr "Annuleer"
+
+#: src/ives/editor.cxx:369 src/ives/editor.cxx:370 src/ives/ives.cxx:626
+#: src/ives/viewer.cxx:408 src/find.cxx:308
+msgid "Find"
+msgstr "Zoek"
+
+#: src/ives/editor.cxx:373
+msgid "Text to find:"
+msgstr "Te zoeken text:"
+
+#: src/ives/editor.cxx:374
+msgid "Entire scope"
+msgstr "Ganse scoop"
+
+#: src/ives/editor.cxx:375
+msgid "Backwards"
+msgstr "Achterwaarts"
+
+#: src/ives/editor.cxx:415
+msgid "Save and Exit"
+msgstr "Opslaan en afsluiten"
+
+#: src/ives/editor.cxx:417 src/ives/editor.cxx:422 src/ives/editor.cxx:427
+#: src/xsetup/setup.cxx:125 src/xsetup/setup.cxx:152
+msgid "Save"
+msgstr "Opslaan"
+
+#: src/ives/editor.cxx:418
+msgid "DOS text format"
+msgstr "DOS text formaat"
+
+#: src/ives/editor.cxx:419
+msgid "KOI8 -> Any RUS"
+msgstr "KOI8 -> Any RUS"
+
+#: src/ives/editor.cxx:423 src/xsetup/setup.cxx:153
+msgid "Don't save"
+msgstr "Niet opslaan"
+
+#: src/ives/editor.cxx:432
+msgid "Save as"
+msgstr "Opslaan als"
+
+#: src/ives/editor.cxx:640 src/ives/editor.cxx:1123 src/ives/editor.cxx:1126
+#: src/ives/editor.cxx:1152 src/ives/editor.cxx:2112 src/ives/viewer.cxx:791
+#: src/ives/viewer.cxx:820 src/base_cap.cxx:973 src/base_cap.cxx:1115
+#: src/base_cap.cxx:1245 src/base_cap.cxx:1276 src/base_cap.cxx:1377
+#: src/base_cap.cxx:1496 src/base_cap.cxx:1502 src/base_cap.cxx:1508
+#: src/main.cxx:105 src/query_windows.cxx:1396 src/query_windows.cxx:1401
+#: src/query_windows.cxx:1406 src/query_windows.cxx:2039
+#: src/lib/vfs/afs.cxx:1481 src/lib/vfs/afs.cxx:1488
+msgid "Error"
+msgstr "Fout"
+
+#: src/ives/editor.cxx:640
+msgid "TAGS file not found..."
+msgstr "TAGS bestand niet gevonden..."
+
+#: src/ives/editor.cxx:1099 src/ives/ives.cxx:652 src/ives/viewer.cxx:412
+msgid "Go to line..."
+msgstr "Ga naar lijn..."
+
+#: src/ives/editor.cxx:1099 src/ives/ives.cxx:652 src/ives/viewer.cxx:412
+msgid "Line number:"
+msgstr "Lijn nummer:"
+
+#: src/ives/editor.cxx:1105
+msgid "ETags-Find"
+msgstr "ETags Zoeken"
+
+#: src/ives/editor.cxx:1105
+msgid "String to find:"
+msgstr "Zoekstring:"
+
+#: src/ives/editor.cxx:1111
+msgid "ETAGS file"
+msgstr "ETAGS bestand"
+
+#: src/ives/editor.cxx:1111
+msgid "Enter tags file:"
+msgstr "Tags bestand invoeren:"
+
+#: src/ives/editor.cxx:1123
+msgid "Not a Emacs TAGS file!"
+msgstr "Geen Emacs TAGS bestand!"
+
+#: src/ives/editor.cxx:1126
+msgid "Etags fatal..."
+msgstr "Etags fataal..."
+
+#: src/ives/editor.cxx:1133 src/base_cap.cxx:914
+msgid "Sorry!"
+msgstr "Sorry!"
+
+#: src/ives/editor.cxx:1133
+msgid "Token not found..."
+msgstr "Token niet gevonden..."
+
+#: src/ives/editor.cxx:1152
+msgid "Wrong line number"
+msgstr "Foutief lijn nummer"
+
+#: src/ives/editor.cxx:2007
+msgid "FATAL Error!"
+msgstr "FATALE Fout!"
+
+#: src/ives/editor.cxx:2007 src/ives/viewer.cxx:738
+msgid "Error loading file..."
+msgstr "Fout bij laden van bestand..."
+
+#: src/ives/editor.cxx:2047
+msgid "Error!"
+msgstr "Fout!"
+
+#: src/ives/editor.cxx:2047
+msgid "Maximum lines exeeded!"
+msgstr "Maximum lijnenaantal overschreden !"
+
+#: src/ives/editor.cxx:2057
+msgid "FATAL Error"
+msgstr "FATALE Fout"
+
+#: src/ives/editor.cxx:2057
+msgid "Error loading file!"
+msgstr "Fout bij laden van bestand!"
+
+#: src/ives/editor.cxx:2112
+msgid "Error saving file!"
+msgstr "Fout bij opslaan van bestand!"
+
+#: src/ives/editor.cxx:2126 src/ives/editor.cxx:2149 src/ives/editor.cxx:2185
+#: src/ives/editor.cxx:2233
+msgid "Warning!"
+msgstr "Opgepast!"
+
+#: src/ives/editor.cxx:2126
+msgid "Symbol not a bracket!"
+msgstr "Symbool is geen haakje"
+
+#: src/ives/editor.cxx:2149 src/ives/editor.cxx:2185
+msgid "Another bracket not found!"
+msgstr "Een ander haakje niet gevonden!"
+
+#: src/ives/editor.cxx:2233
+msgid "String not found"
+msgstr "String niet gevonden"
+
+#: src/ives/ives.cxx:72
+msgid "Choose File"
+msgstr "Bestand sluiten"
+
+#: src/ives/ives.cxx:104
+msgid "Fast (Floyd Dithering)"
+msgstr "Snel (Floyd Dithering)"
+
+#: src/ives/ives.cxx:105
+msgid "Slow method"
+msgstr "Trage methode"
+
+#: src/ives/ives.cxx:106
+msgid "Best (PPM method)"
+msgstr "Beste (PPM methode)"
+
+#: src/ives/ives.cxx:182 src/ives/ives.cxx:191
+msgid "2.Save"
+msgstr "2.Opslaan"
+
+#: src/ives/ives.cxx:183
+msgid "3.Hex/Ascii"
+msgstr "3.Hex/Ascii"
+
+#: src/ives/ives.cxx:184
+msgid "7.Search"
+msgstr "7.Zoek"
+
+#: src/ives/ives.cxx:185 src/ives/ives.cxx:197
+msgid "8.Go to"
+msgstr "8.Ga naar"
+
+#: src/ives/ives.cxx:186 src/ives/ives.cxx:199
+msgid "11.DOSr"
+msgstr "11.DOSr"
+
+#: src/ives/ives.cxx:187 src/ives/ives.cxx:200
+msgid "12.WINr"
+msgstr "12.WINr"
+
+#: src/ives/ives.cxx:188 src/ives/ives.cxx:201
+msgid "-10.Quit"
+msgstr "-10.Verlaten"
+
+#: src/ives/ives.cxx:192
+msgid "3.Copy"
+msgstr "3.Kopiëren"
+
+#: src/ives/ives.cxx:193
+msgid "4.Paste"
+msgstr "4.Plakken"
+
+#: src/ives/ives.cxx:194
+msgid "5.Cut"
+msgstr "5.Knippen"
+
+#: src/ives/ives.cxx:195
+msgid "6.Next"
+msgstr "6.Volgende"
+
+#: src/ives/ives.cxx:196
+msgid "7.Find"
+msgstr "7.Zoek"
+
+#: src/ives/ives.cxx:198
+msgid "9.Del"
+msgstr "9.Wissen"
+
+#: src/ives/ives.cxx:300
+#, c-format
+msgid "%s: IVES Editor %d-%s"
+msgstr "%s: IVES Editor %d-%s"
+
+#: src/ives/ives.cxx:346
+#, c-format
+msgid "%s: IVES Viewer %d-%s"
+msgstr "%s: IVES Viewer %d-%s"
+
+#: src/ives/ives.cxx:366
+#, c-format
+msgid "%s: IVES Image Viewer %d-%s"
+msgstr "%s: IVES Image Viewer %d-%s"
+
+#: src/ives/ives.cxx:367
+msgid "Loading "
+msgstr "Laden"
+
+#: src/ives/ives.cxx:369
+msgid "GIF Image...."
+msgstr "GIF afbeelding...."
+
+#: src/ives/ives.cxx:370
+msgid "JPEG Image...."
+msgstr "JPEG afbeelding...."
+
+#: src/ives/ives.cxx:371
+msgid "PCX Image...."
+msgstr "PCX afbeelding...."
+
+#: src/ives/ives.cxx:372
+msgid "TIFF Image...."
+msgstr "TIFF afbeelding...."
+
+#: src/ives/ives.cxx:373
+msgid "XBM Image...."
+msgstr "XBM afbeelding...."
+
+#: src/ives/ives.cxx:374
+msgid "XPM Image...."
+msgstr "XPM afbeelding...."
+
+#: src/ives/ives.cxx:375
+msgid "BMP Image...."
+msgstr "BMP afbeelding...."
+
+#: src/ives/ives.cxx:376
+msgid "Photo CD...."
+msgstr "Photo CD...."
+
+#: src/ives/ives.cxx:377
+msgid "PNG Image...."
+msgstr "PNG afbeelding...."
+
+#: src/ives/ives.cxx:452 src/ives/ives.cxx:1156 src/panel_metacall.cxx:137
+#: src/menu_process.cxx:268
+msgid "Edit file"
+msgstr "Bestand bewerken"
+
+#: src/ives/ives.cxx:457 src/ives/ives.cxx:1157 src/panel_metacall.cxx:134
+#: src/menu_process.cxx:267
+msgid "View file"
+msgstr "Bestand bekijken"
+
+#: src/ives/ives.cxx:619 src/ives/viewer.cxx:402
+msgid "Save file"
+msgstr "Bestand opslaan"
+
+#: src/ives/ives.cxx:619 src/ives/viewer.cxx:402
+msgid "Save as:"
+msgstr "Opslaan als:"
+
+#: src/ives/ives.cxx:626 src/ives/viewer.cxx:408
+msgid "Find text:"
+msgstr "Zoek text:"
+
+#: src/ives/ives.cxx:650 src/ives/viewer.cxx:411
+msgid "Go to offset..."
+msgstr "Ga naar offset..."
+
+#: src/ives/ives.cxx:650 src/ives/viewer.cxx:411
+msgid "Hex offset:"
+msgstr "Hex offset:"
+
+#: src/ives/ives.cxx:834
+#, c-format
+msgid "Viewers:  %d"
+msgstr "Viewers:  %d"
+
+#: src/ives/ives.cxx:836
+#, c-format
+msgid "Editors:  %d"
+msgstr "Editors:  %d"
+
+#: src/ives/ives.cxx:1010
+msgid "IVES Options"
+msgstr "IVES Opties"
+
+#: src/ives/ives.cxx:1012
+msgid "Image 24->8 convertion"
+msgstr "Afbeelding 24->8 omzetting"
+
+#: src/ives/ives.cxx:1013
+msgid "Photo CD resolution"
+msgstr "Photo CD resolutie"
+
+#: src/ives/ives.cxx:1081
+msgid "Another IVES already running\n"
+msgstr "Een andre IVES werkt reeds\n"
+
+#: src/ives/ives.cxx:1129
+msgid "Loading..."
+msgstr "Bezig met laden..."
+
+#: src/ives/ives.cxx:1154 src/xsetup/setup.cxx:124
+msgid "Exit"
+msgstr "Verlaat"
+
+#: src/ives/ives.cxx:1155 src/menu_process.cxx:300
+msgid "Options"
+msgstr "Opties"
+
+#: src/ives/viewer.cxx:699
+#, c-format
+msgid "Size: %d"
+msgstr "Grootte: %d"
+
+#: src/ives/viewer.cxx:738
+msgid "FATAL ERROR!"
+msgstr "FATALE FOUT!"
+
+#: src/ives/viewer.cxx:750
+msgid "FATAL ERROR"
+msgstr "FATALE FOUT"
+
+#: src/ives/viewer.cxx:750
+msgid "Permission denied"
+msgstr "Geen permissie"
+
+#: src/ives/viewer.cxx:791
+msgid "Can't save this file"
+msgstr "Kan dit bestand niet bewaren"
+
+#: src/ives/viewer.cxx:820
+msgid "Wrong line number!"
+msgstr "Foutief lijn nummer!"
+
+#: src/ives/viewer.cxx:922
+msgid "Warning"
+msgstr "Opgepast"
+
+#: src/ives/viewer.cxx:922
+msgid "String not found!"
+msgstr "String niet gevonden!"
+
+#: src/base_cap.cxx:519 src/cmdline.cxx:135
+msgid "Enter your password"
+msgstr "Geef uw paswoord"
+
+#: src/base_cap.cxx:540 src/base_cap.cxx:591 src/base_cap.cxx:2029
+msgid "Can't change to dir"
+msgstr "Kan niet naar dir wijzigen"
+
+#: src/base_cap.cxx:867
+msgid "Information"
+msgstr "Informatie"
+
+#: src/base_cap.cxx:867
+msgid "No files match given criteria."
+msgstr "Geen bestanden komen overeen met de criteria"
+
+#: src/base_cap.cxx:914
+msgid "Current FileName has no extension!"
+msgstr "Huidig bestand heeft geen extensie!"
+
+#: src/base_cap.cxx:973
+msgid "Can't DELETE on this VFS"
+msgstr "Kan niet WISSEN op deze VFS"
+
+#: src/base_cap.cxx:976
+msgid "Deleting..."
+msgstr "Wissen..."
+
+#: src/base_cap.cxx:985 src/menu_process.cxx:273
+msgid "Delete file"
+msgstr "Bestand wissen"
+
+#: src/base_cap.cxx:1045
+msgid "Delete files"
+msgstr "Bestanden wissen"
+
+#: src/base_cap.cxx:1078 src/base_cap.cxx:1118
+msgid "Copying..."
+msgstr "Kopiëren..."
+
+#: src/base_cap.cxx:1079
+msgid "Full Unpack"
+msgstr "Volledig uitpakken"
+
+#: src/base_cap.cxx:1115
+msgid "Can't COPY on this VFS"
+msgstr "Kan niet KOPIEREN op dit VFS"
+
+#: src/base_cap.cxx:1127 src/base_cap.cxx:1387
+msgid "Pocket operation"
+msgstr "Pocket operatie"
+
+#: src/base_cap.cxx:1160 src/panel.cxx:1455 src/panel.cxx:1526
+#: src/lib/vfs/ftpfs.cxx:1740 src/lib/vfs/ftpfs.cxx:1759
+#: src/lib/vfs/ftpfs.cxx:1843 src/lib/vfs/ftpfs.cxx:1929
+#: src/lib/vfs/ftpfs.cxx:1980 src/lib/vfs/afs.cxx:312 src/lib/vfs/afs.cxx:377
+#: src/lib/vfs/afs.cxx:560 src/lib/vfs/dfs.cxx:498 src/lib/vfs/dfs.cxx:550
+#: src/menu_process.cxx:269
+msgid "Copy file"
+msgstr "Bestand kopiëren"
+
+#: src/base_cap.cxx:1198
+msgid "Copy files"
+msgstr "Bestanden Kopiëren"
+
+#: src/base_cap.cxx:1230
+msgid "Moving..."
+msgstr "Verplaatsen..."
+
+#: src/base_cap.cxx:1245 src/base_cap.cxx:1276
+msgid "Can't MOVE on this VFS"
+msgstr "Kan niet VERPLAATSEN op dit VFS"
+
+#: src/base_cap.cxx:1257 src/panel.cxx:1547 src/panel.cxx:1579
+#: src/lib/vfs/dfs.cxx:601
+msgid "Move file"
+msgstr "Verplaats bestand"
+
+#: src/base_cap.cxx:1311
+msgid "Move files"
+msgstr "Verplaats bestanden"
+
+#: src/base_cap.cxx:1377
+#, fuzzy
+msgid "Can't LINK on this VFS"
+msgstr "Kan niet WISSEN op deze VFS"
+
+#: src/base_cap.cxx:1380
+#, fuzzy
+msgid "Linking..."
+msgstr "Inpakken..."
+
+#: src/base_cap.cxx:1420 src/xsetup/setup.cxx:334
+msgid "Link file"
+msgstr "Link bestand"
+
+#: src/base_cap.cxx:1458
+#, fuzzy
+msgid "Link files"
+msgstr "Link bestand"
+
+#: src/base_cap.cxx:1496
+msgid "No archiver association with your file!"
+msgstr "Geen archief prog. ingesteld voor dit bestand!"
+
+#: src/base_cap.cxx:1502 src/base_cap.cxx:1508
+msgid "Archiver don't support archive creation!"
+msgstr "Archief prog. ondersteund geen archief aanmaak!"
+
+#: src/base_cap.cxx:1514 src/base_cap.cxx:1550
+msgid "Packing..."
+msgstr "Inpakken..."
+
+#: src/base_cap.cxx:1515 src/base_cap.cxx:1551
+msgid "Creating archive"
+msgstr "Archief aanmaken"
+
+#: src/base_cap.cxx:1546 src/lib/vfs/afs.cxx:1181 src/lib/vfs/afs.cxx:1371
+msgid "Can't access TMP dir"
+msgstr "Krijg geen toegang tot TMP dir"
+
+#: src/base_cap.cxx:1662 src/query_windows.cxx:1203 src/menu_process.cxx:276
+msgid "Change Owner"
+msgstr "Wijzig eigenaar"
+
+#: src/base_cap.cxx:2001
+msgid "Set attributes"
+msgstr "Attributen instellen"
+
+#: src/bookmark.cxx:1169
+msgid "Recycle Bin"
+msgstr "Prullenbak"
+
+#: src/config_window.cxx:63
+msgid "Full mode"
+msgstr "Volledige modus"
+
+#: src/config_window.cxx:64
+msgid "Brief mode"
+msgstr "Gewone modus"
+
+#: src/config_window.cxx:65
+msgid "Custom mode"
+msgstr "Gepersonaliseerde modus"
+
+#: src/config_window.cxx:71
+msgid "XNC style icons"
+msgstr "XNC stijl iconen"
+
+#: src/config_window.cxx:72
+msgid "Windows style icons"
+msgstr "Windows stijl iconen"
+
+#: src/config_window.cxx:73
+msgid "KDE style icons"
+msgstr "KDE stijl iconen"
+
+#: src/config_window.cxx:74
+msgid "AquaFusion icons"
+msgstr "AquaFusion iconen"
+
+#: src/config_window.cxx:75
+msgid "GNOME style icons"
+msgstr "GNOME stijl iconen"
+
+#: src/config_window.cxx:81
+msgid "Original Look"
+msgstr "Origineel uiterlijk"
+
+#: src/config_window.cxx:82
+msgid "Five Look"
+msgstr "Five uiterlijk"
+
+#: src/config_window.cxx:83
+msgid "Aqua Look"
+msgstr "Aqua uiterlijk"
+
+#: src/config_window.cxx:344 src/config_window.cxx:361
+#: src/config_window.cxx:381
+msgid "Wait..."
+msgstr "Wachten..."
+
+#: src/config_window.cxx:346 src/config_window.cxx:363
+#: src/config_window.cxx:383
+msgid "Loading Pixmaps..."
+msgstr "Pixmaps laden..."
+
+#: src/config_window.cxx:430
+msgid "XNC Configuration"
+msgstr "XNC Configuratie"
+
+#: src/config_window.cxx:433
+msgid "General:"
+msgstr "Algemeen:"
+
+#: src/config_window.cxx:434
+msgid "User prompts:"
+msgstr "User prompts:"
+
+#: src/config_window.cxx:435
+msgid "Show hidden files"
+msgstr "Toon verborgen bestanden"
+
+#: src/config_window.cxx:437
+msgid "Bookmark animation"
+msgstr "Bladwijzer animatie"
+
+#: src/config_window.cxx:438
+msgid "IVES exit with XNC"
+msgstr "IVES afsluiten met XNC"
+
+#: src/config_window.cxx:440
+msgid "Icons with directories"
+msgstr "Iconen met directories"
+
+#: src/config_window.cxx:441
+msgid "Icons with files"
+msgstr "Iconen met bestanden"
+
+#: src/config_window.cxx:443
+msgid "Status bar view:"
+msgstr "Statusbar zicht"
+
+#: src/config_window.cxx:444
+msgid "File name in status"
+msgstr "Bestandnaam in status"
+
+#: src/config_window.cxx:445
+msgid "Attributes in status"
+msgstr "Attributen in status"
+
+#: src/config_window.cxx:446
+msgid "Date/Time in status"
+msgstr "Datum/Tijd in status"
+
+#: src/config_window.cxx:447
+msgid "Size in status"
+msgstr "Grootte in status"
+
+#: src/config_window.cxx:448
+msgid "Owner in status"
+msgstr "Eigenaar in status"
+
+#: src/config_window.cxx:450
+msgid "Filled file cursor"
+msgstr "Filled file cursor"
+
+#: src/config_window.cxx:452
+msgid "Raise term on exec"
+msgstr "Raise term on exec"
+
+#: src/config_window.cxx:453
+msgid "Lynx style navigation"
+msgstr "Lynx stijl navigatie"
+
+#: src/config_window.cxx:454
+msgid "Shadow text"
+msgstr "Schaduw text"
+
+#: src/config_window.cxx:455
+msgid "Choose iconset:"
+msgstr "Kies iconenset:"
+
+#: src/config_window.cxx:458
+msgid "Prompts:"
+msgstr "Prompts:"
+
+#: src/config_window.cxx:459
+msgid "Copy prompt"
+msgstr "Kopiëer prompt"
+
+#: src/config_window.cxx:460
+msgid "Move prompt"
+msgstr "Verplaats prompt"
+
+#: src/config_window.cxx:461
+msgid "Delete prompt"
+msgstr "Wis prompt"
+
+#: src/config_window.cxx:462
+msgid "Overwrite prompt"
+msgstr "Overschrijf prompt"
+
+#: src/config_window.cxx:463
+msgid "Pack prompt"
+msgstr "Prompt inpakken"
+
+#: src/config_window.cxx:464 src/xsetup/setup.cxx:150
+msgid "Exit prompt"
+msgstr "Verlaat prompt"
+
+#: src/config_window.cxx:466
+msgid "Dirscan timeout:"
+msgstr "Dirscan timeout:"
+
+#: src/config_window.cxx:468
+msgid "Branch depth:"
+msgstr "Branch diepte:"
+
+#: src/config_window.cxx:470
+msgid "sec"
+msgstr "sec"
+
+#: src/config_window.cxx:476
+msgid "Magic file:"
+msgstr "Magic bestand:"
+
+#: src/config_window.cxx:479
+msgid "GUI plugin will work only after restart of XNC."
+msgstr "GUI plugin zal enkel werken na een herstart van XNC."
+
+#: src/config_window.cxx:480
+msgid "GUI plugin (skin):"
+msgstr "GUI plugin (skin):"
+
+#: src/config_window.cxx:483
+msgid "Mouse state:"
+msgstr "Muis status:"
+
+#: src/config_window.cxx:489
+msgid "Action for the state:"
+msgstr "Action for the state:"
+
+#: src/config_window.cxx:493
+msgid "Modes:"
+msgstr "Modes:"
+
+#: src/config_window.cxx:496
+msgid "Enter mode format string:"
+msgstr "Enter mode format string:"
+
+#: src/config_window.cxx:497
+msgid "Minimum display file name length:"
+msgstr "Minimum display bestandsnaam lengte:"
+
+#: src/config_window.cxx:498
+msgid "Choose mode:"
+msgstr "Kies modus:"
+
+#: src/config_window.cxx:499
+msgid "Mode format explanation:"
+msgstr "Mode format explanation:"
+
+#: src/config_window.cxx:500
+msgid "F - file name"
+msgstr "F - bestandnaam"
+
+#: src/config_window.cxx:501
+msgid "A - file attributes (-rwxr-x-r-x)"
+msgstr "A - bestand attributen (-rwxr-x-r-x)"
+
+#: src/config_window.cxx:502
+msgid "O - file attributes in octal (0755)"
+msgstr "O - octale bestand attributen (0755)"
+
+#: src/config_window.cxx:503
+msgid "S - file size"
+msgstr "S - bestand grootte"
+
+#: src/config_window.cxx:504
+msgid "D - file date/time"
+msgstr "D - bestand datum/tijd"
+
+#: src/config_window.cxx:505
+msgid "| - visual separator"
+msgstr "| - scheidingsteken"
+
+#: src/config_window.cxx:506
+msgid ". - small empty space"
+msgstr ". - kleine lege ruimte"
+
+#: src/config_window.cxx:516
+msgid "Main"
+msgstr "Main"
+
+#: src/config_window.cxx:518
+msgid "Prompt/View"
+msgstr "Prompt/View"
+
+#: src/config_window.cxx:520
+msgid "Look/Feel"
+msgstr "Look/Feel"
+
+#: src/config_window.cxx:522
+msgid "Mouse"
+msgstr "Muis"
+
+#: src/config_window.cxx:524
+msgid "Modes"
+msgstr "Modes"
+
+#: src/find.cxx:309
+msgid "From '/'"
+msgstr "Van '/'"
+
+#: src/find.cxx:310
+msgid "Stop"
+msgstr "Stop"
+
+#: src/find.cxx:311 src/menu_process.cxx:162
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: src/ftpvisuals.cxx:330
+msgid "Can't close during operation!"
+msgstr "Kan niet afsluiten tijden een operatie!"
+
+#: src/ftpvisuals.cxx:413 src/ftpvisuals.cxx:414 src/ftpvisuals.cxx:421
+#: src/ftpvisuals.cxx:422 src/ftpvisuals.cxx:425 src/ftpvisuals.cxx:426
+msgid "Vacant FTP"
+msgstr "Vacant FTP"
+
+#: src/main.cxx:91
+msgid "Error connecting to IVES"
+msgstr "Fout tijdens verbinding naar IVES"
+
+#: src/main.cxx:92
+msgid "Editor and/or Viewer not available! Use 'xncsetup' for correct"
+msgstr "Editor en/of Viewer niet beschikbaar! Gebruik 'xncsetup' voor correcte"
+
+#: src/main.cxx:98
+msgid "Loading IVES"
+msgstr "IVES Laden"
+
+#: src/main.cxx:98
+msgid "   Please wait..."
+msgstr "   Even geduld..."
+
+#: src/main.cxx:105
+msgid "IVE System not available!"
+msgstr "IVE Systeem niet beschikbaar!"
+
+#: src/main.cxx:361
+msgid ""
+"OOPS! It seems that You found a bug in XNC!!!\n"
+"If You can repeat this situation then send me a bug report\n"
+"to <leo@xnc.dubna.su> with subject  'XNC - bug report'\n"
+msgstr ""
+"OOPS! It seems that You found a bug in XNC!!!\n"
+"If You can repeat this situation then send me a bug report\n"
+"to <leo@xnc.dubna.su> with subject  'XNC - bug report'\n"
+
+#: src/main.cxx:365
+msgid ""
+"Body of the mail:\n"
+"   -What are You doing to produce this bug.\n"
+"   -XNC configuration (~/.xnc/xnc.ini) file.\n"
+"   -Output of 'ldd xnc' command.\n"
+"   -X Server configuration (resolution and color depth)\n"
+"   -And Your reply mail address, for more information about situation if "
+"need\n"
+"Do NOT include 'CORE' dump file in the following letter.\n"
+"Thanks, and sorry for BUG\n"
+msgstr ""
+"Body of the mail:\n"
+"   -What are You doing to produce this bug.\n"
+"   -XNC configuration (~/.xnc/xnc.ini) file.\n"
+"   -Output of 'ldd xnc' command.\n"
+"   -X Server configuration (resolution and color depth)\n"
+"   -And Your reply mail address, for more information about situation if "
+"need\n"
+"Do NOT include 'CORE' dump file in the following letter.\n"
+"Thanks, and sorry for BUG\n"
+
+#: src/main.cxx:541
+#, c-format
+msgid "Starting %s Build%s.....\n"
+msgstr "Starting %s Build%s.....\n"
+
+#: src/main.cxx:572
+msgid "Copyright (c) 1995-2002 Leonid V. KHramov aka Leo <leo@xnc.dubna.su>\n"
+msgstr "Copyright (c) 1995-2002 Leonid V. KHramov aka Leo <leo@xnc.dubna.su>\n"
+
+#: src/main.cxx:648
+msgid ""
+"------------------------------------------------------------------------------\n"
+"Notice:\n"
+"\tIf You like X Northern Captain and will use it,\n"
+"\tthen send me e-mail to <leo@xnc.dubna.su> with names of\n"
+"\tcity and country where you are using it. It's for my collection.\n"
+"\tIf You do it, i'll be happy....\n"
+"\t\t\tThanks,\n"
+"\t\t\tLeonid V. Khramov aka Leo <leo@xnc.dubna.su>\n"
+msgstr ""
+"------------------------------------------------------------------------------\n"
+"Notice:\n"
+"\tIf You like X Northern Captain and will use it,\n"
+"\tthen send me e-mail to <leo@xnc.dubna.su> with names of\n"
+"\tcity and country where you are using it. It's for my collection.\n"
+"\tIf You do it, i'll be happy....\n"
+"\t\t\tThanks,\n"
+"\t\t\tLeonid V. Khramov aka Leo <leo@xnc.dubna.su>\n"
+
+#: src/main.cxx:654
+msgid ""
+"\n"
+"PS: If you have any questions, comments about xnc or you want\n"
+"to know latest news then join to xnc mailing list <xnc@xnc.dubna.su>\n"
+"Just mail a letter with 'SUBSCRIBE xnc' in the body of mail to\n"
+"<majordomo@xnc.dubna.su> and you are inside.\n"
+msgstr ""
+"\n"
+"PS: If you have any questions, comments about xnc or you want\n"
+"to know latest news then join to xnc mailing list <xnc@xnc.dubna.su>\n"
+"Just mail a letter with 'SUBSCRIBE xnc' in the body of mail to\n"
+"<majordomo@xnc.dubna.su> and you are inside.\n"
+
+#: src/main.cxx:659
+#, c-format
+msgid "Thank you. You have run X Northern Captain %d times!\n"
+msgstr "Dank u. U heeft X Northern Captain %d keren gebruikt!\n"
+
+#: src/man_page.cxx:94
+msgid "Man report"
+msgstr "Man report"
+
+#: src/man_page.cxx:94
+msgid "No manual page for this command."
+msgstr "Geen man pagina voor dit commando."
+
+#: src/panel.cxx:865
+msgid " file(s) selected"
+msgstr " bestand(s) geselecteerd"
+
+#: src/panel.cxx:1271
+msgid "Kill process!"
+msgstr "Kill process!"
+
+#: src/panel.cxx:1435
+msgid "Delete file?"
+msgstr "Bestand wissen?"
+
+#: src/panel.cxx:1453 src/panel.cxx:1524
+msgid "Copy files?"
+msgstr "Bestanden kopiëren?"
+
+#: src/panel.cxx:1472
+#, fuzzy
+msgid "Link files?"
+msgstr "Link bestand"
+
+#: src/panel.cxx:1474
+#, fuzzy
+msgid "Make a link to file"
+msgstr "Kan bestandlijst niet lezen!"
+
+#: src/panel.cxx:1498 src/panel.cxx:1500
+msgid "Create archive?"
+msgstr "Archief aanmaken?"
+
+#: src/panel.cxx:1545 src/panel.cxx:1577
+msgid "Move files?"
+msgstr "Bestanden verplaatsen?"
+
+#: src/panel.cxx:1564 src/menu_process.cxx:271
+msgid "Rename file"
+msgstr "Bestand hernoemen"
+
+#: src/panel.cxx:1725 src/panel.cxx:1802
+msgid "Reading directory"
+msgstr "Directory lezen"
+
+#: src/panel.cxx:1749 src/lib/vfs/ftpfs.cxx:2048
+msgid "Changing directory"
+msgstr "Directory wijzigen"
+
+#: src/panel.cxx:1831
+msgid "Which command?"
+msgstr "Welk commando?"
+
+#: src/panel.cxx:1909
+msgid "Execute with..."
+msgstr "Uitvoeren met..."
+
+#: src/panel.cxx:1979 src/panel_metacall.cxx:264 src/menu_process.cxx:272
+#: src/panel_click.cxx:234
+msgid "Make directory"
+msgstr "Directory aanmaken"
+
+#: src/panel.cxx:2105 src/lib/vfs/ftpfs.cxx:1101
+msgid "Pusher"
+msgstr "Pusher"
+
+#: src/panel.cxx:2105
+msgid "Can't switch to FTP over another one!"
+msgstr "Kan niet naar een andere FTP overschakelen!"
+
+#: src/panel_metacall.cxx:64 src/panel_metacall.cxx:253
+#: src/menu_process.cxx:613 src/panel_click.cxx:172
+msgid "Man page"
+msgstr "Man pagina"
+
+#: src/panel_metacall.cxx:68
+msgid "Make directory "
+msgstr "Directory aanmaken"
+
+#: src/panel_metacall.cxx:76
+#, c-format
+msgid "Create archive %s"
+msgstr "Archief %s aanmaken"
+
+#: src/panel_metacall.cxx:85
+#, c-format
+msgid "Create archive %s "
+msgstr "Archief %s aanmaken "
+
+#: src/panel_metacall.cxx:91
+msgid "Go to subdirectory "
+msgstr "Ga naar subdirectory"
+
+#: src/panel_metacall.cxx:98
+msgid "Execute "
+msgstr "Uitvoeren"
+
+#: src/panel_metacall.cxx:106
+msgid "Browse into archive "
+msgstr "Browsen in archief"
+
+#: src/panel_metacall.cxx:111
+msgid "Execute association "
+msgstr "Execute association "
+
+#: src/panel_metacall.cxx:116
+msgid "Execute with ... "
+msgstr "Uitvoeren met ... "
+
+#: src/panel_metacall.cxx:124
+msgid "Copy file(s)"
+msgstr "Bestand(en) kopiëren"
+
+#: src/panel_metacall.cxx:127
+msgid "Move/Rename file(s)"
+msgstr "Bestand(en) verplaatsen/hernoemen"
+
+#: src/panel_metacall.cxx:130
+msgid "Delete file(s)"
+msgstr "Bestand(en) wissen"
+
+#: src/panel_metacall.cxx:142
+msgid "Change file(s) attributes"
+msgstr "Bestand attributen wijzigen"
+
+#: src/panel_metacall.cxx:145
+msgid "Change file(s) owner"
+msgstr "Bestand eigenaar wijzigen"
+
+#: src/query_windows.cxx:157
+msgid "User prompt"
+msgstr "User prompt"
+
+#: src/query_windows.cxx:158
+msgid "Update archive before exiting from it?"
+msgstr "Archief updaten voordat het verlaten wordt?"
+
+#: src/query_windows.cxx:159
+msgid "Press 'Update' if You change files"
+msgstr "Druk op 'Update' als u bestanden wijzigt"
+
+#: src/query_windows.cxx:160
+msgid "Update"
+msgstr "Update"
+
+#: src/query_windows.cxx:194
+msgid "File:"
+msgstr "Bestand:"
+
+#: src/query_windows.cxx:196
+msgid "This file already exists!"
+msgstr "Dit bestand bestaat reeds!"
+
+#: src/query_windows.cxx:197
+msgid "Overwrite existing file???"
+msgstr "Bestaand bestand overschrijven???"
+
+#: src/query_windows.cxx:199
+msgid "Yes to All"
+msgstr "Ja voor alles"
+
+#: src/query_windows.cxx:201
+msgid "No"
+msgstr "Nee"
+
+#: src/query_windows.cxx:270 src/query_windows.cxx:816
+#, c-format
+msgid "File:   %s"
+msgstr "Bestand:   %s"
+
+#: src/query_windows.cxx:271 src/query_windows.cxx:824
+#, c-format
+msgid "Owner:  %s.%s"
+msgstr "Eigenaar:  %s.%s"
+
+#: src/query_windows.cxx:278 src/query_windows.cxx:283
+#, c-format
+msgid "Status: %s"
+msgstr "Status: %s"
+
+#: src/query_windows.cxx:295
+msgid "Agree"
+msgstr "Akkoord"
+
+#: src/query_windows.cxx:333 src/query_windows.cxx:334
+msgid "Path:  none"
+msgstr "Path:  geen"
+
+#: src/query_windows.cxx:335
+msgid "File:  unknown"
+msgstr "Bestand:  onbekend"
+
+#: src/query_windows.cxx:336
+msgid "Size:  unknown"
+msgstr "Grootte:  onbekend"
+
+#: src/query_windows.cxx:337 src/query_windows.cxx:804
+msgid "Status: rwxrwxrwx"
+msgstr "Status: rwxrwxrwx"
+
+#: src/query_windows.cxx:338
+msgid "Owner: *********"
+msgstr "Eigenaar: *********"
+
+#: src/query_windows.cxx:345
+msgid "Read"
+msgstr "Lees"
+
+#: src/query_windows.cxx:346
+msgid "Write"
+msgstr "Schrijf"
+
+#: src/query_windows.cxx:347
+msgid "Execute"
+msgstr "Uitvoeren"
+
+#: src/query_windows.cxx:566
+#, c-format
+msgid "File: %s"
+msgstr "Bestand: %s"
+
+#: src/query_windows.cxx:567
+msgid "Attributes"
+msgstr "Attributen"
+
+#: src/query_windows.cxx:570 src/query_windows.cxx:646
+#: src/query_windows.cxx:1210
+msgid "Owner:"
+msgstr "Eigenaar:"
+
+#: src/query_windows.cxx:571 src/query_windows.cxx:647
+msgid "Group:"
+msgstr "Groep:"
+
+#: src/query_windows.cxx:572 src/query_windows.cxx:648
+msgid "Other:"
+msgstr "Andere:"
+
+#: src/query_windows.cxx:575 src/query_windows.cxx:1790
+#, c-format
+msgid "Owner: %s.%s"
+msgstr "Eigenaar: %s.%s"
+
+#: src/query_windows.cxx:641
+msgid "For all selected files:"
+msgstr "Voor alle geselecteerde bestanden:"
+
+#: src/query_windows.cxx:642
+msgid "Set/Clear attributes"
+msgstr "Zet/wis attributen"
+
+#: src/query_windows.cxx:643
+msgid "Set"
+msgstr "Zet"
+
+#: src/query_windows.cxx:644 src/xsetup/setup.cxx:1050
+msgid "Clear"
+msgstr "Wis"
+
+#: src/query_windows.cxx:789
+#, c-format
+msgid "From: %s"
+msgstr "Van: %s"
+
+#: src/query_windows.cxx:791
+msgid "To:   Recycle Bin"
+msgstr "Naar:   Prullenbak"
+
+#: src/query_windows.cxx:793
+msgid "To:   Printer"
+msgstr "Naar:   Printer"
+
+#: src/query_windows.cxx:797 src/query_windows.cxx:801
+#, c-format
+msgid "To:   %s"
+msgstr "Naar:   %s"
+
+#: src/query_windows.cxx:808 src/query_windows.cxx:902
+#, c-format
+msgid "File:   %d selected files"
+msgstr "Bestand:   %d geselecteerde bestanden"
+
+#: src/query_windows.cxx:809 src/query_windows.cxx:817
+#: src/query_windows.cxx:903
+#, c-format
+msgid "Size:   %s"
+msgstr "Grootte:   %s"
+
+#: src/query_windows.cxx:810
+msgid "Status: *********"
+msgstr "Status: *********"
+
+#: src/query_windows.cxx:811
+msgid "Owner:  *********"
+msgstr "Eigenaar:  *********"
+
+#: src/query_windows.cxx:887
+#, c-format
+msgid "From:  %s"
+msgstr "Van:  %s"
+
+#: src/query_windows.cxx:908
+msgid "To:"
+msgstr "Naar:"
+
+#: src/query_windows.cxx:925 src/query_windows.cxx:1807
+msgid "Make symbolic link"
+msgstr ""
+
+#: src/query_windows.cxx:927 src/query_windows.cxx:1809
+msgid "Translate symlinks as is."
+msgstr "Translate symlinks as is."
+
+#: src/query_windows.cxx:1184 src/query_windows.cxx:1789
+#, c-format
+msgid "File:  %s"
+msgstr "Bestand:  %s"
+
+#: src/query_windows.cxx:1186
+msgid "Attributes: "
+msgstr "Attributen: "
+
+#: src/query_windows.cxx:1199
+#, c-format
+msgid "File: %d selected"
+msgstr "Bestand: %d geselecteerd"
+
+#: src/query_windows.cxx:1200
+msgid "Attributes: *********"
+msgstr "Attributen: *********"
+
+#: src/query_windows.cxx:1204
+msgid "Change"
+msgstr "Wijzig"
+
+#: src/query_windows.cxx:1211
+msgid "Users:"
+msgstr "Users:"
+
+#: src/query_windows.cxx:1212
+msgid "Groups:"
+msgstr "Groepen:"
+
+#: src/query_windows.cxx:1360
+msgid "Sorry"
+msgstr "Sorry"
+
+#: src/query_windows.cxx:1360
+msgid "Not implemented yet!"
+msgstr "Nog niet geïmplementeerd!"
+
+#: src/query_windows.cxx:1396
+msgid "Hostname can't be blank!"
+msgstr "Hostname mag niet leeg zijn!"
+
+#: src/query_windows.cxx:1401
+msgid "Login can't be blank!"
+msgstr "Login mag niet leeg zijn!"
+
+#: src/query_windows.cxx:1406
+msgid "Password can't be blank!"
+msgstr "Paswoord mag niet leeg zijn!"
+
+#: src/query_windows.cxx:1417
+msgid "Ftp Proxy Config"
+msgstr "Ftp Proxy Configuratie"
+
+#: src/query_windows.cxx:1418 src/query_windows.cxx:1604
+msgid "Ftp Proxy host:"
+msgstr "Ftp Proxy host:"
+
+#: src/query_windows.cxx:1420 src/query_windows.cxx:1606
+msgid "FTP Proxy Login:"
+msgstr "FTP Proxy Login:"
+
+#: src/query_windows.cxx:1422 src/query_windows.cxx:1592
+#: src/query_windows.cxx:1608
+msgid "Password:"
+msgstr "Paswoord:"
+
+#: src/query_windows.cxx:1557
+msgid "Ftp Connection"
+msgstr "Ftp Verbinding"
+
+#: src/query_windows.cxx:1559
+msgid "Connect"
+msgstr "Verbind"
+
+#: src/query_windows.cxx:1565
+msgid "FTP Sessions:"
+msgstr "FTP Sessies:"
+
+#: src/query_windows.cxx:1572
+msgid "Host:"
+msgstr "Host:"
+
+#: src/query_windows.cxx:1573
+msgid "Login:"
+msgstr "Login:"
+
+#: src/query_windows.cxx:1574
+msgid "Path:"
+msgstr "Path:"
+
+#: src/query_windows.cxx:1580
+msgid "Session name:"
+msgstr "Sessie naam:"
+
+#: src/query_windows.cxx:1583
+msgid "Host name:"
+msgstr "Host naam:"
+
+#: src/query_windows.cxx:1586
+msgid "Remote path:"
+msgstr "Remote path:"
+
+#: src/query_windows.cxx:1589
+msgid "Login name:"
+msgstr "Login naam:"
+
+#: src/query_windows.cxx:1595
+msgid "Port:"
+msgstr "Poort:"
+
+#: src/query_windows.cxx:1598
+msgid "Add/Upd"
+msgstr "Add/Upd"
+
+#: src/query_windows.cxx:1600
+msgid "Anonymous"
+msgstr "Anonymous"
+
+#: src/query_windows.cxx:1602
+msgid "Use proxy"
+msgstr "Gebruik proxy"
+
+#: src/query_windows.cxx:1660
+msgid "Sites"
+msgstr "Sites"
+
+#: src/query_windows.cxx:1662
+msgid "New site"
+msgstr "Nieuwe site"
+
+#: src/query_windows.cxx:1664
+msgid "Proxy"
+msgstr "Proxy"
+
+#: src/query_windows.cxx:1796
+msgid "To directory:"
+msgstr "Naar directory:"
+
+#: src/query_windows.cxx:1865
+#, fuzzy
+msgid "New Name:"
+msgstr "Lettertype Naam:"
+
+#: src/query_windows.cxx:2006
+msgid "Remounting"
+msgstr "Hermounten"
+
+#: src/query_windows.cxx:2006
+msgid "Change DEVICE NOW"
+msgstr "Wijzig DEVICE NU"
+
+#: src/query_windows.cxx:2039
+msgid "Kill failed"
+msgstr "Kill mislukt"
+
+#: src/query_windows.cxx:2079
+msgid "Signals for sending:"
+msgstr "Signalen om te zenden:"
+
+#: src/query_windows.cxx:2080
+msgid "Send"
+msgstr "Zend"
+
+#: src/query_windows.cxx:2111
+msgid "Disk Free Space"
+msgstr "Vrije disk ruimte"
+
+#: src/query_windows.cxx:2129
+msgid "Memory Information"
+msgstr "Geheugen info"
+
+#: src/query_windows.cxx:2147
+msgid "Menu commands"
+msgstr "Menu commando's"
+
+#: src/query_windows.cxx:2167
+msgid "Select files"
+msgstr "Selecteer bestanden"
+
+#: src/query_windows.cxx:2169
+msgid "Deselect files"
+msgstr "De-selecteer bestanden"
+
+#: src/query_windows.cxx:2174
+msgid "Mask:"
+msgstr "Masker:"
+
+#: src/lib/vfs/ftpfs.cxx:131
+#, c-format
+msgid "Unplaning Child DIE with code %d"
+msgstr "Unplaning Child DIE with code %d"
+
+#: src/lib/vfs/ftpfs.cxx:741 src/lib/vfs/ftpfs.cxx:788
+#: src/lib/vfs/ftpfs.cxx:834
+msgid "Can't read list file!"
+msgstr "Kan bestandlijst niet lezen!"
+
+#: src/lib/vfs/ftpfs.cxx:752 src/lib/vfs/ftpfs.cxx:799
+#: src/lib/vfs/ftpfs.cxx:845
+msgid "Can't create return list!"
+msgstr "Can't create return list!"
+
+#: src/lib/vfs/ftpfs.cxx:1077
+msgid "Operation not complete!"
+msgstr "De operatie is niet af !"
+
+#: src/lib/vfs/ftpfs.cxx:1101
+msgid "Panel already in FTP mode. Close/Minimize first."
+msgstr "Paneel reeds in FTP mode. Kies eerst Minimaliseren."
+
+#: src/lib/vfs/ftpfs.cxx:1338
+msgid "FTP FATAL"
+msgstr "FTP FATAAL"
+
+#: src/lib/vfs/ftpfs.cxx:1438
+msgid "Too many active connections"
+msgstr "Te veel actieve verbindingen"
+
+#: src/lib/vfs/ftpfs.cxx:1464
+msgid "Forking Child"
+msgstr "Forking Child"
+
+#: src/lib/vfs/ftpfs.cxx:1471
+msgid "Connecting"
+msgstr "Verbinden"
+
+#: src/lib/vfs/ftpfs.cxx:1485
+msgid "Child process failed"
+msgstr "Child process failed"
+
+#: src/lib/vfs/ftpfs.cxx:1500
+msgid "Closing connection"
+msgstr "Verbinding afsluiten"
+
+#: src/lib/vfs/ftpfs.cxx:1541 src/lib/vfs/ftpfs.cxx:1949
+msgid "Getting file"
+msgstr "Getting file"
+
+#: src/lib/vfs/ftpfs.cxx:1568
+msgid "Deleting file"
+msgstr "Bestand wissen"
+
+#: src/lib/vfs/ftpfs.cxx:1589
+msgid "Deleting files"
+msgstr "Bestanden wissen"
+
+#: src/lib/vfs/ftpfs.cxx:1622
+msgid "Making directory"
+msgstr "Directory aanmaken"
+
+#: src/lib/vfs/ftpfs.cxx:1650 src/lib/vfs/ftpfs.cxx:1828
+#: src/lib/vfs/ftpfs.cxx:1969
+msgid "Can't create temporary list file!"
+msgstr "Kan geen tijdelijke bestandenlijst aanmaken!"
+
+#: src/lib/vfs/ftpfs.cxx:1790
+msgid "Putting file"
+msgstr "Putting bestand"
+
+#: src/lib/vfs/ftpfs.cxx:1875
+msgid "MPutting files"
+msgstr "MPutting bestanden"
+
+#: src/lib/vfs/ftpfs.cxx:2007
+msgid "MGetting files"
+msgstr "MGetting bestanden"
+
+#: src/lib/vfs/ftpfs.cxx:2149 src/lib/vfs/ftpfs.cxx:2171
+msgid "Directory listing"
+msgstr "Directory lijst"
+
+#: src/lib/vfs/afs.cxx:135
+msgid "Updating..."
+msgstr "Updating..."
+
+#: src/lib/vfs/afs.cxx:243
+msgid "Preparing to execution..."
+msgstr "Voorbereiden voor uitvoering..."
+
+#: src/lib/vfs/afs.cxx:263
+msgid "Can't access exeTMP dir"
+msgstr "Geen toegang tot de TMP dir"
+
+#: src/lib/vfs/afs.cxx:279 src/lib/vfs/afs.cxx:339
+msgid "Unpacking FAILED!"
+msgstr "Uitpakken MISLUKT!"
+
+#: src/lib/vfs/afs.cxx:300
+msgid "Can't copy to destination VFS"
+msgstr "Kan niet kopiëren naar bestemming VFS"
+
+#: src/lib/vfs/afs.cxx:398 src/lib/vfs/afs.cxx:504
+msgid "TMP dir not accessable!"
+msgstr "TMP dir niet toegankelijk!"
+
+#: src/lib/vfs/afs.cxx:437 src/lib/vfs/afs.cxx:610
+msgid "Can't access execTMP dir"
+msgstr "Geen toegang tot exec TMP dir"
+
+#: src/lib/vfs/afs.cxx:546
+msgid "Operation not supported in this archive"
+msgstr "Operatie niet ondersteund voor dit archief"
+
+#: src/lib/vfs/afs.cxx:663
+msgid "No support for this file"
+msgstr "Geen ondersteuning voor dit bestand"
+
+#: src/lib/vfs/afs.cxx:683
+msgid "Can't create AFSTMP directory!"
+msgstr "kan AFSTMP dir niet aanmaken!"
+
+#: src/lib/vfs/afs.cxx:1191
+msgid "No specified executable for this AFS"
+msgstr "No specified executable for this AFS"
+
+#: src/lib/vfs/afs.cxx:1196
+msgid "Reading Archive..."
+msgstr "Lees archief..."
+
+#: src/lib/vfs/afs.cxx:1327
+msgid "Can't follow directory (outside archive)!"
+msgstr "Kan dir niet volgen (buiten het archief)!"
+
+#: src/lib/vfs/afs.cxx:1481
+msgid "Exit from archive before cleaning cache!"
+msgstr "Verlaten van het archief zonder de cache te wissen!"
+
+#: src/lib/vfs/afs.cxx:1486
+msgid "Report"
+msgstr "Rapport"
+
+#: src/lib/vfs/afs.cxx:1486
+msgid "Archive cache is clean."
+msgstr "Archief cache is leeg."
+
+#: src/lib/vfs/afs.cxx:1488
+msgid "Something wrong with AFS cache!!!"
+msgstr "Er is iets mis met de AFS cache!!!"
+
+#: src/lib/vfs/afs.cxx:1518
+msgid "Errors during archive creation"
+msgstr "Fouten tijdens de aanmaak van het archief"
+
+#: src/lib/vfs/dfs.cxx:112 src/lib/vfs/dfs.cxx:235 src/lib/vfs/dfs.cxx:798
+msgid "Error: trying copy to itself"
+msgstr "Fout: poging op te kopiëren naar zichzelf"
+
+#: src/lib/vfs/dfs.cxx:127
+msgid "Error: can't write data to destination"
+msgstr "Fout: kan geen gegevens naar de bestemming schrijven"
+
+#: src/lib/vfs/dfs.cxx:161
+msgid "Error: operation incomplete!"
+msgstr "Fout: operatie niet compleet!"
+
+#: src/lib/vfs/dfs.cxx:578
+msgid "Error: RM call failed (Unknown reason)"
+msgstr "Fout: RM aanroep mislukt (Onbekende oorzaak)"
+
+#: src/lib/vfs/dfs.cxx:954
+#, fuzzy
+msgid "Symlink file"
+msgstr "Link bestand"
+
+#: src/lib/vfs/dfs.cxx:981
+#, fuzzy
+msgid "Operation not supported on this VFS"
+msgstr "Operatie niet ondersteund voor dit archief"
+
+#: src/xsetup/setup.cxx:126
+msgid "Sysfiles Path:"
+msgstr "Sysbestanden Path:"
+
+#: src/xsetup/setup.cxx:127
+msgid "XNC Geometry:"
+msgstr "XNC Geometry:"
+
+#: src/xsetup/setup.cxx:128
+msgid "XNC Editor:"
+msgstr "XNC Editor:"
+
+#: src/xsetup/setup.cxx:129
+msgid "XNC Viewer:"
+msgstr "XNC Viewer:"
+
+#: src/xsetup/setup.cxx:130
+msgid "Font Name:"
+msgstr "Lettertype Naam:"
+
+#: src/xsetup/setup.cxx:151
+msgid "Save configuration?"
+msgstr "Configuratie bewaren?"
+
+#: src/xsetup/setup.cxx:311
+msgid "Vertical"
+msgstr "Verticaal"
+
+#: src/xsetup/setup.cxx:312
+msgid "Horizontal"
+msgstr "Horizontaal"
+
+#: src/xsetup/setup.cxx:313
+msgid "Page"
+msgstr "Pagina"
+
+#: src/xsetup/setup.cxx:315
+msgid "Main Font"
+msgstr "Hoofdlettertype"
+
+#: src/xsetup/setup.cxx:316
+msgid "Panels Font"
+msgstr "Vensters lettertype"
+
+#: src/xsetup/setup.cxx:317
+msgid "Fixed Font"
+msgstr "Vast lettertype"
+
+#: src/xsetup/setup.cxx:318
+msgid "IVES Font"
+msgstr "IVES lettertype"
+
+#: src/xsetup/setup.cxx:319
+msgid "Mini Fixed Font"
+msgstr "Mini Fixed lettertype"
+
+#: src/xsetup/setup.cxx:322
+msgid "Background"
+msgstr "Achtergrond"
+
+#: src/xsetup/setup.cxx:323
+msgid "Shadow color"
+msgstr "Schaduw kleur"
+
+#: src/xsetup/setup.cxx:324
+msgid "Text color"
+msgstr "Text kleur"
+
+#: src/xsetup/setup.cxx:325
+msgid "Text warning"
+msgstr "Text waarschuwing"
+
+#: src/xsetup/setup.cxx:326
+msgid "Text color 2"
+msgstr "Text kleur 2"
+
+#: src/xsetup/setup.cxx:327
+msgid "Cursor color"
+msgstr "Cursor kleur"
+
+#: src/xsetup/setup.cxx:328
+msgid "Panel Info"
+msgstr "Venster info"
+
+#: src/xsetup/setup.cxx:329
+msgid "Selected file"
+msgstr "Geselecteerd bestand"
+
+#: src/xsetup/setup.cxx:330
+msgid "Extension file"
+msgstr "Extensie bestand"
+
+#: src/xsetup/setup.cxx:331
+msgid "Normal file"
+msgstr "Normaal bestand"
+
+#: src/xsetup/setup.cxx:332
+msgid "Directory"
+msgstr "Directory"
+
+#: src/xsetup/setup.cxx:333
+msgid "Execution file"
+msgstr "Uitvoerbaar bestand"
+
+#: src/xsetup/setup.cxx:335
+msgid "Archive file"
+msgstr "Archief bestand"
+
+#: src/xsetup/setup.cxx:336
+msgid "Image file"
+msgstr "Afbeelding bestand"
+
+#: src/xsetup/setup.cxx:360
+msgid "Define Key"
+msgstr "Define Toets"
+
+#: src/xsetup/setup.cxx:429 src/xsetup/setup.cxx:430
+msgid "Now Press Key combination..."
+msgstr "Druk nu de toetsenbordcombinatie..."
+
+#: src/xsetup/setup.cxx:657
+msgid "WHAT'S NEW from last version"
+msgstr "WAT IS NIEUW t.o.v. de vorige versie"
+
+#: src/xsetup/setup.cxx:674
+msgid "XNC Layout"
+msgstr "XNC Layout"
+
+#: src/xsetup/setup.cxx:675 src/xsetup/setup.cxx:1062
+msgid "Fonts"
+msgstr "Lettertypes"
+
+#: src/xsetup/setup.cxx:676 src/xsetup/setup.cxx:1062
+msgid "Colors"
+msgstr "Kleuren"
+
+#: src/xsetup/setup.cxx:681
+msgid "Example:"
+msgstr "Voorbeeld:"
+
+#: src/xsetup/setup.cxx:1036
+msgid "Always"
+msgstr "Altijd"
+
+#: src/xsetup/setup.cxx:1037 src/menu_process.cxx:358
+msgid "Never"
+msgstr "Nooit"
+
+#: src/xsetup/setup.cxx:1038
+msgid "Prompt"
+msgstr "Prompt"
+
+#: src/xsetup/setup.cxx:1045
+msgid "Hot Keys to XNC Actions mapping:"
+msgstr "Hot Keys to XNC Actions mapping:"
+
+#: src/xsetup/setup.cxx:1047
+msgid "Key1"
+msgstr "Toets1"
+
+#: src/xsetup/setup.cxx:1048
+msgid "Key2"
+msgstr "Toets2"
+
+#: src/xsetup/setup.cxx:1049
+msgid "Key3"
+msgstr "Toets3"
+
+#: src/xsetup/setup.cxx:1051
+msgid "IVES->XNC:"
+msgstr "IVES->XNC:"
+
+#: src/xsetup/setup.cxx:1052
+msgid "Sticky terminal"
+msgstr "Sticky terminal"
+
+#: src/xsetup/setup.cxx:1053
+msgid "Raise terminal on exec"
+msgstr "Raise terminal on exec"
+
+#: src/xsetup/setup.cxx:1054
+msgid "Return Focus from IVES"
+msgstr "Return Focus from IVES"
+
+#: src/xsetup/setup.cxx:1055
+msgid "Bookmark Options:"
+msgstr "Bladwijzer opties"
+
+#: src/xsetup/setup.cxx:1056
+msgid "Enable Bookmark"
+msgstr "Activeer Bladwijzers"
+
+#: src/xsetup/setup.cxx:1057
+msgid "Allow Bookmark animation"
+msgstr "Bladwijzer animatie toelaten"
+
+#: src/xsetup/setup.cxx:1058
+msgid "AFS Options:"
+msgstr "AFS Opties:"
+
+#: src/xsetup/setup.cxx:1059
+msgid "Show icons with directory names"
+msgstr "Toon iconen met directory namen"
+
+#: src/xsetup/setup.cxx:1060
+msgid "Show icons with files"
+msgstr "Toon iconen met bestanden"
+
+#: src/xsetup/setup.cxx:1061
+msgid "Update archieve on exit"
+msgstr "Archief updaten bij afsluiten"
+
+#: src/xsetup/setup.cxx:1062
+msgid "Common"
+msgstr "Gemeenschappelijk"
+
+#: src/xsetup/setup.cxx:1062
+msgid "Keys"
+msgstr "Toetsen"
+
+#: src/xsetup/setup.cxx:1062
+msgid "Other"
+msgstr "Andere"
+
+#: src/xsetup/setup.cxx:1100
+msgid "vertical"
+msgstr "verticaal"
+
+#: src/xsetup/setup.cxx:1100
+msgid "horizontal"
+msgstr "horizontaal"
+
+#: src/xsetup/setup.cxx:1100
+msgid "page"
+msgstr "pagina"
+
+#: src/xsetup/setup.cxx:1345
+msgid "X Northern Captain Setup"
+msgstr "X Northern Captain Setup"
+
+#: src/menu_process.cxx:148 src/menu_process.cxx:223
+msgid "Brief"
+msgstr "Brief"
+
+#: src/menu_process.cxx:149 src/menu_process.cxx:224
+msgid "Full"
+msgstr "Full"
+
+#: src/menu_process.cxx:150 src/menu_process.cxx:225
+msgid "Custom "
+msgstr "Gepersonaliseerd"
+
+#: src/menu_process.cxx:151 src/menu_process.cxx:226
+msgid "One column"
+msgstr "Eén kolom"
+
+#: src/menu_process.cxx:152 src/menu_process.cxx:227
+msgid "Two columns"
+msgstr "Twee kolomen"
+
+#: src/menu_process.cxx:153 src/menu_process.cxx:228
+msgid "Three columns"
+msgstr "Drie kolomen"
+
+#: src/menu_process.cxx:154 src/menu_process.cxx:229
+msgid "Four columns "
+msgstr "Vier kolomen"
+
+#: src/menu_process.cxx:155 src/menu_process.cxx:230
+msgid "Sort by Names"
+msgstr "Sorteren op naam"
+
+#: src/menu_process.cxx:156 src/menu_process.cxx:231
+msgid "Sort by Extensions"
+msgstr "Sorteren op extensies"
+
+#: src/menu_process.cxx:157 src/menu_process.cxx:232
+msgid "Sort by Size"
+msgstr "Sorteren op grootte"
+
+#: src/menu_process.cxx:158 src/menu_process.cxx:233
+msgid "Sort by Time"
+msgstr "Sorteren op tijd"
+
+#: src/menu_process.cxx:159 src/menu_process.cxx:234
+msgid "Unsorted "
+msgstr "Niet gesorteerd"
+
+#: src/menu_process.cxx:160 src/menu_process.cxx:235
+msgid "Reverse sort "
+msgstr "Sortering omkeren"
+
+#: src/menu_process.cxx:161 src/menu_process.cxx:236
+msgid "Toggle branch mode "
+msgstr "Toggle branch mode "
+
+#: src/menu_process.cxx:185
+msgid "Edit menu file"
+msgstr "Bewerk bestand menu"
+
+#: src/menu_process.cxx:186
+msgid "Edit extension file "
+msgstr "Bewerk bestand extensie"
+
+#: src/menu_process.cxx:187
+msgid "Clean AFS cache "
+msgstr "AFS cache wissen"
+
+#: src/menu_process.cxx:188
+msgid "Configuration "
+msgstr "Configuratie "
+
+#: src/menu_process.cxx:189
+msgid "Help in documentation"
+msgstr "Help in documentatie"
+
+#: src/menu_process.cxx:190
+msgid "About XNC"
+msgstr "Info over XNC"
+
+#: src/menu_process.cxx:207
+msgid "Reread current directory"
+msgstr "Huidige directory opnieuw lezen"
+
+#: src/menu_process.cxx:208
+msgid "Switch to terminal "
+msgstr "Omschakelen naar terminal "
+
+#: src/menu_process.cxx:209
+msgid "Add entry to bookmark "
+msgstr "Toevoegen aan de bladwijzers"
+
+#: src/menu_process.cxx:210
+msgid "Add selection by mask"
+msgstr "Selectie toevoegen met masker"
+
+#: src/menu_process.cxx:211
+msgid "Clean selection by mask"
+msgstr "Selectie wissen met masker"
+
+#: src/menu_process.cxx:212
+msgid "Invert selection"
+msgstr "Selectie Inverteren"
+
+#: src/menu_process.cxx:213
+msgid "Add selection by extension"
+msgstr "Selectie toevoegen met extensie "
+
+#: src/menu_process.cxx:214
+msgid "Clean selection by extension "
+msgstr "Selectie wissen met extensie "
+
+#: src/menu_process.cxx:215
+msgid "Insert left directory name"
+msgstr "Linkse dir naam invoegen "
+
+#: src/menu_process.cxx:216
+msgid "Insert right directory name "
+msgstr "Rechtse dir naam invoegen "
+
+#: src/menu_process.cxx:217
+msgid "Source <-> Target"
+msgstr "Bron <-> Doel"
+
+#: src/menu_process.cxx:218
+msgid "Target = Source"
+msgstr "Bron = Doel"
+
+#: src/menu_process.cxx:257
+msgid "Compare by sizes"
+msgstr "Vergelijk groottes"
+
+#: src/menu_process.cxx:257
+msgid "Compare by times"
+msgstr "Linkse dir naam invoegen"
+
+#: src/menu_process.cxx:265
+msgid "Remount current directory"
+msgstr "Hermount huidige directory"
+
+#: src/menu_process.cxx:266
+msgid "Menu"
+msgstr "Menu"
+
+#: src/menu_process.cxx:270
+msgid "Move/Rename file"
+msgstr "Verplaats/Hernoem bestand"
+
+#: src/menu_process.cxx:274
+#, fuzzy
+msgid "Make link"
+msgstr "Main"
+
+#: src/menu_process.cxx:275
+msgid "Attributes of file"
+msgstr "Bestand attributen"
+
+#: src/menu_process.cxx:277
+msgid "Create Archive"
+msgstr "Archief aanmaken"
+
+#: src/menu_process.cxx:278
+msgid "Find files"
+msgstr "Bestanden zoeken"
+
+#: src/menu_process.cxx:279
+msgid "Quick ScanDir Info"
+msgstr "Snelle ScanDir Info"
+
+#: src/menu_process.cxx:280
+msgid "Processes Info"
+msgstr "Processen Info"
+
+#: src/menu_process.cxx:281
+msgid "Memory Info"
+msgstr "Geheugen Info"
+
+#: src/menu_process.cxx:282
+msgid "Disk Info"
+msgstr "Disk Info"
+
+#: src/menu_process.cxx:283
+msgid "Stat Info"
+msgstr "Stat Info"
+
+#: src/menu_process.cxx:284
+msgid "Ftp connection "
+msgstr "Ftp verbinding "
+
+#: src/menu_process.cxx:285
+msgid "Compare directories"
+msgstr "Vergelijk directories"
+
+#: src/menu_process.cxx:297
+msgid "Left"
+msgstr "Links"
+
+#: src/menu_process.cxx:298
+msgid "Commands"
+msgstr "Commando's"
+
+#: src/menu_process.cxx:299
+msgid "Operations"
+msgstr "Operaties"
+
+#: src/menu_process.cxx:301
+msgid "-Right"
+msgstr "-Rechts"
+
+#: src/menu_process.cxx:305
+msgid "FTP"
+msgstr "FTP"
+
+#: src/menu_process.cxx:308
+msgid "1.Man"
+msgstr "1.Man"
+
+#: src/menu_process.cxx:309
+msgid "2.Menu"
+msgstr "2.Menu"
+
+#: src/menu_process.cxx:310
+msgid "3.View"
+msgstr "3.Bekijken"
+
+#: src/menu_process.cxx:311
+msgid "4.Edit"
+msgstr "4.Bewerken"
+
+#: src/menu_process.cxx:312
+msgid "5.Copy"
+msgstr "5.Kopiëren"
+
+#: src/menu_process.cxx:313
+msgid "6.Move"
+msgstr "6.Verplaatsen"
+
+#: src/menu_process.cxx:314
+msgid "7.Mkdir"
+msgstr "7.Mkdir"
+
+#: src/menu_process.cxx:315
+msgid "8.Delete"
+msgstr "8.Wissen"
+
+#: src/menu_process.cxx:316
+msgid "9.Attr"
+msgstr "9.Attr"
+
+#: src/menu_process.cxx:317
+msgid "-0.Quit"
+msgstr "-0.Afsluiten"
+
+#: src/menu_process.cxx:356
+msgid "Really, QUIT?"
+msgstr "Werkelijk, AFSLUITEN?"
+
+#: src/menu_process.cxx:357
+msgid "Yes"
+msgstr "Ja"
+
+#: src/panel_click.cxx:190
+msgid "Print file"
+msgstr "Bestand afdrukken"
+
+#: src/panel_click.cxx:216
+msgid "New text file"
+msgstr "Nieuw text bestand"
+
+#: src/panel_wrap.cxx:29
+msgid "Remount Device ?"
+msgstr "Device hermounten ?"
+
+#: src/panel_wrap.cxx:239
+msgid "Change directory"
+msgstr "Directory veranderen"
+
+#: src/panel_wrap.cxx:239
+msgid "Directory:"
+msgstr "Directory:"

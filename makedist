@@ -1,0 +1,237 @@
+#! /bin/sh
+#Making distribution for XNC
+
+#Using this dir as temporary for package creation
+tmpdir="/tmp"
+ourname=$0
+instdir=usr
+
+create_source ()
+{
+        vers="$1"
+        rm -rf $tmpdir/xnc-$vers
+        mkdir $tmpdir/xnc-$vers
+        echo -n "Copying all files to "$tmpdir/xnc-$vers" directory....."
+        cp -rf * $tmpdir/xnc-$vers
+        cp -rf ./.xlaunch $tmpdir/xnc-$vers
+        echo "OK"
+        curdir=`pwd`
+        cd $tmpdir/xnc-$vers
+        echo -n "Cleaning directories...."
+        ./makeclean
+        echo "OK"
+        cd $tmpdir
+        echo -n "Creating TAR Gzipped source package...."
+        tar -cf $curdir/xnc-$vers.src.tar xnc-$vers
+        echo -n "......."
+        gzip $curdir/xnc-$vers.src.tar
+        echo "OK"
+        cd $curdir
+        echo -n "Cleaning tmp directory...."
+        rm -rf $tmpdir/xnc-$vers
+        echo "OK"
+        echo "Package was created succesfully."
+        echo ""
+        echo "Package name: "$curdir/xnc-$vers.src.tar.gz
+}
+
+create_binaries ()
+{
+#Binary package creation
+        vers="$1"
+        mkdir $tmpdir/xnc-$vers
+        echo -n "Copying binaries to "$tmpdir/xnc-$vers" directory....."
+        curdir=`pwd`
+        cdr=$curdir
+	DESTDIR=$tmpdir/xnc-$vers; export DESTDIR && make install
+        echo "...OK"
+        cd $tmpdir/xnc-$vers
+        echo -n "Creating TAR Gzipped $2 package...."
+        tar -cf $curdir/xnc-$vers.$2.tar .
+        echo -n "......."
+        gzip $curdir/xnc-$vers.$2.tar
+        cd ..
+        echo "....OK"
+        cd $curdir
+        echo -n "Cleaning tmp directory...."
+        rm -rf $tmpdir/xnc-$vers
+        echo "OK"
+        echo "Package was created succesfully."
+        echo ""
+        echo "Package name: "$curdir/xnc-$vers.$2.tar.gz
+}
+
+create_prompted_binaries ()
+{
+        echo -n "Enter platform: "
+        read platform
+        create_binaries $1 "$platform"
+}
+
+create_binaries_for_rpm ()
+{
+        vers="$1"
+        mkdir $tmpdir/xnc-$vers
+        echo -n "Copying all files to "$tmpdir/xnc-$vers" directory....."
+        cp -rf * $tmpdir/xnc-$vers
+        cp -rf ./.xlaunch $tmpdir/xnc-$vers
+        echo "OK"
+        curdir=`pwd`
+        cd $tmpdir/xnc-$vers
+        echo -n "Cleaning directories...."
+        ./makebinclean-rpm
+        echo "OK"
+        cd $tmpdir
+        echo -n "Creating TAR Gzipped package for RPM...."
+        tar cf $curdir/xnc-$vers.elf.tar xnc-$vers
+        echo -n "....."
+        gzip $curdir/xnc-$vers.elf.tar
+        echo "....OK"
+        cd $curdir
+        echo -n "Cleaning tmp directory...."
+        rm -rf $tmpdir/xnc-$vers
+        echo "OK"
+        echo "Package was created succesfully."
+        echo "Package name: "$curdir/xnc-$vers.elf.tar.gz
+}
+
+extract_rpm ()
+{
+    vers="$1"
+    echo "Extracting rpm spec file to 'xnc-$vers.spec' from $ourname"
+    a=`grep -n 'RPM Spec File' $ourname | grep -v grep | tr ':' ' ' \
+    | awk '{print $1}'`
+    b=`wc -l $ourname | awk '{print $1}'`
+    tail -n `expr $b - $a + 1` $ourname | sed \
+    -e "s/^Version:[^\n]*/Version: $vers/" >xnc-$vers.spec
+}
+
+echo "-----------------------------------------------------------------"
+echo "X Nothern Captain distribution package creator."
+echo "Welcome to creation script v2.2.2"
+echo "-----------------------------------------------------------------"
+echo -n "Enter X Northern Captain version: "
+read vers
+
+while :
+do
+echo ""
+echo "Choose one of the following:"
+echo ""
+echo "   1.  Create SOURCE package...................(src.tar.gz)."
+echo "   2.  Create Linux x86 binaries package.......(Linux.x86.tar.gz)."
+echo "   3.  Create Linux Alpha binaries package.....(Linux.alpha.tar.gz)."
+echo "   4.  Create Linux PPC binaries package.......(Linux.PPC.tar.gz)."
+echo "   5.  Create FreeBSD binaries package.........(FreeBSD.tar.gz)."
+echo "   6.  Create NetBSD x86 binaries package......(NetBSD.x86.tar.gz)."
+echo "   7.  Create OpenBSD x86 binaries package.....(OpenBSD.x86.tar.gz)."
+echo "   8.  Create Solaris x86 binaries package.....(Solaris.x86.tar.gz)."
+echo "   9.  Create Solaris SPARC binaries package...(Solaris.SPARC.tar.gz)."
+echo "  10.  Create AIX binaries package.............(AIX.tar.gz)."
+echo "  11.  Create HP-UX binaries package...........(HP-UX.tar.gz)."
+echo "  12.  Create DUNIX (OSF1) binaries package....(DUnix.tar.gz)."
+echo "  13.  Create IRIX binaries package............(IRIX.tar.gz)."
+echo "  14.  Create QNX binaries package.............(QNX.tar.gz)."
+echo "  15.  Create prompted binaries package."
+echo ""
+echo "  19.  Extract RPM spec file...................(xnc-$vers.spec)."
+echo ""
+echo "   0.  Exit"
+echo ""
+echo -n "Your choice: "
+read choice
+
+case "$choice" in
+        1)  create_source "$vers";;
+        2)  create_binaries "$vers" "Linux.x86";;
+        3)  create_binaries "$vers" "Linux.alpha";;
+        4)  create_binaries "$vers" "Linux.PPC";;
+        5)  create_binaries "$vers" "FreeBSD";;
+        6)  create_binaries "$vers" "NetBSD.x86";;
+        7)  create_binaries "$vers" "OpenBSD.x86";;
+        8)  create_binaries "$vers" "Solaris.x86";;
+        9)  create_binaries "$vers" "Solaris.SPARC";;
+       10)  create_binaries "$vers" "AIX";;
+       11)  create_binaries "$vers" "HP-UX";;
+       12)  create_binaries "$vers" "DUnix";;
+       13)  create_binaries "$vers" "IRIX";;
+       14)  create_binaries "$vers" "QNX";;
+       15)  create_prompted_binaries "$vers";;
+       19)  extract_rpm "$vers";;
+        0)  exit 0;;
+esac
+done
+echo "-----------------------------------------------------------------"
+exit 
+#----------------------Cut from this line-------------------------------
+#---------------RPM Spec File for X Northern Captain--------------------
+
+%define prefix /usr
+
+Summary: X Northern Captain - X filemanager with many functions
+Name: xnc
+Version: 
+Release: 1
+Copyright: GPL
+Packager: Leonid Khramov 
+Group: X11/Applications
+Source0: %{name}-%{version}.src.tar.gz
+#Icon: 
+BuildRoot: /tmp/%{name}-%{version}-root
+
+%description
+This program allows the user to navigate through many filesystems,
+manipulate files, archives, execute commands in builtin shell, view
+and edit images, text and binary files...
+
+%prep
+%setup
+
+%build
+CFLAGS="$RPM_OPT_FLAGS" CXXFLAGS="$RPM_OPT_FLAGS" LDFLAGS=-s ./configure \
+	--prefix=%{prefix} --mandir=%{prefix}/share/man --with-x
+make       
+
+%install
+rm -rf $RPM_BUILD_ROOT
+
+#install -d "$RPM_BUILD_ROOT"/%{prefix}/{bin,share/man/man1,lib/xnc,share/locale}
+
+export DESTDIR=$RPM_BUILD_ROOT && make install
+
+#install bin/bzip.xnc bin/iedit bin/groups.xnc bin/gzip.xnc bin/ives \
+#bin/rpm.xnc bin/users.xnc bin/view.xnc bin/iview bin/xjpegroot bin/xncsetup \
+#bin/xnlaunch \
+#bin/zips.xnc bin/xncloader bin/xnc "$RPM_BUILD_ROOT"/usr/bin
+#install lib/libxncfive.so "$RPM_BUILD_ROOT"/%{prefix}/lib/xnc/
+#install lib/libxncaqua.so "$RPM_BUILD_ROOT"/%{prefix}/lib/xnc/
+
+mkdir -p "$RPM_BUILD_ROOT"/etc/X11/wmconfig
+cat > "$RPM_BUILD_ROOT"/etc/X11/wmconfig/xnc <<EOF
+xnc name "X Northern Captain"
+xnc description "filemanager for X Window"
+xnc icon "FileManager.xpm"
+xnc mini-icon "mini-filemgr.xpm"
+xnc group "Utilities/File Management"
+xnc exec "xnc &"
+EOF
+ 
+#install -m 644 yo-man/ives.1 yo-man/xjpegroot.1 yo-man/iedit.1 yo-man/iview.1 \
+#yo-man/xnc.1 yo-man/xnlaunch.1 "$RPM_BUILD_ROOT"/%{prefix}/share/man/man1
+gzip -f "$RPM_BUILD_ROOT"/%{prefix}/share/man/man1/*
+find "$RPM_BUILD_ROOT" -type f | grep -v doc | sed "s;$RPM_BUILD_ROOT;%attr(-,root,root) /;" \
+  > $RPM_BUILD_DIR/file.list-%{name}-%{version}
+find doc -type f | sed 's;.*;%attr(-,root,root) %doc &;' \
+  >> $RPM_BUILD_DIR/file.list-%{name}-%{version}
+echo "%attr(-,root,root) %doc README README.keys AUTHORS LICENSE WHATS_NEW \
+TODO" >> $RPM_BUILD_DIR/file.list-%{name}-%{version}
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+rm -f ../file.list-%{name}-%{version}
+
+%files -f ../file.list-%{name}-%{version}
+
+
+
+

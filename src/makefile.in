@@ -1,0 +1,171 @@
+#  XNC -- a  filemanager for X Window
+#                                
+#  Copyright (C) 1996-99 by Leo Khramov
+#  email:             leo@xnc.dubna.su
+# 
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+
+include ../make.conf
+
+BASE_DIR = ..
+
+@MCOMMON@
+
+
+           PDIRS = \
+                lib \
+		ives \
+		xsetup \
+		launch \
+		xjroot
+
+           XNCOBJS= \
+		au/au.o \
+		au/au_lex.o \
+		au/au_tree.o \
+		au/key.o \
+		base_cap.o \
+		bookmark.o \
+		cmdline.o \
+		config_doc.o \
+		config_file.o \
+		config_window.o \
+		find.o \
+		ftpcfg.o \
+		ftpvisuals.o \
+		iconsets.o \
+		infowin.o \
+		inodewin.o \
+		internals.o \
+		main.o \
+		menu_process.o \
+		man_page.o \
+		panel.o \
+		panel_actions.o \
+		panel_click.o \
+		panel_dnd.o \
+		panel_format.o \
+		panel_metacall.o \
+		panel_vlook.o \
+		panel_wrap.o \
+		ps_info.o \
+		query_windows.o \
+		qview.o \
+		tartest.o \
+		xh.o
+
+           XNCLIBS= \
+		$(MYLIBDIR)/libie.a \
+		$(MYLIBDIR)/libxncbitmaps.a \
+		$(MYLIBDIR)/libxncfiledir.a \
+		$(MYLIBDIR)/libxnciconset.a \
+		$(MYLIBDIR)/libxncrxvt.a \
+		$(MYLIBDIR)/libxnctool.a \
+		$(MYLIBDIR)/libnorthgui.a \
+		$(MYLIBDIR)/libxncvfs.a
+
+           CXXINCLUDES=-I$(MYSRCDIR)/include/xnc \
+		-I$(MYSRCDIR)/lib/manage \
+		-I$(MYSRCDIR)/au \
+		-I$(MYSRCDIR)/lib/vfs \
+		-I$(MYSRCDIR)/lib/vfs/ftplib \
+		-I$(MYSRCDIR)/lib/xbitmaps \
+		-I$(MYSRCDIR)/lib/rxvt2 \
+		-I$(MYSRCDIR)/lib/filedir \
+		$(XINC)
+
+           TAGFILES= *.cxx \
+		$(MYSRCDIR)/include/*.h \
+		$(MYSRCDIR)/include/xnc/*.h \
+		$(MYSRCDIR)/lib/vfs/*.cxx \
+		$(MYSRCDIR)/lib/vfs/*.h \
+		$(MYSRCDIR)/lib/northgui/*.cxx \
+		$(MYSRCDIR)/lib/northgui/*.h \
+		$(MYSRCDIR)/lib/manage/*.cxx \
+		$(MYSRCDIR)/lib/manage/*.h \
+		$(MYSRCDIR)/lib/tool/*.cxx
+
+           CXXOPT=$(DEFS) -DOLD_STYLE $(CFLAGS) $(DEB)
+           LOCAL_LIBRARIES=$(PNGLIB) $(ZLIB) $(TLIB) $(XLIBS) $(LIBS)
+
+all:: compile
+
+compile:
+	for i in $(PDIRS); do cd $$i && make compile; cd ..; done
+	make $(MYBINDIR)/xnc
+	make $(MYBINDIR)/xncloader
+	make compile-$(PLUGINS)
+
+compile-:
+	echo nothing
+
+compile-gui_plugins:
+	cd plugins && make
+
+config:	FORCE
+	./configure
+
+$(MYBINDIR)/xnc: $(XNCOBJS) $(XNCLIBS) $(JDEP)
+	$(CXX) $(LDFLAGS) -o $@ $(XNCOBJS) $(XNCLIBS) $(LOCAL_LIBRARIES) $(JLIB) \
+	$(DEB) $(STRIPPING)
+
+$(MYBINDIR)/xncloader: helpers/resloader.o plugins/aqua/aquaskin.o \
+	plugins/five/fiveskin.o
+	$(CXX) $(LDFLAGS) -o $@ \
+	helpers/resloader.o \
+	plugins/aqua/aquaskin.o \
+	plugins/five/fiveskin.o	\
+	$(MYLIBDIR)/libie.a \
+	$(MYLIBDIR)/libnorthgui.a \
+	$(MYLIBDIR)/libxncbitmaps.a \
+	$(MYLIBDIR)/libxnciconset.a \
+	$(MYLIBDIR)/libxnctool.a \
+	$(LOCAL_LIBRARIES) $(JLIB) \
+	$(DEB) $(STRIPPING)
+
+clean:
+	pwd_v=`pwd`; \
+	for i in $(PDIRS); do cd $$i && make clean; cd $$pwd_v; done
+	$(RMF) $(MYBINDIR)/xnc
+	$(RMF) $(XNCOBJS)
+	$(RMF) helpers/resloader.o
+	make clean-$(PLUGINS)
+
+clean-:
+	echo nothing
+
+clean-gui_plugins:
+	cd plugins && make clean
+
+fast:
+	$(RMF) *.o
+	make compile
+
+tags:
+	etags $(TAGFILES)
+
+FORCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+

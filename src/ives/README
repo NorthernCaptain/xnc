@@ -1,0 +1,21 @@
+Hello!
+Let me introduce the IVES v1.x.
+IVES- Independent Viewing and Editing System.
+This is multi-window system, that let You view and edit
+many files at the same time in ASCII and HEX formats.
+
+IVES can run in manual or automatic mode.
+In manual mode just run "ives" then use "es filename" for edit
+and "vs filename" for view with IVES.
+
+In automatic mode just run "xnc" and it will do all work for You.
+
+For keys see  'ives' man page.
+
+Thank You.
+
+PS: This version can view images in GIF,PCX,BMP,
+       XBM,XPM,TARGA,TIFF and JPEG formats.
+
+                              (c) Copyright by Leo '96-97.   (old@sunct2.jinr.dubna.su)
+                              

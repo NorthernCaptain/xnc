@@ -1,0 +1,171 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=koi8-r">
+   <meta name="Author" content="Leonid Khramov">
+   <meta name="GENERATOR" content="Mozilla/4.79 [en] (X11; U; Linux 2.4.18-18.8.0 i686) [Netscape]">
+   <meta name="Description" content="http://xnc.dubna.su">
+   <meta name="Keywords" content="xnc">
+   <title>X Northern Captain - Panels</title>
+</head>
+<body text="#F0FFF0" bgcolor="#003366" link="#66FFFF" vlink="#FFCC99" alink="#FF6666">
+
+<center>
+<h3>
+<font color="#FFFF00">Panels</font></h3></center>
+
+<table CELLSPACING=0 CELLPADDING=5 >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP><b><font size=-1>XNC Index:</font></b>
+<br><font size=-1><a href="index.html">Overview</a></font>
+<br><font size=-1><a href="doc8.html">Installation</a></font>
+<br><font size=-1><a href="doc1.html">Panels</a></font>
+<br><font size=-1><a href="doc2.html">Commands</a></font>
+<br><font size=-1><a href="doc4.html">VFS_support</a></font>
+<br><font size=-1><a href="doc5.html">Bookmark</a></font>
+<br><font size=-1><a href="doc6.html">Extensions</a></font>
+<br><font size=-1><a href="doc7.html">User Menu</a></font>
+<br><font size=-1><a href="doc3.html">Hot Keys</a></font></td>
+
+<td><b>X Northern Captain</b> has two panels. Each panel is a window with
+directory listing assigned to it. At the top of the panel located VFS directory
+header. This header shows path to directory that contents is displayed
+in the window.&nbsp;
+<ul>
+<li>
+If this is normal disk file system (DFS) then header show full path from
+'/' directory.</li>
+
+<br>Example: <b>/usr/local/bin</b>
+<li>
+If we are inside archive (AFS) then header shows name of the archive support,
+name of the archive itself, and path relative to the top of the archive.</li>
+
+<br>Example: <b>TARGZ[test.tar.gz]./docs</b>
+<li>
+If you are browsing ftp site, then header displays the name of the ftp
+site with port number connected and the full path inside the site.</li>
+
+<br>Example: <b>ftp://xnc.dubna.su:21/pub/xnc</b></ul>
+There is a directory listing under the header. Files are displayed with
+color highlighting that depends on file type:
+<ul>
+<li>
+Directory - file is a directory and you can dive into it.</li>
+
+<li>
+Link - file is a symbolic link to another one.</li>
+
+<li>
+Normal file - just ordinar file without any associations.</li>
+
+<li>
+Executive file - file has execute attribute and can be run.</li>
+
+<li>
+Association (extension) file - file was previously associated with some
+program and can be run with it.</li>
+
+<li>
+Archive file - file is an archive with known type and can be opened for
+operations.</li>
+
+<li>
+Image file - file is known image format and can be viewed by internal image
+viewer.</li>
+</ul>
+The listing itself can be organized in different ways:
+<ul>
+<li>
+Display files in 1-4 columns.</li>
+
+<li>
+Configurable display modes (Options/Configuration/Modes)</li>
+
+<ul>
+<li>
+Brief - display only file names</li>
+
+<li>
+Full - display file name, size, attributes, date, owner and group</li>
+
+<li>
+Custom - your own set of fields to display</li>
+</ul>
+
+<li>
+Different sorting methods in direct and reverse orders:</li>
+
+<ul>
+<li>
+By file name</li>
+
+<li>
+By file extension and then by file name</li>
+
+<li>
+By file size and then by file name</li>
+
+<li>
+By date/time of file and then by file name</li>
+</ul>
+</ul>
+Mouse action can be activated on each file of the listing, you can select,
+drag and drop files or see context menu that shows useful file operations.
+<p>There is a status bar at the bottom of each panel. Status bar shows
+information about current file (file under cursor) or about set of selected
+files if files were selected on the panel. Status bar is also configurable
+via Options/Configuration/Prompt/View page and can display the same fields
+as the panel. Another feature of status bar is its ability to display magic
+file information when activating <b>QuickFileInfo</b> command or current
+file information even if some file are selected (the same action).
+<p>These two panels have three different orientations (layouts):
+<ul>
+<li>
+Vertical layout. In this layout panels located in vetrical mode - we see
+right and left panels with identical y coordinates but different x one.</li>
+
+<li>
+Horizontal Layout. Panels located one over another (Top and Bottom panels).</li>
+
+<li>
+Page layout. Panels located as book or tab pages. You can see only one
+panel at a time and only header of another invisible panel. Invisible panel
+becomes visible and raise upon another one if you press on panel header
+you want to see or press <b>SwitchPanels</b> key.</li>
+</ul>
+You can change layout of the panels only from <b>xncsetup</b> program,
+not from xnc itself.
+<p>There is a transformation menu bar over the panels. Its behaviour depends
+on your actions. In normal mode it shows menu items for panel settins and
+commands. But if you one an ftp session then menu bar transform to ftp
+diagnostic button bar. Each button on this bar displays current state of
+the ftp connection. There are small led and three small buttons on it.
+The led lights red if your ftp session is busy and processing operation
+and green if it's ready for commands. The buttons assigned to actions of
+closing ftp session, displaying session state and the last one for turning
+on/off autoraise ftp while it ends a background operation.
+<br>You can change mode of the upper menu bar by pressing on '>' button
+in the left conner of it.
+<br>&nbsp;</td>
+</tr>
+
+<tr>
+<td>
+<center><font size=-1>XNC НОМЕ</font>
+<br><font size=-1><a href="http://xnc.dubna.su">xnc.dubna.su</a></font></center>
+</td>
+
+<td></td>
+</tr>
+</table>
+
+<div align=right><font size=-1>Author <a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">Leonid
+V. Khramov</a></font>
+<br><font size=-1><a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">leo@xnc.dubna.su</a></font>
+<br><font size=-1>St-Petersburg</font>
+<br><font size=-1>Russia</font>
+<br><font size=-1>1995-2002</font></div>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+#  XNC -- a  filemanager for X Window
+#                                
+#  Copyright (C) 1996-99 by Leo Khramov
+#  email:             leo@xnc.dubna.su
+# 
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+
+include ./make.conf
+
+BASE_DIR = .
+
+@MCOMMON@
+
+
+           PDIRS = \
+		src/helpers \
+		iconset \
+		src
+
+all:: compile
+
+compile:
+	./newcomp $(XNCVERSION)
+	cd intl && make
+	for i in $(PDIRS); do cd $$i && make compile; cd $(FULLDIR); done
+	make compile-$(PO_MAKE_DIR)
+
+compile-:
+	@echo "Skipping..."
+
+compile-po:
+	cd po && make compile
+
+config:	FORCE
+	./configure
+
+install: install-$(PLUGINS)
+	$(MKINSTALLDIRS) $(DESTDIR)$(INSTDIR)
+	$(MKINSTALLDIRS) $(DESTDIR)$(INSTMAN)
+	$(MKINSTALLDIRS) $(DESTDIR)$(INSTDOCDIR)
+	$(MKINSTALLDIRS) $(DESTDIR)$(INSTICONDIR)
+	$(MKINSTALLDIRS) $(DESTDIR)$(INSTDESKDIR1)
+	$(MKINSTALLDIRS) $(DESTDIR)$(INSTDESKDIR2)
+	$(MKINSTALLDIRS) $(DESTDIR)$(INSTDESKDIR3)
+	$(INSTALL_PROGRAM) bin/users.xnc $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/groups.xnc $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/rpm.xnc $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/zips.xnc $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/gzip.xnc $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/bzip.xnc $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/view.xnc $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/xnc $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/ives $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/iview $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/iedit $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/xncloader $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/xjpegroot $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/xncsetup $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/xnlaunch $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/xnc-en $(DESTDIR)$(INSTDIR)
+	$(INSTALL_PROGRAM) bin/xncsetup-en $(DESTDIR)$(INSTDIR)
+	$(INSTALL_DATA) ./yo-man/*.1 $(DESTDIR)$(INSTMAN)
+	$(INSTALL_DATA) ./doc/*.html $(DESTDIR)$(INSTDOCDIR)
+	$(INSTALL_DATA) ./desktop/xnc.xpm $(DESTDIR)$(INSTICONDIR)
+	$(INSTALL_DATA) ./desktop/xnc.png $(DESTDIR)$(INSTICONDIR)
+	$(INSTALL_DATA) ./desktop/xnc.xpm $(DESTDIR)$(INSTICONDIR)
+	$(INSTALL_DATA) ./desktop/xnc.desktop $(DESTDIR)$(INSTDESKDIR1)
+	$(INSTALL_DATA) ./desktop/X_Northern_Captain.desktop $(DESTDIR)$(INSTDESKDIR2)
+	$(INSTALL_DATA) ./desktop/xnc-gnome2.desktop $(DESTDIR)$(INSTDESKDIR3)
+	make install-$(PO_MAKE_DIR)
+	@echo "Don't foget run 'xncsetup' before starting XNC"
+	@echo "And add $(DESTDIR)$(INSTDIR) into your PATH environment variable"
+
+
+install-gui_plugins:
+	$(MKINSTALLDIRS) $(DESTDIR)$(INSTPLUG)
+	$(INSTALL_PROGRAM) lib/libxncfive.so $(DESTDIR)$(INSTPLUG)
+	$(INSTALL_PROGRAM) lib/libxncaqua.so $(DESTDIR)$(INSTPLUG)
+
+install-:
+	@echo "Skipping..."
+
+install-po:
+	cd po && make install
+
+uninstall:
+	$(RMF) $(DESTDIR)$(INSTDIR)/users.xnc
+	$(RMF) $(DESTDIR)$(INSTDIR)/groups.xnc
+	$(RMF) $(DESTDIR)$(INSTDIR)/rpm.xnc
+	$(RMF) $(DESTDIR)$(INSTDIR)/zips.xnc
+	$(RMF) $(DESTDIR)$(INSTDIR)/gzip.xnc
+	$(RMF) $(DESTDIR)$(INSTDIR)/bzip.xnc
+	$(RMF) $(DESTDIR)$(INSTDIR)/view.xnc
+	$(RMF) $(DESTDIR)$(INSTDIR)/xnc
+	$(RMF) $(DESTDIR)$(INSTDIR)/ives
+	$(RMF) $(DESTDIR)$(INSTDIR)/iedit
+	$(RMF) $(DESTDIR)$(INSTDIR)/xjpegroot
+	$(RMF) $(DESTDIR)$(INSTDIR)/xnlaunch
+	$(RMF) $(DESTDIR)$(INSTDIR)/iview
+	$(RMF) $(DESTDIR)$(INSTDIR)/xncsetup
+	$(RMF) $(DESTDIR)$(INSTDIR)/xncloader
+	$(RMF) $(DESTDIR)$(INSTMAN)/man1/xnc.1
+	$(RMF) $(DESTDIR)$(INSTMAN)/man1/ives.1
+	$(RMF) $(DESTDIR)$(INSTMAN)/man1/xjpegroot.1
+	$(RMF) $(DESTDIR)$(INSTMAN)/man1/xnlaunch.1
+	$(RMF) -r $(HOME)/.xnc
+	$(RMF) -r $(DESTDIR)$(INSTDOCDIR)
+	$(RMF) -r $(DESTDIR)$(INSTPLUG)
+
+clean:
+	pwd_v=`pwd`; \
+	for i in $(PDIRS); do cd $$i && make clean; cd $$pwd_v; done
+
+fast:
+	cd src && make fast
+
+tags:
+	cd src && make tags
+
+FORCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+

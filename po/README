@@ -1,0 +1,31 @@
+    HOW to localize XNC package.
+-----------------------------------
+There is one template for all package in this directory.
+This file named 'xnc.pot' and contains all messages that need to be 
+translated. 
+
+If you want to translate package into your language for example French.
+You copy xnc.pot into fr.po file. First two letters is language abreviation.
+Before translating text you need to fill header of the file with your
+name, e-mail, language and charset.
+After that you edit your fr.po file and translate each line marked as
+'msgid'. Translated text you put into 'msgstr' string.
+just put your translated text under it. For examples see 'fr.po' in this
+directory.
+
+When you finish your translation or make a part of it you need to try
+to compile it into binary format. Do this with command:
+msgfmt -c --statistics fr.po -o fr.gmo
+  or with simple script
+./compile fr.po
+
+If you see any errors, please, correct it.
+
+After you translate all message, send me translated file (*.po) and 
+i include it into xnc package. 
+My e-mail is <leo@xnc.dubna.su>
+
+Thank you.
+
+P.S: You can modify your fr.po file at any time and compile it again for checks
+

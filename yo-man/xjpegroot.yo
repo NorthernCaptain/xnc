@@ -1,0 +1,46 @@
+manpage(xjpegroot)
+       (1)
+       (1995-1999)
+       (The XNC Package)
+       (XJpegRoot)
+
+manpagename(xjpegroot)(Image to background installer)
+
+manpagesynopsis()
+    bf(xjpegroot) [-d xdisplay] -c/-t imagefile
+
+manpagedescription()
+
+    This manual page describes the bf(xjpegroot) program, the image to
+	screen background installer for X Window.
+	bf(xjpegroot) can load and install images to background from various
+	formats, such as GIF, JPEG, PNG, PCX, BMP, XBM, XPM, TIFF,
+	TGA and PhotoCD.
+	Images may be intalled in tiling or in center mode.
+
+manpageoptions()
+
+startdit()
+
+    dit(-d xdisplay)Connect to X Server em(xdisplay).
+ 	dit(-c)Install image in center of the screen, don't do tiling.
+	dit(-t)Install image in tiling mode.
+enddit()
+
+manpagefiles()
+
+    The bf(xjpegroot) program requires no configuration files.
+
+manpageseealso()
+
+    bf(xnc), bf(ives), bf(vs), bf(es)
+
+manpagebugs()
+
+    There may be bugs in the bf(xjpegroot), but that's not very likely.
+	But if you'll find the bug then please, send complete description to
+	the author.
+
+manpageauthor()
+
+    Leonid Khramov (leo@xnc.dubna.su)

@@ -1,0 +1,72 @@
+#This is Extension file for X Northern Captain...
+#Usage:   .extension:   command  %s  or %s/%s
+#   %s           means filename
+#   %s/%s    means path/filename
+.au: showaudio %s
+.png: view.xnc %s             #View PNG picture
+.PNG: view.xnc %s             #View PNG picture
+.gif: view.xnc %s             #View GIF picture
+.GIF: view.xnc %s             #View GIF picture
+.bmp: view.xnc %s             #View BMP picture
+.BMP: view.xnc %s             #View BMP picture
+.jpg: view.xnc %s             #View JPG picture
+.JPG: view.xnc %s             #View JPG picture
+.pcx: view.xnc %s             #View PCX picture
+.PCX: view.xnc %s             #View PCX picture
+.tif: view.xnc %s             #View TIF picture
+.TIF: view.xnc %s             #View TIF picture
+.tiff: view.xnc %s             #View TIFF picture
+.TIFF: view.xnc %s             #View TIFF picture
+.jpeg: view.xnc %s             #View JPEG picture
+.JPEG: view.xnc %s             #View JPEG picture
+.pcx: view.xnc %s             #View PCX picture
+.PCX: view.xnc %s             #View PCX picture
+.ppm: view.xnc %s             #View PPM picture
+.xpm: view.xnc %s             #View PPM picture
+.pcd: xpcd %s
+.tgz: tar zvtf %s       #List archive
+.tgz: tar zxvf %s/%s    #Unpack to the opposite panel
+.tgz: tar zxvf %s       #Unpack to the same panel
+.tar.gz: tar ztvf %s       #List archive
+.tar.Z: tar ztvf %s       #List archive
+.taz: tar ztvf %s       #List archive
+.tar.gz: tar zxvf %s/%s    #Unpack to the opposite panel
+.tar.gz: tar zxvf %s       #Unpack to the same panel
+.tar.Z: tar zxvf %s/%s    #Unpack to the opposite panel
+.tar.Z: tar zxvf %s       #Unpack to the same panel
+.taz: tar zxvf %s/%s    #Unpack to the opposite panel
+.taz: tar zxvf %s       #Unpack to the same panel
+.z: gunzip -d %s
+.Z: gunzip -d %s
+.arj: unarj %s          #List archive
+.arj: unarj e %s        #Uncompress
+.arj: unarj x %s        #Uncompress with subdirs
+.rar: rar v %s        #List archive
+.rar: rar e %s        #Uncompress
+.rar: rar x %s        #Uncompress with subdirs
+.wav: vplay %s          #Play WAVE file
+.wav: xanim %s          #Play WAVE file
+.mod: tracker %s        #Play sound MODule
+.mod: mikmod  %s       #Play sound MODule in bg
+.xm: mikmod  %s 
+.s3m: mikmod  %s 
+.S3M: mikmod  %s 
+.stm: mikmod  %s 
+.xbm: bitmap %s
+.net: textedit %s &
+.doc: ivesview %s
+.mp3: x11amp %s &
+.MP3: x11amp %s &
+.mpg: view.xnc %s &            #View MPEG video
+.MPG: view.xnc %s &            #View MPEG video
+.mpeg: view.xnc %s &            #View MPEG video
+.MPEG: view.xnc %s &            #View MPEG video
+.avi: view.xnc %s &            #View MPEG4/AVI video
+.AVI: view.xnc %s &            #View MPEG4/AVI video
+.htm: view.xnc %s &            #View HTML document
+.HTM: view.xnc %s &            #View HTML document
+.html: view.xnc %s &            #View HTML document
+.HTML: view.xnc %s &            #View HTML document
+.ps: ghostview %s &
+.c: gcc %s -I.
+#End of file

@@ -1,0 +1,233 @@
+manpage(xnc)
+       (1)
+       (1995-2002)
+       (The XNC Package)
+       (X Northern Captain)
+
+manpagename(xnc)(File manager for X Window)
+
+manpagesynopsis()
+    bf(xnc) [-display xdisplay] [-geometry geom] [-/+rv] [-fn fontname] 
+        [-/+ls] [-/+sb] [-sl number] [-/+vb] [-C] [-/+si] [-/+fl] 
+        [-/+shared] [-plugin plugin_name]
+    [-help]
+
+manpagedescription()
+
+    This manual page describes the bf(xnc) program, the file manager for
+    X Window. It provides many operations with files in Virtual File System,
+        such as copy, move, delete, rename, view, edit ...
+        Currently Virtiual File System in bf(xnc) can work with normal disk
+        filesystem, with various archives in popular formats and with FTP 
+        sessions on remote machines.
+        bf(xnc) is highly and easily configurable with bf(xncsetup), that
+        allow color changing, hot keys redefinitions, fonts choosing etc.
+        
+        Short description of bf(xnc) features:
+startit()
+        it()View two directories in two panels with highlighting.
+        it()Copy, move, rename, delete files and directories recursivly.
+        it()View or edit files with internal bf(ives) or external editors.
+        it()File execution in built-in xterminal.
+        it()File association with applications by file extension.
+        it()Operations with files inside archives.
+        it()User menu for quick command execution.
+        it()HotDir bookmark for quick changing to useful directories.
+        it()Processes information/Signal sending.
+        it()Memory infromation.
+        it()Disk summary infromation.
+        it()Quick ScanDir infromation.
+        it()And more... 
+endit()
+
+	Full description of all internal bf(xnc) commands with default 
+	hot keys for them:
+
+startit()
+        it()Move cursor up/down on the panel [Up/Down] - MoveUp/MoveDown. This command moves cursor one file up or down
+            in the active panel. 
+        it()Move cursor one column up/down [Left/Right] - MoveLeft/MoveRight. This command moves cursor one column up and
+            down or left and right according to number of columns. 
+        it()Move cursor page up/down [PageUp/PageDown] - MoveCursorPageUp/MoveCursorPageDown. This command moves cursor
+            one page up or down if number of files in current directory are more that for one page. 
+        it()Move cursor home [Home] - MoveCursorHome. This command moves cursor to the beggining of the directory list
+            where '..' is shown. 
+        it()Move cursor to the end [End] - MoveCursorEnd. This command moves cursor to the last file in the current
+                 directory listing.
+        it()Switch between panels [Tab] - SwitchPanels. This action allows you to change focus between panels and makes
+            one active. You can also switch between panels by clicking with mouse on the panel or its header. 
+        it()Switch between Xterminal and Panels window [Crtl-O] - SwitchToTerm. Allow you to switch between panels window
+            and xterminal window to view xterminal output of running programs in it and then return back to your panels
+            and continue browsing your file system tree. 
+        it()Set inactive panel directory to current one [Ctrl+j] - SetPanelToCurrent. This command takes directory path
+            from active panel and sets the same path to inactive one. Usefull if you want to copy to the same directory. 
+        it()Swap directories in the panels [Ctrl+u] - SwapPanels. This command exchanges directory paths between two
+            panels.
+        it()Execute in foreground or changing directory [Enter] - Execute. Double left click on file or pressing hotkey
+            will execute file in foreground with output to built in xterminal. If file has no execute permission,
+            association menu appears and you can choose command from it to execute with current file as a parameter. If
+            current file is a directory then xnc changes current directory to those one under cursor and shows dir
+            contents.  
+        it()Execute in background [Shift-Enter] - Execute. This operation allowed only if file has execute permission.
+            File executed in background using built in xterminal shell ('&' will be auto added by xnc).  
+        it()File insertion to command line [Ctrl-Enter] - Execute. Pressing this combination or dragging file to command
+            line and xnc will insert this file in command. Very useful for constructing command line parameters.  
+ 
+	it()Insert left panel directory path [Ctrl+[] - InsertLeftDir. If this command is activated, then xnc will insert
+            into the command line full path from left (top) panel. This command is usefull if you want combine filename
+            with it full path. 
+        it()Insert right panel directory path [Ctrl+]] - InsertRightDir. If this command is activated, then xnc will
+            insert into the command line full path from right (bottom) panel. This command is usefull if you want combine
+            filename with it full path. 
+        it()Insert previous executed command from history [Shift+Up,Ctrl+e] - CmdLineCommandUp. Take previous command
+            from history and put it into the command line. You can also view all history and choose your remembered
+            command by clicking on the icon in the left corner of the command line. 
+        it()Move cursor one step right in the command line [Shift+Right] - CmdLineCommandRight. 
+        it()Move cursor one step left in the command line [Shift+Right] - CmdLineCommandLeft.
+	it()Manual Selectection/Deselection files and directories on the panels. [Insert] - ManualSelectFile. Use right
+            mouse button to do this operation with mouse.  
+        it()Selection/Deselection by mask. [Gray+ or Gray-] - AddMaskSelection/DelMaskSelection.You can type any file
+            mask with '*' and '?' in wildcard. Use 'Gray +' for select files by mask and 'Gray -' for deselect or choose
+            these operations from 'Operations' menu.  
+        it()Invert selection of the files. [Gray*] - InvertMaskSelection. Make currently selected files deselected and
+            select others. 
+        it()Select file by extension [Shift+Gray+] - SelectFileMask. Takes the extension of the file under cursor and
+            selects all files with the same extension. 
+        it()Deselect file by extension [Shift+Gray-] - DeselectFileMask. Takes the extension of the file under cursor and
+            deselects all files with the same extension. 
+	it()Copy file(s) [F5] - CopyFile. With this function you can copy files and directories to destination file
+            system, where destination file system may be disk, archive or ftp session. Directories are copied
+            recursively. Links are copied as files if opposite option is not set in a confirmation copy window. This
+            window appears only if your option 'prompt on copy' is on. You can enter another directory  in this window.
+            Use Tab key for directory name completion on normal disk file system. If you copy single file not a selection
+            then you can add new file name to directy path in the confirmation window and file will be copied with
+            another name.  
+        it()Move file(s) [F6] - MoveFile. Same as copy files but this function move files i.e delete it from source panel
+            after 'copying'.  
+        it()Delete file(s) [F8] - DelFile. Delete files and directories from the active panel. Directories are deleted
+            recursively. Use mouse to drag files and drop it on recycle bin icon for activating the same delete command. 
+        it()Create archive from file(s) [Shift+F5] - CreateArchive. If you want to create an archive from some files or
+            directories in the active panel, then select them and activate this command. Dialog window apperas and the
+            default name or the archive is displayed. Default arhiver is TAR+GZIP, and if you want any other that xnc
+            supports then just change extension in name of the archive and xnc will automatically use necessary arhiver.
+            For exmaple if you type 'my_first_one.zip' then zip archiver will be used and my_first_one will be created.
+            Note that removing directoty name from the name of the archive will push xnc to create archive in the current
+            directory of the active panel. XNC can create archives only on normal disk file system, but from files from
+            any type of virtual file system. 
+        it()Rename file [Shift+F6] - RenameFile. Rename file command pop ups the dialog window this the old file name in
+            it. Change this name to any other you want and the file will be renamed. Command works only with one file
+            under cursor. 
+        it()Change attributes [F9] - AttributeFile. Change owner/group/other read/write/execute permissions of file or
+            set/clear these permissions for selected files and directories.  
+        it()Change owner [Shift-F9] - ChangeOwner. Change owner and group of file(s). Pops up dialog window and you can
+            choose new owner and group from list or type it on keyboard in 'owner.group' format. After that owner and/or
+            group will be updated for selected files of for file under cursor.  
+        it()Make directory [F7] - MakeDir. Create directory with given name in current one.  
+        it()View file [F3] - ViewFile. View current file (not selected) with IVES or specified viewer.  
+        it()Simple View [Shift-F3] - SimpleViewFile. Work only with IVES and allow you to view file in simple raw/HEX
+            mode even it is an image.  
+        it()Edit file [F4] - EditFile. Edit current file with IVES or specified editor.  
+        it()New file for edit [Shift-F4] - NewFileEdit. Create new file and give it to editor.  
+        it()Print current file [Ctrl+F9] - Print. This command sends current file to the default printer via 'lpr'
+            command.
+	it()Memory information [Ctrl-M] - MemoryInfo. Shows memory information window with output from by 'free' or
+            'vmstat' command.  
+        it()Disk information [Ctrl-L] - DiskInfo. Shows window with information about each mounted partition in system
+            (executes 'df' command).  
+        it()Processes information [F11] - KillMenu. Shows working processes and allow you to send signal to selected
+            process.  
+        it()Quick ScanDir [Ctrl-Q] - QuickDir. Switch on/off summary information window about current directory and its
+            files and subdirectories.  
+        it()Inode file information [Crtl+i] - InodeInfo. Shows information window with specific information about file
+            taken from 'stat' structure. 
+        it()Quick file information [GrayInsert] - QuickFileInfo. If you activate this command the xnc will show 'magic'
+            file information in status bar area of the current panel. If any files are selected the instead of magic file
+            information, ordinary information about file under cursor will be shown.
+	it()Add entry to bookmark [Ctrl-a] - AddtoBookMark. Add current directory to empty place in the bookmark. If
+            bookmark is full then addition is failed. If this directory already exists in the bookmark then folder with
+            that dir starts flushing. Use drag and drop from the panel header to empty bookmark area if you want to add
+            new bookmark folder by mouse.  
+        it()Switch to folder [Alt-1..9] - SwitchToBook. Switch active panel to directory stored in specified bookmark
+            folder. If the bookmark folder does not exist it will be created with current directory and no switching will
+            be made. Click on choosen bookmark folder with mouse to make it visible on active panel.  
+        it()Delete current folder from the bookmark [Alt-Delete] - DelCurrentBook. Delete highlighted folder from the
+            bookmark (not from file system). Also You can drag any bookmark folder to Recycle bin to delete it.
+	it()Find files [Ctrl-F] - FindFile. This command opens a find file window where file name or mask need to be
+            specified and find results will be shown. Allow recursive directories scanning from current or from '/'
+            directory. You can click on one of the found files you are interested in and xnc will switch active panel to
+            the directory where this file is located and set cursor to it. 
+        it()Open FTP session [Ctrl+H] - ActivateFtpLink. This command open FTP connection window, where you can choose
+            one of your favorite sites to connect to or add one and connect to it via FTP. You can also open FTP session
+            by typing the following command in the command line: 'cd ftp://[user@]hostname[:port][/path]'. 
+        it()User Menu [F2] - UserMenu. Show user menu with commands and hotkeys defined for it and allow activate menu
+            item.  
+        it()Man pages [F1] - ManPage. Popup window asks you for man page name and options then execute 'man'. If you are
+            using IVES as a viewer then it shows man pages in IVES HighLight View window otherwise in xterminal using
+            your PAGER environment.  
+        it()Clean archive file system cache [Ctrl+C] - CleanAFSCache. This command cleans archive cache on your disk. XNC
+            uses this cache for speed up browsing your archives. 
+        it()Remount current directory [Shift+F1] - RemountCurrent. This command tries to remount current directory. Often
+            useful only if you are root. 
+        it()Remount device from the list [Ctrl+F1] - RemountList. This command show list of all mountable device and
+            allow you to choose and then mount/remount selected device. Useful from cdrom disks changing on the fly. 
+        it()Reread current directory [Ctrl+R] - RereadDir. This command forces xnc to reread directory contents from
+            virtual file system.
+endit()
+
+manpageoptions()
+
+startdit()
+
+    dit(-display xdisp) Connect to X Server em(xdisp).
+    
+    dit(-geometry geom) Set geometry of bf(xnc) windows to em(geom). 
+    
+    dit(-/+rv) Turn on/off reverse video in xterminal (default is nonreverse).
+    
+    dit(-fn fontname) Set font named em(fontname) in xterminal window. 
+
+    dit(-/+ls) Turn on/off login shell mode. 
+    
+    dit(-/+sb) Turn on/off scrollbar in xterminal window.
+    
+    dit(-sl number) em(Number) of scrolled line to save in xterminal window.
+    
+    dit(-/+vb) Turn on/off visual bell.
+    
+    dit(-C) Intercept console massages.
+       
+    dit(-/+si) Turn on/off startup logo (default is on).
+      
+    dit(-/+fl) Turn on/off fast loading mode. (default is off). There are no
+        directory icons, file icons and startup logo in em(fast loading) mode.
+        
+    dit(-/+to) Turn on/off rxvt terminal (default is on).
+
+    dit(-/+su) Turn on/off 'system' call, works when terminal is off (-to).
+
+    dit(-/+shared) Turn on/off shared resource using with xncloader.
+    
+    dit(-plugin plugin_name) plugin name for load different look. 
+	
+    dit(-help) Shows help options screen.
+    
+enddit()
+
+manpagefiles()
+
+    The bf(xnc) program requires some configuration files in your em(HOME/.xnc)
+        directory, so run bf(xncsetup) before first start of bf(xnc).
+
+manpageseealso()
+
+    bf(xncsetup), bf(ives), bf(iview), bf(iedit), bf(xjpegroot)
+
+manpagebugs()
+
+    There may be bugs in the bf(xnc) package, but that's not very likely.
+    But if you'll find the bug then please, send complete description to
+    the author.
+
+manpageauthor()
+
+    Leonid Khramov (leo@xnc.dubna.su) Russia, St.Petersburg 2002

@@ -1,0 +1,13 @@
+#This is menu file for X Northen Captain
+# Thats all...
+F2: Pack current dir with tar & gzip:tar zcvf ../%p(Archive Name) .
+F3: Mount current directory if possible: mount %s/%s
+F4: Generate Selfextract Execatable:tzx %s
+s:  Music in background: tracker `randomize /put/dir/here/*.mod` &
+g:  GIMP: gimp &
+j:  Joe with current file: joe %s
+b:  Bitmap:bitmap %s &
+k:  XKILL: xkill &
+m: Mount Dos floppy on /floppy: mount -t vfat /dev/fd0 /floppy
+p: Process info by name: ps auxw | grep -v grep | grep %p(Process Name)
+#End of menu file

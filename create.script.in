@@ -1,0 +1,20 @@
+#! /bin/sh
+#This script create xnc system default directory and copy
+#some files to it.
+
+echo "Creating XNC system default directory...."
+mkdir @prefix@/lib 2>/dev/null
+mkdir @prefix@/lib/xnc 2>/dev/null
+chmod a+rwx @prefix@/lib/xnc 2>/dev/null
+cp -f ./xsetup/*.gif @prefix@/lib/xnc
+cp -rf ./xsetup/data @prefix@/lib/xnc
+cp -f ./xsetup/data/.* @prefix@/lib/xnc 2>/dev/null
+cp -rf ./xsetup/pixs @prefix@/lib/xnc
+cp -f ./xsetup/data/* @prefix@/lib/xnc/pixs
+rm -f @prefix@/lib/xnc/xnctmp 2>/dev/null
+ln -s @prefix@/lib/xnc/pixs @prefix@/lib/xnc/xnctmp
+mkdir @prefix@/lib/xnc/xnctmp/AFS 2>/dev/null
+chmod a+rwx @prefix@/lib/xnc/xnctmp/AFS 2>/dev/null
+chmod a+rwx @prefix@/lib/AFS 2>/dev/null
+echo ---------------------------------------------------------
+exit

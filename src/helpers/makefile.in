@@ -1,0 +1,48 @@
+#  help programs for xnc
+#                                
+#  Copyright (C) 2002 by Leo Khramov
+#  email:      leo@solvo.ru
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+
+include ../../make.conf
+
+BASE_DIR = ../..
+
+@MCOMMON@
+
+           PROGRAM = \
+		$(MYBINDIR)/users.xnc \
+		$(MYBINDIR)/groups.xnc \
+		$(MYBINDIR)/zips.xnc \
+		$(MYBINDIR)/data2c
+
+all:: $(PROGRAM)
+
+compile: $(PROGRAM)
+
+$(MYBINDIR)/users.xnc: users.cxx
+	$(CXX) $(LDFLAGS) -o $@ users.cxx $(DEB) $(DEFS) $(CFLAGS) $(INCLUDES) $(STRIPPING)
+
+$(MYBINDIR)/groups.xnc: groups.cxx
+	$(CXX) $(LDFLAGS) -o $@ groups.cxx $(DEB) $(DEFS) $(CFLAGS) $(INCLUDES) $(STRIPPING)
+
+$(MYBINDIR)/zips.xnc: zips.cxx
+	$(CXX) $(LDFLAGS) -o $@ zips.cxx $(DEB) $(DEFS) $(CFLAGS) $(INCLUDES) $(STRIPPING)
+
+$(MYBINDIR)/data2c: data2c.cxx
+	$(CXX) $(LDFLAGS) -o $@ data2c.cxx $(DEB) $(DEFS) $(CFLAGS) $(INCLUDES) $(STRIPPING)
+
+clean:
+	 $(RMF) $(PROGRAM)
+
+FORCE:

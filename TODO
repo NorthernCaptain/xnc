@@ -1,0 +1,236 @@
+                        X Northern Captain Project   1995-2002
+
+To DO:
+
+Hot list:
+ - Scroll with wheel not by page, but for some lines with user defined value.
+
+ - Extended bookmark that allows to store more that 9 entries.
+
+ - Hot keys for sorting columns and reverse
+
+ - Hot key and small window for fast search
+ 
+ - Make ability to call alternative editor/viewer.
+ 
+ - Customization of display modes (Full/Brief). User can choose from any attribute 
+   to display in the panel. Give user mechanism of making sets of modes and quick 
+   switching between them. Make two predefined brief/full sets.
+
+[Done 24-06-2002]
+
+ - Mouse actions. Add to configuration tab 'Mouse' and give user to choose which 
+   action will be define on each mouse button including wheel and Ctrl/Shift modifiers.
+
+[Done 09-06-2002]
+
+ - Context menu for selected file(s). User presses hot key or mouse button and we build
+   context menu with available actions according to file type and VFS type.
+
+[Done 25-06-2002]
+
+ - Change internal mechanism of drawing panel and make it flexibile for next plugin
+   creation.
+
+[Done 01-06-2002]
+ - Make meta gui plugin (skining) that will read all configuration and images from files
+   and draw another xnc look. This plugin give us the way to create new skins without
+   writing some C++ code.   
+
+ - BUG(Fixed): Can't enter localized symbols in command-line (in rxvt window can).
+
+[Done 20-05-2002]
+
+ - Normal history in cmdline. Use our common module 'history' for save/restore
+   history of commands. Add button in the left of the cmdline. Pressing on this
+   button will pop-up menu with history commands, choosing will insert it in
+   cmdline.
+[Done 10-06-2002]
+
+ - Add 'Skip', 'Skip All' to dialog about overwriting files.
+
+ - Add 'Split file' and 'Combine file' commands.
+
+ - Add 'branch view' mode to panle which will display all files with subdirs in 
+   one plane list  and do all operations with them.
+
+ - Add 'Pack files into archive' command for packing files.
+
+ - Add 'Rename file' (Shift-F6) for renaming file only, not moving.
+
+Common, global tasks
+-----------------------------
+                1. FTP file system. Make FTP though 'ftp.xnc' - ftp agent that will be run
+                    from XNC and do all FTP work (connect, get, put, ls etc..) and send
+                    results to XNC.  Make ftp.xnc multithreaded with POSIX threads for
+                    allowing multiconnections at the same time. If all of ftp work will be 
+                    done by ftp.xnc then XNC will be only waiting for end of operation,
+                    so make ftp timeout after which XNC sends current FTP panel to
+                    background (bookmark) and activate previous VFS. 
+                    (Think about methods of realizasion)...
+                    
+                2. MFS (Mtools File System). Make another class of VFS for working
+                    with mtools (MS-DOS tools: mdir, mcopy, mdel...) as with normal VFS.
+                    (Not very hard, just need correct parsing of mtools output...)
+                    (But how to show mtools VFS in XNC? small floppy in bookmark? hmm..)
+                    
+                3. TFS (Trash File System). Make file system that allowed delete files/directories
+                    to 'Recycle Bin' and then recover its. All other VFSes must delete files though it.
+                    This TFS create '.xnc.trash' folder in home directory and store files there.
+                    Double click on 'Recycle Bin' brings listing of deleted files/dir to active panel.
+                    (Problem: How to show this directory tree, if we have many objects from different
+                      VFSes. And How to recover? To the same path, where file was deleted or to
+                      any other place?).
+                      
+                4. Directory Tree. One panel switches to directory tree mode, display directory hierarchy
+                    and allow user to navigate though the tree and see contents of directories on the 
+                    other panel.
+                    
+                5. Online Help system. In any window, at any time, by pressing help key show pop window
+                    with context help information.
+                    
+                6. Make support for skins: Special image and coordinates translation table and XNC have
+                    another look!!!
+                    
+                7. Add checking for running command in command shell (rxvt window). Currently no check, so
+                   after running command XNC panel can't raise up when command is complete, cuz don't know
+                   when it'll be. Any ideas?
+                   
+                8. Add support for mime.types (parsing and using) for automatically detect MIME types.
+                   Not very hard but where to find application table for MIME->executable translation?
+                   
+                9. Add support for internal file scan contents (like 'file' through existing Magic file).
+                   Use the same magic files as 'file' and add option for switch on/off such type of scan
+                   at directory reading and option for showing this info in status bar.
+                   Problem is: parsing of Magic files - need to include part of code from 'file' to XNC
+                   or write such code by myself (i'm too lazy now for that :).
+                
+               10. Add linking magic numbers support with mime.types for COOL detection/running executables.
+                   Cuz, all of this will be optionally.
+                    
+Other
+--------
+               1. Make INTERNAL 'move' operation instead of using 'mv' command.
+                   There is already one variant of it, but problem is 'symbolic links'.
+                   When trying to move symlink we can move it as symlink or as another
+                   copy of file, but if that file had already been moved then symlink points to
+                   nothing!!!  :(
+
+  [+Done 08MAR98. Move symlink "As is", not move file it points to.]
+
+
+
+               2. Make switch in 'copy/move' windows named 'Copy symlinks as is' which means
+                   that we are copying symlink as symlink not as another copy of the same file.
+                   Currently 'copy/move' operations copy not symlinks but files that followed by symlinks.
+                   
+  [+Done 08MAR98.]
+                   
+
+               3. Add 'destination path' edit field when copy/move many selected files.
+               
+  [+Done 08MAR98.]
+               
+
+               4. Make RPM package for RH5.0. Many users ask for it because rpm very simple
+                   to install but hard for creating package... :)   (I don't know how to do it)
+                   
+  [+Done-i386.rpm] Need src.rpm...
+  
+               
+               5. A way to customize the directory listing would be nice,
+                   i.e. a way to adjust the columns to be printed and the width
+                   of them.
+
+               6. Long filenames problem. Can't execute files with spaces, brackets...
+                   Can't detect such files inside AFS (archieves) (Any ideas how to do it?).
+                   
+  [+Done by Heiko Schroeder.]
+  
+
+               7. Second part of Offix DnD (drop files to XNC). Currently XNC can only
+                   send file to another application. Make receiving DnD messages,
+                   and sending groups of files not only single.
+
+               8. Make option (in xncsetup or compile time) for switching off rxvt terminal.
+                   XNC with this option enabled don't show terminal window and executes
+                   all commands using 'system' call (work as filemanager only, not as terminal).
+                   
+  [+Done. Added option '-/+to and -/+su']
+  
+
+               9. Rewrite 'image/tiff.c' routines for compiling with not only TIFF 3.3 library.
+                   TIFF 3.3 very old and current TIFFlib has another interface.
+                   
+              10. A way to create archives. For example: We select some files and dirs on panel,
+                    then press hotkey, enter archive name, choose arhivator (TAR, ZIP, RAR...)
+                    and XNC create archive with selected files on the other panel.
+                    
+              11. More datailed documentation and man pages.
+ 
+  [+Done for man pages - yo-man format]
+              
+              12. Add history to all input fields. Store this history in .xnc.history file and load 
+                    at startup.
+              
+  [+Done. But also need to show history pulldown window near every input field]
+  
+                    
+              13. Make CUT/COPY/PASTE operations in all input fields.
+              
+              14. Problem with IVES running on two different displays for the same user. XNC running on
+                 other than ives diplay shows files through ives on wrong display.
+                 
+              15. Make option to switch off status bar and/or it contents (filename/size/atributes/date).
+              
+  [+Done for status bar contents, not for whole one].
+  
+              16. Remake configuration using automake instead of autoconf.
+              
+              17. Add checking for system-wide 'jpeg', 'png' and 'zlib' libs to 'configure' script
+                  and if found then using it instead of internal ones.
+
+              18. Add configurable display in full mode of file size/attrs/date
+                  Also need some way for configuring panel sub-part width. I 
+                  mean with of file name or date or size etc..
+
+
+
+              19. Make alternative editor, viewer options - will start 
+                  alternative editor/viewer by pressing Ctrl+F3/F4. 
+                  Must be added to setup, and keybinding.
+                  
+              20. Make data2c.cxx compiled in distro, and generate configs with it. Or may be don't include 
+                  it in general building mechanism, just do it with 'make configs'.
+Porting
+----------
+
+                1. FreeBSD, NetBSD, OpenBSD
+  [+]Done, but some features (qview - QuickScanDir) disabled. Need to be solved.
+                    
+                2. Solaris.
+  [+]Done, but compiled only on GCC. Not tested on SunC compiler.
+                
+                3. AIX.
+  [+]Done, but compiled only on GCC.
+                
+                4. SunOS.
+                
+                5. IRIX.
+                
+                6. HP-UX.
+  [+]Done, but compiled only on GCC.
+                
+                7. Dunix/OSF1/Ultrix
+  [+]Done, compiled on DEC C/C++ compiler.
+
+
+Remakes
+-------
+
+  Remove globals with compare and sort_ordering in FList...
+
+  Change type of global var 'panel' from Lister* to BaseCaptain*
+               
+End of file.                Last update: 05-OCT-2002
+

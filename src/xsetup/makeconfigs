@@ -1,0 +1,58 @@
+#! /bin/sh
+
+# This script convert configuration needed by xnc to C sources
+# for compiling them into xnc binaries.
+# Run it only from xnc/xsetup directory.
+# (c) 2002 <leo@xnc.dubna.su>
+
+# Some vars that we need to work properly
+curdir=`pwd`
+data2c=$curdir/../../bin/data2c
+xnc_cfg_compiled_dir=$curdir/../lib/xbitmaps
+setup_cfg_compiled_dir=$curdir
+src_dir=files.tar.dir
+tmp_src_dir=/tmp/$src_dir
+
+# Here we make convertion of config file to C source 
+# with renaming and moving source to xnc_cfg_complied dir
+cfg_compile(){
+    echo "Copying    '$1' -> '$2'"
+    cp -f $src_dir/data/$1 $2
+    $data2c $2
+    rm -f $2
+    mv -f ${2}.c $xnc_cfg_compiled_dir/${2}.c
+}
+
+
+# Here we create tarbal from source config tree, make CVS cleanup
+# and convert tarball to C source for xncsetup
+cfg_make_tarball() {
+
+tarball=${1}.tar
+cball=${1}.c
+
+echo "Make tarball $tarball"
+cp -rf $src_dir $tmp_src_dir
+find $tmp_src_dir -name "CVS" -type d | xargs -i rm -rf {}
+cd $tmp_src_dir
+tar cf $curdir/$tarball .
+cd $curdir
+$data2c $tarball
+rm -rf $tmp_src_dir
+}
+
+cfg_compile ".xnc.ini"           "xncini"
+cfg_compile ".xnc.cfg"           "xnccfg"
+cfg_compile ".xnc.ext"           "xncext"
+cfg_compile ".xnc.menu"          "xncmenu"
+cfg_compile ".xnc.keys"          "xnckeys"
+cfg_compile ".xnc.afs"           "xncafs"
+cfg_compile ".ives.ini"          "ivesini"
+cfg_compile "xnc.afs.aixtar"     "xncafsaix"
+cfg_compile "xnc.afs.openbsdtar" "xncafsopenbsd"
+cfg_compile "xnc.afs.tar112"     "xncafstar"
+
+cfg_make_tarball "sfiles"
+
+echo "------------> All done <------------"
+

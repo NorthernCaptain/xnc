@@ -1,0 +1,52 @@
+#  Iconsets library for xnc
+#                                
+#  Copyright (C) 2002 by Leo Khramov
+#  email:      leo@solvo.ru
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+
+include ../../../make.conf
+
+BASE_DIR = ../../..
+
+@MCOMMON@
+
+           IOBJS = \
+		file.o \
+		apprentice.o \
+		fsmagic.o \
+		softmagic.o \
+		ascmagic.o \
+		compress.o \
+		is_tar.o \
+		print.o
+
+           PROGRAM = $(MYLIBDIR)/libxncfiledir.a
+
+VERSION = 3.20.1
+MAGIC   = /usr/share/magic
+
+CINCLUDES=-DMAGIC='"$(MAGIC)"' -DMAGIC_FOR_XNC $(DEFS) $(DEB) $(STRIPPING)
+
+all:: $(PROGRAM)
+
+compile: $(PROGRAM)
+
+$(PROGRAM): $(IOBJS)
+	$(RMF) $(PROGRAM)
+	ar rc $(PROGRAM) $(IOBJS)
+	@RANLIB@ $(PROGRAM)
+
+clean:
+	 $(RMF) $(IOBJS) $(PROGRAM)
+
+FORCE:

@@ -1,0 +1,817 @@
+dnl# -*- sh -*-
+dnl#
+dnl# $Id: configure.in,v 1.14 2003/12/25 12:43:18 leo Exp $
+dnl#
+dnl# Process this file with autoconf to produce a configure script.
+dnl#
+AC_INIT(src/include/globals.h)
+
+
+dnl ======================= Package and Verision =======================
+
+PACKAGE=xnc
+VERSION=5.0.4
+
+AC_DEFINE_UNQUOTED(PACKAGE, "$PACKAGE")
+AC_DEFINE_UNQUOTED(VERSION, "$VERSION")
+AC_SUBST(PACKAGE)
+AC_SUBST(VERSION)
+
+dnl ====================================================================
+
+if test -z "${CFLAGS}"; then
+    if test -z "${CCOPTS}"; then
+        CCOPTS='-O'
+    fi
+    CFLAGS="$CCOPTS"
+fi
+
+dnl# Checks for programs.
+dnl AC_MAKE_SET
+
+AC_CANONICAL_HOST
+changequote(,)dnl
+ARCH=`echo $host | sed 's/\([^-]*\)-[^-]*-\([^-]*\)/\1-\2/'`
+changequote([,])dnl
+
+dnl Checks for programs.
+AC_PREFIX_DEFAULT(/usr)
+AC_ISC_POSIX
+AC_AIX
+AC_MINIX
+AC_PROG_CC
+AC_PROG_CXX
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_PROG_MAKE_SET
+AC_PROG_RANLIB
+AC_PATH_PROG(RM, rm, rm)
+AC_PATH_PROG(CP, cp, cp)
+
+AC_SUBST(SHAREFLAGS)
+AC_SUBST(LD_SHAREFLAGS)
+AC_SUBST(PLUGINS)
+AC_SUBST(DEB)
+AC_SUBST(BASE_DIR)
+AC_SUBST(PO_MAKE_DIR)
+
+BASE_DIR=`pwd`
+
+dnl ****************************************************************
+dnl On SCO Unix, there are ELF and COFF binaries.  We want elf to
+dnl provide for dlopen() and friends.  With help from Tamas Laufer!
+dnl ****************************************************************
+
+case "$ARCH" in
+    *sco*|*SCO*)
+        AC_MSG_CHECKING("SCO-Unix.  See if we need -belf")
+        old_cflags="$CFLAGS"
+        CFLAGS="$CFLAGS -belf"
+        AC_TRY_COMPILE(
+        [
+        ],
+        [
+        ],
+        CMFLAGS="$CMFLAGS -belf"
+        AC_MSG_RESULT(yes),
+        AC_MSG_RESULT(no)
+        CFLAGS="$old_cflags")
+        ;;
+esac
+
+dnl ================ Checking GNU gettext for l10n =====================
+
+AM_GNU_GETTEXT
+
+dnl ====================================================================
+
+dnl Checks for header files.
+
+dnl ======================= X11 checks =================================
+AC_PATH_X
+AC_PATH_XTRA
+dnl ====================================================================
+
+AC_MSG_CHECKING("for long long type")
+AC_TRY_COMPILE(
+[
+#include <stdio.h>
+],
+[
+long long very_long;
+],
+ AC_DEFINE(HAVE_LONG_LONG)
+ AC_MSG_RESULT(yes),
+ AC_MSG_RESULT(no))
+
+
+AC_HEADER_DIRENT
+AC_HEADER_STDC
+AC_HEADER_SYS_WAIT
+AC_HEADER_TIME
+AC_CHECK_HEADERS(fcntl.h \
+		termios.h \
+		sys/ioctl.h \
+		sys/select.h \
+		sys/time.h \
+		sys/sockio.h \
+		sys/byteorder.h \
+		sys/sigevent.h \
+		utmpx.h \
+		mntent.h \
+		unistd.h \
+		errno.h \
+		unix.h \
+		setjmp.h \
+		dirent.h \
+		strings.h \
+		dlfcn.h \
+		malloc.h \
+		locale.h \
+		X11/extensions/shape.h)
+
+dnl ==================== Checks for libraries. =========================
+
+AC_CHECK_LIB(m, pow)
+AC_CHECK_FUNCS(setlocale)
+
+dnl ====================================================================
+
+dnl --------------------------------------------------------------------------
+dnl ===========  Additional configure options added for xnc ==================
+
+AC_ARG_ENABLE(debug, [  --enable-debug          Turn on debugging output of xnc],
+              xncdebug=yes,
+              xncdebug=no)
+
+if test "$xncdebug" = "yes"; then
+    DEB="-g -DDEBUG_XNC"
+else
+    DEB=""
+fi
+
+
+AC_ARG_WITH(pty,
+  [  --with-pty=NAME         set the pseudo terminal mode to NAME
+                          values are: 
+                               OPENPTY
+                               SGI4
+                               SCO
+                               HPUX
+                               GLIBC
+                               PTC
+                               STREAMS
+                               BSD],
+  [if test x$withval != x; then
+     rxvt_cv_ptys=$withval
+   else
+     rxvt_cv_ptys=detect
+  fi])
+
+
+AC_ARG_ENABLE(oldpty, [  --enable-oldpty         Turn on old style of pty detection],
+              xncoldpty=yes,
+              xncoldpty=no)
+
+
+dnl --------------------------------------------------------------------------
+
+AC_ARG_ENABLE(shared, [  --disable-shared        No plugins (shared-lib interface is disabled)],
+              configshared=no,
+              configshared=yes)
+
+if test "$configshared" = "yes"; then
+  PLUGINS="gui_plugins"
+  AC_DEFINE(USE_SHARED_LOADING,1)
+  AC_CHECK_LIB(dl, dlopen)
+  if test "$ac_cv_lib_dl_dlopen" = "yes"; then
+    AC_CHECK_FUNCS(dlopen)
+  else
+    AC_CHECK_LIB(dld, shl_load)
+    AC_CHECK_FUNCS(shl_load)
+  fi
+fi
+
+dnl On SCO, dlopen is in libc.so and requires dlfcn.h to compile.  Thanks
+dnl to Tamas Laufer.
+
+if test ! "$ac_cv_func_dlopen" = "yes"; then
+AC_MSG_CHECKING("dlopen in libc")
+AC_TRY_COMPILE(
+[
+#include <dlfcn.h>
+#ifndef RTLD_NOW
+#define RTLD_NOW 0
+#endif
+],
+[ dlopen("foobar", RTLD_NOW);
+], AC_DEFINE(HAVE_DLOPEN)
+   AC_MSG_RESULT(yes),
+   AC_MSG_RESULT(no))
+fi
+
+out_lib=${LIBS}
+
+
+
+
+dnl ---------------------- Checking for image libraries ------------------------
+
+
+AC_CHECK_LIB(jpeg, jpeg_read_scanlines,
+[
+  echo "JLIB=-ljpeg" > make.conf
+  echo "JPGDEFINE=-DLOAD_JPG" >>make.conf
+  echo "JINC=" >> make.conf
+  echo "JDEP=" >> make.conf
+  echo "JLOC="`pwd`"/src/lib/jpeg/libjpeg.a" >> make.conf
+  out_lib="$out_lib -ljpeg"
+],
+[
+ echo "JLOC="`pwd`"/src/lib/jpeg/libjpeg.a" >  make.conf
+ echo "JPGDEFINE=-DLOAD_JPG" >>make.conf
+ echo "JLIB="`pwd`"/src/lib/jpeg/libjpeg.a" >> make.conf
+ echo "JINC=-I"`pwd`"/src/lib/jpeg" >> make.conf
+ echo "JDEP=\$(JLOC)" >> make.conf
+ need_jpeg="yes"
+])
+
+AC_CHECK_LIB(tiff, TIFFGetField,
+[
+  out_lib="$out_lib -ltiff"
+  echo "TLIB=-ltiff" >> make.conf
+  echo "TIFFDEFINE=-DLOAD_TIF" >>make.conf
+  echo "TIFFINC=" >> make.conf
+  tiff="TIFF"
+],
+[
+  echo "TLIB=" >> make.conf
+  echo "TIFFDEFINE=" >>make.conf
+  echo "TIFFINC=" >> make.conf
+])
+
+
+AC_CHECK_LIB(z, inflate,
+[
+ echo "ZINC=" >>make.conf
+ echo "ZLIB=-lz" >>make.conf
+ echo "ZDEP=" >>make.conf
+ out_lib="$out_lib -lz"
+],
+[
+ echo "ZINC=-I`pwd`/src/lib/zlib" >>make.conf
+ echo "ZLIB=`pwd`/src/lib/zlib/libz.a" >>make.conf
+ echo "ZDEP=\$(ZLIB)" >>make.conf
+])
+
+
+AC_CHECK_LIB(png, png_get_valid,
+[
+ echo "PNGDEFINE=-DLOAD_PNG" >>make.conf
+ echo "PNG=-DPNG_SUPPORT" >>make.conf
+ echo "PNGINC=" >>make.conf
+ echo "PNGLIB=-lpng" >>make.conf
+ echo "PNGDEP=" >>make.conf
+ png="PNG"
+ out_lib="$out_lib -lpng"
+],
+[
+ echo "PNGDEFINE=-DLOAD_PNG" >>make.conf
+ echo "PNG=-DPNG_SUPPORT" >>make.conf
+ echo "PNGINC=-I`pwd`/src/lib/libpng -I`pwd`/src/lib/zlib" >>make.conf
+ echo "PNGLIB=`pwd`/src/lib/libpng/libpng.a" >>make.conf
+ echo "PNGDEP=\$(PNGLIB)" >>make.conf
+ png="PNG"
+], -lz -lm)
+
+
+dnl ---------------------- End image libraries checking ----------------
+
+dnl ==== Checks for typedefs, structures, and compiler characteristics.
+
+AC_C_CONST
+AC_TYPE_UID_T
+AC_C_INLINE
+AC_TYPE_MODE_T
+AC_TYPE_PID_T
+AC_TYPE_SIZE_T
+AC_STRUCT_TM
+AC_TYPE_SIGNAL
+
+
+
+
+dnl ---------------------- Checks for library functions -----------------
+
+AC_PROG_GCC_TRADITIONAL
+AC_FUNC_MEMCMP
+AC_TYPE_SIGNAL
+AC_CHECK_FUNCS( getcwd \
+		mkdir \
+		putenv \
+		select \
+		socket \
+		seteuid \
+		unsetenv \
+		setutent \
+		atexit \
+		openpty \
+		_getpty \
+		grantpt \
+		unlockpt \
+		isastream \
+                access
+		)
+
+
+
+dnl -------------- Defining PO_MAKE_DIR -------------------------
+
+if test "$MSGFMT" != ":"; then
+    PO_MAKE_DIR="po"
+else
+    PO_MAKE_DIR=""
+fi
+
+
+dnl -------------- Checking pty type here -------------------------
+
+
+AC_CACHE_CHECK(for getpt, rxvt_cv_func_getpt,
+[AC_TRY_LINK([#define _GNU_SOURCE
+# include <stdlib.h>
+],
+  [(void)getpt();],
+  rxvt_cv_func_getpt=yes, rxvt_cv_func_getpt=no)])
+if test x${rxvt_cv_func_getpt} = xyes; then
+  AC_DEFINE(HAVE_GETPT)
+fi
+
+
+
+if test x$xncoldpty = xyes; then
+
+dnl ------------- OLD pty detection technique --------------------
+
+# if we don't guess right then it's up to the user
+AC_CACHE_CHECK(for tty/pty type, rxvt_cv_ptys,
+[AC_TRY_RUN([#include <stdio.h>
+# ifdef HAVE_GETPT
+#  define _GNU_SOURCE
+# endif
+# include <stdlib.h>
+#ifdef HAVE_FCNTL_H
+# include <fcntl.h>
+#endif
+#include <sys/stat.h>
+#include <errno.h>
+main()
+{
+    int pty, checkerror;
+    FILE *a, *f=fopen("conftestval", "w");
+    struct stat statbuf;
+    extern int errno;
+
+    if (!f) exit(1);
+/* presume that S_IXOTH is required for people to access devices */
+    if (stat("/dev", &statbuf) < 0)
+	checkerror = 0;
+    else
+	checkerror = ((statbuf.st_mode & S_IXOTH) == S_IXOTH) ? 1 : 0;
+#if defined(__sgi) || defined(sgi) || defined(__sgi__)
+    if (stat("/dev/ptc", &statbuf) >= 0)
+# ifdef HAVE__GETPTY
+	fprintf(f, "SGI4");
+# else
+	fprintf(f, "SGI3");
+# endif
+    else
+	fprintf(f, "SGI4");
+    exit(0);
+#endif
+#ifdef _SCO_DS
+    if (stat("/dev/ttyp20", &statbuf) == 0) {
+	fprintf(f, "SCO");
+	exit(0);
+    }
+#endif
+/* HPUX: before ptmx */
+    pty = open("/dev/ptym/clone", O_RDWR);
+    if (pty >= 0 || (checkerror && errno == EACCES)) {
+	fprintf(f, "HPUX");
+	exit(0);
+    }
+#if defined(HAVE_GRANTPT) && defined(HAVE_UNLOCKPT)
+# ifdef HAVE_GETPT
+    pty = getpt();
+    if (pty >= 0 || errno == EACCES) {
+	fprintf(f, "GLIBC");
+	exit(0);
+    }
+# endif
+    if (stat("/dev/ptmx", &statbuf) >= 0
+	&& ((statbuf.st_mode & S_IFCHR) == S_IFCHR))
+	if (stat("/dev/pts/0", &statbuf) >= 0
+	    && ((statbuf.st_mode & S_IFCHR) == S_IFCHR)
+	    && ((pty = open("/dev/ptmx", O_RDWR)) >= 0
+		|| (checkerror && errno == EACCES))) {
+	    fprintf(f, "USG");
+	    exit(0);
+    }
+#endif
+    if (stat("/dev/ttyp20", &statbuf) == 0) {
+	fprintf(f, "SCO");
+	exit(0);
+    }
+    fprintf(f, "BSD");
+    exit(0);
+}], rxvt_cv_ptys=`cat conftestval`, rxvt_cv_ptys=UNKNOWN )])
+
+if test x${rxvt_cv_ptys} = xSCO; then
+  AC_DEFINE(PTYS_ARE_NUMERIC)
+  AC_SUBST(PTYS_ARE_NUMERIC)
+fi
+if test x${rxvt_cv_ptys} = xUSG; then
+  AC_DEFINE(PTYS_ARE_PTMX)
+  AC_SUBST(PTYS_ARE_PTMX)
+  AC_DEFINE(PTYS_ARE_SEARCHED)
+  AC_SUBST(PTYS_ARE_SEARCHED)
+fi
+if test x${rxvt_cv_ptys} = xSGI3; then
+  AC_DEFINE(PTYS_ARE_PTC)
+  AC_SUBST(PTYS_ARE_PTC)
+fi
+if test x${rxvt_cv_ptys} = xSGI4; then
+  AC_DEFINE(PTYS_ARE__GETPTY)
+  AC_SUBST(PTYS_ARE__GETPTY)
+fi
+if test x${rxvt_cv_ptys} = xCONVEX; then
+  AC_DEFINE(PTYS_ARE_GETPTY)
+  AC_SUBST(PTYS_ARE_GETPTY)
+fi
+if test x${rxvt_cv_ptys} = xGLIBC; then
+  AC_DEFINE(PTYS_ARE_GETPT)
+  AC_SUBST(PTYS_ARE_GETPT)
+  AC_DEFINE(PTYS_ARE_SEARCHED)
+  AC_SUBST(PTYS_ARE_SEARCHED)
+fi
+if test x${rxvt_cv_ptys} = xHPUX; then
+  AC_DEFINE(PTYS_ARE_CLONE)
+  AC_SUBST(PTYS_ARE_CLONE)
+  AC_DEFINE(PTYS_ARE_SEARCHED)
+  AC_SUBST(PTYS_ARE_SEARCHED)
+fi
+if test x${rxvt_cv_ptys} = xBSD; then
+  AC_DEFINE(PTYS_ARE_SEARCHED)
+  AC_SUBST(PTYS_ARE_SEARCHED)
+fi
+
+else
+
+
+
+dnl ====================================================================
+dnl --> New version of checking pty/tty taken from rxvt-2.7.6 <---
+
+dnl# if we don't guess right then it's up to the user
+
+
+if test x$rxvt_cv_ptys = xdetect -o x$rxvt_cv_ptys = x; then
+
+AC_CACHE_CHECK(for pty/tty type, rxvt_cv_ptys,
+[if test x$ac_cv_func_openpty = xyes; then
+    rxvt_cv_ptys=OPENPTY
+ else if test x$ac_cv_func__getpty = xyes; then
+    rxvt_cv_ptys=SGI4
+ else if test -c /dev/ttyp20; then
+    rxvt_cv_ptys=SCO
+ else if test -c /dev/ptym/clone; then
+    rxvt_cv_ptys=HPUX
+ else if test x$rxvt_cv_func_getpt = xyes; then
+    rxvt_cv_ptys=GLIBC
+ else if test -c /dev/ptc -a -c /dev/pts; then
+    rxvt_cv_ptys=PTC
+ else if test -c /dev/ptc -a -d /dev/pts; then
+    rxvt_cv_ptys=PTC
+ else if test -c /dev/ptmx -a -c /dev/pts/0; then
+    rxvt_cv_ptys=STREAMS
+ else if test x$ac_cv_func_grantpt = xyes && test x$ac_cv_func_unlockpt = xyes; then
+dnl# catch CYGWIN
+    rxvt_cv_ptys=STREAMS
+ else
+    rxvt_cv_ptys=BSD
+fi
+fi
+fi
+fi
+fi
+fi
+fi
+fi
+fi
+])
+
+fi
+
+if test x$rxvt_cv_ptys = xOPENPTY; then
+  AC_DEFINE(PTYS_ARE_OPENPTY)
+  AC_SUBST(PTYS_ARE_OPENPTY)
+fi
+if test x$rxvt_cv_ptys = xSCO; then
+  AC_DEFINE(PTYS_ARE_NUMERIC)
+  AC_SUBST(PTYS_ARE_NUMERIC)
+fi
+if test x$rxvt_cv_ptys = xSTREAMS; then
+  AC_DEFINE(PTYS_ARE_PTMX)
+  AC_SUBST(PTYS_ARE_PTMX)
+  if test x$ac_cv_func_access = xyes; then
+    AC_DEFINE(PTYS_ARE_SEARCHED)
+  fi
+fi
+if test x$rxvt_cv_ptys = xPTC; then
+  AC_DEFINE(PTYS_ARE_PTC)
+  AC_SUBST(PTYS_ARE_PTC)
+fi
+if test x$rxvt_cv_ptys = xSGI4; then
+  AC_DEFINE(PTYS_ARE__GETPTY)
+  AC_SUBST(PTYS_ARE__GETPTY)
+fi
+if test x$rxvt_cv_ptys = xCONVEX; then
+  AC_DEFINE(PTYS_ARE_GETPTY)
+  AC_SUBST(PTYS_ARE_GETPTY)
+fi
+if test x$rxvt_cv_ptys = xGLIBC; then
+  AC_DEFINE(PTYS_ARE_GETPT)
+  AC_SUBST(PTYS_ARE_GETPT)
+  AC_DEFINE(PTYS_ARE_SEARCHED)  dnl# really needed?
+  AC_SUBST(PTYS_ARE_SEARCHED)   dnl# really needed?
+fi
+if test x$rxvt_cv_ptys = xHPUX; then
+  AC_DEFINE(PTYS_ARE_CLONE)
+  AC_SUBST(PTYS_ARE_CLONE)
+  AC_DEFINE(PTYS_ARE_SEARCHED)  dnl# really needed?
+  AC_SUBST(PTYS_ARE_SEARCHED)   dnl# really needed?
+fi
+if test x$rxvt_cv_ptys = xBSD; then
+  AC_DEFINE(PTYS_ARE_SEARCHED)
+  AC_SUBST(PTYS_ARE_SEARCHED)
+fi
+
+fi
+
+dnl --------------------------------------------------------------
+
+
+
+
+
+
+
+CFLAGS=${CFLAGS--O}
+LDFLAGS=${LDFLAGS--O}
+CPPFLAGS="$CPPFLAGS"
+AC_SUBST(CFLAGS)
+AC_SUBST(CPPFLAGS)
+AC_SUBST(LDFLAGS)
+AC_SUBST(LIBS)
+dnl# common parts of the Makefile
+MCOMMON=./Make.common
+AC_SUBST_FILE(MCOMMON)
+
+
+dnl -------------- Check for SHARED resource compiling -------------
+
+if test "$configshared" = "yes"; then
+
+dnl Some versions of (g)cc need to export the symbols from the main program
+dnl using -export-dynamic or (older versions) -rdynamic.  See whether
+dnl this gcc understands this flag.
+
+AC_MSG_CHECKING("whether LDFLAGS need -export-dynamic")
+  old_ldflags="$LDFLAGS"
+  LDFLAGS="-export-dynamic $LDFLAGS"
+  AC_TRY_RUN(
+main()
+{ exit(0);
+},
+     if grep 'unrecognized option `-export-dynamic'"'" config.log >/dev/null; then
+       AC_MSG_RESULT(no)
+       LDFLAGS="$old_ldflags"
+     else
+       AC_MSG_RESULT(yes)
+       exportdynamic=done
+     fi,
+     AC_MSG_RESULT(no)
+     LDFLAGS="$old_ldflags",
+     AC_MSG_RESULT(no)
+     LDFLAGS="$old_ldflags")
+
+if test "$exportdynamic" != "done"; then
+AC_MSG_CHECKING("whether LDFLAGS need -rdynamic")
+  old_ldflags="$LDFLAGS"
+  LDFLAGS="-rdynamic $LDFLAGS"
+  AC_TRY_RUN(
+main()
+{ exit(0);
+},
+     if grep 'unrecognized option `-rdynamic'"'" config.log >/dev/null; then
+       AC_MSG_RESULT(no)
+       LDFLAGS="$old_ldflags"
+     else
+       AC_MSG_RESULT(yes)
+     fi,
+     AC_MSG_RESULT(no)
+     LDFLAGS="$old_ldflags",
+     AC_MSG_RESULT(no)
+     LDFLAGS="$old_ldflags")
+fi      dnl test for -exportdynamic
+
+
+
+dnl Check for -fpic option for dll
+
+AC_MSG_CHECKING("whether LDFLAGS need -fpic")
+  old_ldflags="$LDFLAGS"
+  LDFLAGS="-fpic $LDFLAGS"
+  AC_TRY_RUN(
+main()
+{ exit(0);
+},
+     if grep 'unrecognized option `-fpic'"'" config.log >/dev/null; then
+       AC_MSG_RESULT(no)
+       LDFLAGS="$old_ldflags"
+     else
+       LDFLAGS="$old_ldflags"
+       SHAREFLAGS=-fpic
+       AC_MSG_RESULT(yes)
+     fi,
+     AC_MSG_RESULT(no)
+     LDFLAGS="$old_ldflags",
+     AC_MSG_RESULT(no)
+     LDFLAGS="$old_ldflags")
+
+
+dnl Some specific OS stuff
+
+case "$ARCH" in
+  *linux*)
+           AC_DEFINE(SO_EXT, "so")
+        ;;
+  *hppa*|*hpux*)
+        AC_DEFINE(SO_EXT, "so")
+        if test "$GCC" = "yes"; then
+            LDFLAGS="$LDFLAGS -Wl,-E"
+	    LD_SHAREFLAGS="-Wl,-b"
+        else
+            LDFLAGS="$LDFLAGS -E"
+        fi
+        ;;
+  *solaris*)
+        AC_DEFINE(SO_EXT, "so")
+        if test "$GCC" = "yes"; then
+		AC_MSG_CHECKING("whether we need -fpermissive")
+		old_cflags="$CFLAGS"
+		CFLAGS="-fpermissive $CFLAGS"
+		AC_TRY_RUN(
+		main()
+		{ exit(0);
+		},
+	        if grep 'option `-fpermissive'"'" config.log >/dev/null; then
+	           AC_MSG_RESULT(no)
+	           CFLAGS="$old_cflags"
+	        else
+	           CFLAGS="$old_cflags -fpermissive"
+	           AC_MSG_RESULT(yes)
+	        fi,
+	        AC_MSG_RESULT(no)
+	        CFLAGS="$old_cflags",
+	        AC_MSG_RESULT(no)
+	        CFLAGS="$old_cflags")
+
+
+	        AC_MSG_CHECKING("whether we need -mimpure-text")
+		old_cflags="$CFLAGS"
+		CFLAGS="-mimpure-text $CFLAGS"
+		AC_TRY_RUN(
+		main()
+		{ exit(0);
+		},
+	        if grep 'option `-mimpure-text'"'" config.log >/dev/null; then
+	           AC_MSG_RESULT(no)
+	           CFLAGS="$old_cflags"
+	        else
+	           CFLAGS="$old_cflags"
+  	           LD_SHAREFLAGS="-mimpure-text"
+	           AC_MSG_RESULT(yes)
+	        fi,
+	        AC_MSG_RESULT(no)
+	        CFLAGS="$old_cflags",
+	        AC_MSG_RESULT(no)
+	        CFLAGS="$old_cflags")
+		if test "$LD_SHAREFLAGS" = "-mimpure-text"; then
+  	           LD_SHAREFLAGS="-mimpure-text -Wl,-ztextoff"
+		fi
+        fi
+        ;;
+  *aix*)
+        AC_DEFINE(SO_EXT, "so")
+        if test "$GCC" = "yes"; then
+            LDFLAGS="$LDFLAGS -Wl,-bexpall"
+	    LD_SHAREFLAGS="-Wl,-berok"
+        else
+            LDFLAGS="$LDFLAGS -bexpall"
+	    LD_SHAREFLAGS="-berok"
+        fi
+        ;;
+  *darwin*)
+        LD_SHAREFLAGS="-dynamiclib -undefined suppress"
+	;;
+  *)
+        AC_DEFINE(SO_EXT, "so")
+        ;;
+esac
+
+fi
+
+dnl ------------------------- End SHARED part --------------------------------
+
+if test ! -z "${need_jpeg}"; then
+  AC_CONFIG_SUBDIRS(src/lib/jpeg)
+fi
+
+AC_CONFIG_HEADER(src/include/config.h)
+AC_OUTPUT(Make.common  intl/Makefile po/Makefile.in \
+    Makefile \
+    reconfig \
+    src/include/xncdirs.h \
+    src/makefile \
+    src/lib/makefile \
+    src/helpers/makefile \
+    src/lib/image2/makefile \
+    src/lib/northgui/makefile \
+    src/lib/vfs/makefile \
+    src/lib/filedir/makefile \
+    src/lib/manage/makefile \
+    src/lib/tool/makefile \
+    src/lib/rxvt2/makefile \
+    src/lib/xbitmaps/makefile \
+    src/ives/makefile \
+    src/xsetup/makefile \
+    src/launch/makefile \
+    src/xjroot/makefile \
+    src/plugins/makefile \
+    src/plugins/five/makefile \
+    src/plugins/aqua/makefile \
+    src/plugins/theme/makefile \
+    src/lib/libpng/makefile \
+    src/lib/zlib/Makefile \
+    src/config_doc.cxx \
+    iconset/makefile) 
+
+ echo "NO_ALT=" >>make.conf
+ rus="enabled"
+
+ echo "PSEUDO=-DPSEUDOCOLOR" >>make.conf
+ pse="PseudoColor; TrueColor;"
+
+
+ bmp="BMP"
+
+ xpm="XPM"
+
+ pcx="PCX"
+
+ targa="TGA"
+
+ echo "PCD=-DPCD_SUPPORT" >>make.conf
+ pcd="PhotoCD"
+
+ln -sf src/include/config.h config.h
+
+echo "---------------X Northern Captain Project----------------------"
+
+echo "
+Configuration:
+
+  Source code location:     ${srcdir}
+  C Compiler:               ${CC}
+  C Compiler flags:         ${CFLAGS}
+  C++ Compiler:             ${CXX}
+  Libraries:                ${out_lib}
+  Install path:             ${prefix}/bin
+  Man pages path:           ${prefix}/man
+  X11 versions:            ${X_LIBS}
+  X Visuals:                ${pse}
+  Image formats:            JPEG GIF LBM ${pcd} ${tiff} ${xpm} ${pcx} ${bmp} ${targa} ${png}
+  IVES Russian:             ${rus}
+  Pseudo terminal type:     ${rxvt_cv_ptys}
+"
+echo "---------------------------------------------------------------"
+echo ""
+echo "Use ./reconfig for changing these settings before compile XNC"
+echo "then type 'make' for building XNC binaries, and after that"
+echo "do 'make install' as 'root'."
+echo ""
+echo "Thank you..."
+chmod 755 ${srcdir}/reconfig
+

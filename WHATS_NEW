@@ -1,0 +1,293 @@
+                  WELCOME  to X Northern Captain v5.0.4 (02-Jan-2004)
+             (Hotest news for XNC on http://xnc.dubna.su or http://xnc.jinr.ru)
+             Your suggestions, comments are always welcome at:
+                            <leo@xnc.dubna.su> or <leo@xnc.jinr.ru>
+
+Whats New from verion 5.0.2 (05-Feb-2003):
+        - Added 'create link' command for one file or group of selected files (Shift+F7)
+        - Added displaing key shotcuts in menu
+        - Fixed bugs with long file names and file names with special characters
+        - Fixed bug with switching between terminal and FM window
+                 
+Whats New from verion 5.0.0 (01-Jan-2003):
+        - Added quick 'cd' command - Ctrl-x. You can use Tab expantion there.
+        - Added hot keys to panel sort methods and modes.
+        - Added visual terminal/fm switch.
+        - Fixes for status bar display items.
+        - Fixes for edit/view files with spaces with external editor/viewer
+        - Fixes for deletion files named with '-alala-'
+        - Fixes for selection on right/bottom panels.
+        - Added Spanish, Czech and Serbian translation (thanks people)
+        - Added partly translated Hungarian messages
+
+Whats New from verion 4.4.7 (28-Mar-2002):
+        -Added localization support. 
+         XNC translated into :
+            - Russian
+            - Polush
+            - Portugese
+            - French
+         Volunteers for other languages wanted!
+        -Added context menu for file manipulation.
+         Use middle mouse button for pop up it or redifine in configuration.
+        -Added mouse actions. Define your own combinations for mouse
+         buttons + modificators for xnc actions. Use configuration for that.
+        -Added format definition of display modes (full, brief, custom)
+        -Added third panel mode - custom mode
+        -Added command line history menu
+        -Added full support of XDnd v3 (Drag and Drop). Now xnc can do dnd
+         with KDE and GNOME apps.
+        -Added iconsets for menu and files (KDE, GNOME, Windows, XNC, Aqua).
+        -XNC and xterminal now in one solid window.
+        -Added Ctrl-U - swap panels command.
+        -Added Ctrl-J - duplicate panel command.
+        -Added branch view mode for viewing files inside subdirectores
+         on the panel (Ctrl+B).
+        -Add archive creation from panels for TAR,ZIP,RAR,LHA,GZ,BZ2.
+         Use context menu or Ctrl+F5.
+        -Bookmarks now work in terminal mode too (Crtl+1,2,3..).
+
+
+Whats New from version 4.4.6 (14-Sep-2001):
+        -Changed to new method of detection pseudo-tty, work on more platforms
+        -Small bug fixes
+        -IVES command line viewer and editor renamed vs->iview, es->iedit, 
+         becouse older name conflict with other apps. Thanks to Grzegorz Prokopski
+        -Changed to new image library. Now xnc can view image formats:
+         GIF, JPG, BMP, PCX, XPM, TGA, LBM, PNG, PNM, PCD, TIF
+        -Fixed legal issues, added some copyrights :) Thanks to Grzegorz Prokopski
+
+Whats New from version 4.4.5 (23-Jul-2001):
+        -Fixed bug in rxvt part for redrawing screen.
+        -Add new program 'xncloader'. It allows sharing resources of many copies of xnc.
+         Use xncloader for speedup starting xnc. It's very simple, just run once 
+         'xncloader' after you start X server. After that all xnc resources will be stored
+         on server and starting will be very fast! Try it!
+
+Whats New from version 4.4.4 (19-Apr-2001):
+        -Added mouse wheel support.
+        -Fixed compilation bug on RH 7.x (GLIBC 2.2)
+        -Fixed problem with opening pseudo-terminal on Mandrake Linux, and
+         PPC Linux.
+        -Many fixes to FTP vfs.
+        -Add method of opening ftp via 'cd ftp://site' like mc does.
+        -Fixed problem with loading plugins on a.out systems, like OpenBSD.
+         Thanks Reinhard J. Sammer 
+        -Made some improvements.
+
+Whats New from version 4.4.0 (28-Dec-2000):
+        -new AQUA plugin for different xnc look, try 'xnc -plugin aqua'
+         to see LookAqua skin. I hope you like it :)
+        -Fixed bug with JPEG, BMP view in PseudoColor mode.
+        -Fixed some minor bugs.
+        -Made some improvements.
+
+Whats New from version 4.2.1 (27-Jan-2000):
+        -NEW plugin support for different xnc look, try 'xnc -plugin five'
+         to see LookFive skin. I hope you like it :)
+        -Fixed some bugs in FTP support
+        -Fixed crash dump when clicking on bookmark
+        -Fixed crash dump in small size of main window (incorrect resize).
+
+Whats New from version 4.0.8:
+        -New rpm spec file for package. Thanks to ?ukasz Kowalczyk <lukow@tempac.fuw.edu.pl>
+        -Add PageUp/Dn keys for scrolling panels by pages.
+        -Add Home/End keys for quick scrolling to start/end of panel.
+        -Add 'Stat Info' window with full info from 'stat' stucture.
+        -Add 'Magic file' database reading at startup.
+        -QuickFileInfo shows 'file' output to status bar, use hotkey 
+         (KP_Insert by default).
+        -Status bar now configurable at runtime 
+         (filename, permissions, owners, time/date, size).
+        -'IVES exit with XNC' option added.
+        -Add Rectangle/Filled cursor option.
+        -Fixed bug with KDE window manager while switching desktops.
+        -All files now will be installed to '/usr/bin' directory,
+         man pages to '/usr/man/man1' directory.
+        -Faster startup loading with background resource reading (? marks).
+         XNC now starts as fast as it can. You begin working and xnc read
+         his icons in background and shows its. Use 'xnc -bl' for it.
+        -Minor bugs fixed.
+        -Internal code rearranging.
+
+Whats New from version 4.0.7:
+        -Fixed bug with find function.
+        -Fixed bug with IVES non-loading.
+        -Input history fixes.
+        -Fixed bug with -courier- fonts in input fields.
+        -Add TAB expansion to Input fields,
+         (TAB - expand, Ctrl+TAB - next field).
+        -Add DEB archive support for debian packages.
+        -Add GZIP archive support.
+        -Add BZIP 2 archive support.
+        -Add TAR-BZIP2 archive support.
+        -XNCSetup improvements.
+        -Add insertion of panel path to command line. (Ctrl+[/Ctrl+])
+        -Text shadow now can be turned off in 'Options/Configuration'.
+        -Made port to AIX 4.x
+        -Made port to NetBSD 1.3.x
+        -Made port to OpenBSD 2.x
+        
+Whats New from version 4.0.6:
+        -Add '-/+to' startup option for swith off/on built in rxvt terminal.
+         Try 'xnc -to' or 'xnc -to -su'. See 'xnc -help' for details.
+        -Add runtime configuration to 'Options' menu.
+         Some options were moved from XNCSetup directly to XNC.
+        -History corrections.
+        -More makefiles clean-ups. (thanks to Pavel Roskin)
+        -Changes to configure scripts. Separation between interactive and
+         noninteractive parts. Run 'reconfig' for manual configure
+         compile-time options. (thanks to Pavel Roskin)
+        -Add '-/+fl' startup option for XNC fast loading. Try 'xnc -fl'.
+        -Fixed small minor bug in copy function.
+        -Fixed bug with selection/deselection on AFS.
+        -Solved problem with PNGlib linking.
+        -More correct RPM package.
+        -New format of elf.tar.gz package (no 'make install' now):
+                unpack it directly to '/' and then all files go to
+                   /usr/local/bin - binaries
+                   /usr/local/lib/xnc - system wide configation
+                   /usr/local/man/cat1 - man pages.
+
+Whats New from version 4.0.5:
+        -Add PNG image format to IVES.
+        -Add history to all input lines.
+        -Remade and clean up makefiles.
+        -Made port to Solaris 2.6
+
+Whats New from version 4.0.4:
+        -Now faster reading directories (on normal FS and also inside archives)
+        -AFS now understands symbolic links inside archives.
+        -If you use tar v1.12 or higher then look into 'xsetup/data/xnc.afs.tar112' file.
+        -Symlinked directory copying bug fixed.
+        -Fixed problems with compilation under glibc2.
+        -Some small bugs also fixed and some added :)
+
+Whats New from version 4.0.3:
+        -Archive file system now works correctly with long
+         file names.                (modified by Heiko Schroeder)
+        -Archive file system shows date/time of files inside
+         archive                      (modified by Heiko Schroeder)
+        -Copy/move override bug fixed.
+        -PseudoColor ImageEngine bug fixed.
+        -Small minor changes, bug fixes.....
+         
+Whats New from version 4.0.2:
+        -ImagEngine bugfix for correct work in 24bpp        (Thanks to Heiko Schroeder)
+        -Compiling errors on RH5.0 bugfix                        (Thanks to Joeseph Sugarman)
+        -System wide configuration files moved
+                from 'usr/local/lib/.xnc'
+                to    'usr/local/lib/xnc'
+        -Offix Drag and drop support added                (Thanks to Heiko Schroeder)
+        -'Show hidden files' switch added for showing/hiding '.*' files
+        -Panels now can have different width in 'vertical' and 'horizontal' layouts.
+         Just positioned your mouse between panels and drag it to size you want.
+         
+Whats New from version 4.0.0:
+        -More carefull Error reporting when file operation failed
+        -Show date/time in panel status bar
+        -No system "cp" & "mv" any more, use fast internal ones.
+        -Now succesfully compiled under glibc2  (GNU_SOURCE)
+        -Redrawing  while copy/move bug fixed.
+        -File name redrawing after "Overwrite" query bug fixed.
+        -Core dumps while starting without configs bug fixed.
+        
+Whats New from version 3.0.8:
+        -Bugs fix....
+        -Add Virtual File System (VFS). Now VFS can work with archieves.
+        -Add VFS support for TAR,TARGZ,RPM,ZIP,RAR,LHA archieves.
+        -Add Bookmark for HotDirs.
+        -Add Drag and Drop operations with files.
+        -Add icons to file listing in panels.
+        -Add PhotoCD image format to IVES.
+        -Makefies remake, now with autoconf.
+        
+Whats New from version 3.0.6:
+        -Bug fixes and fixes.... ;)  Thanks to all who send me bug reports.
+        -Add Key support (".xnc.keys"). 
+         Now You can easily redefine any hot key in XNC.
+        -All windows now RESIZABLE!!
+        -Add file attributes showing in file info panel under file listing.
+         Attrs shows with three color rectangles. 
+         Rectangles are for owner/group/other. Colors describe permissions
+         for each group as follows: 
+               green color -  'rwx'
+               yellow color - 'rw-'
+               red color - 'r--'
+               blue color - 'r-x'
+               black color - other combinations.
+          Pressing on the attributes You see Attr Change Window.
+        -Add Win Russian mapping/conversion to IVES Editor.
+
+Whats New from version 3.0.5:
+
+        -Scroll Bar widget remake
+        -Add TIFF Image format (need libtiff.a)
+        -Editor scrolling bug fixed
+        -Viewer zeroes bug fixed
+        -Add new application 'X Northern Launch Pad' for
+         quick launching programs under X.
+                          
+Whats New from version 3.0.4:
+
+        -Double IVES run bug fixed.
+        -PseudoColor compilation bug fixed.
+        -Recursive delete bug fixed.
+        -Makefiles remake. Add 'make config' option. Run it before compilation.
+        -Add symbolic link identification.
+        -Add BMP Image format to 'ImagEngine'.
+        -Add XBM Image format to 'ImagEngine'.
+        -Add XPM Image format to 'ImagEngine'.
+        -Add TARGA Image format to 'ImagEngine'.
+        -Correct error reporting for copy/del/move.
+        -Fixed some bugs with copying errors.
+        -Fixed users scanning bug with NIS (thanks Jaime D. Perea Duarte).
+        -Fixed file attributes change bug (thanks Joe Sugarman).
+        -Fixed JPEG grayscale image viewing bug.
+        
+Whats New from version 3.0.0 :
+        
+         -Add Quick Scandir (Ctrl+Q) .....
+         -Some bugs were fixed, such as 'Segmentation fault' and etc.
+         -GIF Interlaced bug was fixed.
+         -Add Progressive JPEG image format.
+
+
+from version 2.1.5:
+
+         -Add Russian KOI8/DOS mapping into IVES Editor and Viewer
+          Use 'F11' key to convert DOS->KOI8 russian files.
+          Use 'Right Alt or Mode switch' keys to switch between 
+          russian/english keyboards in IVES Editor.
+          Set theese fonts in 'X Northen Captain Setup':
+      
+           for 'IVES font'  :      -cronyx-helvetica-*-r-*-*-*-*-*-*-koi8-r
+           for 'Fixed font':       -cronyx-courier-*-r-*-*-*-*-*-*-*-koi8-r
+          if you want to see russian letters in IVES Editor and Viewer.
+
+          If You don't want Russian mapping and letters edit makefile
+          in ives directory (-DNO_ALT).
+          
+         -add DOS/Unix CR/LF file detection and writing to IVES Editor.
+         -add 'Shift+F3' key combination, which allow you view
+          any files (even GIF, JPEG ...etc) in HEX mode.
+         -Solved problems with multiuser IVES connections, and loading
+          from remote host.
+         -fixed IVES Editor 'Permission denied' bug.
+         -fixed IVES Viewer HEX editing bug.
+         -fixed IVES Editor backup file creating bug in DOS filesystem. ('.BUG' extension)
+         -add scrollbar to IVES Viewer.
+         -add 'F8' key to IVES Viewer for going to line number
+          or hex offset.
+         -add scrollbar to IVES Editor.
+         -add waiting message for loading IVES from XNC.
+         -add Host, User and Group to the window headers.
+         -add recursive copy function.
+         -add SYSCOPY compilation flag for exchanging internal 
+          copy/del functions with system cp/rm commands.
+          Use this flag if something wrong with copy.
+         -add color deselection while copying, moving selected files.
+        
+          
+                                     28 MAR 2002  Copyright (c) Leo. <leo@xnc.dubna.su>
+                                                

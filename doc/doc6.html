@@ -1,0 +1,73 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=koi8-r">
+   <meta name="Author" content="Leonid Khramov">
+   <meta name="GENERATOR" content="Mozilla/4.79 [en] (X11; U; Linux 2.4.18-3 i686) [Netscape]">
+   <meta name="Description" content="http://xnc.dubna.su">
+   <meta name="Keywords" content="xnc">
+   <title>X Northern Captain - Extension Association</title>
+</head>
+<body text="#F0FFF0" bgcolor="#003366" link="#66FFFF" vlink="#FFCC99" alink="#FF6666">
+
+<center>
+<h3>
+<font color="#FFFF00">Extension Association</font></h3></center>
+
+<table CELLSPACING=0 CELLPADDING=5 >
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP><b><font size=-1>XNC Index:</font></b>
+<br><font size=-1><a href="index.html">Overview</a></font>
+<br><font size=-1><a href="doc8.html">Installation</a></font>
+<br><font size=-1><a href="doc1.html">Panels</a></font>
+<br><font size=-1><a href="doc2.html">Commands</a></font>
+<br><font size=-1><a href="doc4.html">VFS_support</a></font>
+<br><font size=-1><a href="doc5.html">Bookmark</a></font>
+<br><font size=-1><a href="doc6.html">Extensions</a></font>
+<br><font size=-1><a href="doc7.html">User Menu</a></font>
+<br><font size=-1><a href="doc3.html">Hot Keys</a></font></td>
+
+<td><b>X Northern Captain</b> provide extension file association and execution
+thought simple file of extensions. This is text file each line of that
+describe file extension begining from dot '.' and application assocated
+with this extension. XNC reads this file at startup and then looks for
+file with following extensions in directory, highlights them with 'extension
+color', and allows you execute given application with file by pressing
+on it with 'execution key' [Enter]. If more than one application defined
+for this extension (two or more lines in xnc.ext) choice menu appears and
+You can choose needed command.&nbsp;
+<p>Format of the extension string:
+<p><font face="Courier New,Courier">#Put comments after this sign</font>
+<br><font face="Courier New,Courier">.extension: application %s #comment
+if need</font>
+<br><font face="Courier New,Courier">.extension: application %s/%s #comment
+if need</font>
+<p>where:
+<p>&nbsp; %s - current file name without path. Application run in current
+directory with current file.&nbsp;
+<br>&nbsp; %s/%s - current file with full path. Application run in opposite
+panel directory with full path file.&nbsp;
+<p>To add/edit extensions file choose in upper menu 'Option' then 'Edit
+extension file'. Remember that if you are using external editor (not IVES)
+then you need to restart xnc for your changes will take effect.</td>
+</tr>
+
+<tr>
+<td>
+<center><font size=-1>XNC НОМЕ</font>
+<br><font size=-1><a href="http://xnc.dubna.su">xnc.dubna.su</a></font></center>
+</td>
+
+<td></td>
+</tr>
+</table>
+
+<div align=right><font size=-1>Author <a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">Leonid
+V. Khramov</a></font>
+<br><font size=-1><a href="mailto: &quot;Leonid V. Khramov&quot; <leo@xnc.dubna.su>">leo@xnc.dubna.su</a></font>
+<br><font size=-1>St-Petersburg</font>
+<br><font size=-1>Russia</font>
+<br><font size=-1>1995-2002</font></div>
+
+</body>
+</html>

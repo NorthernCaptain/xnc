@@ -1,0 +1,8 @@
+2002-09-06  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* configure.in (AC_OUTPUT): Add intl/Makefile, po/Makefile.in.
+
+2002-09-06  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* configure.in (AC_OUTPUT): Add intl/Makefile, po/Makefile.in.
+

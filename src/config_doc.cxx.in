@@ -1,0 +1,46 @@
+/****************************************************************************
+*  Copyright (C) 2002 by Leo Khramov
+*  email:     leo@xnc.dubna.su
+*  
+*  This program is free software; you can redistribute it and/or modify
+*  it under the terms of the GNU General Public License as published by
+*  the Free Software Foundation; either version 2 of the License, or
+*  (at your option) any later version.
+*
+*  This program is distributed in the hope that it will be useful,
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+*  GNU General Public License for more details.
+ ****************************************************************************/
+/* $Id: config_doc.cxx.in,v 1.2 2002/11/19 15:55:49 leo Exp $ */
+#include "globals.h"
+#include "xh.h"
+#include "config_file.h"
+
+
+char help_doc_file[]="@prefix@/share/doc/xnc-@VERSION@/index.html";
+
+
+extern int xnc_ex; //Flag for disabling xnc actions on exit (main.cxx)
+
+void browse_documentation()
+{
+    char buf[L_MAXPATH];
+    int pid;
+    pid=fork();
+    if(pid==-1)
+    {
+	return;
+    }
+    if(pid==0)
+    {
+	close(XConnectionNumber(disp));   //Closing connection to X server.
+	xnc_ex=0;                //Disable Xlib.. functions on exit.
+	sprintf(buf, html_browser, help_doc_file);
+	//	close(1);
+	xncdprintf(("RUN BROWSER: [%s]\n",buf));
+	signal(SIGCHLD, SIG_DFL);
+	system(buf);
+	exit(0);
+    }    
+}

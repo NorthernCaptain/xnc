@@ -1,0 +1,21 @@
+XNCSetup - Setup program for X Northern Captain
+
+******Run under X Window!!!*****
+
+This program generate files in Your $HOME/.xnc directory
+
+Run this program for each XNC user before trying to start XNC!!!!
+
+Syntax:
+   
+   xncsetup   [-d display] [-l prev.file.ini]
+   
+Options
+     
+    -d display  - specify display to connection to X Server
+    
+    -l previous.file - specify .ini file for loading from it colors, fonts etc..
+    
+
+      (c) Copyright by Leo 1996-98   (leo@xnc.dubna.su)
+      
