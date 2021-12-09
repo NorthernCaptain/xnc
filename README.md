@@ -1,5 +1,4 @@
-        Welcome to X Northern Captain 4.4.x !!!
-                 (http://xnc.dubna.su)
+        Welcome to X Northern Captain 5.0.4 (released 2004)                
 
 -----------------
 Introduction:
@@ -23,21 +22,21 @@ with XNCSetup make XNC very usefull tool.
 
 Short List of XNC functions:
 
- -Files execution in built in rxvt or in background
- -Files selection/deselection manually or by mask
- -Copy/Move/Delete files/directories (recursivly)
- -View files in ASCII/HEX/GIF/JPEG/TIFF/PCX/XBM/XPM/TGA/BMP/PhotoCD formats
- -Edit files in ASCII/HEX formats
- -Change owner & attributes of files
- -Creating directories
- -Archieve files copy/del/edit/view/execute with Virtual File System
+ - Files execution in built in rxvt or in background
+ - Files selection/deselection manually or by mask
+ - Copy/Move/Delete files/directories (recursivly)
+ - View files in ASCII/HEX/GIF/JPEG/TIFF/PCX/XBM/XPM/TGA/BMP/PhotoCD formats
+ - Edit files in ASCII/HEX formats
+ - Change owner & attributes of files
+ - Creating directories
+ - Archieve files copy/del/edit/view/execute with Virtual File System
   supported archieves: TAR, TARGZ, RPM, ARJ, ZIP, LHA, RAR
   Subarchieves (archieve inside archive) supported as well. 
- -Find files on Disk File System
- -Hot Dir Bookmark - quick switching to usefull directories
- -Disk summary information
- -Memory information
- More...
+ - Find files on Disk File System
+ - Hot Dir Bookmark - quick switching to usefull directories
+ - Disk summary information
+ - Memory information
+ - More...
  
 See 'Docs' dir for complete description (html format). 
 
@@ -45,10 +44,11 @@ See 'Docs' dir for complete description (html format).
 Installation:
 --------------------
 
- ./configure
+ ```./configure
  make
  make install
  xncsetup   - Do it under X Window because XNCSetup needs X
+ ```
 
 -------------------------
 Post Configuration:
@@ -78,17 +78,6 @@ xncloader   - run it just ONCE after you start you X server
 
 xnc         - run it, and it will use faster loading
 
--------------------------
-Additions:
--------------------------
 
-Please mail me name of city and country where you are using xnc,
-it's for my collection ;)
-
-to:                        leo@xnc.dubna.su
-  
-PS: I'm sorry for my English
-
-
-         (c) Copyright 1996-2001 by Leo Khramov. St-Petersburg, Russia
+         (c) Copyright 1996-2004 by Leo Khramov. St-Petersburg, Russia
          
